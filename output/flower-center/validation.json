@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "checks": {
+    "sixPaletteMappingsAndBlankBase": true,
+    "sixDistinctAtlasTiles": true,
+    "sevenDistinctRenderedStates": true,
+    "rimUsesMatchingPaletteFillHue": true,
+    "centerFillConvertsAuthoredColorOnlyOnce": true,
+    "allSixRenderedCenterFillsRemainSaturated": true,
+    "atlasSharedAndMaterialStable": true,
+    "invalidCenterStatesRejected": true,
+    "activeIconNotInterruptedByPendingChoice": true,
+    "nextCenterWaveStartsAfterCurrentFinishes": true,
+    "latestCenterChoiceWins": true,
+    "centerOnlyChangePreservesPetalPalettes": true,
+    "immediateCenterChangePreservesPetalWaves": true,
+    "centerOverrideSurvivesWaveCompletion": true,
+    "brightnessEditPreservesWaveAndDestination": true,
+    "gpuCenterArtworkAndColorRevealOutward": true,
+    "emissionRingIsNearRadialEdgeOnly": true,
+    "iconEmissionIndependentlyAdjustable": true,
+    "postProcessingAffectsCenterGlow": true,
+    "combinedUpdatesAllocateZeroManagedBytes": true,
+    "shaderCompilesWithoutErrors": true,
+    "srpBatcherCompatible": true,
+    "centerGeometryUnchanged": true,
+    "originalCenterMaterialRestored": true,
+    "latestCenterIconRetainedAfterReenable": true,
+    "noNewMaterialLeaks": true,
+    "atlasUsesCompressedDesktopStorage": true,
+    "noRuntimeErrors": true
+  },
+  "detail": {
+    "centerFillSaturation": [
+      0.981253862,
+      0.953522444,
+      0.917991459,
+      0.8513318,
+      0.97225225,
+      0.9731452
+    ],
+    "wavePixels": {
+      "inner": 4344,
+      "outer": 28752,
+      "mismatch": 0
+    },
+    "ringEmissionDifference": 0.30316458210331149,
+    "interiorDifferenceWhenRingGlowChanges": 0.0,
+    "iconEmissionDifference": 0.028928069710731506,
+    "allocatedBytesFor256Updates": 0,
+    "ownedMaterials": 24,
+    "atlas": {
+      "width": 2048,
+      "height": 1024,
+      "format": "BC4",
+      "mipmapCount": 12
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,6 @@
+* text=auto
+*.unity text eol=lf
+*.prefab text eol=lf
+*.meta text eol=lf
+
+# Binary media use regular Git storage; no Git LFS download is required.

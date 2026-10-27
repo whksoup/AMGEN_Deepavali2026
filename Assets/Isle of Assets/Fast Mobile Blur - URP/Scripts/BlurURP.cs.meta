@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f529bce0c607ed24ba77b5ccad65e71d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 242848
+  packageName: Fast Mobile Blur - URP
+  packageVersion: 1.0.1
+  assetPath: Assets/Isle of Assets/Fast Mobile Blur - URP/Scripts/BlurURP.cs
+  uploadId: 666373

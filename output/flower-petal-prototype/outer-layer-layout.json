@@ -1,0 +1,148 @@
+{
+  "source": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\flower-curves-package\\01-outer-petals.svg",
+  "count": 15,
+  "spacing_degrees": 24,
+  "phase_degrees": 12,
+  "root_drop_m": 0.024,
+  "lift_follow": 0.72,
+  "sway_follow": 0.5,
+  "mapping": [
+    {
+      "petal": "OuterPetal_01",
+      "rig": "OuterPetal_01_Rig",
+      "angle_degrees": 12,
+      "top_neighbors_1based": [
+        1,
+        2
+      ]
+    },
+    {
+      "petal": "OuterPetal_02",
+      "rig": "OuterPetal_02_Rig",
+      "angle_degrees": 36,
+      "top_neighbors_1based": [
+        2,
+        1
+      ]
+    },
+    {
+      "petal": "OuterPetal_03",
+      "rig": "OuterPetal_03_Rig",
+      "angle_degrees": 60,
+      "top_neighbors_1based": [
+        2,
+        3
+      ]
+    },
+    {
+      "petal": "OuterPetal_04",
+      "rig": "OuterPetal_04_Rig",
+      "angle_degrees": 84,
+      "top_neighbors_1based": [
+        3,
+        2
+      ]
+    },
+    {
+      "petal": "OuterPetal_05",
+      "rig": "OuterPetal_05_Rig",
+      "angle_degrees": 108,
+      "top_neighbors_1based": [
+        3,
+        4
+      ]
+    },
+    {
+      "petal": "OuterPetal_06",
+      "rig": "OuterPetal_06_Rig",
+      "angle_degrees": 132,
+      "top_neighbors_1based": [
+        4,
+        3
+      ]
+    },
+    {
+      "petal": "OuterPetal_07",
+      "rig": "OuterPetal_07_Rig",
+      "angle_degrees": 156,
+      "top_neighbors_1based": [
+        4,
+        5
+      ]
+    },
+    {
+      "petal": "OuterPetal_08",
+      "rig": "OuterPetal_08_Rig",
+      "angle_degrees": 180,
+      "top_neighbors_1based": [
+        5,
+        4
+      ]
+    },
+    {
+      "petal": "OuterPetal_09",
+      "rig": "OuterPetal_09_Rig",
+      "angle_degrees": 204,
+      "top_neighbors_1based": [
+        6,
+        5
+      ]
+    },
+    {
+      "petal": "OuterPetal_10",
+      "rig": "OuterPetal_10_Rig",
+      "angle_degrees": 228,
+      "top_neighbors_1based": [
+        6,
+        7
+      ]
+    },
+    {
+      "petal": "OuterPetal_11",
+      "rig": "OuterPetal_11_Rig",
+      "angle_degrees": 252,
+      "top_neighbors_1based": [
+        7,
+        6
+      ]
+    },
+    {
+      "petal": "OuterPetal_12",
+      "rig": "OuterPetal_12_Rig",
+      "angle_degrees": 276,
+      "top_neighbors_1based": [
+        7,
+        8
+      ]
+    },
+    {
+      "petal": "OuterPetal_13",
+      "rig": "OuterPetal_13_Rig",
+      "angle_degrees": 300,
+      "top_neighbors_1based": [
+        8,
+        7
+      ]
+    },
+    {
+      "petal": "OuterPetal_14",
+      "rig": "OuterPetal_14_Rig",
+      "angle_degrees": 324,
+      "top_neighbors_1based": [
+        8,
+        1
+      ]
+    },
+    {
+      "petal": "OuterPetal_15",
+      "rig": "OuterPetal_15_Rig",
+      "angle_degrees": 348,
+      "top_neighbors_1based": [
+        1,
+        8
+      ]
+    }
+  ],
+  "downward_follow": 1.35,
+  "shingle_degrees": 6
+}

@@ -1,0 +1,34 @@
+{
+  "scene": "Assets/Scenes/Deepavali_PaletteTest.unity",
+  "prefab": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Two Layer Flower.prefab",
+  "outerPetals": 15,
+  "assignments": {
+    "oddPetals": "Deepavali Outer Tone 1",
+    "evenPetals": "Deepavali Outer Tone 2",
+    "controllerIndices": "OuterPetal_01 through OuterPetal_15 occupy indices 8 through 22 after the eight inner petals. Override Palette per petal to change its tone family."
+  },
+  "manualControls": {
+    "paletteAssets": [
+      "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Deepavali Outer Tone 1.asset",
+      "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Deepavali Outer Tone 2.asset"
+    ],
+    "states": ["Base / Red", "Gold", "Pink", "Purple", "Green", "Blue", "Orange"],
+    "fill": "Manually authored sRGB substrate shade for this state and tone family.",
+    "ornament": "Main gold ornament and border color.",
+    "accent": "Secondary ornament color.",
+    "mainPatternIntensity": "Independent emission of border and main ornament.",
+    "accentPatternIntensity": "Independent emission of secondary ornament.",
+    "edgeIntensity": "Existing additional fill-colored rim glow.",
+    "sharedGlowSlider": "Multiplies all emission regions. All-petals selection controls both layers.",
+    "liveEditing": "Palette asset edits refresh during Play Mode without restarting palette or artwork transitions. ScriptableObject edits persist after exiting Play Mode."
+  },
+  "artwork": {
+    "mode": "built-in image_gen tool",
+    "source": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Ornament_Source.png",
+    "packedRegions": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Regions_RGBA.png",
+    "generationPromptBrief": "Create one portrait 2:3 outer-petal ornament texture for a Deepavali flower. Crisp, flat orthographic 2D artwork on uniform #551024 burgundy. Use the attached flower reference for airy gold diamonds, beads and foliate decoration, and the existing inner-petal texture for related style, with a calmer composition and roughly 55% negative space. Imply a vertical leaf with its tip at the top and root at the bottom. Add a small finial about 12% from the top, mirrored scrollwork in the upper third, a restrained eight-petal central rosette, and lower droplets and diamonds. Primary ornament #FFD877 and secondary details #E99024. Do not add an enclosing border: the exact mesh contour supplies it separately. No complete flower assembly, text, shadows, bloom, perspective or 3D shading.",
+    "technicalPacking": "1024 x 2048 linear RGBA. R ornament coverage; G main/secondary blend; B neutral pigment detail; A exact UV-contour gold border, beadwork and protected rim. Generated source remains unchanged."
+  },
+  "validation": ["render-validation.json", "live-validation.json", "prefab-validation.json"],
+  "previews": ["00-base.png", "01-gold.png", "02-pink.png", "03-purple.png", "04-green.png", "05-blue.png", "06-orange.png"]
+}

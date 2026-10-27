@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e8cd99b1c64624ebff365c0a15f811, type: 3}
+  m_Name: Deepavali Outer Tone 1
+  m_EditorClassIdentifier: 
+  states:
+  - label: Base / Red - Tone 1
+    fill: {r: 0.38039216, g: 0.05882353, b: 0.16470589, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.38039216, g: 0.05882353, b: 0.16470589, a: 1}
+    center: {r: 0.38039216, g: 0.05882353, b: 0.16470589, a: 1}
+    edgeIntensity: 13.384817
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55
+  - label: Gold - Tone 1
+    fill: {r: 0.44313726, g: 0.20784314, b: 0.011764706, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.44313726, g: 0.20784314, b: 0.011764706, a: 1}
+    center: {r: 0.44313726, g: 0.20784314, b: 0.011764706, a: 1}
+    edgeIntensity: 9.689205
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55
+  - label: Pink - Tone 1
+    fill: {r: 0.47058824, g: 0.050980393, b: 0.24313726, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.47058824, g: 0.050980393, b: 0.24313726, a: 1}
+    center: {r: 0.47058824, g: 0.050980393, b: 0.24313726, a: 1}
+    edgeIntensity: 8.51876
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55
+  - label: Purple - Tone 1
+    fill: {r: 0.18431373, g: 0.07058824, b: 0.30980393, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.18431373, g: 0.07058824, b: 0.30980393, a: 1}
+    center: {r: 0.18431373, g: 0.07058824, b: 0.30980393, a: 1}
+    edgeIntensity: 20.463648
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55
+  - label: Green - Tone 1
+    fill: {r: 0.043137256, g: 0.23921569, b: 0.16470589, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.043137256, g: 0.23921569, b: 0.16470589, a: 1}
+    center: {r: 0.043137256, g: 0.23921569, b: 0.16470589, a: 1}
+    edgeIntensity: 34.286877
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55
+  - label: Blue - Tone 1
+    fill: {r: 0.047058824, g: 0.1764706, b: 0.3372549, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.047058824, g: 0.1764706, b: 0.3372549, a: 1}
+    center: {r: 0.047058824, g: 0.1764706, b: 0.3372549, a: 1}
+    edgeIntensity: 17.193398
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55
+  - label: Orange - Tone 1
+    fill: {r: 0.49803922, g: 0.14509805, b: 0.03137255, a: 1}
+    ornament: {r: 1, g: 0.85882354, b: 0.5137255, a: 1}
+    accent: {r: 0.9254902, g: 0.6509804, b: 0.21960784, a: 1}
+    edge: {r: 0.49803922, g: 0.14509805, b: 0.03137255, a: 1}
+    center: {r: 0.49803922, g: 0.14509805, b: 0.03137255, a: 1}
+    edgeIntensity: 7.538965
+    mainPatternIntensity: 1.15
+    accentPatternIntensity: 0.55

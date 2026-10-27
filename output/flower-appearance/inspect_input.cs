@@ -1,0 +1,16 @@
+var c=UnityEngine.Object.FindFirstObjectByType<Amgen.Deepavali.FlowerPaletteController>();
+var input=UnityEngine.Object.FindFirstObjectByType<Amgen.Deepavali.PetalLayerPointerInput>();
+var preview=UnityEngine.Object.FindFirstObjectByType<Amgen.Deepavali.FlowerAppearancePreview>();
+var canvas=UnityEngine.GameObject.Find("Test Instructions").GetComponent<UnityEngine.Canvas>();
+UnityEngine.Canvas.ForceUpdateCanvases();
+var bar=UnityEngine.GameObject.Find("Palette Choices").transform;
+var b=(UnityEngine.RectTransform)bar.GetChild(2);
+var bp=UnityEngine.RectTransformUtility.WorldToScreenPoint(null,b.TransformPoint(b.rect.center));
+var refs=new UnityEditor.SerializedObject(c).FindProperty("petals");
+var skin=(UnityEngine.SkinnedMeshRenderer)refs.GetArrayElementAtIndex(0).objectReferenceValue;
+var motion=skin.GetComponentInParent<Amgen.Deepavali.PetalMotionController>();
+var pp=(UnityEngine.Vector2)UnityEngine.Camera.main.WorldToScreenPoint(motion.transform.TransformPoint(new UnityEngine.Vector3(0,0.02f,-0.24f)));
+var target=motion.GetComponent<Amgen.Deepavali.PetalPickTarget>();
+bool hit=target.TryRaycast(UnityEngine.Camera.main.ScreenPointToRay(pp),out var distance);
+bool routed=input.TryPulseAtScreenPoint(pp);
+return new {width=UnityEngine.Screen.width,height=UnityEngine.Screen.height,pixelRect=UnityEngine.Camera.main.pixelRect,focus=UnityEngine.Application.isFocused,background=UnityEngine.Application.runInBackground,inputMode=UnityEngine.InputSystem.InputSystem.settings.updateMode,backgroundBehavior=UnityEngine.InputSystem.InputSystem.settings.backgroundBehavior,canvas=canvas.renderMode,scale=canvas.scaleFactor,buttonPoint=bp,petalPoint=pp,hit,distance,routed,selection=preview.SelectedPetal,uiTarget=bar.GetChild(2).GetComponent<UnityEngine.UI.Button>().onClick.GetPersistentTarget(0).name,inputDevices=UnityEngine.InputSystem.InputSystem.devices.Select(d=>new{name=d.name,enabled=d.enabled}).ToArray()};

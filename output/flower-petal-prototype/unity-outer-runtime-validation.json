@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "samples": 2739,
+  "clicked": true,
+  "singlePeak": 0.86398685,
+  "allPeak": 0.860521,
+  "maxError": 2.380159E-07,
+  "maxPositionDrift": 0.0,
+  "maxScaleDrift": 0.0,
+  "resetError": 0.0,
+  "outerLiftTravelDegrees": 3.806344
+}

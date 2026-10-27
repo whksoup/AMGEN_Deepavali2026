@@ -1,0 +1,85 @@
+{
+  "petal": {
+    "vertices": 191,
+    "boundary_edges": 56,
+    "nonmanifold_interior_edges": 0,
+    "loose_vertices": 0,
+    "zero_area_faces": 0,
+    "triangles": 324,
+    "max_bone_influences": 2,
+    "unweighted_vertices": 0,
+    "maximum_weight_sum_error": 2.9802322387695312e-08
+  },
+  "disc": {
+    "vertices": 258,
+    "boundary_edges": 0,
+    "nonmanifold_interior_edges": 0,
+    "loose_vertices": 0,
+    "zero_area_faces": 0,
+    "triangles": 512
+  },
+  "pose_checks": [
+    {
+      "pose": "lift_and_curl",
+      "root_drift_m": 0.0,
+      "tip_world_m": [
+        0.0,
+        0.325994610786438,
+        0.09166792780160904
+      ]
+    },
+    {
+      "pose": "downward_bend",
+      "root_drift_m": 0.0,
+      "tip_world_m": [
+        0.0,
+        0.33860892057418823,
+        -0.048306290060281754
+      ]
+    },
+    {
+      "pose": "side_sway",
+      "root_drift_m": 0.0,
+      "tip_world_m": [
+        -0.04164838045835495,
+        0.3414337635040283,
+        0.004000000189989805
+      ]
+    },
+    {
+      "pose": "combined",
+      "root_drift_m": 0.0,
+      "tip_world_m": [
+        0.032754696905612946,
+        0.33008867502212524,
+        0.07538531720638275
+      ]
+    }
+  ],
+  "export": {
+    "file": "Deepavali_SinglePetal.fbx",
+    "asset_triangles": 836,
+    "bones": [
+      "Petal_01_Base",
+      "Petal_01_Mid",
+      "Petal_01_Tip"
+    ],
+    "animation_clips": 0,
+    "preview_objects_included": false,
+    "target_note": "Lightweight asset budget, not a measured Android device performance result."
+  },
+  "fbx_roundtrip": {
+    "objects": 4,
+    "meshes": 2,
+    "bones": [
+      "Petal_01_Base",
+      "Petal_01_Mid",
+      "Petal_01_Tip"
+    ],
+    "triangles": 836,
+    "petal_max_influences": 2,
+    "world_width_m": 0.24199999868869781,
+    "world_length_m": 0.4660000279545784,
+    "animation_actions": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "accepted": true,
+  "queued": true,
+  "firstCompleted": true,
+  "nextStarted": true,
+  "latestWins": true,
+  "centerWave": true,
+  "brightnessIndependent": true,
+  "isolated": true,
+  "cancelPending": true,
+  "reset": true
+}

@@ -1,0 +1,19 @@
+{
+  "scene": "Assets/Scenes/Deepavali_PaletteTest.unity",
+  "saved": true,
+  "playing": false,
+  "icons": 6,
+  "petals": 23,
+  "state": "Base",
+  "prefabs": [
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Palette Inner Layer.prefab",
+      "icons": 6
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Two Layer Flower.prefab",
+      "icons": 6
+    }
+  ],
+  "shaderErrors": []
+}

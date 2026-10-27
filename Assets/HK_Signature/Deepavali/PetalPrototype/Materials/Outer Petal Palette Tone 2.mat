@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Outer Petal Palette Tone 2
+  m_Shader: {fileID: 4800000, guid: 1e4deb4d5be1c5145b2875aaab0ad107, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: c970b58c980c335498c9db1196c95408, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SymbolAtlas:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AccentPatternIntensity: 0.55
+    - _ArtworkProgress: 1
+    - _ArtworkRadius: 1.059
+    - _ArtworkSoftness: 0.04
+    - _CenterSurface: 0
+    - _Cull: 0
+    - _EdgeIntensity: 4.6795335
+    - _EmissionScale: 1
+    - _MainPatternIntensity: 1.15
+    - _Smoothness: 0.28
+    - _Surface: 0
+    - _SymbolEnabled: 0
+    - _SymbolMaxMip: 3
+    - _TargetAccentPatternIntensity: 0.55
+    - _TargetEdgeIntensity: 4.6795335
+    - _TargetMainPatternIntensity: 1.15
+    - _TargetSymbolEnabled: 0
+    - _WaveProgress: 1
+    - _WaveRadius: 0.36
+    - _WaveSoftness: 0.025
+    m_Colors:
+    - _AccentColor: {r: 1, g: 0.4072403, b: 0.036889445, a: 1}
+    - _ArtworkUvToRoot: {r: 0.692, g: 1, b: -0.346, a: 0}
+    - _BaseColor: {r: 0.34191445, g: 0.016807375, b: 0.05951124, a: 1}
+    - _PatternColor: {r: 1, g: 0.63759696, b: 0.14412849, a: 1}
+    - _RestUvToFlowerX: {r: 0.182, g: 0, b: -0.091, a: 0}
+    - _RestUvToFlowerZ: {r: 0, g: -0.263, b: -0.082, a: 0}
+    - _SymbolRect: {r: 1, g: 1, b: 0, a: 0}
+    - _TargetAccentColor: {r: 1, g: 0.4072403, b: 0.036889445, a: 1}
+    - _TargetBaseColor: {r: 0.34191445, g: 0.016807375, b: 0.05951124, a: 1}
+    - _TargetPatternColor: {r: 1, g: 0.63759696, b: 0.14412849, a: 1}
+    - _TargetSymbolRect: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

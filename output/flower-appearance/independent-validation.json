@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "independent": true,
+  "tied": true,
+  "sharedTexture": true,
+  "materials": 8,
+  "rejects": true,
+  "retained": true,
+  "restored": true
+}

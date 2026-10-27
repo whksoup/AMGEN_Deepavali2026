@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "petals": 23,
+  "outer": 15,
+  "tone1": 8,
+  "tone2": 7,
+  "states": 7,
+  "distinctStates": 7,
+  "maxColorError": 5.96046448E-08,
+  "sharedSlider": true,
+  "mainGlowChangedPixels": 61208,
+  "accentGlowChangedPixels": 76293,
+  "distinctGlowPixels": 60809,
+  "batcher": true,
+  "shaderMessages": [],
+  "failures": []
+}

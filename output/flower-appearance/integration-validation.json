@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": {
+    "independentPalettes": true,
+    "emissionUsesFillAndIndependentScale": true,
+    "invalidRequestsRejected": true,
+    "all28SymbolPaletteCombinations": true,
+    "stableRuntimeMaterials": true,
+    "geometryUnchanged": true,
+    "oldArtworkAndPigmentFullyErased": true,
+    "bloomStillVisible": true,
+    "shadowsRetained": true,
+    "srpBatcherCompatible": true,
+    "shaderCompiledWithoutErrors": true,
+    "inspectorBrightnessDoesNotInterruptWave": true,
+    "activeWaveNotInterrupted": true,
+    "latestRequestWinsInRealFrames": true,
+    "transitionUpdatesAllocateZeroManagedBytes": true,
+    "uiDoesNotPickPetals": true,
+    "paletteUiRequestsWave": true,
+    "simultaneousTouchPulsesAreIndependent": true,
+    "rootsRemainPinned": true,
+    "restCoordinatesStableUnderMotion": true,
+    "touchSelectsPetalForAppearance": true,
+    "selectedPetalUiDoesNotRecolorOthers": true,
+    "symbolUiAffectsOnlySelection": true,
+    "brightnessUiAffectsOnlySelection": true,
+    "radialDirectionAndCenter": true,
+    "ringSharesRadialTiming": true,
+    "materialsRestoredOnDisable": true,
+    "appearanceRetainedOnReenable": true,
+    "noMaterialLeaksAcrossReenable": true,
+    "noRuntimeErrors": true
+  },
+  "details": {
+    "distinctSymbolPaletteRenders": 28,
+    "oldPatternControlDifference": 0.012024522058823529,
+    "replacementDifferenceAfterChangingOldPattern": 0.0,
+    "bloomImageDifference": 0.014075502450980392,
+    "allocatedBytesFor256Updates": 0,
+    "touchPulsePeaks": [
+      0.8604468,
+      0.8604468,
+      0.0
+    ],
+    "maxRootDriftMetres": 0.0,
+    "vertexMotionMetres": 0.0320556276,
+    "liveOwnedMaterials": 9,
+    "runtimeErrors": []
+  }
+}

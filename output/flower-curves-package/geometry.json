@@ -1,0 +1,39 @@
+{
+  "source": "codex-clipboard-35544284-8947-447e-89e8-6938c935bec1.png",
+  "method": "Symmetry-constrained manual vector reconstruction, not calibrated inverse projection",
+  "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+  ],
+  "center": [
+    500,
+    500
+  ],
+  "nominal_units": "mm",
+  "outer_petals": {
+    "count": 12,
+    "rotation_step_degrees": 30,
+    "tip_radius": 446
+  },
+  "inner_petals": {
+    "count": 8,
+    "rotation_step_degrees": 45,
+    "tip_radius": 345
+  },
+  "center_radius": 121,
+  "ring": {
+    "outer_radius": 480,
+    "inner_radius": 474,
+    "centerline_radius": 477
+  },
+  "geometry": "22 individually named closed paths; ring has two oppositely wound closed subpaths",
+  "excluded": "Icons, dotted borders, surface textures, lamps, sparks, arrowheads and raster glow",
+  "depth_order_bottom_to_top": [
+    "outer-glow-ring (independent)",
+    "outer-petals",
+    "inner-petals",
+    "center-disc"
+  ]
+}

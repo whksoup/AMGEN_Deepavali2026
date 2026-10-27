@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1000mm" height="1000mm" viewBox="0 0 1000 1000">
+  <title>Symmetric top-down flower - editable closed Bezier curves</title>
+  <desc>Reference-based reconstruction: 12 outer petals, 8 inner petals, center disc, orange annulus. All coordinates baked; no transforms, clipping, filters or raster images. Petals continue under the center disc. Nominal ring outside diameter: 960 mm; rescale as needed.</desc>
+  <g id="layer-center-disc" inkscape:groupmode="layer" inkscape:label="03 Center disc">
+    <path id="center-disc" d="M 621 500 C 621 566.82645 566.82645 621 500 621 C 433.17355 621 379 566.82645 379 500 C 379 433.17355 433.17355 379 500 379 C 566.82645 379 621 433.17355 621 500 Z" fill="#2d163f" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

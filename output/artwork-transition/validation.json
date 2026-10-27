@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "checks": {
+    "oneBoundControllerPerPetal": true,
+    "invalidRequestsRejected": true,
+    "simultaneousIndependentPaletteAndArtwork": true,
+    "petalsStartIndependently": true,
+    "paletteResetAndBrightnessPreserveArtwork": true,
+    "activeRevealFinishesBeforeLatestRequest": true,
+    "nextRevealUsesOnlyLatestRequest": true,
+    "settledRequestDoesNotRestart": true,
+    "requestingActiveTargetClearsPending": true,
+    "immediateArtworkResetIsLocal": true,
+    "restoringOriginalUsesReveal": true,
+    "restoresOriginalExactly": true,
+    "inspectorArtworkAnimatesAndBrightnessPreservesProgress": true,
+    "sameFramePaletteResetDoesNotDropInspectorArtwork": true,
+    "perPetalDurationRespected": true,
+    "allPetalArtworkUpdatesAllocateZeroManagedBytes": true,
+    "materialsReusedDuringReveals": true,
+    "gpuRadialReveal_-1_to_0": true,
+    "gpuRadialReveal_0_to_3": true,
+    "gpuRadialReveal_1_to_2": true,
+    "gpuRadialReveal_3_to_-1": true,
+    "noShaderErrors": true,
+    "srpBatcherCompatible": true
+  },
+  "detail": {
+    "petalCount": 23,
+    "allocatedBytesFor256Updates": 0,
+    "gpuPixelComparisons": [
+      {
+        "from": -1,
+        "to": 0,
+        "changed": 67074,
+        "oldCount": 32756,
+        "newCount": 26451,
+        "mismatched": 0
+      },
+      {
+        "from": 0,
+        "to": 3,
+        "changed": 17826,
+        "oldCount": 10078,
+        "newCount": 5952,
+        "mismatched": 0
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "changed": 25002,
+        "oldCount": 13826,
+        "newCount": 8240,
+        "mismatched": 0
+      },
+      {
+        "from": 3,
+        "to": -1,
+        "changed": 68802,
+        "oldCount": 34067,
+        "newCount": 26978,
+        "mismatched": 0
+      }
+    ]
+  }
+}

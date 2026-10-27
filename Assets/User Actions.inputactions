@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "name": "User Actions",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "f3597a44-73d3-40ba-acc2-43c11b4736e8",
+            "actions": [
+                {
+                    "name": "ChangeScene",
+                    "type": "Button",
+                    "id": "05d63993-75ca-4586-bb47-ad6322756ec3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3051fa1f-70cd-4ac8-aced-8742e52eaf6b",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeScene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "544c6857-aee4-4905-9338-735d54f92b0b",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeScene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e826880d-f373-4f73-957b-b3ab6b33039d",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeScene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

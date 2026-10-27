@@ -1,0 +1,965 @@
+{
+  "summary": {
+    "pose_count": 28,
+    "minimum_lower_to_top_mm": 7.368442051426845,
+    "minimum_neighbor_mm": 4.597694651613311,
+    "top_crossings": 0,
+    "neighbor_crossings": 0,
+    "max_root_drift_m": 0.0,
+    "outer_vertices": 6375,
+    "outer_triangles": 11280,
+    "max_weights": 2,
+    "max_weight_sum_error": 2.9802322387695312e-08,
+    "zero_area_faces": 0
+  },
+  "settings": {
+    "layer_drop_m": 0.024,
+    "lift_follow": 0.72,
+    "downward_follow": 1.35,
+    "sway_follow": 0.5,
+    "shingle_degrees": 6
+  },
+  "method": "Exact vertical plane separation over clipped XY triangle-overlap polygons, evaluated skinned meshes. 28 discrete synchronized poses; not a continuous-motion proof or runtime solver.",
+  "mesh_health": [
+    {
+      "mesh": "OuterPetal_01",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_02",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_03",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_04",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_05",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_06",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_07",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_08",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_09",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_10",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_11",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_12",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_13",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_14",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "mesh": "OuterPetal_15",
+      "vertices": 425,
+      "faces": 384,
+      "triangles": 752,
+      "max_weights": 2,
+      "max_weight_sum_error": 2.9802322387695312e-08,
+      "min_face_normal_z": 0.9903156757354736,
+      "zero_area_faces": 0,
+      "uv_layers": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "pose": "rest",
+      "source_lift_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_sway_degrees": [
+        0,
+        0,
+        0
+      ],
+      "minimum_lower_to_top_m": 0.013385733956260467,
+      "minimum_neighbor_m": 0.005557889906234277,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_02",
+        "REF_TopPetal_02"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_0",
+      "source_lift_degrees": [
+        1.5,
+        1.5199430695623681,
+        0.840408162972156
+      ],
+      "source_sway_degrees": [
+        0.0,
+        -0.5219586409334762,
+        -1.1749903644412252
+      ],
+      "minimum_lower_to_top_m": 0.016961747019740576,
+      "minimum_neighbor_m": 0.005558291600291445,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_10",
+        "REF_TopPetal_07"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_1",
+      "source_lift_degrees": [
+        2.2071067811865475,
+        2.590480030574331,
+        2.1535299235285894
+      ],
+      "source_sway_degrees": [
+        0.40181242651469806,
+        0.09137160050587613,
+        -0.5477100674329525
+      ],
+      "minimum_lower_to_top_m": 0.017857964787971768,
+      "minimum_neighbor_m": 0.005555294967901493,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_10",
+        "REF_TopPetal_06"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_2",
+      "source_lift_degrees": [
+        2.5,
+        3.3151217979863303,
+        3.3767159371120794
+      ],
+      "source_sway_degrees": [
+        0.6949052115505531,
+        0.6799791430120149,
+        0.22776585080627626
+      ],
+      "minimum_lower_to_top_m": 0.018111202430407092,
+      "minimum_neighbor_m": 0.005552183593814377,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_10",
+        "REF_TopPetal_06"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_3",
+      "source_lift_degrees": [
+        2.2071067811865475,
+        3.2693830523104275,
+        3.793440426270498
+      ],
+      "source_sway_degrees": [
+        0.7999753261158318,
+        1.0846026079658557,
+        0.9416144524003436
+      ],
+      "minimum_lower_to_top_m": 0.017896683216805827,
+      "minimum_neighbor_m": 0.005551796350273719,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_10",
+        "REF_TopPetal_06"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_4",
+      "source_lift_degrees": [
+        1.5000000000000002,
+        2.480056930437632,
+        3.159591837027844
+      ],
+      "source_sway_degrees": [
+        0.688593621603155,
+        1.1957617624505612,
+        1.4006874947509291
+      ],
+      "minimum_lower_to_top_m": 0.017335360136040298,
+      "minimum_neighbor_m": 0.00555419835045686,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_10",
+        "REF_TopPetal_06"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_5",
+      "source_lift_degrees": [
+        0.7928932188134525,
+        1.4095199694256695,
+        1.8464700764714113
+      ],
+      "source_sway_degrees": [
+        0.3908969931975639,
+        0.9833799273362827,
+        1.4807721529589217
+      ],
+      "minimum_lower_to_top_m": 0.01605523627722743,
+      "minimum_neighbor_m": 0.005556772842664379,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_06",
+        "REF_TopPetal_04"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_13",
+        "OuterPetal_14"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_6",
+      "source_lift_degrees": [
+        0.5,
+        0.6848782020136694,
+        0.6232840628879213
+      ],
+      "source_sway_degrees": [
+        -0.012565853849456727,
+        0.5049219181602728,
+        1.1601996712721638
+      ],
+      "minimum_lower_to_top_m": 0.01488585045158343,
+      "minimum_neighbor_m": 0.005557958555146229,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_04",
+        "REF_TopPetal_03"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "breeze_7",
+      "source_lift_degrees": [
+        0.7928932188134523,
+        0.7306169476895727,
+        0.20655957372950184
+      ],
+      "source_sway_degrees": [
+        -0.41262871862803796,
+        -0.11015438924347079,
+        0.5257083459132901
+      ],
+      "minimum_lower_to_top_m": 0.015308139279603557,
+      "minimum_neighbor_m": 0.005559229861191492,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_14",
+        "InnerPetal_01"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_0",
+      "source_lift_degrees": [
+        6.5,
+        10.519943069562368,
+        8.840408162972157
+      ],
+      "source_sway_degrees": [
+        0.0,
+        -0.5219586409334762,
+        -1.1749903644412252
+      ],
+      "minimum_lower_to_top_m": 0.018374764439872127,
+      "minimum_neighbor_m": 0.0055498803897287095,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_1",
+      "source_lift_degrees": [
+        7.207106781186548,
+        11.59048003057433,
+        10.15352992352859
+      ],
+      "source_sway_degrees": [
+        0.40181242651469806,
+        0.09137160050587613,
+        -0.5477100674329525
+      ],
+      "minimum_lower_to_top_m": 0.018219970677057468,
+      "minimum_neighbor_m": 0.005041403076855931,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_12",
+        "OuterPetal_13"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_2",
+      "source_lift_degrees": [
+        7.5,
+        12.31512179798633,
+        11.37671593711208
+      ],
+      "source_sway_degrees": [
+        0.6949052115505531,
+        0.6799791430120149,
+        0.22776585080627626
+      ],
+      "minimum_lower_to_top_m": 0.018159537909208427,
+      "minimum_neighbor_m": 0.004685766207549551,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_07",
+        "OuterPetal_08"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_3",
+      "source_lift_degrees": [
+        7.207106781186548,
+        12.269383052310427,
+        11.793440426270498
+      ],
+      "source_sway_degrees": [
+        0.7999753261158318,
+        1.0846026079658557,
+        0.9416144524003436
+      ],
+      "minimum_lower_to_top_m": 0.018230860343475375,
+      "minimum_neighbor_m": 0.00471851883294294,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_13",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_14",
+        "OuterPetal_15"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_4",
+      "source_lift_degrees": [
+        6.5,
+        11.480056930437632,
+        11.159591837027843
+      ],
+      "source_sway_degrees": [
+        0.688593621603155,
+        1.1957617624505612,
+        1.4006874947509291
+      ],
+      "minimum_lower_to_top_m": 0.01839290259798197,
+      "minimum_neighbor_m": 0.00511204350712968,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_13",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_5",
+      "source_lift_degrees": [
+        5.792893218813452,
+        10.40951996942567,
+        9.84647007647141
+      ],
+      "source_sway_degrees": [
+        0.3908969931975639,
+        0.9833799273362827,
+        1.4807721529589217
+      ],
+      "minimum_lower_to_top_m": 0.018550064511455605,
+      "minimum_neighbor_m": 0.005555078304699164,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_13",
+        "OuterPetal_14"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_6",
+      "source_lift_degrees": [
+        5.5,
+        9.68487820201367,
+        8.62328406288792
+      ],
+      "source_sway_degrees": [
+        -0.012565853849456727,
+        0.5049219181602728,
+        1.1601996712721638
+      ],
+      "minimum_lower_to_top_m": 0.01860833405993728,
+      "minimum_neighbor_m": 0.005563545952208313,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_05",
+        "OuterPetal_06"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "pulse_7",
+      "source_lift_degrees": [
+        5.792893218813452,
+        9.730616947689573,
+        8.206559573729502
+      ],
+      "source_sway_degrees": [
+        -0.41262871862803796,
+        -0.11015438924347079,
+        0.5257083459132901
+      ],
+      "minimum_lower_to_top_m": 0.018529765278077093,
+      "minimum_neighbor_m": 0.005573075721915699,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_0",
+      "source_lift_degrees": [
+        0.5,
+        0.6,
+        0.2
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.014786289398989457,
+      "minimum_neighbor_m": 0.0055562494870165825,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_04",
+        "REF_TopPetal_03"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_1",
+      "source_lift_degrees": [
+        0.5,
+        0.6,
+        11.8
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.014193503934586314,
+      "minimum_neighbor_m": 0.0055562494870165825,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_12",
+        "REF_TopPetal_08"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_2",
+      "source_lift_degrees": [
+        0.5,
+        12.4,
+        0.2
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.0171029696100162,
+      "minimum_neighbor_m": 0.0055562494870165825,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_12",
+        "REF_TopPetal_07"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_3",
+      "source_lift_degrees": [
+        0.5,
+        12.4,
+        11.8
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.0171029696100162,
+      "minimum_neighbor_m": 0.0055562494870165825,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_12",
+        "REF_TopPetal_07"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_4",
+      "source_lift_degrees": [
+        7.5,
+        0.6,
+        0.2
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.018162475658459798,
+      "minimum_neighbor_m": 0.00554331581683938,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_13",
+        "OuterPetal_14"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_5",
+      "source_lift_degrees": [
+        7.5,
+        0.6,
+        11.8
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.018162475658459798,
+      "minimum_neighbor_m": 0.00554331581683938,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_13",
+        "OuterPetal_14"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_6",
+      "source_lift_degrees": [
+        7.5,
+        12.4,
+        0.2
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.018162475658459798,
+      "minimum_neighbor_m": 0.00484703432359918,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_07",
+        "OuterPetal_08"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "envelope_corner_7",
+      "source_lift_degrees": [
+        7.5,
+        12.4,
+        11.8
+      ],
+      "source_sway_degrees": [
+        0.8,
+        -1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.018162475658459798,
+      "minimum_neighbor_m": 0.00484703432359918,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_07",
+        "OuterPetal_08"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "negative_bend_margin",
+      "source_lift_degrees": [
+        -4,
+        -6,
+        -6
+      ],
+      "source_sway_degrees": [
+        -0.8,
+        1.2,
+        -1.5
+      ],
+      "minimum_lower_to_top_m": 0.007368442051426845,
+      "minimum_neighbor_m": 0.005544564045831556,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_13",
+        "REF_TopPetal_08"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_02",
+        "OuterPetal_03"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "maximum_positive_sway",
+      "source_lift_degrees": [
+        7.5,
+        12.4,
+        11.8
+      ],
+      "source_sway_degrees": [
+        0.8,
+        1.2,
+        1.5
+      ],
+      "minimum_lower_to_top_m": 0.018162475658459798,
+      "minimum_neighbor_m": 0.0045976946516133104,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_03",
+        "OuterPetal_04"
+      ],
+      "max_root_drift_m": 0.0
+    },
+    {
+      "pose": "maximum_negative_sway",
+      "source_lift_degrees": [
+        7.5,
+        12.4,
+        11.8
+      ],
+      "source_sway_degrees": [
+        -0.8,
+        -1.2,
+        -1.5
+      ],
+      "minimum_lower_to_top_m": 0.018116949946204736,
+      "minimum_neighbor_m": 0.004997782175356749,
+      "top_crossing_triangle_pairs": 0,
+      "neighbor_crossing_triangle_pairs": 0,
+      "worst_top_pair": [
+        "OuterPetal_09",
+        "CenterDisc"
+      ],
+      "worst_neighbor_pair": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ],
+      "max_root_drift_m": 0.0
+    }
+  ]
+}

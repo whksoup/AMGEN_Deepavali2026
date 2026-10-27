@@ -1,0 +1,49 @@
+# Unity-generated data and local editor state
+/[Ll]ibrary/
+/[Tt]emp/
+/[Ll]ogs/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/ProjectSettings/Packages/com.unity.pipeline/
+/Assets/StreamingAssets/aa/
+
+# IDE and generated project files
+/.vs/
+/.idea/
+/.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.tmp
+*.log
+/UpgradeLog.htm
+sysinfo.txt
+
+# Local automation state and credentials
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.keystore
+*.jks
+
+# In-session backups; retain source, validation reports, and review renders
+/output/**/baseline/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

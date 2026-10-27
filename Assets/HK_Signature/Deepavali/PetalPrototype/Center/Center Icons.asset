@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb6c13fdc9ff9144a835012e751aa5e, type: 3}
+  m_Name: Center Icons
+  m_EditorClassIdentifier: 
+  atlas: {fileID: 2800000, guid: 24444ea949a770044a7aaee76c049f59, type: 3}
+  maxMipLevel: 4
+  symbols:
+  - label: "Gold \u2014 Lotus"
+    uvRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.5004883
+      width: 0.33284506
+      height: 0.49902344
+  - label: "Pink \u2014 Sunburst"
+    uvRect:
+      serializedVersion: 2
+      x: 0.33357748
+      y: 0.5004883
+      width: 0.33284506
+      height: 0.49902344
+  - label: "Purple \u2014 Star"
+    uvRect:
+      serializedVersion: 2
+      x: 0.6669108
+      y: 0.5004883
+      width: 0.33284506
+      height: 0.49902344
+  - label: "Green \u2014 Sprout"
+    uvRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00048828125
+      width: 0.33284506
+      height: 0.49902344
+  - label: "Blue \u2014 Diya"
+    uvRect:
+      serializedVersion: 2
+      x: 0.33357748
+      y: 0.00048828125
+      width: 0.33284506
+      height: 0.49902344
+  - label: "Orange \u2014 People and heart"
+    uvRect:
+      serializedVersion: 2
+      x: 0.6669108
+      y: 0.00048828125
+      width: 0.33284506
+      height: 0.49902344
