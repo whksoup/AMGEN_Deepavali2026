@@ -1,0 +1,98 @@
+[
+  {
+    "index": 0,
+    "renderer": "InnerPetal_01",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - InnerPetal_01.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/InnerPetal_01 Rootward.mat",
+    "iconRegion": [
+      0.496859372,
+      0.46,
+      0.183105618,
+      0.003
+    ]
+  },
+  {
+    "index": 1,
+    "renderer": "REF_TopPetal_02",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_02.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_02 Rootward.mat",
+    "iconRegion": [
+      0.520841241,
+      0.46,
+      0.158749834,
+      0.003
+    ]
+  },
+  {
+    "index": 2,
+    "renderer": "REF_TopPetal_03",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_03.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_03 Rootward.mat",
+    "iconRegion": [
+      0.5048977,
+      0.45,
+      0.178746,
+      0.003
+    ]
+  },
+  {
+    "index": 3,
+    "renderer": "REF_TopPetal_04",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_04.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_04 Rootward.mat",
+    "iconRegion": [
+      0.5057353,
+      0.44,
+      0.164054632,
+      0.003
+    ]
+  },
+  {
+    "index": 4,
+    "renderer": "REF_TopPetal_05",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_05.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_05 Rootward.mat",
+    "iconRegion": [
+      0.499008,
+      0.45,
+      0.1715779,
+      0.003
+    ]
+  },
+  {
+    "index": 5,
+    "renderer": "REF_TopPetal_06",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_06.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_06 Rootward.mat",
+    "iconRegion": [
+      0.4934373,
+      0.43,
+      0.145646214,
+      0.003
+    ]
+  },
+  {
+    "index": 6,
+    "renderer": "REF_TopPetal_07",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_07.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_07 Rootward.mat",
+    "iconRegion": [
+      0.503061831,
+      0.45,
+      0.171988949,
+      0.003
+    ]
+  },
+  {
+    "index": 7,
+    "renderer": "REF_TopPetal_08",
+    "sourceMaterial": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Inner - REF_TopPetal_08.mat",
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Materials/REF_TopPetal_08 Rootward.mat",
+    "iconRegion": [
+      0.487084,
+      0.47,
+      0.1654096,
+      0.003
+    ]
+  }
+]

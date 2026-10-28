@@ -1,0 +1,56 @@
+{
+  "prefab": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Peacock Flower.prefab",
+  "basePrefabRetained": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Two Layer Flower.prefab",
+  "scene": "Assets/Scenes/Deepavali_PaletteTest.unity",
+  "outerPetalCount": 15,
+  "openingTones": [
+    {
+      "petals": "Odd outer petal numbers, 01 through 15",
+      "asset": "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Peacock Startup Tone 1.asset",
+      "fill": "#982264",
+      "tertiary": "#247DCC"
+    },
+    {
+      "petals": "Even outer petal numbers, 02 through 14",
+      "asset": "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Peacock Startup Tone 2.asset",
+      "fill": "#D94791",
+      "tertiary": "#FF8BC4"
+    }
+  ],
+  "controls": {
+    "startupPalette": "Each outer PetalAppearance references a shared Peacock Startup Tone asset. Edit Colors on that asset to tune the opening fill, gold, amber, tertiary inlay and glow strengths.",
+    "mainPatternIntensity": "Gold border, rings and main feather ribs.",
+    "accentPatternIntensity": "Amber details and the tertiary-colored iris, droplets and tip.",
+    "emissionScale": "Existing shared/per-petal glow control multiplies both regions.",
+    "takeover": "First normal palette request consumes startup for the addressed petals, even when the requested enum already equals Base. TransitionTo uses the existing radial palette wave; SetState changes immediately. Disable/enable preserves consumption; a newly instantiated flower receives opening colors.",
+    "regularPalette": "Existing Glow Trial Outer Tone 1 and 2 references retained unchanged. Tertiary alpha zero falls back to that regular state's Accent color, so initial blue/pink inlays are overwritten. Set an opaque Tertiary color in a regular state to author it independently.",
+    "artwork": "Peacock ornament remains the outer base artwork while its colors change. Existing symbol replacement/reveal also erases the tertiary artwork and glow correctly."
+  },
+  "assets": {
+    "source": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Source.png",
+    "regions": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Regions_RGBA.png",
+    "tertiaryMask": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Inlays.png",
+    "generation": "Built-in image_gen, exact prompt in generation-prompt.txt",
+    "packing": "Source unchanged; technical mask extraction with exact UV-contour border. Artwork UV mapping preserves circular proportions in mesh dimensions."
+  },
+  "validation": {
+    "stateReport": "state-validation.json",
+    "liveWaveReport": "wave-validation.json",
+    "checks": [
+      "15 opening assignments",
+      "7 existing normal palettes",
+      "per-petal takeover",
+      "same-enum Base wave",
+      "live startup color editing",
+      "glow edits preserve startup",
+      "disable/enable consumption",
+      "spill lighting",
+      "shader compilation",
+      "SRP Batcher compatibility"
+    ],
+    "combinedIntegrationReport": "combined-validation.json"
+  },
+  "previews": [
+    "startup-flower.png"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "meshes": [
+    {
+      "name": "Inner Petal Broad Base",
+      "vertices": 190,
+      "triangles": 318,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "maxWeightError": 2.98023224E-08,
+      "uvCount": 190,
+      "uv2Count": 190
+    },
+    {
+      "name": "Outer Petal Broad Base",
+      "vertices": 424,
+      "triangles": 744,
+      "finite": true,
+      "zeroAreaTriangles": 0,
+      "maxWeightError": 2.98023224E-08,
+      "uvCount": 424,
+      "uv2Count": 424
+    }
+  ],
+  "padWorldBottom": -0.08093233,
+  "padWorldTop": -0.0458616242,
+  "padLocalPosition": [
+    0.0,
+    -0.0506,
+    0.0
+  ],
+  "padLocalScale": [
+    1.0,
+    1.0,
+    1.3
+  ]
+}

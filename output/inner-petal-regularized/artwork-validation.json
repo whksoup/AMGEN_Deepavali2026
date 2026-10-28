@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "petalCount": 22,
+  "checks": {
+    "reviewUiBindsEveryPetalComponent": true,
+    "reviewUiStartsAllPetalReveals": true,
+    "liveArtworkAndPaletteAdvanceTogether": true,
+    "motionPreservesArtworkRootCoordinates": true,
+    "liveLatestChoiceWinsPerPetal": true,
+    "reenableAppliesLatestQueuedArtwork": true,
+    "runtimeMaterialsMatchPetalsPlusCenter": true,
+    "noRuntimeErrors": true
+  },
+  "errors": []
+}

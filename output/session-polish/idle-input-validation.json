@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "Repeated stationary sensor samples do not refresh idle": true,
+    "Sub-pixel sensor jitter does not refresh idle": true,
+    "Meaningful movement refreshes idle": true,
+    "Stale tracking expires without faking activity": true,
+    "Tracking reacquisition refreshes idle": true,
+    "Explicit reset can interrupt a gradual return": true,
+    "Reset cancels pending fade and leaves reusable base": true
+  },
+  "errors": []
+}

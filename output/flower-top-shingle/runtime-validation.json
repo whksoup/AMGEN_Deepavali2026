@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "frames": 972,
+  "picked": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "pulsePeaks": [
+    0.8618211,
+    0.860389948,
+    0.8615085,
+    0.8603234,
+    0.8618864,
+    0.86215806,
+    0.8627432,
+    0.861841261
+  ],
+  "tipTravelMm": [
+    16.5674248,
+    17.5734921,
+    18.4325886,
+    18.9112873,
+    19.0439529,
+    18.87864,
+    21.37041,
+    21.1353149
+  ],
+  "maxRootDrift": 0.0,
+  "maxBaseLift": 0.6651933,
+  "maxTipLift": 12.0962877,
+  "independentTipSpread": 10.0947161,
+  "errors": []
+}

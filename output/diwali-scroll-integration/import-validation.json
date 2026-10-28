@@ -1,0 +1,146 @@
+[
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_blue_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_blue_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_blue_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_cyan_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_cyan_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_cyan_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_green_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_green_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_green_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_orange_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_orange_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_orange_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_pink_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_pink_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_pink_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_purple_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_purple_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_purple_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_red_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_red_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_red_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_yellow_hide.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_yellow_idle.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  },
+  {
+    "path": "Assets/DiwaliScroll/Videos/diwali_yellow_spawn.webm",
+    "alpha": true,
+    "transcode": true,
+    "codec": "VP8"
+  }
+]

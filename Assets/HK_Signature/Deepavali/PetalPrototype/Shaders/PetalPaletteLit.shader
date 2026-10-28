@@ -3,10 +3,23 @@ Shader "Amgen/Deepavali/Petal Palette Lit"
     Properties
     {
         [MainTexture] _BaseMap("Region Mask (Ornament / Main / Detail / Edge)", 2D) = "white" {}
+        _ArtworkFitMap("Fitted Artwork Coordinates (16-bit U / V)", 2D) = "black" {}
+        [HideInInspector] _ArtworkFitEnabled("Use Fitted Artwork", Float) = 0
         [MainColor] _BaseColor("Petal Fill", Color) = (0.5,0.05,0.15,1)
         _PatternColor("Main Ornament", Color) = (1,0.7,0.3,1)
         _AccentColor("Accent Ornament", Color) = (1,0.3,0.02,1)
-        _EdgeIntensity("Edge Intensity (Fill Color)", Float) = 3
+        _TertiaryMap("Minor Inlay / Colored Tip Mask", 2D) = "black" {}
+        _TertiaryColor("Tertiary Inlay", Color) = (0.1,0.4,0.8,1)
+        _EdgeIntensity("Edge Intensity", Float) = 3
+        _EdgeColor("Edge Tint (Alpha 0 Uses Fill)", Color) = (0,0,0,0)
+        _TargetEdgeColor("Target Edge Tint", Color) = (0,0,0,0)
+        _StartupAtlas("Initial Medallion Artwork", 2D) = "black" {}
+        [Toggle] _StartupMeshUV("Initial Artwork Uses Physical Mesh UV", Float) = 0
+        _StartupRect("Initial Artwork UV Scale / Offset", Vector) = (1,1,0,0)
+        _StartupMaxMip("Initial Artwork Safe Mip", Float) = 3
+        _StartupSymbolEnabled("Initial Artwork Assigned", Float) = 0
+        _StartupAppearance("Source Uses Initial Appearance", Float) = 0
+        _TargetStartupAppearance("Target Uses Initial Appearance", Float) = 0
         _EmissionScale("Petal Emission Scale", Float) = 1
         _MainPatternIntensity("Main Ornament Glow", Float) = 0
         _AccentPatternIntensity("Accent Ornament Glow", Float) = 0
@@ -15,6 +28,7 @@ Shader "Amgen/Deepavali/Petal Palette Lit"
         _TargetBaseColor("Target Fill", Color) = (0.5,0.05,0.15,1)
         _TargetPatternColor("Target Main Ornament", Color) = (1,0.7,0.3,1)
         _TargetAccentColor("Target Accent Ornament", Color) = (1,0.3,0.02,1)
+        _TargetTertiaryColor("Target Tertiary Inlay", Color) = (0.1,0.4,0.8,1)
         _TargetEdgeIntensity("Target Edge Intensity", Float) = 3
         _WaveProgress("Wave Progress", Range(0,1)) = 1
         _WaveRadius("Flower Rest Radius", Float) = 0.36
@@ -36,11 +50,37 @@ Shader "Amgen/Deepavali/Petal Palette Lit"
         _TargetSymbolRect("Target Symbol UV Scale / Offset", Vector) = (1,1,0,0)
         _TargetSymbolEnabled("Target Replaces Interior Artwork", Float) = 0
         _SymbolMaxMip("Symbol Safe Maximum Mip", Float) = 3
+        [HideInInspector] _OutcomeIconEnabled("Shared Outcome Icon", Float) = 0
+        _OutcomeIconAtlas("Outcome Icons", 2D) = "black" {}
+        _OutcomeIconRect("Outcome Icon Rect", Vector) = (1,1,0,0)
+        _OutcomeIconRotation("Outcome Icon Rotation", Vector) = (1,0,0,0)
+        _OutcomeIconMaxMip("Outcome Icon Safe Mip", Float) = 3
         _ArtworkProgress("Artwork Reveal Progress", Range(0,1)) = 1
         _ArtworkSoftness("Artwork Reveal Softness", Float) = 0.04
         _ArtworkUvToRoot("Artwork UV To Petal Root", Vector) = (0.692,1,-0.346,0)
         _ArtworkRadius("Artwork Root Radius", Float) = 1.059
         _Smoothness("Smoothness", Range(0,1)) = 0.22
+        _BodyShadingMap("Body Shading (R Shade / G Occlusion)", 2D) = "white" {}
+        _CenterShadingMap("Center Shading (R Shade / G Occlusion)", 2D) = "white" {}
+        _BodyShadeStrength("Body Shading Strength", Range(0,1)) = 0
+        _BodyOcclusionStrength("Body Occlusion Strength", Range(0,1)) = 0
+        _BodySpecularStrength("Body Sheen", Range(0,1)) = 1
+        _RimGlowScale("Rim Glow Multiplier", Range(0,6)) = 1
+        _OrnamentGlowScale("Interior Ornament Glow Multiplier", Range(0,2)) = 1
+        [Toggle] _PetalLightEnabled("Spatial Lighting Prototype", Float) = 0
+        [HideInInspector] _PatternLightHandoff("Pattern Light Handoff", Range(0,1)) = 0
+        [HideInInspector] _PatternPaletteAlpha("Pattern Palette Alpha", Range(0,1)) = 1
+        [HideInInspector] _PatternEmissionGain("Pattern Emission Gain", Float) = 1
+        [HideInInspector] _PatternSurfaceGlow("Pattern Surface Glow", Float) = 0
+        _PetalLightData("Lighting (Distance / Side Path / Variation / Arrival)", 2D) = "white" {}
+        _PetalLightColor("Spatial Light Warmth", Color) = (1,0.55,0.12,1)
+        _PetalLightShape("Shimmer / Gap Coverage / Gap Depth / Speed", Vector) = (0.65,0.45,0.97,0.6)
+        _PetalLightTravel("Progress / Tip Brightness / Edge Brightness / Growth Enabled", Vector) = (1,10,7,1)
+        _PetalLightStyle("Wash Width / Wash Strength / Seed / Clock", Vector) = (0.25,0.25,1,0)
+        _PetalLightTipReach("Light Reach Down From Tip", Range(0.05,1)) = 0.14
+        _PetalLightIconBrightness("Spatial Icon Brightness", Range(0,20)) = 0
+        _PetalLightIconRegion("Icon Center UV / Radius / Feather (Petal Length)", Vector) = (0.5,0.57,0.1863,0.004)
+        _FlowerStageLevels("Stage Emission / Ornament / Surface / Center Rim", Vector) = (1,1,1,1)
         [Enum(UnityEngine.Rendering.CullMode)] _Cull("Render Face", Float) = 2
         [HideInInspector] _Surface("Surface", Float) = 0
     }
@@ -64,6 +104,7 @@ Shader "Amgen/Deepavali/Petal Palette Lit"
             #pragma multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS
             #pragma multi_compile_fragment _ _SHADOWS_SOFT _SHADOWS_SOFT_LOW _SHADOWS_SOFT_MEDIUM _SHADOWS_SOFT_HIGH
             #pragma multi_compile_fragment _ _LIGHT_COOKIES
+            #pragma multi_compile_fragment _ _SCREEN_SPACE_OCCLUSION
             #pragma multi_compile_fragment _ _REFLECTION_PROBE_BLENDING
             #pragma multi_compile_fragment _ _REFLECTION_PROBE_BOX_PROJECTION
             #pragma multi_compile _ _LIGHT_LAYERS

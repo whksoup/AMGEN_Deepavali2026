@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292129f921a77e84e8c0c3a9b4dfe535, type: 3}
+  m_Name: Rootward Inner Source
+  m_EditorClassIdentifier: 
+  outputName: Rootward Inner Medallions
+  padding: 16
+  tiles:
+  - label: Sprout
+    mask: {fileID: 2800000, guid: c154c19115a8a924e8a21030116d41b9, type: 3}
+  - label: Diya
+    mask: {fileID: 2800000, guid: c4eac7bb3e65968438a7f34c811fd4b7, type: 3}
+  - label: Star
+    mask: {fileID: 2800000, guid: 0c0bac835fdce574e87c4f4146a563e8, type: 3}
+  - label: Stacked Coins
+    mask: {fileID: 2800000, guid: 8b42e128e5c8fee4281a37bbc00c7132, type: 3}
+  - label: People and Heart
+    mask: {fileID: 2800000, guid: c306adac28625684b881713fa961aafa, type: 3}
+  - label: Gift Box
+    mask: {fileID: 2800000, guid: bc1f97f83d453fc4d8a754e6ac0347eb, type: 3}
+  - label: Sunburst
+    mask: {fileID: 2800000, guid: 757117af327336f4eb14aa820204d03e, type: 3}
+  - label: Lotus
+    mask: {fileID: 2800000, guid: 3b056e6120fb4b44eba2cdfa345e5034, type: 3}
+  generatedSet: {fileID: 11400000, guid: c1552e27c0e234846a4a564d48d4575d, type: 2}

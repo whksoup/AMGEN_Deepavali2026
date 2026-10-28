@@ -1,0 +1,10 @@
+UI raycast selects hand badge
+Active badge blocks petal input
+Transparent corners do not intercept clicks
+Pointer click starts loading
+Repeated click does not restart timer
+Duplicate retains independent idle material
+Completion deactivates prompt
+Hidden prompt releases input
+Re-enable resets the prompt
+No shader compiler messages

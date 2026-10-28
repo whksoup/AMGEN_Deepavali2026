@@ -1,0 +1,1670 @@
+[
+  {
+    "frame": 824,
+    "matches": 2826,
+    "error": 0.0,
+    "type": "direct"
+  },
+  {
+    "frame": 821,
+    "matches": 1522,
+    "error": 0.16136300563812256,
+    "type": "direct"
+  },
+  {
+    "frame": 818,
+    "matches": 1469,
+    "error": 0.1988580822944641,
+    "type": "direct"
+  },
+  {
+    "frame": 815,
+    "matches": 1552,
+    "error": 0.22975632548332214,
+    "type": "direct"
+  },
+  {
+    "frame": 812,
+    "matches": 1488,
+    "error": 0.25844115018844604,
+    "type": "direct"
+  },
+  {
+    "frame": 809,
+    "matches": 1484,
+    "error": 0.25507286190986633,
+    "type": "direct"
+  },
+  {
+    "frame": 806,
+    "matches": 1460,
+    "error": 0.24338287115097046,
+    "type": "direct"
+  },
+  {
+    "frame": 803,
+    "matches": 1276,
+    "error": 0.2269604653120041,
+    "type": "direct"
+  },
+  {
+    "frame": 800,
+    "matches": 1202,
+    "error": 0.6405484080314636,
+    "type": "direct"
+  },
+  {
+    "frame": 797,
+    "matches": 923,
+    "error": 0.7765685319900513,
+    "type": "direct"
+  },
+  {
+    "frame": 794,
+    "matches": 894,
+    "error": 1.0026044845581055,
+    "type": "direct"
+  },
+  {
+    "frame": 791,
+    "matches": 897,
+    "error": 0.7951667904853821,
+    "type": "direct"
+  },
+  {
+    "frame": 788,
+    "matches": 900,
+    "error": 1.030066728591919,
+    "type": "direct"
+  },
+  {
+    "frame": 785,
+    "matches": 927,
+    "error": 0.8113611936569214,
+    "type": "direct"
+  },
+  {
+    "frame": 782,
+    "matches": 969,
+    "error": 0.7352904081344604,
+    "type": "direct"
+  },
+  {
+    "frame": 779,
+    "matches": 1203,
+    "error": 0.4692981243133545,
+    "type": "direct"
+  },
+  {
+    "frame": 776,
+    "matches": 1192,
+    "error": 0.300796240568161,
+    "type": "direct"
+  },
+  {
+    "frame": 773,
+    "matches": 1199,
+    "error": 0.31770727038383484,
+    "type": "direct"
+  },
+  {
+    "frame": 770,
+    "matches": 1200,
+    "error": 0.32051321864128113,
+    "type": "direct"
+  },
+  {
+    "frame": 767,
+    "matches": 1281,
+    "error": 0.28494730591773987,
+    "type": "direct"
+  },
+  {
+    "frame": 764,
+    "matches": 1185,
+    "error": 0.5281038284301758,
+    "type": "direct"
+  },
+  {
+    "frame": 761,
+    "matches": 1136,
+    "error": 0.7786130905151367,
+    "type": "direct"
+  },
+  {
+    "frame": 758,
+    "matches": 1079,
+    "error": 0.768747091293335,
+    "type": "direct"
+  },
+  {
+    "frame": 755,
+    "matches": 898,
+    "error": 0.7209385633468628,
+    "type": "direct"
+  },
+  {
+    "frame": 752,
+    "matches": 756,
+    "error": 0.9449098110198975,
+    "type": "direct"
+  },
+  {
+    "frame": 749,
+    "matches": 694,
+    "error": 0.8973117470741272,
+    "type": "direct"
+  },
+  {
+    "frame": 746,
+    "matches": 552,
+    "error": 0.9131749868392944,
+    "type": "direct"
+  },
+  {
+    "frame": 743,
+    "matches": 426,
+    "error": 1.0608798265457153,
+    "type": "direct"
+  },
+  {
+    "frame": 740,
+    "matches": 375,
+    "error": 1.3913646936416626,
+    "type": "direct"
+  },
+  {
+    "frame": 737,
+    "matches": 272,
+    "error": 0.8967568874359131,
+    "type": "direct"
+  },
+  {
+    "frame": 734,
+    "matches": 186,
+    "error": 1.0202288627624512,
+    "type": "direct"
+  },
+  {
+    "frame": 731,
+    "matches": 114,
+    "error": 1.426845908164978,
+    "type": "direct"
+  },
+  {
+    "frame": 728,
+    "matches": 968,
+    "error": 0.791748046875,
+    "type": "chain"
+  },
+  {
+    "frame": 725,
+    "matches": 908,
+    "error": 0.8170080184936523,
+    "type": "chain"
+  },
+  {
+    "frame": 722,
+    "matches": 886,
+    "error": 0.6218008995056152,
+    "type": "chain"
+  },
+  {
+    "frame": 719,
+    "matches": 712,
+    "error": 0.8487337827682495,
+    "type": "chain"
+  },
+  {
+    "frame": 716,
+    "matches": 503,
+    "error": 0.8695842027664185,
+    "type": "chain"
+  },
+  {
+    "frame": 713,
+    "matches": 362,
+    "error": 0.98842453956604,
+    "type": "chain"
+  },
+  {
+    "frame": 710,
+    "matches": 511,
+    "error": 0.818984866142273,
+    "type": "chain"
+  },
+  {
+    "frame": 707,
+    "matches": 973,
+    "error": 0.006091678515076637,
+    "type": "chain"
+  },
+  {
+    "frame": 704,
+    "matches": 641,
+    "error": 0.21660661697387695,
+    "type": "chain"
+  },
+  {
+    "frame": 701,
+    "matches": 594,
+    "error": 0.6562561988830566,
+    "type": "chain"
+  },
+  {
+    "frame": 698,
+    "matches": 492,
+    "error": 1.0640606880187988,
+    "type": "chain"
+  },
+  {
+    "frame": 695,
+    "matches": 762,
+    "error": 0.2379184067249298,
+    "type": "chain"
+  },
+  {
+    "frame": 692,
+    "matches": 706,
+    "error": 0.6354129314422607,
+    "type": "chain"
+  },
+  {
+    "frame": 689,
+    "matches": 713,
+    "error": 0.717749297618866,
+    "type": "chain"
+  },
+  {
+    "frame": 686,
+    "matches": 725,
+    "error": 0.8601094484329224,
+    "type": "chain"
+  },
+  {
+    "frame": 683,
+    "matches": 492,
+    "error": 1.217090129852295,
+    "type": "direct"
+  },
+  {
+    "frame": 680,
+    "matches": 480,
+    "error": 1.0866334438323975,
+    "type": "direct"
+  },
+  {
+    "frame": 677,
+    "matches": 515,
+    "error": 1.1724061965942383,
+    "type": "direct"
+  },
+  {
+    "frame": 674,
+    "matches": 501,
+    "error": 0.9739813208580017,
+    "type": "direct"
+  },
+  {
+    "frame": 671,
+    "matches": 459,
+    "error": 0.9020659923553467,
+    "type": "direct"
+  },
+  {
+    "frame": 668,
+    "matches": 461,
+    "error": 1.0776532888412476,
+    "type": "direct"
+  },
+  {
+    "frame": 665,
+    "matches": 488,
+    "error": 0.9399277567863464,
+    "type": "direct"
+  },
+  {
+    "frame": 662,
+    "matches": 589,
+    "error": 1.1938419342041016,
+    "type": "direct"
+  },
+  {
+    "frame": 659,
+    "matches": 796,
+    "error": 1.2101075649261475,
+    "type": "direct"
+  },
+  {
+    "frame": 656,
+    "matches": 1067,
+    "error": 0.771731972694397,
+    "type": "direct"
+  },
+  {
+    "frame": 653,
+    "matches": 1317,
+    "error": 0.18849045038223267,
+    "type": "direct"
+  },
+  {
+    "frame": 650,
+    "matches": 1040,
+    "error": 0.7366280555725098,
+    "type": "direct"
+  },
+  {
+    "frame": 647,
+    "matches": 903,
+    "error": 0.785943865776062,
+    "type": "direct"
+  },
+  {
+    "frame": 644,
+    "matches": 889,
+    "error": 0.8701061010360718,
+    "type": "direct"
+  },
+  {
+    "frame": 641,
+    "matches": 898,
+    "error": 1.028109073638916,
+    "type": "direct"
+  },
+  {
+    "frame": 638,
+    "matches": 883,
+    "error": 1.0993444919586182,
+    "type": "direct"
+  },
+  {
+    "frame": 635,
+    "matches": 877,
+    "error": 1.1311652660369873,
+    "type": "direct"
+  },
+  {
+    "frame": 632,
+    "matches": 816,
+    "error": 0.7762354612350464,
+    "type": "direct"
+  },
+  {
+    "frame": 629,
+    "matches": 751,
+    "error": 0.9511147141456604,
+    "type": "direct"
+  },
+  {
+    "frame": 626,
+    "matches": 723,
+    "error": 0.8047304153442383,
+    "type": "direct"
+  },
+  {
+    "frame": 623,
+    "matches": 717,
+    "error": 1.0115861892700195,
+    "type": "direct"
+  },
+  {
+    "frame": 620,
+    "matches": 764,
+    "error": 1.1732498407363892,
+    "type": "direct"
+  },
+  {
+    "frame": 617,
+    "matches": 809,
+    "error": 0.8539631366729736,
+    "type": "direct"
+  },
+  {
+    "frame": 614,
+    "matches": 840,
+    "error": 1.0361621379852295,
+    "type": "direct"
+  },
+  {
+    "frame": 611,
+    "matches": 909,
+    "error": 1.0763310194015503,
+    "type": "direct"
+  },
+  {
+    "frame": 608,
+    "matches": 907,
+    "error": 0.9943147301673889,
+    "type": "direct"
+  },
+  {
+    "frame": 605,
+    "matches": 907,
+    "error": 0.7734231352806091,
+    "type": "direct"
+  },
+  {
+    "frame": 602,
+    "matches": 908,
+    "error": 0.785847544670105,
+    "type": "direct"
+  },
+  {
+    "frame": 599,
+    "matches": 922,
+    "error": 1.0208659172058105,
+    "type": "direct"
+  },
+  {
+    "frame": 596,
+    "matches": 936,
+    "error": 0.9968520402908325,
+    "type": "direct"
+  },
+  {
+    "frame": 593,
+    "matches": 968,
+    "error": 0.9481170177459717,
+    "type": "direct"
+  },
+  {
+    "frame": 590,
+    "matches": 1181,
+    "error": 0.4454519748687744,
+    "type": "direct"
+  },
+  {
+    "frame": 587,
+    "matches": 1167,
+    "error": 0.4744747281074524,
+    "type": "direct"
+  },
+  {
+    "frame": 584,
+    "matches": 845,
+    "error": 0.7274263501167297,
+    "type": "direct"
+  },
+  {
+    "frame": 581,
+    "matches": 669,
+    "error": 0.9905831813812256,
+    "type": "direct"
+  },
+  {
+    "frame": 578,
+    "matches": 657,
+    "error": 1.0082358121871948,
+    "type": "direct"
+  },
+  {
+    "frame": 575,
+    "matches": 635,
+    "error": 0.7899104952812195,
+    "type": "direct"
+  },
+  {
+    "frame": 572,
+    "matches": 660,
+    "error": 0.8845557570457458,
+    "type": "direct"
+  },
+  {
+    "frame": 569,
+    "matches": 713,
+    "error": 0.8908085227012634,
+    "type": "direct"
+  },
+  {
+    "frame": 566,
+    "matches": 749,
+    "error": 0.9872074723243713,
+    "type": "direct"
+  },
+  {
+    "frame": 563,
+    "matches": 799,
+    "error": 0.9116385579109192,
+    "type": "direct"
+  },
+  {
+    "frame": 560,
+    "matches": 819,
+    "error": 1.0265651941299438,
+    "type": "direct"
+  },
+  {
+    "frame": 557,
+    "matches": 795,
+    "error": 0.9510365128517151,
+    "type": "direct"
+  },
+  {
+    "frame": 554,
+    "matches": 817,
+    "error": 0.7110472321510315,
+    "type": "direct"
+  },
+  {
+    "frame": 551,
+    "matches": 801,
+    "error": 0.6980587840080261,
+    "type": "direct"
+  },
+  {
+    "frame": 548,
+    "matches": 812,
+    "error": 0.6729793548583984,
+    "type": "direct"
+  },
+  {
+    "frame": 545,
+    "matches": 805,
+    "error": 0.6810617446899414,
+    "type": "direct"
+  },
+  {
+    "frame": 542,
+    "matches": 743,
+    "error": 0.9943392276763916,
+    "type": "direct"
+  },
+  {
+    "frame": 539,
+    "matches": 692,
+    "error": 0.9996950030326843,
+    "type": "direct"
+  },
+  {
+    "frame": 536,
+    "matches": 690,
+    "error": 0.828894853591919,
+    "type": "direct"
+  },
+  {
+    "frame": 533,
+    "matches": 480,
+    "error": 0.7440078854560852,
+    "type": "direct"
+  },
+  {
+    "frame": 530,
+    "matches": 171,
+    "error": 1.1008011102676392,
+    "type": "direct"
+  },
+  {
+    "frame": 527,
+    "matches": 731,
+    "error": 0.9888508319854736,
+    "type": "chain"
+  },
+  {
+    "frame": 524,
+    "matches": 102,
+    "error": 1.3751084804534912,
+    "type": "direct"
+  },
+  {
+    "frame": 521,
+    "matches": 93,
+    "error": 1.285338282585144,
+    "type": "direct"
+  },
+  {
+    "frame": 518,
+    "matches": 1035,
+    "error": 0.41451945900917053,
+    "type": "chain"
+  },
+  {
+    "frame": 515,
+    "matches": 216,
+    "error": 1.1208239793777466,
+    "type": "chain"
+  },
+  {
+    "frame": 512,
+    "matches": 11,
+    "error": 0.34982186555862427,
+    "type": "chain"
+  },
+  {
+    "frame": 509,
+    "matches": 166,
+    "error": 1.217771053314209,
+    "type": "chain"
+  },
+  {
+    "frame": 506,
+    "matches": 328,
+    "error": 0.9163551330566406,
+    "type": "chain"
+  },
+  {
+    "frame": 503,
+    "matches": 376,
+    "error": 0.9784574508666992,
+    "type": "chain"
+  },
+  {
+    "frame": 500,
+    "matches": 154,
+    "error": 1.0748862028121948,
+    "type": "chain"
+  },
+  {
+    "frame": 498,
+    "matches": 227,
+    "error": 1.2555547952651978,
+    "type": "chain"
+  },
+  {
+    "frame": 497,
+    "matches": 443,
+    "error": 0.8531073927879333,
+    "type": "chain"
+  },
+  {
+    "frame": 494,
+    "matches": 234,
+    "error": 1.3075519800186157,
+    "type": "chain"
+  },
+  {
+    "frame": 491,
+    "matches": 136,
+    "error": 1.2225537300109863,
+    "type": "chain"
+  },
+  {
+    "frame": 488,
+    "matches": 223,
+    "error": 1.17226243019104,
+    "type": "chain"
+  },
+  {
+    "frame": 485,
+    "matches": 387,
+    "error": 1.4507004022598267,
+    "type": "chain"
+  },
+  {
+    "frame": 482,
+    "matches": 110,
+    "error": 1.2840723991394043,
+    "type": "direct"
+  },
+  {
+    "frame": 479,
+    "matches": 107,
+    "error": 0.9882839322090149,
+    "type": "direct"
+  },
+  {
+    "frame": 476,
+    "matches": 105,
+    "error": 1.2497225999832153,
+    "type": "direct"
+  },
+  {
+    "frame": 473,
+    "matches": 110,
+    "error": 1.2444109916687012,
+    "type": "direct"
+  },
+  {
+    "frame": 470,
+    "matches": 94,
+    "error": 1.029301404953003,
+    "type": "direct"
+  },
+  {
+    "frame": 467,
+    "matches": 168,
+    "error": 0.8180595636367798,
+    "type": "chain"
+  },
+  {
+    "frame": 464,
+    "matches": 115,
+    "error": 1.3981969356536865,
+    "type": "chain"
+  },
+  {
+    "frame": 461,
+    "matches": 311,
+    "error": 1.2102775573730469,
+    "type": "chain"
+  },
+  {
+    "frame": 458,
+    "matches": 896,
+    "error": 0.4300348162651062,
+    "type": "chain"
+  },
+  {
+    "frame": 455,
+    "matches": 1029,
+    "error": 0.1859656125307083,
+    "type": "chain"
+  },
+  {
+    "frame": 452,
+    "matches": 894,
+    "error": 0.6112796068191528,
+    "type": "chain"
+  },
+  {
+    "frame": 449,
+    "matches": 709,
+    "error": 0.9947749376296997,
+    "type": "chain"
+  },
+  {
+    "frame": 446,
+    "matches": 108,
+    "error": 1.1217573881149292,
+    "type": "direct"
+  },
+  {
+    "frame": 443,
+    "matches": 239,
+    "error": 1.3677513599395752,
+    "type": "direct"
+  },
+  {
+    "frame": 440,
+    "matches": 559,
+    "error": 1.064863681793213,
+    "type": "direct"
+  },
+  {
+    "frame": 437,
+    "matches": 979,
+    "error": 0.8666545152664185,
+    "type": "direct"
+  },
+  {
+    "frame": 434,
+    "matches": 1083,
+    "error": 0.5242828726768494,
+    "type": "direct"
+  },
+  {
+    "frame": 431,
+    "matches": 790,
+    "error": 1.2250384092330933,
+    "type": "direct"
+  },
+  {
+    "frame": 428,
+    "matches": 724,
+    "error": 0.9146373271942139,
+    "type": "direct"
+  },
+  {
+    "frame": 425,
+    "matches": 728,
+    "error": 0.8633460998535156,
+    "type": "direct"
+  },
+  {
+    "frame": 422,
+    "matches": 738,
+    "error": 0.9613749980926514,
+    "type": "direct"
+  },
+  {
+    "frame": 419,
+    "matches": 680,
+    "error": 0.648738443851471,
+    "type": "direct"
+  },
+  {
+    "frame": 416,
+    "matches": 921,
+    "error": 0.8716930747032166,
+    "type": "direct"
+  },
+  {
+    "frame": 413,
+    "matches": 949,
+    "error": 0.8803486227989197,
+    "type": "direct"
+  },
+  {
+    "frame": 410,
+    "matches": 456,
+    "error": 0.8829197883605957,
+    "type": "direct"
+  },
+  {
+    "frame": 407,
+    "matches": 347,
+    "error": 1.3326685428619385,
+    "type": "direct"
+  },
+  {
+    "frame": 404,
+    "matches": 334,
+    "error": 0.6835094094276428,
+    "type": "direct"
+  },
+  {
+    "frame": 401,
+    "matches": 362,
+    "error": 0.9429726004600525,
+    "type": "direct"
+  },
+  {
+    "frame": 398,
+    "matches": 322,
+    "error": 0.7824870347976685,
+    "type": "direct"
+  },
+  {
+    "frame": 395,
+    "matches": 299,
+    "error": 0.7399148941040039,
+    "type": "direct"
+  },
+  {
+    "frame": 392,
+    "matches": 346,
+    "error": 1.5390286445617676,
+    "type": "direct"
+  },
+  {
+    "frame": 389,
+    "matches": 9,
+    "error": 0.06274675577878952,
+    "type": "chain"
+  },
+  {
+    "frame": 386,
+    "matches": 811,
+    "error": 0.005290202796459198,
+    "type": "chain"
+  },
+  {
+    "frame": 383,
+    "matches": 726,
+    "error": 0.046050816774368286,
+    "type": "chain"
+  },
+  {
+    "frame": 380,
+    "matches": 778,
+    "error": 0.020544571802020073,
+    "type": "chain"
+  },
+  {
+    "frame": 377,
+    "matches": 738,
+    "error": 0.03601571172475815,
+    "type": "chain"
+  },
+  {
+    "frame": 374,
+    "matches": 792,
+    "error": 0.01594768837094307,
+    "type": "chain"
+  },
+  {
+    "frame": 371,
+    "matches": 424,
+    "error": 0.441673219203949,
+    "type": "chain"
+  },
+  {
+    "frame": 368,
+    "matches": 392,
+    "error": 0.38406580686569214,
+    "type": "chain"
+  },
+  {
+    "frame": 365,
+    "matches": 512,
+    "error": 0.1841936707496643,
+    "type": "chain"
+  },
+  {
+    "frame": 362,
+    "matches": 395,
+    "error": 0.5273796916007996,
+    "type": "chain"
+  },
+  {
+    "frame": 359,
+    "matches": 142,
+    "error": 1.1085549592971802,
+    "type": "chain"
+  },
+  {
+    "frame": 356,
+    "matches": 114,
+    "error": 1.4084168672561646,
+    "type": "chain"
+  },
+  {
+    "frame": 353,
+    "matches": 274,
+    "error": 0.9291902780532837,
+    "type": "chain"
+  },
+  {
+    "frame": 350,
+    "matches": 826,
+    "error": 0.3534148931503296,
+    "type": "chain"
+  },
+  {
+    "frame": 347,
+    "matches": 1385,
+    "error": 0.04282212257385254,
+    "type": "chain"
+  },
+  {
+    "frame": 344,
+    "matches": 956,
+    "error": 0.2001069337129593,
+    "type": "chain"
+  },
+  {
+    "frame": 341,
+    "matches": 763,
+    "error": 0.6749179363250732,
+    "type": "chain"
+  },
+  {
+    "frame": 338,
+    "matches": 499,
+    "error": 1.110741376876831,
+    "type": "chain"
+  },
+  {
+    "frame": 335,
+    "matches": 465,
+    "error": 1.1946234703063965,
+    "type": "chain"
+  },
+  {
+    "frame": 332,
+    "matches": 504,
+    "error": 0.8934224247932434,
+    "type": "chain"
+  },
+  {
+    "frame": 329,
+    "matches": 520,
+    "error": 0.8815873861312866,
+    "type": "chain"
+  },
+  {
+    "frame": 326,
+    "matches": 88,
+    "error": 1.033471941947937,
+    "type": "direct"
+  },
+  {
+    "frame": 323,
+    "matches": 1847,
+    "error": 0.011059664189815521,
+    "type": "chain"
+  },
+  {
+    "frame": 320,
+    "matches": 84,
+    "error": 1.0883946418762207,
+    "type": "direct"
+  },
+  {
+    "frame": 317,
+    "matches": 83,
+    "error": 1.555481195449829,
+    "type": "direct"
+  },
+  {
+    "frame": 314,
+    "matches": 1541,
+    "error": 0.08305396139621735,
+    "type": "chain"
+  },
+  {
+    "frame": 311,
+    "matches": 96,
+    "error": 1.2277487516403198,
+    "type": "direct"
+  },
+  {
+    "frame": 308,
+    "matches": 90,
+    "error": 1.1070632934570312,
+    "type": "direct"
+  },
+  {
+    "frame": 305,
+    "matches": 91,
+    "error": 0.7713809013366699,
+    "type": "direct"
+  },
+  {
+    "frame": 302,
+    "matches": 490,
+    "error": 0.7340918779373169,
+    "type": "chain"
+  },
+  {
+    "frame": 299,
+    "matches": 289,
+    "error": 1.0839884281158447,
+    "type": "chain"
+  },
+  {
+    "frame": 296,
+    "matches": 787,
+    "error": 0.34055474400520325,
+    "type": "chain"
+  },
+  {
+    "frame": 293,
+    "matches": 1399,
+    "error": 0.0158624779433012,
+    "type": "chain"
+  },
+  {
+    "frame": 290,
+    "matches": 1354,
+    "error": 0.023881150409579277,
+    "type": "chain"
+  },
+  {
+    "frame": 287,
+    "matches": 1509,
+    "error": 0.00091603584587574,
+    "type": "chain"
+  },
+  {
+    "frame": 284,
+    "matches": 1510,
+    "error": 0.0,
+    "type": "chain"
+  },
+  {
+    "frame": 281,
+    "matches": 1434,
+    "error": 0.006529936566948891,
+    "type": "chain"
+  },
+  {
+    "frame": 280,
+    "matches": 1341,
+    "error": 0.02256898209452629,
+    "type": "chain"
+  },
+  {
+    "frame": 278,
+    "matches": 1467,
+    "error": 0.004998272284865379,
+    "type": "chain"
+  },
+  {
+    "frame": 275,
+    "matches": 1288,
+    "error": 0.04128848388791084,
+    "type": "chain"
+  },
+  {
+    "frame": 272,
+    "matches": 1287,
+    "error": 0.04237198457121849,
+    "type": "chain"
+  },
+  {
+    "frame": 269,
+    "matches": 1320,
+    "error": 0.03259590268135071,
+    "type": "chain"
+  },
+  {
+    "frame": 266,
+    "matches": 943,
+    "error": 0.17044727504253387,
+    "type": "chain"
+  },
+  {
+    "frame": 263,
+    "matches": 813,
+    "error": 0.4041250944137573,
+    "type": "chain"
+  },
+  {
+    "frame": 260,
+    "matches": 1313,
+    "error": 0.03725661337375641,
+    "type": "chain"
+  },
+  {
+    "frame": 257,
+    "matches": 809,
+    "error": 0.3329143226146698,
+    "type": "chain"
+  },
+  {
+    "frame": 254,
+    "matches": 532,
+    "error": 0.9230093955993652,
+    "type": "chain"
+  },
+  {
+    "frame": 251,
+    "matches": 879,
+    "error": 0.5390805006027222,
+    "type": "chain"
+  },
+  {
+    "frame": 248,
+    "matches": 888,
+    "error": 0.45961835980415344,
+    "type": "chain"
+  },
+  {
+    "frame": 245,
+    "matches": 896,
+    "error": 0.3749732971191406,
+    "type": "chain"
+  },
+  {
+    "frame": 242,
+    "matches": 862,
+    "error": 0.38234585523605347,
+    "type": "chain"
+  },
+  {
+    "frame": 239,
+    "matches": 910,
+    "error": 0.18935592472553253,
+    "type": "chain"
+  },
+  {
+    "frame": 236,
+    "matches": 828,
+    "error": 0.250896692276001,
+    "type": "chain"
+  },
+  {
+    "frame": 233,
+    "matches": 850,
+    "error": 0.3489736020565033,
+    "type": "chain"
+  },
+  {
+    "frame": 230,
+    "matches": 777,
+    "error": 0.480406254529953,
+    "type": "chain"
+  },
+  {
+    "frame": 227,
+    "matches": 728,
+    "error": 0.4478772282600403,
+    "type": "chain"
+  },
+  {
+    "frame": 224,
+    "matches": 777,
+    "error": 0.22657336294651031,
+    "type": "chain"
+  },
+  {
+    "frame": 221,
+    "matches": 1166,
+    "error": 0.06381482630968094,
+    "type": "chain"
+  },
+  {
+    "frame": 218,
+    "matches": 877,
+    "error": 0.21204271912574768,
+    "type": "chain"
+  },
+  {
+    "frame": 215,
+    "matches": 656,
+    "error": 0.6377485990524292,
+    "type": "chain"
+  },
+  {
+    "frame": 212,
+    "matches": 167,
+    "error": 0.6995376348495483,
+    "type": "direct"
+  },
+  {
+    "frame": 209,
+    "matches": 206,
+    "error": 0.8835750222206116,
+    "type": "direct"
+  },
+  {
+    "frame": 206,
+    "matches": 200,
+    "error": 1.2370034456253052,
+    "type": "direct"
+  },
+  {
+    "frame": 203,
+    "matches": 193,
+    "error": 0.701854407787323,
+    "type": "direct"
+  },
+  {
+    "frame": 200,
+    "matches": 120,
+    "error": 1.2620956897735596,
+    "type": "direct"
+  },
+  {
+    "frame": 197,
+    "matches": 431,
+    "error": 0.7063113451004028,
+    "type": "chain"
+  },
+  {
+    "frame": 194,
+    "matches": 156,
+    "error": 0.9890403747558594,
+    "type": "chain"
+  },
+  {
+    "frame": 191,
+    "matches": 324,
+    "error": 0.9069305658340454,
+    "type": "chain"
+  },
+  {
+    "frame": 188,
+    "matches": 432,
+    "error": 1.1959328651428223,
+    "type": "chain"
+  },
+  {
+    "frame": 185,
+    "matches": 89,
+    "error": 1.0772157907485962,
+    "type": "direct"
+  },
+  {
+    "frame": 182,
+    "matches": 178,
+    "error": 0.951136589050293,
+    "type": "direct"
+  },
+  {
+    "frame": 179,
+    "matches": 360,
+    "error": 1.2701525688171387,
+    "type": "direct"
+  },
+  {
+    "frame": 176,
+    "matches": 356,
+    "error": 1.1233484745025635,
+    "type": "direct"
+  },
+  {
+    "frame": 173,
+    "matches": 401,
+    "error": 0.8630082607269287,
+    "type": "direct"
+  },
+  {
+    "frame": 170,
+    "matches": 467,
+    "error": 1.2205969095230103,
+    "type": "direct"
+  },
+  {
+    "frame": 167,
+    "matches": 444,
+    "error": 1.2176260948181152,
+    "type": "direct"
+  },
+  {
+    "frame": 164,
+    "matches": 433,
+    "error": 0.8003002405166626,
+    "type": "direct"
+  },
+  {
+    "frame": 161,
+    "matches": 462,
+    "error": 1.0221011638641357,
+    "type": "direct"
+  },
+  {
+    "frame": 158,
+    "matches": 544,
+    "error": 1.1741459369659424,
+    "type": "direct"
+  },
+  {
+    "frame": 155,
+    "matches": 544,
+    "error": 0.9835896492004395,
+    "type": "direct"
+  },
+  {
+    "frame": 152,
+    "matches": 529,
+    "error": 0.7909618020057678,
+    "type": "direct"
+  },
+  {
+    "frame": 149,
+    "matches": 653,
+    "error": 1.2669587135314941,
+    "type": "direct"
+  },
+  {
+    "frame": 146,
+    "matches": 648,
+    "error": 1.1975359916687012,
+    "type": "direct"
+  },
+  {
+    "frame": 143,
+    "matches": 669,
+    "error": 0.9017124176025391,
+    "type": "direct"
+  },
+  {
+    "frame": 140,
+    "matches": 680,
+    "error": 0.9222348928451538,
+    "type": "direct"
+  },
+  {
+    "frame": 137,
+    "matches": 682,
+    "error": 1.291555643081665,
+    "type": "direct"
+  },
+  {
+    "frame": 134,
+    "matches": 696,
+    "error": 1.3375005722045898,
+    "type": "direct"
+  },
+  {
+    "frame": 131,
+    "matches": 692,
+    "error": 0.9711373448371887,
+    "type": "direct"
+  },
+  {
+    "frame": 128,
+    "matches": 683,
+    "error": 0.7148826718330383,
+    "type": "direct"
+  },
+  {
+    "frame": 125,
+    "matches": 691,
+    "error": 0.9969074726104736,
+    "type": "direct"
+  },
+  {
+    "frame": 122,
+    "matches": 641,
+    "error": 0.9418736100196838,
+    "type": "direct"
+  },
+  {
+    "frame": 119,
+    "matches": 724,
+    "error": 0.9976650476455688,
+    "type": "direct"
+  },
+  {
+    "frame": 117,
+    "matches": 628,
+    "error": 0.6707075834274292,
+    "type": "direct"
+  },
+  {
+    "frame": 116,
+    "matches": 624,
+    "error": 0.7588298916816711,
+    "type": "direct"
+  },
+  {
+    "frame": 113,
+    "matches": 672,
+    "error": 0.9064337015151978,
+    "type": "direct"
+  },
+  {
+    "frame": 110,
+    "matches": 563,
+    "error": 0.7263197302818298,
+    "type": "direct"
+  },
+  {
+    "frame": 107,
+    "matches": 361,
+    "error": 0.6736551523208618,
+    "type": "direct"
+  },
+  {
+    "frame": 104,
+    "matches": 284,
+    "error": 1.0457451343536377,
+    "type": "direct"
+  },
+  {
+    "frame": 101,
+    "matches": 278,
+    "error": 1.1263914108276367,
+    "type": "direct"
+  },
+  {
+    "frame": 98,
+    "matches": 304,
+    "error": 1.1718783378601074,
+    "type": "direct"
+  },
+  {
+    "frame": 95,
+    "matches": 265,
+    "error": 0.7964995503425598,
+    "type": "direct"
+  },
+  {
+    "frame": 92,
+    "matches": 341,
+    "error": 0.9420998096466064,
+    "type": "direct"
+  },
+  {
+    "frame": 89,
+    "matches": 313,
+    "error": 0.7731199860572815,
+    "type": "direct"
+  },
+  {
+    "frame": 86,
+    "matches": 316,
+    "error": 0.9367526769638062,
+    "type": "direct"
+  },
+  {
+    "frame": 83,
+    "matches": 295,
+    "error": 0.7213362455368042,
+    "type": "direct"
+  },
+  {
+    "frame": 80,
+    "matches": 290,
+    "error": 0.5696724653244019,
+    "type": "direct"
+  },
+  {
+    "frame": 77,
+    "matches": 260,
+    "error": 0.6352131962776184,
+    "type": "direct"
+  },
+  {
+    "frame": 74,
+    "matches": 145,
+    "error": 1.0011080503463745,
+    "type": "direct"
+  },
+  {
+    "frame": 71,
+    "matches": 221,
+    "error": 1.2155267000198364,
+    "type": "chain"
+  },
+  {
+    "frame": 68,
+    "matches": 72,
+    "error": 1.0198564529418945,
+    "type": "chain"
+  },
+  {
+    "frame": 65,
+    "matches": 183,
+    "error": 1.1221827268600464,
+    "type": "chain"
+  },
+  {
+    "frame": 62,
+    "matches": 485,
+    "error": 0.8564431667327881,
+    "type": "chain"
+  },
+  {
+    "frame": 59,
+    "matches": 147,
+    "error": 1.0499043464660645,
+    "type": "chain"
+  },
+  {
+    "frame": 56,
+    "matches": 762,
+    "error": 0.5846390128135681,
+    "type": "chain"
+  },
+  {
+    "frame": 53,
+    "matches": 254,
+    "error": 0.9762620329856873,
+    "type": "chain"
+  },
+  {
+    "frame": 50,
+    "matches": 244,
+    "error": 1.2613153457641602,
+    "type": "chain"
+  },
+  {
+    "frame": 47,
+    "matches": 278,
+    "error": 0.9236263632774353,
+    "type": "chain"
+  },
+  {
+    "frame": 44,
+    "matches": 172,
+    "error": 0.9706798791885376,
+    "type": "chain"
+  },
+  {
+    "frame": 41,
+    "matches": 471,
+    "error": 0.8498205542564392,
+    "type": "chain"
+  },
+  {
+    "frame": 38,
+    "matches": 543,
+    "error": 0.7417149543762207,
+    "type": "chain"
+  },
+  {
+    "frame": 35,
+    "matches": 81,
+    "error": 1.1480141878128052,
+    "type": "chain"
+  },
+  {
+    "frame": 32,
+    "matches": 98,
+    "error": 1.0350440740585327,
+    "type": "chain"
+  },
+  {
+    "frame": 29,
+    "matches": 148,
+    "error": 1.0663681030273438,
+    "type": "direct"
+  },
+  {
+    "frame": 26,
+    "matches": 394,
+    "error": 1.2270143032073975,
+    "type": "direct"
+  },
+  {
+    "frame": 23,
+    "matches": 785,
+    "error": 0.9614176154136658,
+    "type": "direct"
+  },
+  {
+    "frame": 20,
+    "matches": 1048,
+    "error": 0.3965013325214386,
+    "type": "direct"
+  },
+  {
+    "frame": 17,
+    "matches": 1049,
+    "error": 0.42566385865211487,
+    "type": "direct"
+  },
+  {
+    "frame": 14,
+    "matches": 1055,
+    "error": 0.4204212725162506,
+    "type": "direct"
+  },
+  {
+    "frame": 11,
+    "matches": 1058,
+    "error": 0.4246525764465332,
+    "type": "direct"
+  },
+  {
+    "frame": 8,
+    "matches": 1063,
+    "error": 0.43058452010154724,
+    "type": "direct"
+  },
+  {
+    "frame": 5,
+    "matches": 1052,
+    "error": 0.42524027824401855,
+    "type": "direct"
+  },
+  {
+    "frame": 2,
+    "matches": 1038,
+    "error": 0.4317695200443268,
+    "type": "direct"
+  }
+]

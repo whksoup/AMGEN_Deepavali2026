@@ -1,0 +1,184 @@
+ M "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Inner Layer.prefab"
+ M "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Inner Petal.prefab"
+ M "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Palette Inner Layer.prefab"
+ M "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Textured Inner Layer.prefab"
+ M "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Two Layer Flower.prefab"
+ M "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Petal Subtle Bloom.asset"
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerAppearancePreview.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Artwork.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Center.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteSet.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/OuterPetalLayerMotion.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLayerPointerInput.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalMotionController.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalPickTarget.cs
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Shaders/PetalPaletteInput.hlsl
+ M Assets/HK_Signature/Deepavali/PetalPrototype/Shaders/PetalPaletteLit.shader
+ M Assets/Scenes/Deepavali_PaletteTest.unity
+ M ProjectSettings/ProjectSettings.asset
+ M README.md
+ M output/flower-petal-prototype/README.txt
+?? Assets/DiwaliAssets.meta
+?? Assets/DiwaliAssets/
+?? Assets/DiwaliScroll.meta
+?? Assets/DiwaliScroll/
+?? Assets/HK_Signature/Deepavali/Background.meta
+?? Assets/HK_Signature/Deepavali/Background/
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Materials/Peacock Outer Tone 1.mat"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Materials/Peacock Outer Tone 1.mat.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Materials/Peacock Outer Tone 2.mat"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Materials/Peacock Outer Tone 2.mat.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Inner Petal Shingled.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Inner Petal Shingled.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Glow Trial Inner.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Glow Trial Inner.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Glow Trial Outer Tone 1.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Glow Trial Outer Tone 1.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Glow Trial Outer Tone 2.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Glow Trial Outer Tone 2.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Initial Inner.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Initial Inner/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Peacock Startup Tone 1.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Peacock Startup Tone 1.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Peacock Startup Tone 2.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Palettes/Peacock Startup Tone 2.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Peacock Flower.prefab"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Peacock Flower.prefab.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Light Sequence.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Light Sequence/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Petal Luminous Bloom.asset"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Petal Luminous Bloom.asset.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Spatial Lighting.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Spatial Lighting/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Comparison.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Comparison/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/"
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/DeepavaliOutcomeSet.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/DeepavaliOutcomeSet.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerLightSequence.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerLightSequence.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Initial.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Initial.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Lighting.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Lighting.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Outcomes.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Outcomes.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Pattern.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Pattern.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Sequence.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Sequence.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.SpatialLighting.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.SpatialLighting.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteLighting.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteLighting.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerRoulettePath.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerRoulettePath.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerSequencePreset.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerSequencePreset.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerSequencePreview.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerSequencePreview.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerStartupPalette.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerStartupPalette.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLightingPreset.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLightingPreset.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLightingPrototype.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLightingPrototype.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLightingSettings.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalLightingSettings.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalRingPulse.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalRingPulse.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.Settings.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.Settings.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.ShimmerLights.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.ShimmerLights.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelPattern.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelPattern.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelSequencePreview.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelSequencePreview.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelSettingsPreset.cs
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelSettingsPreset.cs.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Shaders/PetalSpatialLighting.hlsl
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Shaders/PetalSpatialLighting.hlsl.meta
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Initial State.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Initial State/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Outcome Icons.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Outcome Icons/"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/"
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Inlays.png
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Inlays.png.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Regions_RGBA.png
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Regions_RGBA.png.meta
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Source.png
+?? Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Source.png.meta
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower.meta"
+?? "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/"
+?? Assets/HK_Signature/Deepavali/Restoration.meta
+?? Assets/HK_Signature/Deepavali/Restoration/
+?? Assets/HK_Signature/Deepavali/UI.meta
+?? Assets/HK_Signature/Deepavali/UI/
+?? Assets/Scenes/Deepavali_LightSequence.unity
+?? Assets/Scenes/Deepavali_LightSequence.unity.meta
+?? Assets/Scenes/Deepavali_PetalLightingPrototype.unity
+?? Assets/Scenes/Deepavali_PetalLightingPrototype.unity.meta
+?? Assets/Scenes/Deepavali_PetalWheelSequence.unity
+?? Assets/Scenes/Deepavali_PetalWheelSequence.unity.meta
+?? Assets/Scenes/Deepavali_RestorationTest.unity
+?? Assets/Scenes/Deepavali_RestorationTest.unity.meta
+?? Assets/YughuesFreeGroundMaterials.meta
+?? Assets/YughuesFreeGroundMaterials/
+?? Assets/output.meta
+?? Assets/output/
+?? Documentation/Deepavali-scroll-integration-plan.md
+?? output/deepavali-background/
+?? output/deepavali-camera-framing/
+?? output/deepavali-center-pad/
+?? output/deepavali-glow-trial/
+?? output/deepavali-palette-glow/
+?? output/deepavali-wide-flower/
+?? output/diwali-scroll-integration/
+?? output/flower-initial-state/
+?? output/flower-light-sequence/
+?? output/flower-outer-peacock/
+?? output/flower-petal-prototype/Deepavali_InnerPetal_Petal2.blend
+?? output/flower-petal-prototype/Deepavali_InnerPetal_Petal2.blend1
+?? output/flower-petal-prototype/Deepavali_InnerPetal_VideoFit.blend
+?? output/flower-petal-prototype/Deepavali_InnerPetal_VideoFit.blend1
+?? output/flower-petal-prototype/Deepavali_SinglePetal_before_Petal2.blend
+?? output/flower-petal-prototype/Petal2.svg
+?? output/flower-petal-prototype/inner-petal-Petal2-layout.json
+?? output/flower-petal-prototype/inner-petal-Petal2-validation.json
+?? output/flower-petal-prototype/inner-petal-before-image1-angle.png
+?? output/flower-petal-prototype/inner-petal-bend-image1-angle.png
+?? output/flower-petal-prototype/inner-petal-image1-angle.png
+?? output/flower-petal-prototype/inner-petal-image1-comparison.png
+?? output/flower-petal-prototype/inner-petal-reference-image1.png
+?? output/flower-petal-prototype/make_inner_petal_review.py
+?? output/flower-petal-prototype/refine_inner_petal.py
+?? output/flower-petal-prototype/validate_inner_petal.py
+?? output/flower-petal-prototype/video-proportion-review/
+?? output/flower-rustle/
+?? output/flower-symbols/
+?? output/flower-tonal-comparison/
+?? output/flower-tonal-refinement/
+?? output/flower-top-shingle/
+?? output/hand-guidance/
+?? output/inner-petal-artwork/
+?? output/inner-petal-pattern-guides/
+?? output/inner-petal-regularized/
+?? output/inner-petal-shape-investigation/
+?? output/petal-lighting-prototype/
+?? output/petal-shimmer-lights/
+?? output/petal-wheel-sequence/
+?? output/refined-flower-integration/
+?? output/restoration-session/
+?? output/screen-restoration/
+?? output/session-polish/

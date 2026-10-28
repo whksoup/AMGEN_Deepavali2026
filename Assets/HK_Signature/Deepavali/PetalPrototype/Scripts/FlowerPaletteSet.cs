@@ -3,7 +3,8 @@ using UnityEngine;
 
 namespace Amgen.Deepavali
 {
-    public enum FlowerPaletteState { Base, Gold, Pink, Purple, Green, Blue, Orange }
+    // Append states to preserve the serialized IDs of the existing seven palettes.
+    public enum FlowerPaletteState { Base, Gold, Pink, Purple, Green, Blue, Orange, Cyan, Red }
 
     [Serializable]
     public sealed class FlowerPalette
@@ -12,7 +13,10 @@ namespace Amgen.Deepavali
         public Color fill;
         public Color ornament;
         public Color accent;
-        [Tooltip("Legacy coordinated edge color. Current emission derives from fill; retained for existing assets.")]
+        [Tooltip("Minor inlays and colored tip. Alpha 0 uses Accent, keeping existing palettes compatible.")]
+        public Color tertiary;
+        [Tooltip("Use Edge instead of the fill hue for the geometric edge light. Off preserves the existing phase lighting.")]
+        public bool useEdgeColor;
         public Color edge;
         public Color center;
         [Min(0f)] public float edgeIntensity = 3f;
@@ -25,8 +29,8 @@ namespace Amgen.Deepavali
     [CreateAssetMenu(menuName = "Deepavali/Flower Palette Set")]
     public sealed class FlowerPaletteSet : ScriptableObject
     {
-        [Tooltip("Enum order: Base, Gold, Pink, Purple, Green, Blue, Orange. Colors use sRGB.")]
-        [SerializeField] private FlowerPalette[] states = new FlowerPalette[7];
+        [Tooltip("Enum order: Base, Gold, Pink, Purple, Green, Blue, Orange, Cyan, Red. Older sets can retain seven entries. Colors use sRGB.")]
+        [SerializeField] private FlowerPalette[] states = new FlowerPalette[9];
         [NonSerialized] private int revision;
         public int Revision => revision;
         private void OnValidate() { unchecked { revision++; } }
@@ -34,7 +38,7 @@ namespace Amgen.Deepavali
         public bool TryGet(FlowerPaletteState state, out FlowerPalette palette)
         {
             int index = (int)state;
-            palette = states != null && index >= 0 && index < states.Length && index < 7 ? states[index] : null;
+            palette = states != null && index >= 0 && index < states.Length && index <= (int)FlowerPaletteState.Red ? states[index] : null;
             return palette != null;
         }
     }

@@ -1,0 +1,52 @@
+{
+  "combined_sources": [
+    "OuterPetal_01",
+    "OuterPetal_02",
+    "OuterPetal_16"
+  ],
+  "result_object": "OuterPetal_01",
+  "previous_outer_count": 16,
+  "outer_count": 14,
+  "previous_center_leaf_width_m": 0.13796265423297882,
+  "merged_width_m": 0.2670616954565048,
+  "length_m": 0.29688327911924495,
+  "width_multiplier": 1.9357535337462792,
+  "mesh_health": {
+    "vertices": 425,
+    "triangles": 752,
+    "loose_vertices": 0,
+    "zero_area_faces": 0,
+    "nonmanifold_interior_edges": 0,
+    "inverted_faces": 0,
+    "max_influences": 2,
+    "max_weight_error": 2.9802322387695312e-08
+  },
+  "max_root_drift_m": 1.7462298274040222e-10,
+  "other_meshes_and_transforms_unchanged": {
+    "InnerPetal_01": true,
+    "CenterDisc": true,
+    "PREVIEW_Ground": true,
+    "OuterPetal_03": true,
+    "OuterPetal_04": true,
+    "OuterPetal_05": true,
+    "OuterPetal_06": true,
+    "OuterPetal_07": true,
+    "OuterPetal_08": true,
+    "OuterPetal_09": true,
+    "OuterPetal_10": true,
+    "OuterPetal_11": true,
+    "OuterPetal_12": true,
+    "OuterPetal_13": true,
+    "OuterPetal_14": true,
+    "OuterPetal_15": true,
+    "REF_TopPetal_02": true,
+    "REF_TopPetal_03": true,
+    "REF_TopPetal_04": true,
+    "REF_TopPetal_05": true,
+    "REF_TopPetal_06": true,
+    "REF_TopPetal_07": true,
+    "REF_TopPetal_08": true
+  },
+  "backup": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\flower-petal-prototype\\video-proportion-review\\before-top-merge.blend",
+  "unity_assets_changed": false
+}

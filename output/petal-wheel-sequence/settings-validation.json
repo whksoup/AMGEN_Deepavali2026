@@ -1,0 +1,10 @@
+{
+  "screenshot_values_loaded": true,
+  "timing_not_shared": true,
+  "unsaved_adjustments_leave_asset_unchanged": true,
+  "gui_save_method_succeeds": true,
+  "all_control_groups_saved_to_disk": true,
+  "saved_timing_is_a_copy": true,
+  "load_updates_live_timing_reference": true,
+  "settings_persist_after_play_restart": true
+}

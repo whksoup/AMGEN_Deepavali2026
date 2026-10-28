@@ -9,8 +9,17 @@ namespace Amgen.Deepavali
         public FlowerPaletteState palette;
         [Tooltip("Optional per-petal tone set. Whole-flower state controls still apply; null uses the main palette.")]
         public FlowerPaletteSet paletteOverride;
+        [Tooltip("Optional opening colors. Replaced by the first palette request for this petal, including a request for its existing state.")]
+        public FlowerStartupPalette startupPalette;
+        [Tooltip("Opening artwork index in Startup Symbol Set; -1 leaves normal artwork. Consumed with startup colors by a palette request.")]
+        public int startupSymbol = -1;
+        public bool useStartupArtwork;
         [Tooltip("Optional artwork material. Re-enable after changing this during Play Mode.")]
         public Material materialOverride;
+        [Tooltip("Optional lighting coordinates fitted to this petal's silhouette.")]
+        public Texture2D spatialLightingMap;
+        [Tooltip("FBX artwork U runs opposite imported mesh X. Retained separately so existing assets keep their mapping.")]
+        public bool artworkMirroredX;
         [Min(0f)] public float emissionScale = 1f;
         [Tooltip("-1 keeps the original ornament. Otherwise, index in the shared symbol set.")]
         public int symbol = -1;
@@ -52,6 +61,11 @@ namespace Amgen.Deepavali
         private float activeDuration, activeSoftness, maxRadius, progress = 1f;
         private int paletteRevision;
         private int[] overrideRevisions;
+        // Private state only: serialized/public seven-state palette indices stay unchanged.
+        private const FlowerPaletteState StartupState = (FlowerPaletteState)(-1);
+        private bool[] startupConsumed;
+        private FlowerPaletteState[] lastAuthoredStates;
+        private int[] startupRevisions;
 
         private static readonly int Fill = Shader.PropertyToID("_BaseColor");
         private static readonly int Ornament = Shader.PropertyToID("_PatternColor");
@@ -97,6 +111,8 @@ namespace Amgen.Deepavali
         private void OnEnable()
         {
             EnsureAppearances();
+            if (outcomeSet != null && !outcomeSet.Validate(out var outcomeError))
+            { FailSetup(outcomeError); return; }
             if (paletteSet == null || !paletteSet.TryGet(selectedState, out _) || petalMaterial == null ||
                 !petalMaterial.HasProperty(TargetFill) || PetalCount == 0 || centerDisc == null || centerDisc.sharedMaterial == null)
             {
@@ -120,6 +136,10 @@ namespace Amgen.Deepavali
             targets = new FlowerPaletteState[PetalCount + 1];
             requested = new FlowerPaletteState[PetalCount + 1];
             overrideRevisions = new int[PetalCount];
+            startupRevisions = new int[PetalCount];
+            lastAuthoredStates = new FlowerPaletteState[PetalCount];
+            if (startupConsumed == null || startupConsumed.Length != PetalCount)
+                startupConsumed = new bool[PetalCount];
             maxRadius = 0f;
             for (int i = 0; i < runtimePetals.Length; i++)
             {
@@ -127,7 +147,7 @@ namespace Amgen.Deepavali
                 var mat = new Material(MaterialFor(i)) { name = $"Flower Petal {i + 1:00} (Runtime)", hideFlags = HideFlags.DontSave };
                 runtimePetals[i] = mat;
                 mat.SetFloat(CenterSurface, 0f);
-                ConfigureMapping(mat, boundPetals[i], petalAppearances[i].artworkMin, petalAppearances[i].artworkSize);
+                ConfigureMapping(mat, boundPetals[i], petalAppearances[i].artworkMin, petalAppearances[i].artworkSize, petalAppearances[i].artworkMirroredX);
                 boundPetals[i].sharedMaterial = mat;
             }
             originalCenter = boundCenter.sharedMaterial;
@@ -136,6 +156,7 @@ namespace Amgen.Deepavali
             runtimeCenter.SetFloat("_Smoothness", originalCenter.HasProperty("_Smoothness") ? originalCenter.GetFloat("_Smoothness") : 0.25f);
             ConfigureMapping(runtimeCenter, boundCenter, centerArtworkMin, centerArtworkSize);
             boundCenter.sharedMaterial = runtimeCenter;
+            InitializeOutcomeAppearance();
             InitializeArtwork();
             ApplyAuthoredAppearance();
         }
@@ -145,12 +166,12 @@ namespace Amgen.Deepavali
         private static bool ValidAppearance(PetalAppearance p) => Finite(p.emissionScale) && p.emissionScale >= 0f &&
             Finite(p.artworkMin.x) && Finite(p.artworkMin.y) && Finite(p.artworkSize.x) && Finite(p.artworkSize.y) && p.artworkSize.x > 0f && p.artworkSize.y > 0f;
 
-        private void ConfigureMapping(Material mat, Renderer surface, Vector2 min, Vector2 size)
+        private void ConfigureMapping(Material mat, Renderer surface, Vector2 min, Vector2 size, bool mirroredX = false)
         {
             // Imported artwork is mesh XY. Snapshot renderer placement, never animated bones.
             var toFlower = transform.worldToLocalMatrix * surface.transform.localToWorldMatrix;
-            var origin = toFlower.MultiplyPoint3x4(new Vector3(min.x, min.y, 0f));
-            var u = toFlower.MultiplyVector(new Vector3(size.x, 0f, 0f));
+            var origin = toFlower.MultiplyPoint3x4(new Vector3(mirroredX ? -min.x : min.x, min.y, 0f));
+            var u = toFlower.MultiplyVector(new Vector3(mirroredX ? -size.x : size.x, 0f, 0f));
             var v = toFlower.MultiplyVector(new Vector3(0f, size.y, 0f));
             mat.SetVector(RestX, new Vector4(u.x, v.x, origin.x, 0f));
             mat.SetVector(RestZ, new Vector4(u.z, v.z, origin.z, 0f));
@@ -167,6 +188,14 @@ namespace Amgen.Deepavali
             petalAppearances != null && petalAppearances.Length == runtimePetals.Length;
         private bool ValidPetal(int index) => Ready && index >= 0 && index < runtimePetals.Length;
         private FlowerPaletteSet PaletteFor(int index) => petalAppearances[index].paletteOverride != null ? petalAppearances[index].paletteOverride : paletteSet;
+        private FlowerPalette StartupFor(int index) => OutcomeOpeningPalette(index) ??
+            (petalAppearances[index].startupPalette != null ? petalAppearances[index].startupPalette.Colors : null);
+        private int StartupRevision(int index) => petalAppearances[index].startupPalette != null ? petalAppearances[index].startupPalette.Revision : -1;
+        private static bool TryAppearance(FlowerPaletteSet colors, FlowerPaletteState state, FlowerPalette startup, out FlowerPalette palette)
+        {
+            if (state == StartupState) { palette = startup; return palette != null; }
+            return colors.TryGet(state, out palette);
+        }
         private Material MaterialFor(int index) => petalAppearances[index].materialOverride != null ? petalAppearances[index].materialOverride : petalMaterial;
         private bool ValidState(FlowerPaletteState state)
         {
@@ -175,7 +204,8 @@ namespace Amgen.Deepavali
                 if (!PaletteFor(i).TryGet(state, out _)) return false;
             return true;
         }
-        public FlowerPaletteState GetPetalState(int index) => settled == null ? petalAppearances[index].palette : settled[index];
+        public FlowerPaletteState GetPetalState(int index) => settled == null || settled[index] == StartupState ? petalAppearances[index].palette : settled[index];
+        public bool IsUsingStartupPalette(int index) => ValidPetal(index) && settled[index] == StartupState;
         public FlowerPaletteState GetRequestedPetalState(int index) => petalAppearances[index].palette;
         public float GetPetalEmissionScale(int index) => petalAppearances[index].emissionScale;
         public int GetSymbol(int index) => petalAppearances[index].symbol;
@@ -190,7 +220,8 @@ namespace Amgen.Deepavali
         {
             if (!Ready || !ValidState(state)) return false;
             selectedState = state;
-            for (int i = 0; i < runtimePetals.Length; i++) petalAppearances[i].palette = state;
+            startupCenterConsumed = true;
+            for (int i = 0; i < runtimePetals.Length; i++) { startupConsumed[i] = true; petalAppearances[i].palette = state; }
             ApplyAuthoredAppearance(false);
             return true;
         }
@@ -200,8 +231,9 @@ namespace Amgen.Deepavali
         {
             if (!ValidPetal(index) || !ValidState(state)) return false;
             petalAppearances[index].palette = state;
+            startupConsumed[index] = true;
             settled[index] = targets[index] = requested[index] = state;
-            ApplyPair(runtimePetals[index], state, state, false, PaletteFor(index));
+            ApplyPair(runtimePetals[index], state, state, false, PaletteFor(index), StartupFor(index));
             return true;
         }
 
@@ -217,7 +249,8 @@ namespace Amgen.Deepavali
         {
             if (!Ready || !ValidState(state)) return false;
             selectedState = state;
-            for (int i = 0; i < runtimePetals.Length; i++) { petalAppearances[i].palette = state; requested[i] = state; }
+            startupCenterConsumed = true;
+            for (int i = 0; i < runtimePetals.Length; i++) { startupConsumed[i] = true; petalAppearances[i].palette = state; requested[i] = state; }
             requested[runtimePetals.Length] = state;
             if (!transitioning) StartNextWave();
             return true;
@@ -227,6 +260,7 @@ namespace Amgen.Deepavali
         {
             if (!ValidPetal(index) || !ValidState(state)) return false;
             petalAppearances[index].palette = state;
+            startupConsumed[index] = true;
             requested[index] = state;
             if (!transitioning) StartNextWave();
             return true;
@@ -237,8 +271,9 @@ namespace Amgen.Deepavali
         {
             if (!Ready || states == null || states.Length != runtimePetals.Length || !ValidState(center)) return false;
             for (int i = 0; i < states.Length; i++) if (!ValidState(states[i])) return false;
-            for (int i = 0; i < states.Length; i++) { requested[i] = states[i]; petalAppearances[i].palette = states[i]; }
+            for (int i = 0; i < states.Length; i++) { startupConsumed[i] = true; requested[i] = states[i]; petalAppearances[i].palette = states[i]; }
             selectedState = center;
+            startupCenterConsumed = true;
             requested[states.Length] = center;
             if (!transitioning) StartNextWave();
             return true;
@@ -255,14 +290,18 @@ namespace Amgen.Deepavali
             {
                 var p = petalAppearances[i];
                 if (!ValidState(p.palette)) p.palette = selectedState;
-                settled[i] = targets[i] = requested[i] = p.palette;
-                ApplyPair(runtimePetals[i], p.palette, p.palette, false, PaletteFor(i));
+                var state = !startupConsumed[i] && StartupFor(i) != null ? StartupState : p.palette;
+                settled[i] = targets[i] = requested[i] = state;
+                lastAuthoredStates[i] = p.palette;
+                ApplyPair(runtimePetals[i], state, state, false, PaletteFor(i), StartupFor(i));
                 runtimePetals[i].SetFloat(EmissionScale, Mathf.Max(0f, p.emissionScale));
                 if (resetArtwork) SetSymbol(i, ValidSymbol(p.symbol) ? p.symbol : -1);
             }
             int center = runtimePetals.Length;
-            settled[center] = targets[center] = requested[center] = selectedState;
-            ApplyPair(runtimeCenter, selectedState, selectedState, true, paletteSet);
+            var centerState = !startupCenterConsumed && StartupCenter != null ? StartupState : selectedState;
+            settled[center] = targets[center] = requested[center] = centerState;
+            lastAuthoredCenterState = selectedState;
+            ApplyPair(runtimeCenter, centerState, centerState, true, paletteSet);
             CachePaletteRevisions();
             activeSoftness = waveSoftness;
             ConfigureWave();
@@ -275,7 +314,7 @@ namespace Amgen.Deepavali
             for (int i = 0; i < requested.Length; i++) changed |= requested[i] != settled[i];
             if (!changed) return;
             for (int i = 0; i < requested.Length; i++) targets[i] = requested[i];
-            for (int i = 0; i < runtimePetals.Length; i++) ApplyPair(runtimePetals[i], settled[i], targets[i], false, PaletteFor(i));
+            for (int i = 0; i < runtimePetals.Length; i++) ApplyPair(runtimePetals[i], settled[i], targets[i], false, PaletteFor(i), StartupFor(i));
             int center = runtimePetals.Length;
             ApplyPair(runtimeCenter, settled[center], targets[center], true, paletteSet);
             activeDuration = Mathf.Max(0.01f, transitionDuration);
@@ -293,13 +332,25 @@ namespace Amgen.Deepavali
             for (int i = 0; i < runtimePetals.Length; i++)
             {
                 var p = petalAppearances[i];
-                if (ValidState(p.palette)) requested[i] = p.palette;
+                // Glow/artwork Inspector changes must not consume opening colors.
+                if (ValidState(p.palette) && (startupConsumed[i] || settled[i] != StartupState || p.palette != lastAuthoredStates[i]))
+                {
+                    startupConsumed[i] = true;
+                    requested[i] = p.palette;
+                }
+                lastAuthoredStates[i] = p.palette;
                 float scale = Finite(p.emissionScale) ? Mathf.Max(0f, p.emissionScale) : 0f;
                 p.emissionScale = scale;
                 runtimePetals[i].SetFloat(EmissionScale, scale);
                 if (!TransitionSymbol(i, p.symbol)) p.symbol = artworkWaves[i].requested;
             }
-            requested[runtimePetals.Length] = selectedState;
+            int center = runtimePetals.Length;
+            if (startupCenterConsumed || settled[center] != StartupState || selectedState != lastAuthoredCenterState)
+            {
+                startupCenterConsumed = true;
+                requested[center] = selectedState;
+            }
+            lastAuthoredCenterState = selectedState;
             if (!transitioning) StartNextWave();
             RefreshPaletteColors();
         }
@@ -317,15 +368,22 @@ namespace Amgen.Deepavali
             StartNextWave();
         }
 
-        private void ApplyPair(Material mat, FlowerPaletteState from, FlowerPaletteState to, bool center, FlowerPaletteSet colors)
+        private void ApplyPair(Material mat, FlowerPaletteState from, FlowerPaletteState to, bool center, FlowerPaletteSet colors, FlowerPalette startup = null)
         {
-            if (!colors.TryGet(from, out var a) || !colors.TryGet(to, out var b)) return;
+            if (center) startup = StartupCenter;
+            if (!TryAppearance(colors, from, startup, out var a) || !TryAppearance(colors, to, startup, out var b)) return;
             // Color shader properties are converted to linear by Unity. The center
             // palette is authored in sRGB; pre-converting it makes the disc nearly black.
             mat.SetColor(Fill, center ? a.center : a.fill.linear);
             mat.SetColor(TargetFill, center ? b.center : b.fill.linear);
             mat.SetColor(Ornament, a.ornament.linear); mat.SetColor(TargetOrnament, b.ornament.linear);
             mat.SetColor(Accent, a.accent.linear); mat.SetColor(TargetAccent, b.accent.linear);
+            mat.SetColor("_TertiaryColor", (a.tertiary.a > 0f ? a.tertiary : a.accent).linear);
+            mat.SetColor("_TargetTertiaryColor", (b.tertiary.a > 0f ? b.tertiary : b.accent).linear);
+            mat.SetColor("_EdgeColor", a.useEdgeColor ? a.edge.linear : Color.clear);
+            mat.SetColor("_TargetEdgeColor", b.useEdgeColor ? b.edge.linear : Color.clear);
+            mat.SetFloat("_StartupAppearance", from == StartupState ? 1f : 0f);
+            mat.SetFloat("_TargetStartupAppearance", to == StartupState ? 1f : 0f);
             mat.SetFloat(Intensity, Mathf.Max(0f, a.edgeIntensity));
             mat.SetFloat(TargetIntensity, Mathf.Max(0f, b.edgeIntensity));
             mat.SetFloat("_MainPatternIntensity", Mathf.Max(0f, a.mainPatternIntensity));
@@ -335,8 +393,8 @@ namespace Amgen.Deepavali
             if (center)
             {
                 // The rim follows the same fill hue/intensity as the petal edges.
-                mat.SetColor(CenterRingColor, a.fill.linear);
-                mat.SetColor(TargetCenterRingColor, b.fill.linear);
+                mat.SetColor(CenterRingColor, EdgeHue(a));
+                mat.SetColor(TargetCenterRingColor, EdgeHue(b));
                 ApplyCenterArtworkPair(mat, from, to);
             }
         }
@@ -344,15 +402,20 @@ namespace Amgen.Deepavali
         private void CachePaletteRevisions()
         {
             paletteRevision = paletteSet.Revision;
-            for (int i = 0; i < overrideRevisions.Length; i++) overrideRevisions[i] = PaletteFor(i).Revision;
+            startupCenterRevision = StartupCenterRevision;
+            for (int i = 0; i < overrideRevisions.Length; i++)
+            {
+                overrideRevisions[i] = PaletteFor(i).Revision;
+                startupRevisions[i] = StartupRevision(i);
+            }
         }
 
         private bool PaletteAssetsChanged()
         {
             if (!Ready) return false;
-            if (paletteRevision != paletteSet.Revision) return true;
+            if (paletteRevision != paletteSet.Revision || startupCenterRevision != StartupCenterRevision) return true;
             for (int i = 0; i < overrideRevisions.Length; i++)
-                if (overrideRevisions[i] != PaletteFor(i).Revision) return true;
+                if (overrideRevisions[i] != PaletteFor(i).Revision || startupRevisions[i] != StartupRevision(i)) return true;
             return false;
         }
 
@@ -361,7 +424,7 @@ namespace Amgen.Deepavali
         {
             if (!Ready) return;
             for (int i = 0; i < runtimePetals.Length; i++)
-                ApplyPair(runtimePetals[i], settled[i], targets[i], false, PaletteFor(i));
+                ApplyPair(runtimePetals[i], settled[i], targets[i], false, PaletteFor(i), StartupFor(i));
             int center = runtimePetals.Length;
             ApplyPair(runtimeCenter, settled[center], targets[center], true, paletteSet);
             CachePaletteRevisions();
@@ -421,6 +484,9 @@ namespace Amgen.Deepavali
             boundPetals = null; boundCenter = null; settled = targets = requested = null;
             artworkWaves = null;
             overrideRevisions = null;
+            startupRevisions = null;
+            lastAuthoredStates = null;
+            // Keep consumption across disable/enable. A new game instance gets opening colors.
         }
 
         private static void DestroyRuntime(Material material)

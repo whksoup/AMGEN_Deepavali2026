@@ -1,4 +1,71 @@
-DEEPAVALI SINGLE INNER PETAL PROTOTYPE
+LATEST REVISION — 29 OCTOBER 2026
+Deepavali_InnerPetal_VideoFit.blend now contains eight symmetric regularized
+inner petals and the retained 14 outer leaves. Current production integration,
+ornament and stiffer motion: ../inner-petal-regularized/README.txt.
+
+LATEST UNITY INTEGRATION / INNER ROOT CORRECTION (2026-10-28)
+
+The current Deepavali_InnerPetal_VideoFit.blend keeps 8 inner and 14 outer
+petals. The inner petals now have broad, straight-sided, planar roots matching
+the user's Image 1/Petal2.svg correction. Their upper silhouettes, tips,
+lengths, positions, rigs, the merged outer leaf and the center are preserved.
+The earlier video-fit necks followed occluded silhouette boundaries too closely.
+
+Unity integration is now implemented in the four current full-flower scenes
+and both full-flower prefabs. The production export is a new Refined Flower
+FBX; historical SinglePetal/OuterPetals FBX files remain historical assets.
+See ../refined-flower-integration/README.txt for mapping, artwork refits,
+small fixed outer mounting-depth offsets, motion tuning and Play Mode checks.
+The sculpt backup before this correction is at
+../refined-flower-integration/root-correction/before-flat-roots.blend.
+CURRENT SCULPT REVIEW - VIDEO FIT / THREE ROUNDS (2026-10-28)
+
+Open Deepavali_InnerPetal_VideoFit.blend for the latest review candidate.
+The latest edit merges the three top outer leaves into one broad, single-tip
+leaf. It contains 8 individually fitted inner petals and 14 outer petals, with
+different per-position proportions and shallow relief matched to the video.
+Five review cameras include near-overhead, oblique and low-angle views.
+video-proportion-review/README.txt documents all three build/judge rounds,
+measurements, inferred details, structural checks and later Unity handoff.
+video-proportion-review/top-merged-view-15.png shows the current overhead view.
+The earlier round-3 comparison records the previous 16-leaf version.
+Unity Assets and FBX replacement remain deferred. Earlier sculpt files below
+are preserved as historical versions.
+
+PREVIOUS SCULPT REVIEW - PETAL2 / ORIGINAL IMAGE 1 (2026-10-28)
+
+Open Deepavali_InnerPetal_Petal2.blend for the current inner-ring revision.
+It opens in REVIEW_Image1_Camera: 50 degree elevation, 105 mm lens at 3.6 m.
+The original Image 1 is the visual ground truth; Image 2 is not the target.
+inner-petal-image1-comparison.png shows Image 1, the previous sculpt and the
+new sculpt. Both Blender renders use the same camera, lighting and outer ring.
+This is a silhouette/proportion review with plain materials, not final artwork.
+
+The supplied Petal2.svg is copied here. Its circular arcs and cubic Beziers
+are sampled directly, aligned to the base-midpoint/tip axis, then fitted to
+Image 1 with a width factor of 0.88. Body length is 220 mm (was 263 mm),
+maximum width 163.23 mm (was approximately 182 mm). The broad base is tucked
+under the center disc at a 105 mm root radius; the tip radius is 325 mm.
+The surface has 2 mm camber and the 6 degree shingle used by the Unity design.
+
+All 8 preview petals share this sculpt. Each has 361 vertices / 632 triangles,
+the same three bone names and rotation channels, and at most two normalized
+bone weights. Both UV channel names are retained; coordinates are rebuilt
+for the new outline. Rest bone lengths and attachment radius have changed.
+Center and outer meshes are identical to the pre-edit Blender backup.
+
+refine_inner_petal.py rebuilds the sculpt in the review file.
+validate_inner_petal.py checks geometry, weights, fixed roots and outer pose
+drivers, and renders the before/after views. Results are in
+inner-petal-Petal2-validation.json. No Unity assets or FBX were replaced.
+The later integration needs new bind poses, artwork mapping, picking, bounds,
+and clearance verification with the actual Unity motion settings.
+
+Deepavali_SinglePetal_before_Petal2.blend preserves the live session before
+this revision. Deepavali_SinglePetal.blend and its existing FBX are unchanged.
+The older notes below describe that original prototype and integration.
+
+DEEPAVALI SINGLE INNER PETAL PROTOTYPE (ORIGINAL)
 
 Open Deepavali_SinglePetal.blend. The active Deepavali_PetalPrototype scene
 contains one inner petal, a separate static center disc, and a three-bone rig.
@@ -108,3 +175,4 @@ disable/re-enable recovery, and the project's mobile URP asset. It removes
 its input devices/callbacks and restores the previous pipeline afterwards.
 Results are written to unity-validation.json. This is Editor validation on
 the desktop, not an Android device benchmark or APK delivery.
+

@@ -1,0 +1,286 @@
+using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.Video;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
+
+/// <summary>
+/// Full-screen, transparent Diwali scroll overlay. Each colour variant is three VP8 + alpha WebM clips:
+///   spawn (plays once)  ->  idle (loops while shown)  ->  hide (plays once, ends fully transparent).
+/// Every Show() plays one variant, picked at random or in list order.
+///
+/// Setup: GameObject > UI > Diwali Scroll Overlay (or Tools > Diwali Scroll > Add Overlay To Scene).
+/// Manual setup: put this on a full-screen Raw Image under a Screen Space - Overlay Canvas and fill in
+/// the variants (clip import settings: Transcode on, Codec VP8, Keep Alpha).
+///   Left mouse click shows the scroll when hidden and hides it when shown.
+///   From code, call Show(), Show(index or name), Hide() or Toggle().
+/// </summary>
+[RequireComponent(typeof(RawImage))]
+public class DiwaliScrollOverlay : MonoBehaviour
+{
+    public enum State { Hidden, Spawning, Shown, Hiding }
+    public enum VariantOrder { Random, InOrder }
+
+    [Serializable]
+    public class Variant
+    {
+        public string name;
+        public VideoClip spawnClip;
+        public VideoClip idleClip;
+        public VideoClip hideClip;
+    }
+
+    [Header("Scroll variants (VP8 WebM, Keep Alpha)")]
+    public Variant[] variants;
+    [Tooltip("Which variant Show() plays. Random never repeats the previous one; InOrder cycles through the list.")]
+    public VariantOrder variantOrder = VariantOrder.Random;
+
+    [Header("Behaviour")]
+    [Tooltip("Spawn the scroll as soon as the scene starts.")]
+    public bool showOnStart = false;
+    [Tooltip("Left click shows the scroll when hidden and hides it when shown.")]
+    public bool toggleOnMouseClick = true;
+    [Tooltip("Ignore clicks that land on other UI elements (buttons etc.).")]
+    public bool ignoreClicksOverUI = false;
+    [Tooltip("A click during the spawn animation hides the scroll as soon as the spawn finishes.")]
+    public bool queueHideDuringSpawn = true;
+    [Tooltip("Start the hide at the end of the current idle loop, so the flames never jump. Can add up to one loop (4 s) of delay.")]
+    public bool waitForIdleLoopEnd = false;
+    [Tooltip("Keep the clip's aspect ratio when the screen is not 2560x1118 (the sides of the clip are transparent).")]
+    public bool preserveAspect = true;
+
+    public event Action Spawned;   // spawn finished, idle loop running
+    public event Action HideFinished;   // hide finished, overlay invisible
+
+    public State CurrentState { get; private set; } = State.Hidden;
+    /// <summary>Index into variants of the scroll on screen (or the last one shown); -1 before the first Show.</summary>
+    public int CurrentVariant { get; private set; } = -1;
+
+    RawImage image;
+    VideoPlayer spawnPlayer, idlePlayer, hidePlayer;
+    VideoPlayer pending;   // player whose first frame we are waiting for before it is put on screen
+    bool hideQueued;
+    int loadedVariant = -1;   // variant whose clips are in the players
+    int nextVariant;
+
+    void Awake()
+    {
+        image = GetComponent<RawImage>();
+        image.enabled = false;
+        image.raycastTarget = false;
+
+        var rt = (RectTransform)transform;
+        rt.anchorMin = Vector2.zero;
+        rt.anchorMax = Vector2.one;
+        rt.offsetMin = rt.offsetMax = Vector2.zero;
+
+        if (variants == null || variants.Length == 0 || variants[0].spawnClip == null)
+        {
+            Debug.LogError("DiwaliScrollOverlay: no variants assigned.", this);
+            enabled = false;
+            return;
+        }
+        var first = variants[0].spawnClip;
+        if (preserveAspect)
+        {
+            var fitter = GetComponent<AspectRatioFitter>();
+            if (!fitter) fitter = gameObject.AddComponent<AspectRatioFitter>();
+            fitter.aspectMode = AspectRatioFitter.AspectMode.FitInParent;
+            fitter.aspectRatio = (float)first.width / first.height;
+        }
+
+        // All variants share one set of players; their clips are swapped while the scroll is hidden.
+        spawnPlayer = CreatePlayer(first, false);
+        idlePlayer = CreatePlayer(first, true);
+        hidePlayer = CreatePlayer(first, false);
+
+        spawnPlayer.loopPointReached += _ => OnSpawnFinished();
+        idlePlayer.loopPointReached += _ => OnIdleLooped();
+        hidePlayer.loopPointReached += _ => OnHideFinished();
+
+        nextVariant = PickVariant();
+        LoadVariant(nextVariant);
+    }
+
+    void Start()
+    {
+        if (showOnStart) Show();
+    }
+
+    VideoPlayer CreatePlayer(VideoClip sizeFrom, bool loop)
+    {
+        var vp = gameObject.AddComponent<VideoPlayer>();
+        vp.playOnAwake = false;
+        vp.isLooping = loop;
+        vp.renderMode = VideoRenderMode.RenderTexture;
+        vp.audioOutputMode = VideoAudioOutputMode.None;
+        vp.waitForFirstFrame = true;
+        vp.skipOnDrop = true;
+        var tex = new RenderTexture((int)sizeFrom.width, (int)sizeFrom.height, 0, RenderTextureFormat.ARGB32);
+        tex.Create();
+        vp.targetTexture = tex;
+        vp.frameReady += OnFrameReady;
+        return vp;
+    }
+
+    int PickVariant()
+    {
+        int n = variants.Length;
+        if (variantOrder == VariantOrder.InOrder) return (CurrentVariant + 1) % n;
+        if (n == 1) return 0;
+        int i = UnityEngine.Random.Range(0, n - 1);
+        return CurrentVariant >= 0 && i >= CurrentVariant ? i + 1 : i;   // never the same one twice in a row
+    }
+
+    void LoadVariant(int index)
+    {
+        if (index == loadedVariant) return;
+        loadedVariant = index;
+        var v = variants[index];
+        spawnPlayer.clip = v.spawnClip;
+        idlePlayer.clip = v.idleClip;
+        hidePlayer.clip = v.hideClip;
+        // Decode ahead of time so the spawn starts instantly and switching clips is seamless.
+        spawnPlayer.Prepare();
+        idlePlayer.Prepare();
+        hidePlayer.Prepare();
+    }
+
+    void Update()
+    {
+        if (toggleOnMouseClick && ClickedThisFrame()) Toggle();
+    }
+
+    bool ClickedThisFrame()
+    {
+#if ENABLE_INPUT_SYSTEM
+        bool clicked = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+#else
+        bool clicked = Input.GetMouseButtonDown(0);
+#endif
+        if (clicked && ignoreClicksOverUI && EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            return false;
+        return clicked;
+    }
+
+    public void Toggle()
+    {
+        if (CurrentState == State.Hidden) Show();
+        else Hide();
+    }
+
+    /// <summary>Roll in the next variant (see variantOrder). Ignored unless the scroll is fully hidden.</summary>
+    public void Show() => Show(nextVariant);
+
+    /// <summary>Roll in the variant with this index. Ignored unless the scroll is fully hidden.</summary>
+    public void Show(int index)
+    {
+        if (CurrentState != State.Hidden || spawnPlayer == null) return;
+        if (index < 0 || index >= variants.Length)
+        {
+            Debug.LogError($"DiwaliScrollOverlay: no variant {index}.", this);
+            return;
+        }
+        hideQueued = false;
+        CurrentState = State.Spawning;
+        CurrentVariant = index;
+        LoadVariant(index);
+        PlayFromStart(spawnPlayer);
+    }
+
+    /// <summary>Roll in the variant with this name, e.g. "Blue". Ignored unless the scroll is fully hidden.</summary>
+    public void Show(string variantName)
+    {
+        int index = Array.FindIndex(variants, v => string.Equals(v.name, variantName, StringComparison.OrdinalIgnoreCase));
+        if (index < 0) Debug.LogError($"DiwaliScrollOverlay: no variant named {variantName}.", this);
+        else Show(index);
+    }
+
+    /// <summary>Put the lamps out and roll the scroll away.</summary>
+    public void Hide()
+    {
+        if (CurrentState == State.Spawning)
+        {
+            if (queueHideDuringSpawn) hideQueued = true;
+            return;
+        }
+        if (CurrentState != State.Shown) return;
+        if (waitForIdleLoopEnd) { hideQueued = true; return; }
+        StartHide();
+    }
+
+    void StartHide()
+    {
+        hideQueued = false;
+        CurrentState = State.Hiding;
+        PlayFromStart(hidePlayer);
+    }
+
+    void OnSpawnFinished()
+    {
+        CurrentState = State.Shown;
+        Spawned?.Invoke();
+        if (hideQueued && !waitForIdleLoopEnd) StartHide();
+        else PlayFromStart(idlePlayer);
+    }
+
+    void OnIdleLooped()
+    {
+        // The idle clip's last frame flows into hide frame 0, so hiding here is seamless.
+        if (hideQueued && CurrentState == State.Shown) StartHide();
+    }
+
+    void OnHideFinished()
+    {
+        CurrentState = State.Hidden;
+        image.enabled = false;
+        Rewind(idlePlayer);
+        Rewind(hidePlayer);
+        // Load the next variant while nothing is on screen, so the next Show() starts instantly.
+        nextVariant = PickVariant();
+        LoadVariant(nextVariant);
+        HideFinished?.Invoke();
+    }
+
+    void PlayFromStart(VideoPlayer vp)
+    {
+        // Keep the previous clip on screen until this one has decoded its first frame,
+        // so there is never an empty or stale frame between clips.
+        pending = vp;
+        vp.sendFrameReadyEvents = true;
+        vp.frame = 0;
+        vp.Play();
+    }
+
+    void OnFrameReady(VideoPlayer vp, long frame)
+    {
+        if (vp != pending) return;
+        pending = null;
+        vp.sendFrameReadyEvents = false;
+        image.texture = vp.targetTexture;
+        image.enabled = true;
+        if (vp != spawnPlayer) Rewind(spawnPlayer);
+        if (vp != idlePlayer) Rewind(idlePlayer);
+    }
+
+    static void Rewind(VideoPlayer vp)
+    {
+        // Pause rather than Stop: Stop releases the decoder and the next Play would stall while re-preparing.
+        if (!vp.isPrepared) return;
+        vp.Pause();
+        vp.frame = 0;
+    }
+
+    void OnDestroy()
+    {
+        foreach (var vp in new[] { spawnPlayer, idlePlayer, hidePlayer })
+        {
+            if (vp == null || vp.targetTexture == null) continue;
+            vp.targetTexture.Release();
+            Destroy(vp.targetTexture);
+        }
+    }
+}

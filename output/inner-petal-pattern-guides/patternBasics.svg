@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="2384pt" height="3370pt" viewBox="0 0 2383.92 3370.32" xmlns="http://www.w3.org/2000/svg">
+  <defs />
+  <g id="Default">
+    <path d="M3613.0518,3465.7373 C1157.2009,2199.8872 967.9023,218.80518 1432.953,-750.44196 C1898.0038,-1719.6891 3017.404,-1677.1013 3613.0518,-3498.5735" stroke="#000000" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M3613.0518,-2811.0432 C2997.426,-1704.2537 2150.9878,-1774.3967 1684.9652,-897.11774 C1218.9426,-19.838657 1133.3357,1804.8625 3613.0518,2665.5674" stroke="#000000" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="3613" cy="101.5" r="1742" stroke="#000000" stroke-width="0.24" fill="none" />
+    <path d="M1138.1139,469.66095 A2130.8901,2130.8901 0 0 1 1084.9097,-200.32106 C1431.038,-2447.2861 3321.425,-1683.8994 3613.0518,-3903.6567 C3904.6787,-1683.8994 5795.066,-2447.2861 6141.194,-200.32106 A2130.8901,2130.8901 0 0 1 6087.99,469.66095" stroke="#000000" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M1551.779,3370 L1138.1139,469.66095" stroke="#000000" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "InnerPetal_01",
+    "width": 0.1573723554611206,
+    "length": 0.23102408647537231,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 187810
+  },
+  {
+    "name": "REF_TopPetal_02",
+    "width": 0.15009315311908722,
+    "length": 0.2359740436077118,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 185732
+  },
+  {
+    "name": "REF_TopPetal_03",
+    "width": 0.18246369063854218,
+    "length": 0.2713347375392914,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 187586
+  },
+  {
+    "name": "REF_TopPetal_04",
+    "width": 0.1765996813774109,
+    "length": 0.28737935423851013,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 187794
+  },
+  {
+    "name": "REF_TopPetal_05",
+    "width": 0.18187430500984192,
+    "length": 0.28267043828964233,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 187816
+  },
+  {
+    "name": "REF_TopPetal_06",
+    "width": 0.17354194819927216,
+    "length": 0.3142269253730774,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 187742
+  },
+  {
+    "name": "REF_TopPetal_07",
+    "width": 0.1749701201915741,
+    "length": 0.27168816328048706,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 187680
+  },
+  {
+    "name": "REF_TopPetal_08",
+    "width": 0.15183480083942413,
+    "length": 0.23422978818416595,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 186244
+  }
+]

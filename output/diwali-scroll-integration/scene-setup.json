@@ -1,0 +1,137 @@
+{
+  "scene": "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+  "outcomes": [
+    {
+      "palette": 8,
+      "symbol": "Sprout",
+      "openingSymbol": 0,
+      "icon": 3,
+      "scrollVariant": "Red"
+    },
+    {
+      "palette": 6,
+      "symbol": "Diya",
+      "openingSymbol": 1,
+      "icon": 4,
+      "scrollVariant": "Orange"
+    },
+    {
+      "palette": 5,
+      "symbol": "Star",
+      "openingSymbol": 2,
+      "icon": 2,
+      "scrollVariant": "Blue"
+    },
+    {
+      "palette": 4,
+      "symbol": "Stacked Coins",
+      "openingSymbol": 3,
+      "icon": 7,
+      "scrollVariant": "Green"
+    },
+    {
+      "palette": 2,
+      "symbol": "People and Heart",
+      "openingSymbol": 4,
+      "icon": 5,
+      "scrollVariant": "Pink"
+    },
+    {
+      "palette": 7,
+      "symbol": "Gift Box",
+      "openingSymbol": 5,
+      "icon": 6,
+      "scrollVariant": "Cyan"
+    },
+    {
+      "palette": 1,
+      "symbol": "Sunburst",
+      "openingSymbol": 6,
+      "icon": 1,
+      "scrollVariant": "Yellow"
+    },
+    {
+      "palette": 3,
+      "symbol": "Lotus",
+      "openingSymbol": 7,
+      "icon": 0,
+      "scrollVariant": "Purple"
+    }
+  ],
+  "icons": 9,
+  "variants": [
+    {
+      "name": "Orange",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Blue",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Green",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Red",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Yellow",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Purple",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Pink",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    },
+    {
+      "name": "Cyan",
+      "spawn": 5.5999996439616115,
+      "idle": 3.999999745686865,
+      "hide": 3.4166664494408638,
+      "width": 2560,
+      "height": 1118,
+      "fps": 60.000003814697266
+    }
+  ],
+  "settings": "Assets/HK_Signature/Deepavali/Restoration/Deepavali Session Settings.asset"
+}

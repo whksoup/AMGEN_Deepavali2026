@@ -1,0 +1,2354 @@
+[
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.462077022,
+        0.0137020806,
+        0.07036009,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.462077022,
+        0.0137020806,
+        0.07036009,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.473531544,
+        0.184474945,
+        0.00303527,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.473531544,
+        0.184474945,
+        0.00303527,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.0193823613,
+        0.07036009,
+        0.445201159,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.0193823613,
+        0.07036009,
+        0.445201159,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.06301001,
+        0.242281139,
+        0.012286487,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.06301001,
+        0.242281139,
+        0.012286487,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.5583405,
+        0.008023192,
+        0.226965845,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.5583405,
+        0.008023192,
+        0.226965845,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.00604883255,
+        0.174647361,
+        0.2746773,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.00604883255,
+        0.174647361,
+        0.2746773,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.283148766,
+        0.215860486,
+        0.00560539169,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.283148766,
+        0.215860486,
+        0.00560539169,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "InnerPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.5,
+      "_TargetEdgeIntensity": 5.5,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.144128442,
+        0.0168073755,
+        0.332451552,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.144128442,
+        0.0168073755,
+        0.332451552,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_01",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_02",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_03",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_04",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_05",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_06",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_07",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_08",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_09",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_10",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_11",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_12",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_13",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_14",
+    "floats": {
+      "_EdgeIntensity": 2.305901,
+      "_TargetEdgeIntensity": 2.305901,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.6938719,
+        0.06301001,
+        0.283148766,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        1.0,
+        0.258182883,
+        0.55201143,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "OuterPetal_15",
+    "floats": {
+      "_EdgeIntensity": 5.095724,
+      "_TargetEdgeIntensity": 5.095724,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 1.25,
+      "_TargetMainPatternIntensity": 1.25,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 1.3,
+      "_CenterIconGlow": 1.3,
+      "_CenterDotGlow": 0.5,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 3.0,
+      "_OrnamentGlowScale": 0.24,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.313988715,
+        0.0159962922,
+        0.127437651,
+        1.0
+      ],
+      "_PatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        1.0,
+        0.686685443,
+        0.242281139,
+        1.0
+      ],
+      "_AccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.8631573,
+        0.356400222,
+        0.0451861843,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.0176419523,
+        0.205078661,
+        0.6038274,
+        1.0
+      ],
+      "_EdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_TargetEdgeColor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "_CenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        0.5,
+        0.0499999672,
+        0.149999946,
+        1.0
+      ]
+    }
+  },
+  {
+    "name": "Center Disc",
+    "floats": {
+      "_EdgeIntensity": 1.6,
+      "_TargetEdgeIntensity": 1.6,
+      "_EmissionScale": 1.0,
+      "_MainPatternIntensity": 0.65,
+      "_TargetMainPatternIntensity": 0.65,
+      "_AccentPatternIntensity": 0.65,
+      "_TargetAccentPatternIntensity": 0.65,
+      "_CenterRingGlow": 0.95,
+      "_CenterIconGlow": 0.45,
+      "_CenterDotGlow": 0.3,
+      "_StartupAppearance": 1.0,
+      "_TargetStartupAppearance": 1.0,
+      "_WaveProgress": 1.0,
+      "_ArtworkProgress": 1.0,
+      "_RimGlowScale": 2.6,
+      "_OrnamentGlowScale": 0.3,
+      "_BodyShadeStrength": 1.0,
+      "_BodyOcclusionStrength": 0.9,
+      "_BodySpecularStrength": 0.16
+    },
+    "colors": {
+      "_BaseColor": [
+        0.188235253,
+        0.07450979,
+        0.247058779,
+        1.0
+      ],
+      "_TargetBaseColor": [
+        0.188235253,
+        0.07450979,
+        0.247058779,
+        1.0
+      ],
+      "_PatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetPatternColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_AccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetAccentColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_TargetTertiaryColor": [
+        0.9386859,
+        0.6239603,
+        0.187820733,
+        1.0
+      ],
+      "_EdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetEdgeColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_CenterRingColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ],
+      "_TargetCenterRingColor": [
+        1.0,
+        0.6514057,
+        0.102241717,
+        1.0
+      ]
+    }
+  }
+]

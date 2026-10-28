@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "checks": {
+    "Sensor is default with no phantom mouse pointer": true,
+    "Native touch XY reaches the shared viewport pointer": true,
+    "Sensor outside prompt arms entry": true,
+    "Stationary contact feeds hover dwell": true,
+    "Second contact cannot steal dwell": true,
+    "Contact handover restarts dwell": true,
+    "Sensor dwell dismisses guidance and starts restoration": true,
+    "Contact release clears pointer immediately": true,
+    "Released XY cannot keep painting": true,
+    "Held sensor paints continuously": true,
+    "Second hand cannot redirect a stroke": true,
+    "New contact begins a separate stroke without a joining line": true,
+    "Canceled contact clears pointer": true,
+    "Out-of-camera contacts are ignored": true,
+    "Other display contacts are ignored": true,
+    "Screen XY respects camera offset and size": true,
+    "Debug panel blocks sensor brushing and dwell": true,
+    "Sensor resumes outside the debug panel": true,
+    "Device removal clears tracking": true,
+    "Optional mouse preview retains hover interaction": true,
+    "Returning to sensor mode has no mouse fallback": true,
+    "Touch sweep restores candles and finishes directly in shimmer": true
+  },
+  "errors": [
+    "System.Exception: Timeout stage 24 phase AwaitingRestoration\r\n  at PipelineEvaluation.PipelineEval_3029580d+<>c__DisplayClass0_0.<Execute>b__5 () [0x0009e] in <f3d903ea7ef74cfd9fe729b63c6545d8>:0 "
+  ]
+}

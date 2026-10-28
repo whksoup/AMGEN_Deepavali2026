@@ -1,0 +1,49 @@
+{
+  "label": "before",
+  "camera": "1400x1400 / orthographic 0.48 / position 0,1.5,0 / rotation 90,180,0 / rest pose",
+  "ambient": "RGBA(0.100, 0.107, 0.133, 1.000)",
+  "lights": [
+    {
+      "name": "Main Light",
+      "intensity": 0.65,
+      "color": "RGBA(1.000, 0.960, 0.920, 1.000)"
+    },
+    {
+      "name": "Overhead Fill - No Shadows",
+      "intensity": 0.04,
+      "color": "RGBA(0.800, 0.850, 1.000, 1.000)"
+    },
+    {
+      "name": "Palette Spill 1",
+      "intensity": 0.135444388,
+      "color": "RGBA(1.000, 0.725, 0.482, 1.000)"
+    },
+    {
+      "name": "Palette Spill 2",
+      "intensity": 0.125377685,
+      "color": "RGBA(1.000, 0.703, 0.503, 1.000)"
+    },
+    {
+      "name": "Palette Spill 3",
+      "intensity": 0.125377685,
+      "color": "RGBA(1.000, 0.703, 0.503, 1.000)"
+    },
+    {
+      "name": "Palette Spill 4",
+      "intensity": 0.125377685,
+      "color": "RGBA(1.000, 0.703, 0.503, 1.000)"
+    }
+  ],
+  "volumes": [
+    {
+      "name": "Petal Bloom - Mobile",
+      "weight": 1.0,
+      "profile": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Petal Luminous Bloom.asset",
+      "components": [
+        "{\"active\":true,\"skipIterations\":{\"m_OverrideState\":true,\"m_Value\":1},\"threshold\":{\"m_OverrideState\":true,\"m_Value\":1.100000023841858},\"intensity\":{\"m_OverrideState\":true,\"m_Value\":0.800000011920929},\"scatter\":{\"m_OverrideState\":true,\"m_Value\":0.6000000238418579},\"clamp\":{\"m_OverrideState\":true,\"m_Value\":8.0},\"tint\":{\"m_OverrideState\":true,\"m_Value\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0}},\"highQualityFiltering\":{\"m_OverrideState\":true,\"m_Value\":true},\"downscale\":{\"m_OverrideState\":true,\"m_Value\":0},\"maxIterations\":{\"m_OverrideState\":true,\"m_Value\":6},\"dirtTexture\":{\"m_OverrideState\":true,\"m_Value\":{\"instanceID\":0},\"dimension\":1},\"dirtIntensity\":{\"m_OverrideState\":true,\"m_Value\":0.0}}",
+        "{\"active\":true,\"mode\":{\"m_OverrideState\":true,\"m_Value\":1},\"neutralHDRRangeReductionMode\":{\"m_OverrideState\":true,\"m_Value\":2},\"acesPreset\":{\"m_OverrideState\":true,\"m_Value\":3},\"hueShiftAmount\":{\"m_OverrideState\":true,\"m_Value\":0.0},\"detectPaperWhite\":{\"m_OverrideState\":true,\"m_Value\":false},\"paperWhite\":{\"m_OverrideState\":true,\"m_Value\":300.0},\"detectBrightnessLimits\":{\"m_OverrideState\":true,\"m_Value\":true},\"minNits\":{\"m_OverrideState\":true,\"m_Value\":0.004999999888241291},\"maxNits\":{\"m_OverrideState\":true,\"m_Value\":1000.0}}"
+      ]
+    }
+  ],
+  "errors": []
+}

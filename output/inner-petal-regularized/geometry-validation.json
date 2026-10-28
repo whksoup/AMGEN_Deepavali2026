@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "meshes": [
+    {
+      "name": "InnerPetal_01",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": -7.450580596923828e-06,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 5.271457348323544e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_02",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": 7.450580596923828e-06,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 3.901399879156428e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_03",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": 7.450580596923828e-06,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 5.3915294321096874e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_04",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": -7.450580596923828e-06,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 7.129618976361302e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_05",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": 0.0,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 9.608503424331227e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_06",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": 0.0,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 6.844110629795896e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_07",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": 0.0,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 6.981212461419639e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    },
+    {
+      "name": "REF_TopPetal_08",
+      "max_symmetry_error_mm": 0.0,
+      "length_delta_mm": 0.0,
+      "width_delta_mm": 0.0,
+      "root_width_delta_mm": 0.0,
+      "root_plane_error_mm": 5.7844859436238794e-08,
+      "transform_unchanged": true,
+      "triangles_unchanged": true,
+      "bones_unchanged": true
+    }
+  ],
+  "outer_and_center_complete_manifest_records_unchanged": true
+}

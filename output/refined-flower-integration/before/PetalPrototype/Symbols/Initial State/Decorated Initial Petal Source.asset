@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292129f921a77e84e8c0c3a9b4dfe535, type: 3}
+  m_Name: Decorated Initial Petal Source
+  m_EditorClassIdentifier: 
+  outputName: Decorated Initial Petals
+  padding: 16
+  tiles:
+  - label: Sprout
+    mask: {fileID: 2800000, guid: ff813f916a5ff2749a4ce7dd26024713, type: 3}
+  - label: Diya
+    mask: {fileID: 2800000, guid: 82ceea91eea20d045a054f6ebfd5db78, type: 3}
+  - label: Star
+    mask: {fileID: 2800000, guid: 1efbaf125cce5684185169053ea2e94d, type: 3}
+  - label: Stacked Coins
+    mask: {fileID: 2800000, guid: 45744307410e8464cabb37a851452e90, type: 3}
+  - label: People and Heart
+    mask: {fileID: 2800000, guid: 64260f2b5a1959f4aaa2b777c526239f, type: 3}
+  - label: Gift Box
+    mask: {fileID: 2800000, guid: 1f7bb74f628b1e24d8d54deebcba6508, type: 3}
+  - label: Sunburst
+    mask: {fileID: 2800000, guid: 07998cfd7b78cda41b982fd154113eaf, type: 3}
+  - label: Lotus
+    mask: {fileID: 2800000, guid: 3e213a1d188e4c34fa7c5ffee2f85e51, type: 3}
+  generatedSet: {fileID: 11400000, guid: adc841b34c1cece4995c0fcf179fe868, type: 2}

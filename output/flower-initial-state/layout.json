@@ -1,0 +1,70 @@
+{
+  "petals": [
+    {
+      "petal": 0,
+      "symbol": "Sprout",
+      "source_id": 3,
+      "fill": "#B51F4B",
+      "glyph_rotation_degrees": 0
+    },
+    {
+      "petal": 1,
+      "symbol": "Diya",
+      "source_id": 4,
+      "fill": "#B7770A",
+      "glyph_rotation_degrees": 45
+    },
+    {
+      "petal": 2,
+      "symbol": "Star",
+      "source_id": 2,
+      "fill": "#264BB2",
+      "glyph_rotation_degrees": 90
+    },
+    {
+      "petal": 3,
+      "symbol": "Stacked Coins",
+      "source_id": 7,
+      "fill": "#47871D",
+      "glyph_rotation_degrees": 135
+    },
+    {
+      "petal": 4,
+      "symbol": "People and Heart",
+      "source_id": 5,
+      "fill": "#C51683",
+      "glyph_rotation_degrees": 180
+    },
+    {
+      "petal": 5,
+      "symbol": "Gift Box",
+      "source_id": 6,
+      "fill": "#12748F",
+      "glyph_rotation_degrees": 225
+    },
+    {
+      "petal": 6,
+      "symbol": "Sunburst",
+      "source_id": 1,
+      "fill": "#918011",
+      "glyph_rotation_degrees": 270
+    },
+    {
+      "petal": 7,
+      "symbol": "Lotus",
+      "source_id": 0,
+      "fill": "#6A239C",
+      "glyph_rotation_degrees": 315
+    }
+  ],
+  "gold": "#F8CF78",
+  "edge": "#FFD35A",
+  "center_fill": "#30133F",
+  "tile_size": [
+    448,
+    640
+  ],
+  "circle_radius_m": 0.052,
+  "dotted_radius_m": 0.059,
+  "dot_count": 48
+}

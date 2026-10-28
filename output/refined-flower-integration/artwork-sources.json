@@ -1,0 +1,70 @@
+[
+  {
+    "index": 0,
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/Tonal Inner.mat",
+    "textures": [
+      {
+        "name": "_BaseMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Petal_Regions_RGBA.png"
+      },
+      {
+        "name": "_SymbolAtlas",
+        "path": ""
+      },
+      {
+        "name": "_TertiaryMap",
+        "path": ""
+      },
+      {
+        "name": "_StartupAtlas",
+        "path": ""
+      },
+      {
+        "name": "_BodyShadingMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/Inner Body Shading.png"
+      },
+      {
+        "name": "_CenterShadingMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/Center Body Shading.png"
+      },
+      {
+        "name": "_PetalLightData",
+        "path": ""
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "material": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/Tonal Outer 1.mat",
+    "textures": [
+      {
+        "name": "_BaseMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Regions_RGBA.png"
+      },
+      {
+        "name": "_SymbolAtlas",
+        "path": ""
+      },
+      {
+        "name": "_TertiaryMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/OuterPetal_Peacock_Inlays.png"
+      },
+      {
+        "name": "_StartupAtlas",
+        "path": ""
+      },
+      {
+        "name": "_BodyShadingMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/Outer Body Shading.png"
+      },
+      {
+        "name": "_CenterShadingMap",
+        "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Tonal Refinement/Center Body Shading.png"
+      },
+      {
+        "name": "_PetalLightData",
+        "path": ""
+      }
+    ]
+  }
+]

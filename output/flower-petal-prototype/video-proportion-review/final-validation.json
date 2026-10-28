@@ -1,0 +1,389 @@
+{
+  "inner_count": 8,
+  "outer_count": 16,
+  "meshes": [
+    {
+      "name": "InnerPetal_01",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_02",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_03",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_04",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_05",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_06",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_07",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "REF_TopPetal_08",
+      "vertices": 505,
+      "triangles": 888,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_01",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_02",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_03",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_04",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_05",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_06",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_07",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_08",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_09",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_10",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_11",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_12",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_13",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_14",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_15",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    },
+    {
+      "name": "OuterPetal_16",
+      "vertices": 425,
+      "triangles": 752,
+      "loose_vertices": 0,
+      "nonmanifold_interior_edges": 0,
+      "zero_area_faces": 0,
+      "inverted_faces": 0,
+      "max_bone_influences": 2,
+      "max_weight_error": 2.9802322387695312e-08,
+      "uv_channels": [
+        "ArtworkUV",
+        "PetalCoord_Width_Length"
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "pose": "rest",
+      "max_root_drift_m": 0.0,
+      "max_outer_driver_error_rad": 0.0
+    },
+    {
+      "pose": "lift",
+      "max_root_drift_m": 2.3283064365386963e-10,
+      "max_outer_driver_error_rad": 1.075280436912962e-08
+    },
+    {
+      "pose": "sway",
+      "max_root_drift_m": 1.1641532182693481e-10,
+      "max_outer_driver_error_rad": 3.6426158270264075e-10
+    },
+    {
+      "pose": "combined",
+      "max_root_drift_m": 2.6031257322754127e-10,
+      "max_outer_driver_error_rad": 1.075280436912962e-08
+    }
+  ],
+  "limits": "Sculpt review. No Unity changes; future runtime layer-clearance, UV artwork, picking, bounds and per-petal motion mapping need integration checks."
+}

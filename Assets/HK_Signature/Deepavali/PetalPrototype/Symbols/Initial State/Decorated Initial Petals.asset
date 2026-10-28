@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb6c13fdc9ff9144a835012e751aa5e, type: 3}
+  m_Name: Decorated Initial Petals
+  m_EditorClassIdentifier: 
+  atlas: {fileID: 2800000, guid: 9a3d03e6bf9605346910e595093c5912, type: 3}
+  maxMipLevel: 3
+  symbols:
+  - label: Sprout
+    uvRect:
+      serializedVersion: 2
+      x: 0.008056641
+      y: 0.008056641
+      width: 0.21826172
+      height: 0.31201172
+  - label: Diya
+    uvRect:
+      serializedVersion: 2
+      x: 0.24243164
+      y: 0.008056641
+      width: 0.21826172
+      height: 0.31201172
+  - label: Star
+    uvRect:
+      serializedVersion: 2
+      x: 0.47680664
+      y: 0.008056641
+      width: 0.21826172
+      height: 0.31201172
+  - label: Stacked Coins
+    uvRect:
+      serializedVersion: 2
+      x: 0.008056641
+      y: 0.33618164
+      width: 0.21826172
+      height: 0.31201172
+  - label: People and Heart
+    uvRect:
+      serializedVersion: 2
+      x: 0.24243164
+      y: 0.33618164
+      width: 0.21826172
+      height: 0.31201172
+  - label: Gift Box
+    uvRect:
+      serializedVersion: 2
+      x: 0.47680664
+      y: 0.33618164
+      width: 0.21826172
+      height: 0.31201172
+  - label: Sunburst
+    uvRect:
+      serializedVersion: 2
+      x: 0.008056641
+      y: 0.66430664
+      width: 0.21826172
+      height: 0.31201172
+  - label: Lotus
+    uvRect:
+      serializedVersion: 2
+      x: 0.24243164
+      y: 0.66430664
+      width: 0.21826172
+      height: 0.31201172

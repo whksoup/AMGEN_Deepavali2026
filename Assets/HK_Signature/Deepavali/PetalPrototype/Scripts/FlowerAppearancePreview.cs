@@ -40,6 +40,7 @@ namespace Amgen.Deepavali
             RefreshLabel();
         }
         public void SelectAll() { selectedPetal = -1; RefreshLabel(); }
+        public void ShowInitialState() { flower.ResetToInitialState(); RefreshLabel(); }
         public void SelectPalette(int state)
         {
             if (selectedPetal < 0) flower.TransitionTo((FlowerPaletteState)state);
@@ -81,6 +82,10 @@ namespace Amgen.Deepavali
             if (selectedPetal < 0)
                 for (int i = 1; i < flower.PetalCount; i++)
                     if (flower.GetSymbol(i) != symbol) { artwork = "Mixed"; break; }
+            int labelIndex = selectedPetal < 0 ? 0 : selectedPetal;
+            if (flower.IsStartupRequested(labelIndex) && flower.StartupSymbolSet != null &&
+                flower.StartupSymbolSet.TryGet(flower.GetStartupSymbol(labelIndex), out var initial))
+                artwork = selectedPetal < 0 ? "Initial symbols" : "Initial " + initial.label;
             if (selectionLabel != null) selectionLabel.text = subject + " | Artwork: " + artwork + "\nTap a petal to select it. Choose a palette below.";
             if (emissionSlider != null) emissionSlider.SetValueWithoutNotify(flower.GetPetalEmissionScale(selectedPetal < 0 ? 0 : selectedPetal));
         }

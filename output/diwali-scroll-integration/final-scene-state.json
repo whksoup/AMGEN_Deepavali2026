@@ -1,0 +1,11 @@
+{
+  "saved": true,
+  "scene": "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+  "dirty": false,
+  "playing": false,
+  "settings": "Assets/HK_Signature/Deepavali/Restoration/Deepavali Session Settings.asset",
+  "delay": 2.0,
+  "hold": 15.0,
+  "outcomes": "Assets/HK_Signature/Deepavali/PetalPrototype/Rendering/Light Sequence/Deepavali Outcomes.asset",
+  "overlay": "Assets/DiwaliScroll/Prefabs/Diwali Scroll Canvas.prefab"
+}

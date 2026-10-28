@@ -1,0 +1,58 @@
+{
+  "scene": "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+  "idleBehaviours": [
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "PetalWheelLightSequence",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    },
+    {
+      "type": "OuterPetalLayerMotion",
+      "enabled": true
+    },
+    {
+      "type": "PetalLayerPointerInput",
+      "enabled": false
+    },
+    {
+      "type": "PetalRingPulse",
+      "enabled": true
+    },
+    {
+      "type": "PetalMotionController",
+      "enabled": true
+    }
+  ],
+  "lamps": 4,
+  "requiredCoverage": 0.8,
+  "coloredHoldDuration": 10.0,
+  "openingDwellDuration": 0.65,
+  "spinDwellDuration": 0.15
+}

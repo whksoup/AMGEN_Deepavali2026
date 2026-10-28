@@ -1,0 +1,565 @@
+{
+  "completedAt": "2026-10-29T01:57:13.6338231+08:00",
+  "passed": true,
+  "checks": {
+    "Main settings default to 2-second delay and 15-second fully-open hold": true,
+    "Eight explicit outcomes and scroll variants": true,
+    "Demo toggles disabled": true,
+    "Overlay does not intercept input": true,
+    "Slot 0 maps opening symbol and color": true,
+    "Slot 0 resolves complete scroll": true,
+    "Opening fill 0 equals its result": true,
+    "Opening fill 1 equals its result": true,
+    "Opening fill 2 equals its result": true,
+    "Opening fill 3 equals its result": true,
+    "Opening fill 4 equals its result": true,
+    "Opening fill 5 equals its result": true,
+    "Opening fill 6 equals its result": true,
+    "Opening fill 7 equals its result": true,
+    "Force result 0": true,
+    "Result is fully visible before delay 0": true,
+    "Selected variant stays matched 0": true,
+    "Center has correct real icon 0": true,
+    "Result glyph 0/0": true,
+    "Result glyph 0/1": true,
+    "Result glyph 0/2": true,
+    "Result glyph 0/3": true,
+    "Result glyph 0/4": true,
+    "Result glyph 0/5": true,
+    "Result glyph 0/6": true,
+    "Result glyph 0/7": true,
+    "Delay starts after completed result 0": true,
+    "Explicit scroll color 0": true,
+    "Opening clip completes before hold 0": true,
+    "Flower stays settled beneath scroll 0": true,
+    "Fully-open hold duration 0": true,
+    "Closing completed before reset 0": true,
+    "Reset clears overlay and result 0": true,
+    "Reset restores darkness and prompt 0": true,
+    "Exactly three reusable video players 0": true,
+    "Slot 1 maps opening symbol and color": true,
+    "Slot 1 resolves complete scroll": true,
+    "Force result 1": true,
+    "Result is fully visible before delay 1": true,
+    "Selected variant stays matched 1": true,
+    "Center has correct real icon 1": true,
+    "Result glyph 1/0": true,
+    "Result glyph 1/1": true,
+    "Result glyph 1/2": true,
+    "Result glyph 1/3": true,
+    "Result glyph 1/4": true,
+    "Result glyph 1/5": true,
+    "Result glyph 1/6": true,
+    "Result glyph 1/7": true,
+    "Delay starts after completed result 1": true,
+    "Explicit scroll color 1": true,
+    "Opening clip completes before hold 1": true,
+    "Flower stays settled beneath scroll 1": true,
+    "Fully-open hold duration 1": true,
+    "Closing completed before reset 1": true,
+    "Reset clears overlay and result 1": true,
+    "Reset restores darkness and prompt 1": true,
+    "Exactly three reusable video players 1": true,
+    "Slot 2 maps opening symbol and color": true,
+    "Slot 2 resolves complete scroll": true,
+    "Force result 2": true,
+    "Result is fully visible before delay 2": true,
+    "Selected variant stays matched 2": true,
+    "Center has correct real icon 2": true,
+    "Result glyph 2/0": true,
+    "Result glyph 2/1": true,
+    "Result glyph 2/2": true,
+    "Result glyph 2/3": true,
+    "Result glyph 2/4": true,
+    "Result glyph 2/5": true,
+    "Result glyph 2/6": true,
+    "Result glyph 2/7": true,
+    "Delay starts after completed result 2": true,
+    "Explicit scroll color 2": true,
+    "Opening clip completes before hold 2": true,
+    "Flower stays settled beneath scroll 2": true,
+    "Fully-open hold duration 2": true,
+    "Closing completed before reset 2": true,
+    "Reset clears overlay and result 2": true,
+    "Reset restores darkness and prompt 2": true,
+    "Exactly three reusable video players 2": true,
+    "Slot 3 maps opening symbol and color": true,
+    "Slot 3 resolves complete scroll": true,
+    "Force result 3": true,
+    "Result is fully visible before delay 3": true,
+    "Selected variant stays matched 3": true,
+    "Center has correct real icon 3": true,
+    "Result glyph 3/0": true,
+    "Result glyph 3/1": true,
+    "Result glyph 3/2": true,
+    "Result glyph 3/3": true,
+    "Result glyph 3/4": true,
+    "Result glyph 3/5": true,
+    "Result glyph 3/6": true,
+    "Result glyph 3/7": true,
+    "Delay starts after completed result 3": true,
+    "Explicit scroll color 3": true,
+    "Opening clip completes before hold 3": true,
+    "Flower stays settled beneath scroll 3": true,
+    "Fully-open hold duration 3": true,
+    "Closing completed before reset 3": true,
+    "Reset clears overlay and result 3": true,
+    "Reset restores darkness and prompt 3": true,
+    "Exactly three reusable video players 3": true,
+    "Slot 4 maps opening symbol and color": true,
+    "Slot 4 resolves complete scroll": true,
+    "Force result 4": true,
+    "Result is fully visible before delay 4": true,
+    "Selected variant stays matched 4": true,
+    "Center has correct real icon 4": true,
+    "Result glyph 4/0": true,
+    "Result glyph 4/1": true,
+    "Result glyph 4/2": true,
+    "Result glyph 4/3": true,
+    "Result glyph 4/4": true,
+    "Result glyph 4/5": true,
+    "Result glyph 4/6": true,
+    "Result glyph 4/7": true,
+    "Delay starts after completed result 4": true,
+    "Explicit scroll color 4": true,
+    "Opening clip completes before hold 4": true,
+    "Flower stays settled beneath scroll 4": true,
+    "Fully-open hold duration 4": true,
+    "Closing completed before reset 4": true,
+    "Reset clears overlay and result 4": true,
+    "Reset restores darkness and prompt 4": true,
+    "Exactly three reusable video players 4": true,
+    "Slot 5 maps opening symbol and color": true,
+    "Slot 5 resolves complete scroll": true,
+    "Force result 5": true,
+    "Result is fully visible before delay 5": true,
+    "Selected variant stays matched 5": true,
+    "Center has correct real icon 5": true,
+    "Result glyph 5/0": true,
+    "Result glyph 5/1": true,
+    "Result glyph 5/2": true,
+    "Result glyph 5/3": true,
+    "Result glyph 5/4": true,
+    "Result glyph 5/5": true,
+    "Result glyph 5/6": true,
+    "Result glyph 5/7": true,
+    "Delay starts after completed result 5": true,
+    "Explicit scroll color 5": true,
+    "Opening clip completes before hold 5": true,
+    "Flower stays settled beneath scroll 5": true,
+    "Fully-open hold duration 5": true,
+    "Closing completed before reset 5": true,
+    "Reset clears overlay and result 5": true,
+    "Reset restores darkness and prompt 5": true,
+    "Exactly three reusable video players 5": true,
+    "Slot 6 maps opening symbol and color": true,
+    "Slot 6 resolves complete scroll": true,
+    "Force result 6": true,
+    "Result is fully visible before delay 6": true,
+    "Selected variant stays matched 6": true,
+    "Center has correct real icon 6": true,
+    "Result glyph 6/0": true,
+    "Result glyph 6/1": true,
+    "Result glyph 6/2": true,
+    "Result glyph 6/3": true,
+    "Result glyph 6/4": true,
+    "Result glyph 6/5": true,
+    "Result glyph 6/6": true,
+    "Result glyph 6/7": true,
+    "Delay starts after completed result 6": true,
+    "Explicit scroll color 6": true,
+    "Opening clip completes before hold 6": true,
+    "Flower stays settled beneath scroll 6": true,
+    "Fully-open hold duration 6": true,
+    "Closing completed before reset 6": true,
+    "Reset clears overlay and result 6": true,
+    "Reset restores darkness and prompt 6": true,
+    "Exactly three reusable video players 6": true,
+    "Slot 7 maps opening symbol and color": true,
+    "Slot 7 resolves complete scroll": true,
+    "Force result 7": true,
+    "Result is fully visible before delay 7": true,
+    "Selected variant stays matched 7": true,
+    "Center has correct real icon 7": true,
+    "Result glyph 7/0": true,
+    "Result glyph 7/1": true,
+    "Result glyph 7/2": true,
+    "Result glyph 7/3": true,
+    "Result glyph 7/4": true,
+    "Result glyph 7/5": true,
+    "Result glyph 7/6": true,
+    "Result glyph 7/7": true,
+    "Delay starts after completed result 7": true,
+    "Explicit scroll color 7": true,
+    "Opening clip completes before hold 7": true,
+    "Flower stays settled beneath scroll 7": true,
+    "Fully-open hold duration 7": true,
+    "Closing completed before reset 7": true,
+    "Reset clears overlay and result 7": true,
+    "Reset restores darkness and prompt 7": true,
+    "Exactly three reusable video players 7": true,
+    "Result is fully visible before delay 8": true,
+    "Selected variant stays matched 8": true,
+    "Center has correct real icon 8": true,
+    "Result glyph 8/0": true,
+    "Result glyph 8/1": true,
+    "Result glyph 8/2": true,
+    "Result glyph 8/3": true,
+    "Result glyph 8/4": true,
+    "Result glyph 8/5": true,
+    "Result glyph 8/6": true,
+    "Result glyph 8/7": true,
+    "Delay starts after completed result 8": true,
+    "Explicit scroll color 8": true,
+    "Opening clip completes before hold 8": true,
+    "Flower stays settled beneath scroll 8": true,
+    "Fully-open hold duration 8": true,
+    "Closing completed before reset 8": true,
+    "Reset clears overlay and result 8": true,
+    "Reset restores darkness and prompt 8": true,
+    "Exactly three reusable video players 8": true
+  },
+  "errors": [],
+  "results": [
+    {
+      "run": 0,
+      "delay": 2.0125470999992103,
+      "opening": 5.5978317999979481,
+      "hold": 15.01054540000041,
+      "closing": 3.4139948000010918
+    },
+    {
+      "run": 1,
+      "delay": 0.22376339999755146,
+      "opening": 5.6014971000040532,
+      "hold": 0.25281089999771211,
+      "closing": 3.4185441000008723
+    },
+    {
+      "run": 2,
+      "delay": 0.22366869999677874,
+      "opening": 5.6000799000030383,
+      "hold": 0.25786179999704473,
+      "closing": 3.4221684000003734
+    },
+    {
+      "run": 3,
+      "delay": 0.20661459999973886,
+      "opening": 5.60042699999758,
+      "hold": 0.250246600000537,
+      "closing": 3.4268312999993213
+    },
+    {
+      "run": 4,
+      "delay": 0.21216749999439344,
+      "opening": 5.6041020000047865,
+      "hold": 0.24886880000121891,
+      "closing": 3.4210791000004974
+    },
+    {
+      "run": 5,
+      "delay": 0.21325789999536937,
+      "opening": 5.6024522000006982,
+      "hold": 0.25156910000077914,
+      "closing": 3.4201662999985274
+    },
+    {
+      "run": 6,
+      "delay": 0.20765810000011697,
+      "opening": 5.60147390000202,
+      "hold": 0.25303169999824604,
+      "closing": 3.4183276999974623
+    },
+    {
+      "run": 7,
+      "delay": 0.22265869999682764,
+      "opening": 5.6002749000035692,
+      "hold": 0.25640259999636328,
+      "closing": 3.4202110000042012
+    },
+    {
+      "run": 8,
+      "delay": 0.20502850000048056,
+      "opening": 5.41078700000071,
+      "hold": 0.20390010000119219,
+      "closing": 3.2458916999967187
+    }
+  ],
+  "timeline": [
+    {
+      "run": 0,
+      "time": 0.032153499996638857,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 0,
+      "time": 1.0426518999956897,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 0,
+      "time": 1.3753773999997065,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 0,
+      "time": 3.3879244999989169,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 0,
+      "time": 8.985756299996865,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 0,
+      "time": 23.996301699997275,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 0,
+      "time": 27.410296499998367,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 1,
+      "time": 29.221684899996035,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 1,
+      "time": 30.114613999998255,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 1,
+      "time": 30.338377399995807,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 1,
+      "time": 35.93987449999986,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 1,
+      "time": 36.192685399997572,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 1,
+      "time": 39.611229499998444,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 2,
+      "time": 41.418885199993383,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 2,
+      "time": 41.759076199996343,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 2,
+      "time": 41.982744899993122,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 2,
+      "time": 47.58282479999616,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 2,
+      "time": 47.840686599993205,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 2,
+      "time": 51.262854999993579,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 3,
+      "time": 53.072988299994904,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 3,
+      "time": 53.414437499995984,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 3,
+      "time": 53.621052099995723,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 3,
+      "time": 59.2214790999933,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 3,
+      "time": 59.47172569999384,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 3,
+      "time": 62.898556999993161,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 4,
+      "time": 64.702456199993321,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 4,
+      "time": 65.043733999998949,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 4,
+      "time": 65.255901499993342,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 4,
+      "time": 70.860003499998129,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 4,
+      "time": 71.108872299999348,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 4,
+      "time": 74.529951399999845,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 5,
+      "time": 76.3420405999932,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 5,
+      "time": 76.6861202,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 5,
+      "time": 76.899378099995374,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 5,
+      "time": 82.501830299996072,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 5,
+      "time": 82.753399399996852,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 5,
+      "time": 86.173565699995379,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 6,
+      "time": 87.981004699999176,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 6,
+      "time": 88.334761599995545,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 6,
+      "time": 88.542419699995662,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 6,
+      "time": 94.143893599997682,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 6,
+      "time": 94.396925299995928,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 6,
+      "time": 97.81525299999339,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 7,
+      "time": 99.627892899996368,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 7,
+      "time": 99.966386699998111,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 7,
+      "time": 100.18904539999494,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 7,
+      "time": 105.78932029999851,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 7,
+      "time": 106.04572289999487,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 7,
+      "time": 109.46593389999907,
+      "state": "AwaitingRestoration/Hidden"
+    },
+    {
+      "run": 8,
+      "time": 111.27841599999374,
+      "state": "RevealingResult/Hidden"
+    },
+    {
+      "run": 8,
+      "time": 111.61726729999646,
+      "state": "ScrollDelay/Hidden"
+    },
+    {
+      "run": 8,
+      "time": 111.82229579999694,
+      "state": "ScrollOpening/Spawning"
+    },
+    {
+      "run": 8,
+      "time": 117.23308279999765,
+      "state": "ScrollHolding/Shown"
+    },
+    {
+      "run": 8,
+      "time": 117.43698289999884,
+      "state": "ScrollClosing/Hiding"
+    },
+    {
+      "run": 8,
+      "time": 120.68287459999556,
+      "state": "AwaitingRestoration/Hidden"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb6c13fdc9ff9144a835012e751aa5e, type: 3}
+  m_Name: Center Phases and Mandala
+  m_EditorClassIdentifier: 
+  atlas: {fileID: 2800000, guid: 1a176df437dbc6c4ca1933823194f363, type: 3}
+  maxMipLevel: 4
+  symbols:
+  - label: Gold - Lotus
+    uvRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.5004883
+      width: 0.24951172
+      height: 0.49902344
+  - label: Pink - Sunburst
+    uvRect:
+      serializedVersion: 2
+      x: 0.25024414
+      y: 0.5004883
+      width: 0.24951172
+      height: 0.49902344
+  - label: Purple - Star
+    uvRect:
+      serializedVersion: 2
+      x: 0.50024414
+      y: 0.5004883
+      width: 0.24951172
+      height: 0.49902344
+  - label: Green - Sprout
+    uvRect:
+      serializedVersion: 2
+      x: 0.75024414
+      y: 0.5004883
+      width: 0.24951172
+      height: 0.49902344
+  - label: Blue - Diya
+    uvRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00048828125
+      width: 0.24951172
+      height: 0.49902344
+  - label: Orange - People and Heart
+    uvRect:
+      serializedVersion: 2
+      x: 0.25024414
+      y: 0.00048828125
+      width: 0.24951172
+      height: 0.49902344
+  - label: Initial - Mandala
+    uvRect:
+      serializedVersion: 2
+      x: 0.50024414
+      y: 0.00048828125
+      width: 0.24951172
+      height: 0.49902344

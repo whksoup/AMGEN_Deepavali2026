@@ -54,6 +54,7 @@ namespace Amgen.Deepavali
         {
             if (!isActiveAndEnabled || interactionCamera == null || petals == null ||
                 !interactionCamera.pixelRect.Contains(screenPosition)) return false;
+            if (HandHereInteraction.BlocksScreenPoint(screenPosition)) return false;
             if (blockedScreenAreas != null)
                 foreach (var area in blockedScreenAreas)
                     if (area != null && area.gameObject.activeInHierarchy &&

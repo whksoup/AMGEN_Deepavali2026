@@ -1,0 +1,170 @@
+[
+  {
+    "index": 0,
+    "name": "InnerPetal_01",
+    "label": "Sprout",
+    "width": 0.1573723554611206,
+    "length": 0.23102408647537231,
+    "center_uv": [
+      0.5,
+      0.46
+    ],
+    "radius_m": 0.046215367138385775,
+    "dotted_radius_m": 0.05141536713838578,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.46,
+      0.18489573009496274,
+      0.003
+    ],
+    "glyph_rotation_degrees": 0.8859466103556245
+  },
+  {
+    "index": 1,
+    "name": "REF_TopPetal_02",
+    "label": "Diya",
+    "width": 0.15009315311908722,
+    "length": 0.2359740436077118,
+    "center_uv": [
+      0.5,
+      0.46
+    ],
+    "radius_m": 0.04405109199285507,
+    "dotted_radius_m": 0.04925109199285507,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.46,
+      0.17184556137143647,
+      0.003
+    ],
+    "glyph_rotation_degrees": 38.61440485365742
+  },
+  {
+    "index": 2,
+    "name": "REF_TopPetal_03",
+    "label": "Star",
+    "width": 0.18246369063854218,
+    "length": 0.2713347375392914,
+    "center_uv": [
+      0.5,
+      0.45
+    ],
+    "radius_m": 0.052,
+    "dotted_radius_m": 0.0572,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.45,
+      0.17874600369949614,
+      0.003
+    ],
+    "glyph_rotation_degrees": 89.47676217755824
+  },
+  {
+    "index": 3,
+    "name": "REF_TopPetal_04",
+    "label": "Stacked Coins",
+    "width": 0.1765996813774109,
+    "length": 0.28737935423851013,
+    "center_uv": [
+      0.5,
+      0.44
+    ],
+    "radius_m": 0.05164857982695103,
+    "dotted_radius_m": 0.05684857982695103,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.44,
+      0.1675436287152005,
+      0.003
+    ],
+    "glyph_rotation_degrees": 141.0275345615155
+  },
+  {
+    "index": 4,
+    "name": "REF_TopPetal_05",
+    "label": "People and Heart",
+    "width": 0.18187430500984192,
+    "length": 0.28267043828964233,
+    "center_uv": [
+      0.5,
+      0.45
+    ],
+    "radius_m": 0.052,
+    "dotted_radius_m": 0.0572,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.45,
+      0.1715778993143378,
+      0.003
+    ],
+    "glyph_rotation_degrees": 181.01397390217477
+  },
+  {
+    "index": 5,
+    "name": "REF_TopPetal_06",
+    "label": "Gift Box",
+    "width": 0.17354194819927216,
+    "length": 0.3142269253730774,
+    "center_uv": [
+      0.5,
+      0.43
+    ],
+    "radius_m": 0.050622823682427404,
+    "dotted_radius_m": 0.0558228236824274,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.43,
+      0.14996430883979503,
+      0.003
+    ],
+    "glyph_rotation_degrees": 222.52477619966615
+  },
+  {
+    "index": 6,
+    "name": "REF_TopPetal_07",
+    "label": "Sunburst",
+    "width": 0.1749701201915741,
+    "length": 0.27168816328048706,
+    "center_uv": [
+      0.5,
+      0.45
+    ],
+    "radius_m": 0.05128690168261528,
+    "dotted_radius_m": 0.056486901682615276,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.45,
+      0.1758887877396438,
+      0.003
+    ],
+    "glyph_rotation_degrees": 272.61443313567855
+  },
+  {
+    "index": 7,
+    "name": "REF_TopPetal_08",
+    "label": "Lotus",
+    "width": 0.15183480083942413,
+    "length": 0.23422978818416595,
+    "center_uv": [
+      0.5,
+      0.47
+    ],
+    "radius_m": 0.044640036955475804,
+    "dotted_radius_m": 0.0498400369554758,
+    "dot_count": 48,
+    "icon_region": [
+      0.5,
+      0.47,
+      0.17563964547126243,
+      0.003
+    ],
+    "glyph_rotation_degrees": 323.71474116823043
+  }
+]

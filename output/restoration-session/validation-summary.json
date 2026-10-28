@@ -1,0 +1,34 @@
+{
+  "session": {
+    "passed": true,
+    "checks": 31,
+    "errors": []
+  },
+  "lifecycle": {
+    "passed": true,
+    "checks": 16,
+    "errors": []
+  },
+  "prototype": {
+    "passed": true,
+    "checks": 34,
+    "errors": []
+  },
+  "prototypeMouse": {
+    "passed": true,
+    "checks": 7,
+    "errors": []
+  },
+  "wheel": {
+    "passed": true,
+    "checks": 27
+  },
+  "mask": {
+    "passed": true,
+    "checks": 10
+  },
+  "coloredHoldsSeconds": [
+    10.003631999999925,
+    10.006293999998888
+  ]
+}

@@ -26,10 +26,17 @@ namespace Amgen.Deepavali
         private static readonly int CenterRingColor = Shader.PropertyToID("_CenterRingColor");
         private static readonly int TargetCenterRingColor = Shader.PropertyToID("_TargetCenterRingColor");
 
-        public FlowerSymbolSet CenterIconSet => centerIconSet;
-        public FlowerPaletteState CenterState => settled == null ? selectedState : settled[settled.Length - 1];
+        public FlowerSymbolSet CenterIconSet => outcomeSet != null ? outcomeSet.icons : centerIconSet;
+        public FlowerPaletteState CenterState => settled == null || settled[settled.Length - 1] == StartupState ? selectedState : settled[settled.Length - 1];
         public int GetCenterIcon(FlowerPaletteState state)
         {
+            if (outcomeSet != null)
+                return state == StartupState ? outcomeSet.openingCenterIcon : outcomeSet.ForPalette(state)?.icon ?? -1;
+            // The two new color looks reuse the opening mandala until dedicated art is supplied.
+            if (state == FlowerPaletteState.Cyan || state == FlowerPaletteState.Red)
+                return centerIconSet != null && centerIconSet.TryGet(startupCenterIcon, out _) ? startupCenterIcon : -1;
+            if (state == StartupState)
+                return centerIconSet != null && centerIconSet.TryGet(startupCenterIcon, out _) ? startupCenterIcon : -1;
             int index = (int)state - 1;
             return index >= 0 && index < 6 && centerIconSet != null && centerIconSet.TryGet(index, out _) ? index : -1;
         }
@@ -39,6 +46,7 @@ namespace Amgen.Deepavali
         {
             if (!Ready || !paletteSet.TryGet(state, out _)) return false;
             selectedState = state;
+            startupCenterConsumed = true;
             requested[runtimePetals.Length] = state;
             if (!transitioning) StartNextWave();
             return true;
@@ -49,6 +57,7 @@ namespace Amgen.Deepavali
         {
             if (!Ready || !paletteSet.TryGet(state, out _)) return false;
             selectedState = state;
+            startupCenterConsumed = true;
             settled[runtimePetals.Length] = targets[runtimePetals.Length] = requested[runtimePetals.Length] = state;
             ApplyPair(runtimeCenter, state, state, true, paletteSet);
             return true;
@@ -56,10 +65,10 @@ namespace Amgen.Deepavali
 
         private void ApplyCenterArtworkPair(Material mat, FlowerPaletteState from, FlowerPaletteState to)
         {
-            if (centerIconSet != null)
+            if (CenterIconSet != null)
             {
-                mat.SetTexture(SymbolAtlas, centerIconSet.Atlas);
-                mat.SetFloat(SymbolMaxMip, centerIconSet.MaxMipLevel);
+                mat.SetTexture(SymbolAtlas, CenterIconSet.Atlas);
+                mat.SetFloat(SymbolMaxMip, CenterIconSet.MaxMipLevel);
             }
             ApplyCenterIcon(mat, GetCenterIcon(from), SymbolEnabled, SymbolRect);
             ApplyCenterIcon(mat, GetCenterIcon(to), TargetSymbolEnabled, TargetSymbolRect);
@@ -73,10 +82,10 @@ namespace Amgen.Deepavali
 
         private void ApplyCenterIcon(Material mat, int icon, int enabledId, int rectId)
         {
-            bool valid = icon >= 0 && centerIconSet != null && centerIconSet.TryGet(icon, out _);
+            bool valid = icon >= 0 && CenterIconSet != null && CenterIconSet.TryGet(icon, out _);
             mat.SetFloat(enabledId, valid ? 1f : 0f);
             if (!valid) return;
-            centerIconSet.TryGet(icon, out var entry);
+            CenterIconSet.TryGet(icon, out var entry);
             var r = entry.uvRect;
             mat.SetVector(rectId, new Vector4(r.width, r.height, r.x, r.y));
         }

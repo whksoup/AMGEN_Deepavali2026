@@ -1,0 +1,700 @@
+{
+  "summary": {
+    "poses": 62,
+    "top_neighbor_min_gap_mm": 8.327967256125088,
+    "top_neighbor_crossings": 0,
+    "lower_layer_min_gap_mm": 4.8408695782450435,
+    "lower_layer_crossings": 0,
+    "maxRootDrift": 1.66600049e-08,
+    "maxBoundsOverflow": 0.0,
+    "maxSyncError": 2.38418579e-07,
+    "maxLocalPositionDrift": 0.0,
+    "maxLocalScaleDrift": 0.0,
+    "passed": true
+  },
+  "method": "Exact vertical plane separation over clipped projected triangle overlaps from Unity BakeMesh; discrete rest, idle, pulse and opposing-envelope poses.",
+  "poses": [
+    {
+      "pose": "rest",
+      "top_neighbor_min_gap_mm": 11.159798389881756,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 4.8408695782450435,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "idle_0",
+      "top_neighbor_min_gap_mm": 11.076449491092038,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.755703368294681,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_1",
+      "top_neighbor_min_gap_mm": 11.121667145854852,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.404847261713874,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "idle_2",
+      "top_neighbor_min_gap_mm": 11.121227256212244,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.773172713704881,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_3",
+      "top_neighbor_min_gap_mm": 11.00022089315365,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.580822740662795,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_4",
+      "top_neighbor_min_gap_mm": 11.118070133743789,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.4590887916905935,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "idle_5",
+      "top_neighbor_min_gap_mm": 10.917459664879129,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.188782128769048,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_6",
+      "top_neighbor_min_gap_mm": 11.115345926160911,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.854697201284061,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 03",
+        "Inner Petal 04"
+      ]
+    },
+    {
+      "pose": "idle_7",
+      "top_neighbor_min_gap_mm": 11.003979277345978,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.6945973345520455,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_8",
+      "top_neighbor_min_gap_mm": 11.122855756048681,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.422418959833776,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "idle_9",
+      "top_neighbor_min_gap_mm": 11.121635175749741,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.761458937173441,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_10",
+      "top_neighbor_min_gap_mm": 11.032243070592143,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.418158350850018,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_11",
+      "top_neighbor_min_gap_mm": 11.11441825374351,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.637082109156387,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 06",
+        "Inner Petal 07"
+      ]
+    },
+    {
+      "pose": "idle_12",
+      "top_neighbor_min_gap_mm": 10.946155366055063,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.850830744761452,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_13",
+      "top_neighbor_min_gap_mm": 11.121628391477712,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.129873350123851,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 04",
+        "Inner Petal 05"
+      ]
+    },
+    {
+      "pose": "idle_14",
+      "top_neighbor_min_gap_mm": 10.984312074985947,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.528243574006582,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "idle_15",
+      "top_neighbor_min_gap_mm": 11.116750539479654,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.593326606277628,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "single_0",
+      "top_neighbor_min_gap_mm": 9.291054896310161,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.564061084894272,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "single_1",
+      "top_neighbor_min_gap_mm": 9.185506543598253,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.7640217075427,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 02",
+        "Inner Petal 03"
+      ]
+    },
+    {
+      "pose": "single_2",
+      "top_neighbor_min_gap_mm": 9.057876272931708,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 7.0652846438078525,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 03",
+        "Inner Petal 04"
+      ]
+    },
+    {
+      "pose": "single_3",
+      "top_neighbor_min_gap_mm": 8.991939632357314,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 7.518441268294492,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 04",
+        "Inner Petal 05"
+      ]
+    },
+    {
+      "pose": "single_4",
+      "top_neighbor_min_gap_mm": 9.030603941120777,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.129972575663515,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "single_5",
+      "top_neighbor_min_gap_mm": 9.146019917081656,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.0686263804067835,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 06",
+        "Inner Petal 07"
+      ]
+    },
+    {
+      "pose": "single_6",
+      "top_neighbor_min_gap_mm": 9.257700187436182,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.522186917614608,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "single_7",
+      "top_neighbor_min_gap_mm": 9.317798985354523,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.407930404455627,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "adjacent_0",
+      "top_neighbor_min_gap_mm": 9.256028418127288,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.56580987906739,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 02",
+        "Inner Petal 03"
+      ]
+    },
+    {
+      "pose": "adjacent_1",
+      "top_neighbor_min_gap_mm": 9.081148609347782,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 7.112623704756949,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 03",
+        "Inner Petal 04"
+      ]
+    },
+    {
+      "pose": "adjacent_2",
+      "top_neighbor_min_gap_mm": 8.99138195363185,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 7.457239519173535,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 04",
+        "Inner Petal 05"
+      ]
+    },
+    {
+      "pose": "adjacent_3",
+      "top_neighbor_min_gap_mm": 9.090696403001873,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.075221454295663,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "adjacent_4",
+      "top_neighbor_min_gap_mm": 9.25247287319642,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.962796251663933,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 06",
+        "Inner Petal 07"
+      ]
+    },
+    {
+      "pose": "adjacent_5",
+      "top_neighbor_min_gap_mm": 9.276409495335102,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.4397375275569395,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "adjacent_6",
+      "top_neighbor_min_gap_mm": 8.43194736423495,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 5.792157098447922,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "adjacent_7",
+      "top_neighbor_min_gap_mm": 9.291501965715334,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 6.232179709919527,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "alternating_0",
+      "top_neighbor_min_gap_mm": 9.005706509086606,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.14815145508666,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "alternating_1",
+      "top_neighbor_min_gap_mm": 8.987403437819351,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.116704390544424,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 06",
+        "Inner Petal 07"
+      ]
+    },
+    {
+      "pose": "alternating_2",
+      "top_neighbor_min_gap_mm": 8.997617473395469,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.939221951457318,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "alternating_3",
+      "top_neighbor_min_gap_mm": 8.995406979564045,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.025048517566384,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 02",
+        "Inner Petal 03"
+      ]
+    },
+    {
+      "pose": "alternating_4",
+      "top_neighbor_min_gap_mm": 9.015162598416362,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.628744586480815,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "alternating_5",
+      "top_neighbor_min_gap_mm": 9.065829271109898,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.206050249382253,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "alternating_6",
+      "top_neighbor_min_gap_mm": 9.215320431087335,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.973124823506765,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "alternating_7",
+      "top_neighbor_min_gap_mm": 8.327967256125088,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.48736388209572,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "all_0",
+      "top_neighbor_min_gap_mm": 11.067752698698287,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 11.581460397029634,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "all_1",
+      "top_neighbor_min_gap_mm": 11.10694721351753,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 11.435040049147918,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "all_2",
+      "top_neighbor_min_gap_mm": 11.109920372940044,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 11.435731023303736,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "all_3",
+      "top_neighbor_min_gap_mm": 10.939775500367855,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 11.734102448540625,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "independent_release_0",
+      "top_neighbor_min_gap_mm": 9.852753302970038,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.588752886644649,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 04",
+        "Inner Petal 05"
+      ]
+    },
+    {
+      "pose": "independent_release_1",
+      "top_neighbor_min_gap_mm": 9.726767627760339,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.04632623548759,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "independent_release_2",
+      "top_neighbor_min_gap_mm": 10.136586788086266,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.316278069332478,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 06",
+        "Inner Petal 07"
+      ]
+    },
+    {
+      "pose": "independent_release_3",
+      "top_neighbor_min_gap_mm": 9.687368173022508,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.321034212561175,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "independent_release_4",
+      "top_neighbor_min_gap_mm": 10.185769076562865,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.54883732468667,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "independent_release_5",
+      "top_neighbor_min_gap_mm": 9.646148951313386,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.412871692050697,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    },
+    {
+      "pose": "independent_release_6",
+      "top_neighbor_min_gap_mm": 9.648739776887183,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 7.933085545854295,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 03",
+        "Inner Petal 04"
+      ]
+    },
+    {
+      "pose": "independent_release_7",
+      "top_neighbor_min_gap_mm": 9.668912891164947,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.950447600963614,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 04",
+        "Inner Petal 05"
+      ]
+    },
+    {
+      "pose": "independent_release_8",
+      "top_neighbor_min_gap_mm": 10.175698895813275,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.549295533370724,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 02",
+        "Inner Petal 03"
+      ]
+    },
+    {
+      "pose": "independent_release_9",
+      "top_neighbor_min_gap_mm": 9.61956550062589,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 7.284580011561494,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "independent_release_10",
+      "top_neighbor_min_gap_mm": 9.730994829637115,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 9.060023522746686,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 03",
+        "Inner Petal 04"
+      ]
+    },
+    {
+      "pose": "independent_release_11",
+      "top_neighbor_min_gap_mm": 10.333628115780114,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.00209741739534,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "independent_release_12",
+      "top_neighbor_min_gap_mm": 9.532820505701192,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.91588007878349,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 01",
+        "Inner Petal 02"
+      ]
+    },
+    {
+      "pose": "independent_release_13",
+      "top_neighbor_min_gap_mm": 9.422657298016166,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 11.31718460658736,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "independent_release_14",
+      "top_neighbor_min_gap_mm": 9.878767020702627,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 8.569658430626143,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 07",
+        "Inner Petal 08"
+      ]
+    },
+    {
+      "pose": "independent_release_15",
+      "top_neighbor_min_gap_mm": 9.912841309208126,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 10.11867317526331,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 06",
+        "Inner Petal 07"
+      ]
+    },
+    {
+      "pose": "startup_pulse",
+      "top_neighbor_min_gap_mm": 11.150735645058463,
+      "top_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 11.300372160214062,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "Inner Petal 05",
+        "Inner Petal 06"
+      ]
+    }
+  ]
+}

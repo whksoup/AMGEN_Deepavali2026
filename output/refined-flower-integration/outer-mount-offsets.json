@@ -1,0 +1,258 @@
+{
+  "success": true,
+  "message": "Smallest mounting-depth score among up to three reversed lap joins",
+  "margin_world_m": 0.0002,
+  "pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "lo": -0.0034150329589640207,
+      "hi": 0.0005465236997173138,
+      "sign": -1,
+      "names": [
+        "OuterPetal_01",
+        "OuterPetal_03"
+      ]
+    },
+    {
+      "indices": [
+        0,
+        13
+      ],
+      "lo": 5.6040351909507216e-05,
+      "hi": 0.004217168624604525,
+      "sign": 1,
+      "names": [
+        "OuterPetal_01",
+        "OuterPetal_15"
+      ]
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "lo": -0.00386846647704269,
+      "hi": -0.00014646508472016245,
+      "sign": -1,
+      "names": [
+        "OuterPetal_03",
+        "OuterPetal_04"
+      ]
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "lo": -0.0037350087550848416,
+      "hi": -0.0001619143996974778,
+      "sign": -1,
+      "names": [
+        "OuterPetal_04",
+        "OuterPetal_05"
+      ]
+    },
+    {
+      "indices": [
+        3,
+        4
+      ],
+      "lo": -0.0035690208302258525,
+      "hi": 0.00043189251613168786,
+      "sign": -1,
+      "names": [
+        "OuterPetal_05",
+        "OuterPetal_06"
+      ]
+    },
+    {
+      "indices": [
+        4,
+        5
+      ],
+      "lo": -0.0031460344791669334,
+      "hi": 0.00045944447236338955,
+      "sign": -1,
+      "names": [
+        "OuterPetal_06",
+        "OuterPetal_07"
+      ]
+    },
+    {
+      "indices": [
+        5,
+        6
+      ],
+      "lo": -0.002588122931899197,
+      "hi": 0.000951301956777529,
+      "sign": -1,
+      "names": [
+        "OuterPetal_07",
+        "OuterPetal_08"
+      ]
+    },
+    {
+      "indices": [
+        5,
+        7
+      ],
+      "lo": -0.002427930960836208,
+      "hi": -0.0016308393552809661,
+      "sign": -1,
+      "names": [
+        "OuterPetal_07",
+        "OuterPetal_09"
+      ]
+    },
+    {
+      "indices": [
+        6,
+        7
+      ],
+      "lo": -0.003194140269698671,
+      "hi": 0.0003801768257823883,
+      "sign": -1,
+      "names": [
+        "OuterPetal_08",
+        "OuterPetal_09"
+      ]
+    },
+    {
+      "indices": [
+        7,
+        8
+      ],
+      "lo": -0.0029256335509934388,
+      "hi": 0.0006446007129240552,
+      "sign": -1,
+      "names": [
+        "OuterPetal_09",
+        "OuterPetal_10"
+      ]
+    },
+    {
+      "indices": [
+        7,
+        9
+      ],
+      "lo": -0.0022314719693127495,
+      "hi": -0.0020029948720227293,
+      "sign": -1,
+      "names": [
+        "OuterPetal_09",
+        "OuterPetal_11"
+      ]
+    },
+    {
+      "indices": [
+        8,
+        9
+      ],
+      "lo": -0.003846401615071677,
+      "hi": 0.0004766461548877262,
+      "sign": -1,
+      "names": [
+        "OuterPetal_10",
+        "OuterPetal_11"
+      ]
+    },
+    {
+      "indices": [
+        8,
+        10
+      ],
+      "lo": -0.0029525935746675842,
+      "hi": -0.0018812433045787235,
+      "sign": -1,
+      "names": [
+        "OuterPetal_10",
+        "OuterPetal_12"
+      ]
+    },
+    {
+      "indices": [
+        9,
+        10
+      ],
+      "lo": -0.0036400179655053906,
+      "hi": 0.00013414545275405605,
+      "sign": -1,
+      "names": [
+        "OuterPetal_11",
+        "OuterPetal_12"
+      ]
+    },
+    {
+      "indices": [
+        10,
+        11
+      ],
+      "lo": -0.003852502927150491,
+      "hi": 8.713960025389213e-05,
+      "sign": -1,
+      "names": [
+        "OuterPetal_12",
+        "OuterPetal_13"
+      ]
+    },
+    {
+      "indices": [
+        11,
+        12
+      ],
+      "lo": -0.003651764249829884,
+      "hi": 0.00014748321615645332,
+      "sign": -1,
+      "names": [
+        "OuterPetal_13",
+        "OuterPetal_14"
+      ]
+    },
+    {
+      "indices": [
+        12,
+        13
+      ],
+      "lo": -0.0029264038459959254,
+      "hi": 0.0009382278222446116,
+      "sign": -1,
+      "names": [
+        "OuterPetal_14",
+        "OuterPetal_15"
+      ]
+    }
+  ],
+  "reversed_joins": [
+    [
+      "OuterPetal_07",
+      "OuterPetal_08"
+    ],
+    [
+      "OuterPetal_09",
+      "OuterPetal_10"
+    ],
+    [
+      "OuterPetal_14",
+      "OuterPetal_15"
+    ]
+  ],
+  "offsets_flower_m": {
+    "OuterPetal_01": -8.538078019641981e-05,
+    "OuterPetal_03": -0.0005281352378685863,
+    "OuterPetal_04": -0.0005598861687368566,
+    "OuterPetal_05": -0.0005824742919450648,
+    "OuterPetal_06": -0.0009572423380136998,
+    "OuterPetal_07": -0.0016536030364525743,
+    "OuterPetal_08": 0.0,
+    "OuterPetal_09": -0.001853776629296652,
+    "OuterPetal_10": 0.0,
+    "OuterPetal_11": -0.0007844415002841277,
+    "OuterPetal_12": -0.0009826192524087618,
+    "OuterPetal_13": -0.0011529183842846232,
+    "OuterPetal_14": -0.001854233482235417,
+    "OuterPetal_15": 0.0
+  }
+}

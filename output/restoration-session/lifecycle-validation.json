@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": {
+    "External XY and presence drive the same dwell": true,
+    "Loss and reacquisition within one frame cancels accumulated dwell": true,
+    "Invalid sample between valid samples breaks dwell": true,
+    "Stale sensor samples cancel dwell": true,
+    "External reset cancels prompt disintegration and its callback": true,
+    "Tracking at center cannot rearm after external reset": true,
+    "Screen-pixel adapter cancels dwell outside prompt": true,
+    "Reset interrupts Restoring without delayed callbacks": true,
+    "Reset interrupts FinalReveal without delayed callbacks": true,
+    "Reset interrupts AwaitingSpin without delayed callbacks": true,
+    "Reset interrupts DismissingSpinPrompt without delayed callbacks": true,
+    "Reset interrupts EnteringWheel without delayed callbacks": true,
+    "Reset interrupts Spinning without delayed callbacks": true,
+    "Reset interrupts RevealingResult without delayed callbacks": true,
+    "Reset interrupts HoldingResult without delayed callbacks": true,
+    "Session re-enable resets without duplicate listeners or immediate activation": true
+  },
+  "errors": []
+}

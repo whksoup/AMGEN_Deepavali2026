@@ -1,0 +1,31 @@
+{
+  "completed": "2026-10-29T02:00:42.4620206+08:00",
+  "reports": [
+    {
+      "report": "playback-validation.json",
+      "passed": true,
+      "checks": 216,
+      "unexpectedErrors": 0
+    },
+    {
+      "report": "lifecycle-validation.json",
+      "passed": true,
+      "checks": 19,
+      "unexpectedErrors": 0
+    },
+    {
+      "report": "failure-validation.json",
+      "passed": true,
+      "checks": 5,
+      "unexpectedErrors": 0
+    },
+    {
+      "report": "mouse-cycle/session-validation.json",
+      "passed": true,
+      "checks": 31,
+      "unexpectedErrors": 0
+    }
+  ],
+  "totalPassingChecks": 271.0,
+  "targetDeviceTested": false
+}

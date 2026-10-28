@@ -1,0 +1,12 @@
+{
+  "scene": "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+  "play": true,
+  "phase": "AwaitingRestoration",
+  "coverage": 0.0,
+  "lamps": 0,
+  "prompt": true,
+  "mouse": true,
+  "sequence": false,
+  "motions": 0,
+  "hold": 10.0
+}

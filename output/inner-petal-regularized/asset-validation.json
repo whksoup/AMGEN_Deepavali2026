@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "allEightInnerAnd14NoncontiguousOuterSourceIDs": true,
+    "noPreviewObjectsOrAnimation": true,
+    "threeBonesTwoWeightsNormalized": true,
+    "bothUVChannelsImported": true,
+    "Deepavali Peacock Flower_22Renderers66Bones": true,
+    "Deepavali Peacock Flower_completeArtworkAndLightingMaps": true,
+    "Deepavali Peacock Flower_conservativeBounds": true,
+    "Deepavali Two Layer Flower_22Renderers66Bones": true,
+    "Deepavali Two Layer Flower_completeArtworkAndLightingMaps": true,
+    "Deepavali Two Layer Flower_conservativeBounds": true,
+    "shaderHasNoErrors": true
+  },
+  "petalTriangles": 17632
+}

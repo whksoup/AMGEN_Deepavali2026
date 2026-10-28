@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "surfaces": 24,
+  "emissionParametersIdentical": true,
+  "allMasksAssigned": true,
+  "shaderErrors": [],
+  "srpBatcherCompatible": true,
+  "ssaoAffectedFlowerPixels": 88096,
+  "ssaoMeanLinearLuminanceReduction": 0.00075493328674905457,
+  "ssaoMaxLinearLuminanceReduction": 0.0219375
+}

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "cameraPreserved": true,
+  "layers": [
+    {
+      "layer": "Inner",
+      "count": 8,
+      "widthPercent": 54.2164268,
+      "heightPercent": 72.3371353,
+      "bounds": [
+        0.229264975,
+        0.157245576,
+        0.771429241,
+        0.880616963
+      ]
+    },
+    {
+      "layer": "Outer",
+      "count": 14,
+      "widthPercent": 68.65381,
+      "heightPercent": 87.90957,
+      "bounds": [
+        0.153370216,
+        0.0730238259,
+        0.8399083,
+        0.9521195
+      ]
+    }
+  ],
+  "picked": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "maxBakeError": 2.439301E-07,
+  "scatterClear": true,
+  "motionActive": true,
+  "scale": [
+    2.19191647,
+    1.68608963,
+    1.68608963
+  ]
+}

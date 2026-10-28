@@ -1,0 +1,252 @@
+{
+  "scope": "Offline investigation. No live editor access. Proposals are 2-D studies only.",
+  "mapping_source": "source-manifest.json supplies ordered mesh identities; inner-petal-artwork/layout.json supplies symbol labels.",
+  "measurements": [
+    {
+      "index": 0,
+      "name": "InnerPetal_01",
+      "label": "Sprout",
+      "direction": "N",
+      "width_mm": 157.3723629117012,
+      "length_mm": 231.02408647537231,
+      "base_width_mm": 113.2301464676857,
+      "max_body_midline_offset_mm": 4.719816148281097,
+      "max_body_midline_offset_percent_width": 2.9991391505821774,
+      "curvature_sign_changes_left_right": [
+        1,
+        1
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.7574252905812404,
+      "cubic_vs_raw_polyline_rms_mm": 1.5398732291453847,
+      "fair_max_lateral_change_mm": 3.8076017585847652,
+      "fair_max_lateral_change_reference_px": 2.3600837346599786,
+      "fair_rms_lateral_change_mm": 1.401664151882839,
+      "fair_width_mm": 154.21603514227547,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 1,
+      "name": "REF_TopPetal_02",
+      "label": "Diya",
+      "direction": "NE",
+      "width_mm": 150.09314566850662,
+      "length_mm": 235.9740436077118,
+      "base_width_mm": 102.38805413246155,
+      "max_body_midline_offset_mm": 27.749408036470413,
+      "max_body_midline_offset_percent_width": 18.48812476604183,
+      "curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.5644716502818685,
+      "cubic_vs_raw_polyline_rms_mm": 1.2416121868577823,
+      "fair_max_lateral_change_mm": 7.3566270891670325,
+      "fair_max_lateral_change_reference_px": 4.559892823863863,
+      "fair_rms_lateral_change_mm": 1.7480115522091118,
+      "fair_width_mm": 150.135175636473,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 2,
+      "name": "REF_TopPetal_03",
+      "label": "Star",
+      "direction": "E",
+      "width_mm": 182.46368318796158,
+      "length_mm": 271.3347375392914,
+      "base_width_mm": 130.5505484342575,
+      "max_body_midline_offset_mm": 3.618319518864155,
+      "max_body_midline_offset_percent_width": 1.9830354488332949,
+      "curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.7571029187327607,
+      "cubic_vs_raw_polyline_rms_mm": 1.5251214901080001,
+      "fair_max_lateral_change_mm": 6.705404646276891,
+      "fair_max_lateral_change_reference_px": 4.156242549345181,
+      "fair_rms_lateral_change_mm": 2.0447565653647817,
+      "fair_width_mm": 180.04940405281445,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 3,
+      "name": "REF_TopPetal_04",
+      "label": "Stacked Coins",
+      "direction": "SE",
+      "width_mm": 176.59968882799149,
+      "length_mm": 287.37935423851013,
+      "base_width_mm": 127.00331211090088,
+      "max_body_midline_offset_mm": 13.712022453546524,
+      "max_body_midline_offset_percent_width": 7.764465806563265,
+      "curvature_sign_changes_left_right": [
+        1,
+        4
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        1,
+        2
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.7543616091090657,
+      "cubic_vs_raw_polyline_rms_mm": 1.5465335601613297,
+      "fair_max_lateral_change_mm": 6.5897244271184325,
+      "fair_max_lateral_change_reference_px": 4.084539934164318,
+      "fair_rms_lateral_change_mm": 2.0567400402062797,
+      "fair_width_mm": 172.0541307059616,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 4,
+      "name": "REF_TopPetal_05",
+      "label": "People and Heart",
+      "direction": "S",
+      "width_mm": 181.87430500984192,
+      "length_mm": 282.67043828964233,
+      "base_width_mm": 130.87907433509827,
+      "max_body_midline_offset_mm": 7.503442466259003,
+      "max_body_midline_offset_percent_width": 4.125619870191648,
+      "curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        1,
+        1
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.020965582789733,
+      "cubic_vs_raw_polyline_rms_mm": 1.044681981835899,
+      "fair_max_lateral_change_mm": 3.2099478569584186,
+      "fair_max_lateral_change_reference_px": 1.9896371014205074,
+      "fair_rms_lateral_change_mm": 1.1618098053643742,
+      "fair_width_mm": 179.10243092301192,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 5,
+      "name": "REF_TopPetal_06",
+      "label": "Gift Box",
+      "direction": "SW",
+      "width_mm": 173.54194819927216,
+      "length_mm": 314.2269253730774,
+      "base_width_mm": 124.63536858558655,
+      "max_body_midline_offset_mm": 13.102319091558456,
+      "max_body_midline_offset_percent_width": 7.549943530951676,
+      "curvature_sign_changes_left_right": [
+        4,
+        1
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.370548011538201,
+      "cubic_vs_raw_polyline_rms_mm": 1.2645097499858835,
+      "fair_max_lateral_change_mm": 4.2666511162240965,
+      "fair_max_lateral_change_reference_px": 2.644618460469481,
+      "fair_rms_lateral_change_mm": 1.3118974351624448,
+      "fair_width_mm": 169.99045806446074,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 6,
+      "name": "REF_TopPetal_07",
+      "label": "Sunburst",
+      "direction": "W",
+      "width_mm": 174.9701201915741,
+      "length_mm": 271.68816328048706,
+      "base_width_mm": 125.45992434024811,
+      "max_body_midline_offset_mm": 4.718393087387085,
+      "max_body_midline_offset_percent_width": 2.696685058123601,
+      "curvature_sign_changes_left_right": [
+        2,
+        1
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        2,
+        3
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.0173626645967753,
+      "cubic_vs_raw_polyline_rms_mm": 1.1583114263198258,
+      "fair_max_lateral_change_mm": 4.721718974632149,
+      "fair_max_lateral_change_reference_px": 2.926685314854638,
+      "fair_rms_lateral_change_mm": 1.5934616487168174,
+      "fair_width_mm": 172.81344653673438,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    },
+    {
+      "index": 7,
+      "name": "REF_TopPetal_08",
+      "label": "Lotus",
+      "direction": "NW",
+      "width_mm": 151.83480083942413,
+      "length_mm": 234.22978818416595,
+      "base_width_mm": 104.95376586914062,
+      "max_body_midline_offset_mm": 25.88045783340931,
+      "max_body_midline_offset_percent_width": 17.045142279851703,
+      "curvature_sign_changes_left_right": [
+        1,
+        2
+      ],
+      "fair_curvature_sign_changes_left_right": [
+        0,
+        2
+      ],
+      "cubic_vs_raw_polyline_max_mm": 2.311892967263349,
+      "cubic_vs_raw_polyline_rms_mm": 1.2622174265322026,
+      "fair_max_lateral_change_mm": 2.777778014904392,
+      "fair_max_lateral_change_reference_px": 1.7217632323787553,
+      "fair_rms_lateral_change_mm": 0.8220301957677001,
+      "fair_width_mm": 152.14187686445734,
+      "fair_root_rows_0_22_exact": true,
+      "fair_tip_exact": true,
+      "upper_vertices_unchanged_by_previous_root_fix": true
+    }
+  ],
+  "definitions": {
+    "max_body_midline_offset": "max abs((left+right)/2) over 40%-90% length; relative to existing root-to-tip axis, not a proof of surface asymmetry or noise.",
+    "curvature_sign_changes": "Signs of second differences of side x at rows 24..53. Sensitive to sampling; not a pass/fail quality score.",
+    "units": "Prototype model millimetres, not physical fabrication dimensions; scale fixed by assumed 242 mm center diameter.",
+    "fair": "Degree-6 Bezier least-squares profile per side above row 22/56 with fixed initial position/tangent, fixed tip, and tip tangent fitted to last three non-tip rows. No production validation.",
+    "balanced": "Mirrored, piecewise cubic profile; shoulder at 54%; preserves base width and target maximum width, changes root flank lateral slope."
+  },
+  "uncertainty": {
+    "manual_reference_pixels": 3,
+    "millimetres_per_reference_pixel": 1.6133333333333333
+  },
+  "source_blend_hash_matches_manifest": true,
+  "protected_file_sha256_before": {
+    "output\\refined-flower-integration\\source-manifest.json": "ea4b1143218a1e5413ff5bb6a8c4f7761754d97fd4b3cbe334951ca6c21c68bd",
+    "output\\flower-petal-prototype\\Deepavali_InnerPetal_VideoFit.blend": "2bd61cee7fc66fc7a616fc1588b61b334df9ee95d1e685c6aeb2410154ab9949",
+    "Assets\\HK_Signature\\Deepavali\\PetalPrototype\\Models\\Refined Flower\\Deepavali_RefinedFlower.fbx": "4adeddbbbf71b73d755c65f01bf5ab21b21d67d6d5727bd85ba18a2b2289054e"
+  },
+  "protected_file_sha256_after": {
+    "output\\refined-flower-integration\\source-manifest.json": "ea4b1143218a1e5413ff5bb6a8c4f7761754d97fd4b3cbe334951ca6c21c68bd",
+    "output\\flower-petal-prototype\\Deepavali_InnerPetal_VideoFit.blend": "2bd61cee7fc66fc7a616fc1588b61b334df9ee95d1e685c6aeb2410154ab9949",
+    "Assets\\HK_Signature\\Deepavali\\PetalPrototype\\Models\\Refined Flower\\Deepavali_RefinedFlower.fbx": "4adeddbbbf71b73d755c65f01bf5ab21b21d67d6d5727bd85ba18a2b2289054e"
+  }
+}

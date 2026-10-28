@@ -1,0 +1,30 @@
+var checks = new System.Collections.Generic.List<object>();
+void Check(string name, bool passed) { checks.Add(new { name, passed }); if (!passed) throw new System.Exception(name); }
+var area = new UnityEngine.Rect(0, 0, 1, 1);
+var mask = new Amgen.Deepavali.RestorationMask(400, 100, area);
+Check("Starts completely unrestored", mask.Coverage == 0 && mask.Sample(new UnityEngine.Vector2(.5f,.5f)) == 0);
+var center = new UnityEngine.Vector2(.5f,.5f);
+mask.Paint(center, center, .2f, .5f, 1, 4);
+Check("Brush restores center", mask.Sample(center) > .99f);
+Check("Wide-wall brush remains circular in pixels", System.Math.Abs(mask.Sample(new UnityEngine.Vector2(.535f,.5f))-mask.Sample(new UnityEngine.Vector2(.5f,.64f))) < .04);
+Check("Distant region remains dark", mask.Sample(new UnityEngine.Vector2(.2f,.5f)) == 0);
+float coverage = mask.Coverage;
+mask.Paint(new UnityEngine.Vector2(float.NaN,0), center, .2f,.5f,1,4);
+mask.Paint(new UnityEngine.Vector2(-1,0), center, .2f,.5f,1,4);
+Check("Invalid samples do not corrupt coverage", mask.Coverage == coverage);
+mask.Paint(center, center, .2f,.5f,1,4);
+Check("Previously restored center remains restored", mask.Sample(center) == 1);
+Check("Coverage is bounded and monotonic", mask.Coverage >= coverage && mask.Coverage <= 1);
+mask.Clear();
+Check("Reset removes all coverage and uploaded pixels", mask.Coverage == 0 && mask.Pixels.All(v=>v==0));
+mask.Paint(new UnityEngine.Vector2(.1f,.5f),new UnityEngine.Vector2(.9f,.5f),.08f,.5f,1,4);
+Check("Continuous stroke fills between input samples", mask.Sample(center) > .99f);
+var a = new Amgen.Deepavali.RestorationMask(256,128,area);
+var b = new Amgen.Deepavali.RestorationMask(256,128,area);
+for(int i=0;i<30;i++) a.Paint(center,center,.2f,.5f,1f/30,2);
+for(int i=0;i<120;i++) b.Paint(center,center,.2f,.5f,1f/120,2);
+Check("Dwell strength is stable across 30/120 Hz", System.Math.Abs(a.Coverage-b.Coverage)<.00001);
+var json = Newtonsoft.Json.JsonConvert.SerializeObject(new {passed=true,checks}, Newtonsoft.Json.Formatting.Indented);
+System.IO.File.WriteAllText("output/restoration-session/mask-validation.json",json);
+return json;
+

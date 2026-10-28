@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ef9f68789f49a4cb52ef182ad26fec, type: 3}
+  m_Name: Flower Sequence
+  m_EditorClassIdentifier: 
+  innerMap: {fileID: 2800000, guid: 09bf5c5b07648c44886a3096cada94ad, type: 3}
+  outerMap: {fileID: 2800000, guid: 401e8502c7198b746bcaf4cddb0290c0, type: 3}
+  sleepingSeconds: 2
+  ambientSeconds: 6
+  rouletteSeconds: 8
+  rouletteTurns: 4
+  winnerHoldSeconds: 1.2
+  resultSeconds: 8
+  ambientBrightness: 3
+  ambientSpeed: 0.3
+  ambientGapCoverage: 0.58
+  rouletteBrightness: 9
+  rouletteTipReach: 0.35
+  rouletteIconBrightness: 6
+  warmColor: {r: 1, g: 0.65, b: 0.22, a: 1}
+  outcomes: 0100000002000000030000000400000005000000060000000700000008000000

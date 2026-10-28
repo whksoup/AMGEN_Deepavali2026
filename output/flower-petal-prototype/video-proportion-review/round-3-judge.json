@@ -1,0 +1,263 @@
+{
+  "round": 3,
+  "phase": "judge",
+  "outer_count": 16,
+  "views": {
+    "15": {
+      "reference_file": "reference-15-027.5s.png",
+      "camera_elevation_degrees": 88.99065149714568,
+      "camera_plane_fit_rms_px": 4.3377628202000856e-10,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9753431313008624,
+          "mean_outline_error_px": 0.23022377490997314,
+          "observed_tip_distance_px": 0.17385903000831604
+        },
+        "NE": {
+          "visible_outline_iou": 0.9649281739355506,
+          "mean_outline_error_px": 0.4164360761642456,
+          "observed_tip_distance_px": 0.16923893988132477
+        },
+        "E": {
+          "visible_outline_iou": 0.9697928913810256,
+          "mean_outline_error_px": 0.3584979176521301,
+          "observed_tip_distance_px": 0.1612035483121872
+        },
+        "SE": {
+          "visible_outline_iou": 0.9676478387695572,
+          "mean_outline_error_px": 0.4418715536594391,
+          "observed_tip_distance_px": 0.14123831689357758
+        },
+        "S": {
+          "visible_outline_iou": 0.9801302387710803,
+          "mean_outline_error_px": 0.2293001413345337,
+          "observed_tip_distance_px": 0.13173669576644897
+        },
+        "SW": {
+          "visible_outline_iou": 0.9485060924720414,
+          "mean_outline_error_px": 1.1298984289169312,
+          "observed_tip_distance_px": 0.15750978887081146
+        },
+        "W": {
+          "visible_outline_iou": 0.9786848072562359,
+          "mean_outline_error_px": 0.23530060052871704,
+          "observed_tip_distance_px": 0.1660328507423401
+        },
+        "NW": {
+          "visible_outline_iou": 0.9284185175274284,
+          "mean_outline_error_px": 1.372676134109497,
+          "observed_tip_distance_px": 0.1709957867860794
+        }
+      },
+      "mean_iou": 0.9641814614267228,
+      "mean_outline_error_px": 0.5517755784094334
+    },
+    "5": {
+      "reference_file": "reference-05-009.3s.png",
+      "camera_elevation_degrees": 37.124598179721055,
+      "camera_plane_fit_rms_px": 2.7334894105048257,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9557853057633084,
+          "mean_outline_error_px": 0.32886165380477905,
+          "observed_tip_distance_px": 1.0353742837905884
+        },
+        "NE": {
+          "visible_outline_iou": 0.8834927025666834,
+          "mean_outline_error_px": 1.2380187511444092,
+          "observed_tip_distance_px": 1.1652675867080688
+        },
+        "E": {
+          "visible_outline_iou": 0.8967419410446474,
+          "mean_outline_error_px": 1.323570728302002,
+          "observed_tip_distance_px": 1.402639389038086
+        },
+        "SE": {
+          "visible_outline_iou": 0.9084948688711516,
+          "mean_outline_error_px": 1.157653570175171,
+          "observed_tip_distance_px": 0.7459424734115601
+        },
+        "S": {
+          "visible_outline_iou": 0.9447811447811448,
+          "mean_outline_error_px": 0.7433074712753296,
+          "observed_tip_distance_px": 1.9698363542556763
+        },
+        "SW": {
+          "visible_outline_iou": 0.9218160143055831,
+          "mean_outline_error_px": 1.443401575088501,
+          "observed_tip_distance_px": 2.0490036010742188
+        },
+        "W": {
+          "visible_outline_iou": 0.8935855075766207,
+          "mean_outline_error_px": 1.7381693124771118,
+          "observed_tip_distance_px": 5.709203243255615
+        },
+        "NW": {
+          "visible_outline_iou": 0.866990095007075,
+          "mean_outline_error_px": 1.8515512943267822,
+          "observed_tip_distance_px": 3.300455331802368
+        }
+      },
+      "mean_iou": 0.9089609474895268,
+      "mean_outline_error_px": 1.2280667945742607
+    },
+    "9": {
+      "reference_file": "reference-09-016.6s.png",
+      "camera_elevation_degrees": 20.399866752814702,
+      "camera_plane_fit_rms_px": 0.40256986637653935,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.8922844175491679,
+          "mean_outline_error_px": 0.7275058031082153,
+          "observed_tip_distance_px": 1.5186280012130737
+        },
+        "NE": {
+          "visible_outline_iou": 0.8840530431825909,
+          "mean_outline_error_px": 0.7978634834289551,
+          "observed_tip_distance_px": 1.2379440069198608
+        },
+        "E": {
+          "visible_outline_iou": 0.8979057591623036,
+          "mean_outline_error_px": 0.8456903696060181,
+          "observed_tip_distance_px": 0.9375431537628174
+        },
+        "SE": {
+          "visible_outline_iou": 0.8708791208791209,
+          "mean_outline_error_px": 1.0320560932159424,
+          "observed_tip_distance_px": 2.1463019847869873
+        },
+        "S": {
+          "visible_outline_iou": 0.9080547112462006,
+          "mean_outline_error_px": 0.8231890797615051,
+          "observed_tip_distance_px": 1.7550350427627563
+        },
+        "SW": {
+          "visible_outline_iou": 0.8909255898366606,
+          "mean_outline_error_px": 1.2114113569259644,
+          "observed_tip_distance_px": 1.8342534303665161
+        },
+        "W": {
+          "visible_outline_iou": 0.8944963242598848,
+          "mean_outline_error_px": 1.0465061664581299,
+          "observed_tip_distance_px": 2.1763627529144287
+        },
+        "NW": {
+          "visible_outline_iou": 0.8452677459526775,
+          "mean_outline_error_px": 1.652724027633667,
+          "observed_tip_distance_px": 1.9404094219207764
+        }
+      },
+      "mean_iou": 0.8854833390085758,
+      "mean_outline_error_px": 1.0171182975172997
+    },
+    "2": {
+      "reference_file": "reference-02-003.9s.png",
+      "camera_elevation_degrees": 81.04394330953484,
+      "camera_plane_fit_rms_px": 1.626453432647377,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9564119601328903,
+          "mean_outline_error_px": 0.4380999803543091,
+          "observed_tip_distance_px": 2.4588844776153564
+        },
+        "NE": {
+          "visible_outline_iou": 0.9338971106412967,
+          "mean_outline_error_px": 0.8603456020355225,
+          "observed_tip_distance_px": 2.265275478363037
+        },
+        "E": {
+          "visible_outline_iou": 0.9626590069757899,
+          "mean_outline_error_px": 0.48086440563201904,
+          "observed_tip_distance_px": 0.969535768032074
+        },
+        "SE": {
+          "visible_outline_iou": 0.9346459127924956,
+          "mean_outline_error_px": 1.0586555004119873,
+          "observed_tip_distance_px": 2.839003562927246
+        },
+        "S": {
+          "visible_outline_iou": 0.955237242614145,
+          "mean_outline_error_px": 0.6110961437225342,
+          "observed_tip_distance_px": 0.6924117803573608
+        },
+        "SW": {
+          "visible_outline_iou": 0.9054172767203514,
+          "mean_outline_error_px": 1.9600698947906494,
+          "observed_tip_distance_px": 2.727830171585083
+        },
+        "W": {
+          "visible_outline_iou": 0.9595959595959596,
+          "mean_outline_error_px": 0.547263503074646,
+          "observed_tip_distance_px": 1.5239921808242798
+        },
+        "NW": {
+          "visible_outline_iou": 0.9019953051643192,
+          "mean_outline_error_px": 1.681532621383667,
+          "observed_tip_distance_px": 2.104142665863037
+        }
+      },
+      "mean_iou": 0.9387324718296559,
+      "mean_outline_error_px": 0.9547409564256668
+    },
+    "0": {
+      "reference_file": "reference-00-000.3s.png",
+      "camera_elevation_degrees": 83.25447851969264,
+      "camera_plane_fit_rms_px": 0.03599787094734456,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9742417314433776,
+          "mean_outline_error_px": 0.21772626042366028,
+          "observed_tip_distance_px": 0.2830396890640259
+        },
+        "NE": {
+          "visible_outline_iou": 0.9633848657445078,
+          "mean_outline_error_px": 0.3821435868740082,
+          "observed_tip_distance_px": 0.29538270831108093
+        },
+        "E": {
+          "visible_outline_iou": 0.9671779833070155,
+          "mean_outline_error_px": 0.33494964241981506,
+          "observed_tip_distance_px": 0.2603582739830017
+        },
+        "SE": {
+          "visible_outline_iou": 0.9685795330569495,
+          "mean_outline_error_px": 0.3574952185153961,
+          "observed_tip_distance_px": 0.14856137335300446
+        },
+        "S": {
+          "visible_outline_iou": 0.977989352989353,
+          "mean_outline_error_px": 0.22466953098773956,
+          "observed_tip_distance_px": 0.07645856589078903
+        },
+        "SW": {
+          "visible_outline_iou": 0.947438524590164,
+          "mean_outline_error_px": 1.0392298698425293,
+          "observed_tip_distance_px": 0.17095492780208588
+        },
+        "W": {
+          "visible_outline_iou": 0.9795872588604756,
+          "mean_outline_error_px": 0.19515547156333923,
+          "observed_tip_distance_px": 0.2248918116092682
+        },
+        "NW": {
+          "visible_outline_iou": 0.927388321900619,
+          "mean_outline_error_px": 1.231854796409607,
+          "observed_tip_distance_px": 0.24848832190036774
+        }
+      },
+      "mean_iou": 0.9632234464865578,
+      "mean_outline_error_px": 0.49790304712951183
+    }
+  },
+  "measurement_note": "Hand-marked borders, approximate planar registration; silhouette fit is not proof of exact 3D geometry.",
+  "mean_iou_three_angles": 0.9195419159749418,
+  "mean_outline_error_three_angles_px": 0.9323202235003313,
+  "visual_judgment": [
+    "16 outer petals are present, with individual directions, radii and widths.",
+    "Inner silhouettes agree much more closely across overhead, oblique and low-angle views. Mean overlap is 91.95% across the three main views, with 96.42% overhead.",
+    "Two additional registered views yield 93.87% and 96.32% overlap.",
+    "Remaining differences include compressed-video border ambiguity, camera/plane approximation and the inferred two partly occluded far-side outer tips.",
+    "No claim of exact source-model recovery. Three requested build/judge rounds are complete."
+  ],
+  "decision": "Keep round 3 as the sculpt review candidate; defer Unity replacement."
+}

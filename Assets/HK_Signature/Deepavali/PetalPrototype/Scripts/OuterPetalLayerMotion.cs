@@ -6,11 +6,11 @@ namespace Amgen.Deepavali
     [DisallowMultipleComponent]
     public sealed class OuterPetalLayerMotion : MonoBehaviour
     {
-        [Tooltip("All eight top petals. Read after their Update; no separate breeze clock.")]
+        [Tooltip("All eight top petals. Read after the ring's follow-through; no separate breeze clock.")]
         [SerializeField] private PetalMotionController[] topPetals;
-        [Tooltip("15 connected spines, flattened as Base / Mid / Tip for each petal.")]
+        [Tooltip("Connected spines in visual clockwise order, flattened as Base / Mid / Tip. Source IDs need not be contiguous.")]
         [SerializeField] private Transform[] outerBones;
-        [Header("Validated with the 24 mm gap and 6 degree shingled mesh")]
+        [Header("Coordinated lower-layer motion")]
         [SerializeField, Range(0f, 0.72f)] private float liftFollow = 0.72f;
         [SerializeField, Range(1.35f, 1.5f)] private float downwardFollow = 1.35f;
         [SerializeField, Range(0f, 0.5f)] private float swayFollow = 0.5f;
@@ -22,7 +22,7 @@ namespace Amgen.Deepavali
 
         private void OnEnable()
         {
-            if (topPetals == null || topPetals.Length != 8 || outerBones == null || outerBones.Length != 45)
+            if (topPetals == null || topPetals.Length != 8 || outerBones == null || outerBones.Length < 3 || outerBones.Length % 3 != 0)
             {
                 FailSetup();
                 return;
@@ -36,7 +36,7 @@ namespace Amgen.Deepavali
                 for (int j = 0; j < i; j++)
                     if (outerBones[j] == outerBones[i]) { FailSetup(); return; }
             }
-            if (restRotations == null)
+            if (restRotations == null || restRotations.Length != outerBones.Length)
             {
                 restRotations = new Quaternion[outerBones.Length];
                 for (int i = 0; i < outerBones.Length; i++) restRotations[i] = outerBones[i].localRotation;
@@ -46,7 +46,7 @@ namespace Amgen.Deepavali
 
         private void FailSetup()
         {
-            Debug.LogError("Assign all eight top motion controllers and the 15 unique three-bone outer spines.", this);
+            Debug.LogError("Assign all eight top motion controllers and unique connected three-bone outer spines.", this);
             enabled = false;
         }
 
@@ -86,7 +86,7 @@ namespace Amgen.Deepavali
         {
             CurrentLiftDegrees = CurrentSwayDegrees = Vector3.zero;
             if (restRotations == null) return;
-            for (int i = 0; i < restRotations.Length; i++)
+            for (int i = 0; outerBones != null && i < Mathf.Min(restRotations.Length, outerBones.Length); i++)
                 if (outerBones[i] != null) outerBones[i].localRotation = restRotations[i];
         }
     }

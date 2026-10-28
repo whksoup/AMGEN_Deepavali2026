@@ -1,0 +1,118 @@
+{
+  "phase_source_sha256": "74b2448b11d5f5fe76fec9daab37048b354451cf2880b3c7a2761dc2cf0b94df",
+  "existing_icons_pixel_identical": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "symbols": [
+    {
+      "id": 0,
+      "label": "Lotus",
+      "bounds": [
+        80,
+        145,
+        432,
+        428
+      ]
+    },
+    {
+      "id": 1,
+      "label": "Sunburst",
+      "bounds": [
+        74,
+        96,
+        438,
+        457
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Star",
+      "bounds": [
+        94,
+        108,
+        417,
+        448
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Sprout",
+      "bounds": [
+        96,
+        101,
+        416,
+        399
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Diya",
+      "bounds": [
+        109,
+        101,
+        405,
+        409
+      ]
+    },
+    {
+      "id": 5,
+      "label": "People and Heart",
+      "bounds": [
+        77,
+        111,
+        434,
+        392
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Gift Box",
+      "bounds": [
+        76,
+        87,
+        436,
+        425
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Stacked Coins",
+      "bounds": [
+        76,
+        161,
+        436,
+        351
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Center Mandala",
+      "bounds": [
+        61,
+        79,
+        451,
+        433
+      ]
+    }
+  ],
+  "petal_mask_size": [
+    224,
+    480
+  ],
+  "petal_icon_physical_square_m": 0.146,
+  "petal_icon_center_uv": [
+    0.5,
+    0.62
+  ],
+  "petal_mask_channels": {
+    "R": "coverage",
+    "G": 255,
+    "B": 222,
+    "A": 255
+  }
+}

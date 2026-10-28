@@ -1,0 +1,74 @@
+[
+  {
+    "name": "InnerPetal_01",
+    "base_width_mm": 113.23014557361601,
+    "shoulder_width_mm": 157.2640910744667,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_02",
+    "base_width_mm": 102.38805055618286,
+    "shoulder_width_mm": 142.2056257724762,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_03",
+    "base_width_mm": 130.55054783821103,
+    "shoulder_width_mm": 181.3202053308487,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_04",
+    "base_width_mm": 127.0033049583435,
+    "shoulder_width_mm": 176.39347910881042,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_05",
+    "base_width_mm": 130.8790808916092,
+    "shoulder_width_mm": 181.7765012383461,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_06",
+    "base_width_mm": 124.63537037372589,
+    "shoulder_width_mm": 173.1046810746193,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_07",
+    "base_width_mm": 125.45992970466612,
+    "shoulder_width_mm": 174.24990236759186,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  },
+  {
+    "name": "REF_TopPetal_08",
+    "base_width_mm": 104.9537631869316,
+    "shoulder_width_mm": 145.769115537405,
+    "root_fraction": 0.72,
+    "unchanged_from_length_fraction": 0.52,
+    "root_camber_mm": 0,
+    "tip_unchanged": true
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "index": 0,
+      "renderer": "InnerPetal_01",
+      "pass": true,
+      "lightEnergy": 747.493991949614,
+      "centroidErrorPixels": 1.39580393,
+      "medallionRadiusPixels": 24.3888836
+    },
+    {
+      "index": 1,
+      "renderer": "REF_TopPetal_02",
+      "pass": true,
+      "lightEnergy": 672.369731696451,
+      "centroidErrorPixels": 3.83826971,
+      "medallionRadiusPixels": 25.9791412
+    },
+    {
+      "index": 2,
+      "renderer": "REF_TopPetal_03",
+      "pass": true,
+      "lightEnergy": 757.25438097360575,
+      "centroidErrorPixels": 0.25456965,
+      "medallionRadiusPixels": 43.30755
+    },
+    {
+      "index": 3,
+      "renderer": "REF_TopPetal_04",
+      "pass": true,
+      "lightEnergy": 1036.6006440545584,
+      "centroidErrorPixels": 1.70576251,
+      "medallionRadiusPixels": 38.2944756
+    },
+    {
+      "index": 4,
+      "renderer": "REF_TopPetal_05",
+      "pass": true,
+      "lightEnergy": 1218.2000803043479,
+      "centroidErrorPixels": 4.16091537,
+      "medallionRadiusPixels": 34.2477341
+    },
+    {
+      "index": 5,
+      "renderer": "REF_TopPetal_06",
+      "pass": true,
+      "lightEnergy": 1549.2230789261455,
+      "centroidErrorPixels": 0.613064,
+      "medallionRadiusPixels": 38.00098
+    },
+    {
+      "index": 6,
+      "renderer": "REF_TopPetal_07",
+      "pass": true,
+      "lightEnergy": 772.3051775679246,
+      "centroidErrorPixels": 0.410098,
+      "medallionRadiusPixels": 41.3523521
+    },
+    {
+      "index": 7,
+      "renderer": "REF_TopPetal_08",
+      "pass": true,
+      "lightEnergy": 811.45712335811368,
+      "centroidErrorPixels": 1.10798609,
+      "medallionRadiusPixels": 26.152401
+    }
+  ]
+}

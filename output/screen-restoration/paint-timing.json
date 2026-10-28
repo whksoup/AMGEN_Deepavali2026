@@ -1,0 +1,9 @@
+{
+  "cpuPaintMilliseconds": 0.58597199999999994,
+  "iterations": 1000,
+  "maskWidth": 384,
+  "maskHeight": 168,
+  "graphics": "Direct3D11",
+  "device": "NVIDIA GeForce RTX 3070 Ti",
+  "notes": "CPU brush arithmetic only; excludes texture upload and fullscreen GPU pass."
+}

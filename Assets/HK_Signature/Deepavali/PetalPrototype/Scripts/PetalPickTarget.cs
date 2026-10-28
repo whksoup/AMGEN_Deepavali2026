@@ -31,7 +31,9 @@ namespace Amgen.Deepavali
                 bakedMesh.MarkDynamic();
             }
 
-            surface.BakeMesh(bakedMesh);
+            // Handle the renderer's scale during baking; the ray below is already
+            // transformed into renderer-local space, including the flower root scale.
+            surface.BakeMesh(bakedMesh, true);
             if (triangles == null) triangles = bakedMesh.triangles;
             bakedMesh.GetVertices(vertices);
 

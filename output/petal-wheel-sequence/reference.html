@@ -1,0 +1,975 @@
+<title>Petal Wheel Spin</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: the wheel is the stage on the left; a narrow tuning rail sits on the right and stacks below under 900px.
+   Single committed look: a rangoli at night, umber ground, temple gold linework, neon cyan/pink bulbs. */
+:root {
+  color-scheme: dark;
+  --ground: #1b120d;
+  --ground-2: #2a1c14;
+  --panel: #22170f;
+  --line: rgba(214, 165, 78, .24);
+  --gold: #d6a54e;
+  --gold-hi: #ffe2a0;
+  --ink: #f4e8d2;
+  --muted: #b39c7e;
+  --cyan: #2ee6ff;
+  --pink: #ff4fae;
+  --display: "Yatra One", Georgia, serif;
+  --body: "Mukta", system-ui, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+html, body { height: auto; }
+body {
+  background:
+    radial-gradient(ellipse 70% 55% at 38% 42%, rgba(120, 60, 30, .35), transparent 70%),
+    radial-gradient(rgba(214, 165, 78, .07) 1px, transparent 1.6px) 0 0 / 24px 24px,
+    var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.app {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 22px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; }
+h1 { font: 400 32px/1.1 var(--display); color: var(--gold-hi); margin: 0; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 62ch; }
+
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+@media (max-width: 900px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+
+.stage { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.wheel-wrap { width: 100%; max-width: 780px; margin: 0 auto; aspect-ratio: 1; }
+#wheel { width: 100%; height: 100%; display: block; overflow: visible; }
+#hub { cursor: pointer; outline: none; }
+#hub:focus-visible .hub-ring { stroke: var(--gold-hi); stroke-width: 5; }
+.hub-label { font: 500 21px var(--body); letter-spacing: .22em; text-transform: uppercase; }
+
+.hud {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+}
+@media (max-width: 560px) { .hud { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.stat { background: var(--panel); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.k { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.v { font: 600 15px var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pill { display: inline-flex; align-items: center; gap: 7px; }
+.pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, var(--muted)); box-shadow: 0 0 8px var(--dot, transparent); }
+
+.trace { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; align-items: stretch; }
+.trace-labels { display: grid; grid-template-rows: 1fr 1fr; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.trace-labels span { display: flex; align-items: center; }
+#trace { width: 100%; height: 64px; display: block; border-left: 1px solid var(--line); }
+.caption { font-size: 13px; color: var(--muted); margin: 0; }
+
+.panel {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+  padding: 18px; display: flex; flex-direction: column; gap: 20px; min-width: 0;
+}
+.panel section, .group { display: flex; flex-direction: column; gap: 12px; }
+.panel section + section { border-top: 1px solid var(--line); padding-top: 18px; }
+h2 { margin: 0; font: 700 11px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+.ctl { display: flex; flex-direction: column; gap: 5px; }
+.ctl > label, .ctl > .lbl { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; }
+output, .note { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.note { font-family: var(--body); font-size: 12.5px; line-height: 1.4; }
+input[type=range] { width: 100%; accent-color: var(--gold); margin: 0; }
+select {
+  width: 100%; background: var(--ground-2); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 8px; padding: 7px 9px; font: inherit; font-size: 14px;
+}
+select:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.seg { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label { flex: 1; text-align: center; padding: 6px 4px; cursor: pointer; font-size: 13.5px; color: var(--muted); }
+.seg input + label ~ label { border-left: 1px solid var(--line); }
+.seg input:checked + label { background: rgba(214, 165, 78, .2); color: var(--gold-hi); }
+.seg input:focus-visible + label { outline: 2px solid var(--gold); outline-offset: -2px; }
+.check { display: flex; gap: 9px; align-items: center; font-size: 14px; cursor: pointer; }
+.check input { accent-color: var(--gold); width: 16px; height: 16px; margin: 0; }
+
+.spin {
+  font: 400 24px/1 var(--display); color: #2a1708; cursor: pointer;
+  background: linear-gradient(#ecbf66, #b9842f); border: 0; border-radius: 999px; padding: 14px 18px;
+  box-shadow: inset 0 0 0 1px var(--gold-hi), 0 6px 26px rgba(214, 165, 78, .28);
+}
+.spin:hover { filter: brightness(1.08); }
+.spin:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; }
+.spin:disabled { filter: saturate(.4) brightness(.7); cursor: default; }
+.btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.btn {
+  font: 500 14px var(--body); color: var(--gold-hi); background: var(--ground-2); cursor: pointer;
+  border: 1px dashed var(--gold); border-radius: 8px; padding: 8px 6px;
+}
+.btn:hover:not(:disabled) { background: rgba(214, 165, 78, .16); }
+.btn:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 2px; }
+.btn:disabled { opacity: .4; cursor: default; }
+.history { display: flex; flex-wrap: wrap; gap: 6px; min-height: 26px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px 2px 6px; font-size: 12.5px;
+  border: 1px solid var(--line); border-radius: 999px; color: var(--ink);
+}
+.chip i { width: 9px; height: 9px; border-radius: 50%; }
+.empty { font-size: 12.5px; color: var(--muted); }
+</style>
+
+<div class="app">
+  <header>
+    <h1>Petal Wheel Spin</h1>
+    <p>Animation prototype. The inner wheel lights its 8 petals clockwise and lands on one. Each of the 16 outer petals breathes on its own slow cycle, and the whole ring lights up when you press Spin. It opens in a shimmer state where every petal twinkles softly. After landing, the whole flower blooms into the result's color, spreading out from the center. Tap the hub or press Spin.</p>
+  </header>
+
+  <div class="layout">
+    <div class="stage">
+      <div class="wheel-wrap">
+        <svg id="wheel" viewBox="-510 -510 1020 1020" aria-label="Petal wheel"></svg>
+      </div>
+      <div class="hud">
+        <div class="stat"><span class="k">Phase</span><span class="v pill" id="hPhase">Idle</span></div>
+        <div class="stat"><span class="k">Inner rate</span><span class="v" id="hInner">0 ticks/s</span></div>
+        <div class="stat"><span class="k">Outer rate</span><span class="v" id="hOuter">0 ticks/s</span></div>
+        <div class="stat"><span class="k">Landing on</span><span class="v" id="hTarget">—</span></div>
+      </div>
+      <div class="trace">
+        <div class="trace-labels"><span>Inner</span><span>Outer</span></div>
+        <canvas id="trace" aria-label="Tick trace of the last three seconds"></canvas>
+      </div>
+      <p class="caption">Tick trace: the last 3 seconds of real time, newest on the right. Each mark is one step, colored by the petal it lit. The outer row only fills in Chase mode.</p>
+    </div>
+
+    <aside class="panel">
+      <section>
+        <button class="spin" id="spinBtn" type="button">Spin</button>
+        <div class="ctl">
+          <label for="target">Land on</label>
+          <select id="target"></select>
+        </div>
+        <div class="ctl">
+          <label for="mood">Mood</label>
+          <select id="mood">
+            <option value="soft" selected>Soft festive: muted colors, cross-fades</option>
+            <option value="vegas">Neon (first draft): bright bulbs, hard cuts</option>
+          </select>
+          <span class="note">Changing the mood resets the colors, outer ring motion, fades and celebration below.</span>
+        </div>
+        <div class="ctl">
+          <span class="lbl">Recent results</span>
+          <div class="history" id="history"><span class="empty">No spins yet</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Debug: states</h2>
+        <div class="btn-row">
+          <button class="btn" id="enterBtn" type="button">Enter wheel state</button>
+          <button class="btn" id="shimmerBtn" type="button">Back to shimmer</button>
+        </div>
+        <span class="note">The page opens in the shimmer state. Tapping the hub also enters the wheel state, and Spin works from either state.</span>
+      </section>
+
+      <section>
+        <h2>Shimmer state</h2>
+        <div class="ctl"><label for="shimPeriod">Twinkle length <output id="shimPeriodOut"></output></label><input type="range" id="shimPeriod" min="2" max="12" step="0.5" value="5.5"></div>
+        <div class="ctl"><label for="shimLevel">Brightness <output id="shimLevelOut"></output></label><input type="range" id="shimLevel" min="0.2" max="1" step="0.05" value="0.6"></div>
+        <div class="ctl"><label for="shimVar">Variation <output id="shimVarOut"></output></label><input type="range" id="shimVar" min="0" max="1" step="0.05" value="0.5"></div>
+        <div class="ctl"><label for="pulseLen">Pulse on leaving <output id="pulseLenOut"></output></label><input type="range" id="pulseLen" min="0.3" max="2" step="0.1" value="0.8"></div>
+        <div class="ctl"><label for="settleLen">Ease into the wheel <output id="settleLenOut"></output></label><input type="range" id="settleLen" min="0.4" max="4" step="0.1" value="1.6"></div>
+      </section>
+
+      <section>
+        <h2>Spin sequence</h2>
+        <div class="ctl"><label for="speed">Top speed <output id="speedOut"></output></label><input type="range" id="speed" min="6" max="32" step="1" value="16"></div>
+        <div class="ctl"><label for="cruise">Cruise time <output id="cruiseOut"></output></label><input type="range" id="cruise" min="0" max="4" step="0.1" value="1.2"></div>
+        <div class="ctl"><label for="slow">Slowdown time <output id="slowOut"></output></label><input type="range" id="slow" min="1.5" max="8" step="0.1" value="3.6"></div>
+        <div class="ctl">
+          <span class="lbl">Landing</span>
+          <div class="seg" role="radiogroup" aria-label="Landing">
+            <input type="radio" name="landing" id="landEase" value="ease" checked><label for="landEase">Ease out</label>
+            <input type="radio" name="landing" id="landTease" value="tease"><label for="landTease">Overshoot &amp; settle</label>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="windup"> Wind-up (back up before launch)</label>
+        <div class="ctl"><label for="fadeIn">Fade-in (both rings) <output id="fadeInOut"></output></label><input type="range" id="fadeIn" min="0" max="400" step="10" value="160"></div>
+        <div class="ctl"><label for="innerFade">Inner afterglow <output id="innerFadeOut"></output></label><input type="range" id="innerFade" min="0" max="1000" step="10" value="450"></div>
+      </section>
+
+      <section>
+        <h2>Outer ring</h2>
+        <div class="ctl">
+          <span class="lbl">Motion</span>
+          <div class="seg" role="radiogroup" aria-label="Outer ring motion">
+            <input type="radio" name="motion" id="motBreathe" value="breathe" checked><label for="motBreathe">Breathe</label>
+            <input type="radio" name="motion" id="motChase" value="chase"><label for="motChase">Chase (polyrhythm)</label>
+          </div>
+        </div>
+        <div class="group" id="breatheCtl">
+          <div class="ctl"><label for="breathPeriod">Breath length <output id="breathPeriodOut"></output></label><input type="range" id="breathPeriod" min="2" max="10" step="0.5" value="4.5"></div>
+          <div class="ctl"><label for="breathVar">Variation <output id="breathVarOut"></output></label><input type="range" id="breathVar" min="0" max="1" step="0.05" value="0.4"></div>
+          <div class="ctl"><label for="lightUp">Light-up on Spin <output id="lightUpOut"></output></label><input type="range" id="lightUp" min="0.1" max="1.5" step="0.05" value="0.5"></div>
+        </div>
+        <div class="group" id="chaseCtl" hidden>
+        <div class="ctl">
+          <label for="ratio">Tick ratio, outer : inner</label>
+          <select id="ratio">
+            <option value="9/4">9 : 4</option>
+            <option value="7/3">7 : 3</option>
+            <option value="5/2" selected>5 : 2</option>
+            <option value="11/4">11 : 4</option>
+            <option value="3/1">3 : 1 (no polyrhythm)</option>
+            <option value="7/2">7 : 2</option>
+          </select>
+          <span class="note" id="ratioNote"></span>
+        </div>
+        <div class="ctl">
+          <span class="lbl">Direction</span>
+          <div class="seg" role="radiogroup" aria-label="Outer direction">
+            <input type="radio" name="dir" id="dirCw" value="1" checked><label for="dirCw">Clockwise</label>
+            <input type="radio" name="dir" id="dirCcw" value="-1"><label for="dirCcw">Counter</label>
+          </div>
+        </div>
+        <div class="ctl">
+          <span class="lbl">Chase heads</span>
+          <div class="seg" role="radiogroup" aria-label="Chase heads">
+            <input type="radio" name="heads" id="heads1" value="1" checked><label for="heads1">1</label>
+            <input type="radio" name="heads" id="heads2" value="2"><label for="heads2">2</label>
+            <input type="radio" name="heads" id="heads4" value="4"><label for="heads4">4</label>
+          </div>
+        </div>
+        <div class="ctl"><label for="spill">Neighbor glow <output id="spillOut"></output></label><input type="range" id="spill" min="0" max="1" step="0.05" value="0.35"></div>
+        </div>
+        <div class="ctl"><label for="outerFade">Outer afterglow <output id="outerFadeOut"></output></label><input type="range" id="outerFade" min="0" max="1000" step="10" value="420"></div>
+      </section>
+
+      <section>
+        <h2>Celebration</h2>
+        <div class="ctl">
+          <label for="pattern">Outer ring pattern</label>
+          <select id="pattern">
+            <option value="breathe" selected>Keep breathing</option>
+            <option value="swell">Slow swell between the two colors</option>
+            <option value="burstflash">Burst, then flash</option>
+            <option value="burst">Burst from winner</option>
+            <option value="alternate">Alternating flash</option>
+            <option value="sparkle">Sparkle</option>
+          </select>
+        </div>
+        <label class="check"><input type="checkbox" id="bloom" checked> Bloom the whole flower into the result</label>
+        <div class="ctl"><label for="bloomDelay">Bloom starts after <output id="bloomDelayOut"></output></label><input type="range" id="bloomDelay" min="0.3" max="3" step="0.1" value="1.4"></div>
+        <div class="ctl"><label for="bloomSpread">Bloom spread time <output id="bloomSpreadOut"></output></label><input type="range" id="bloomSpread" min="0.6" max="4" step="0.1" value="1.8"></div>
+        <div class="ctl"><label for="hold">Hold after bloom <output id="holdOut"></output></label><input type="range" id="hold" min="1" max="8" step="0.5" value="3.5"></div>
+        <div class="ctl">
+          <label for="afterHold">After the hold</label>
+          <select id="afterHold">
+            <option value="ready" selected>Return to the wheel state</option>
+            <option value="shimmer">Return to the shimmer state</option>
+            <option value="stay">Stay on the result</option>
+          </select>
+        </div>
+      </section>
+
+      <section>
+        <h2>Playback</h2>
+        <div class="ctl">
+          <span class="lbl">Time scale</span>
+          <div class="seg" role="radiogroup" aria-label="Time scale">
+            <input type="radio" name="ts" id="ts1" value="1" checked><label for="ts1">1×</label>
+            <input type="radio" name="ts" id="ts05" value="0.5"><label for="ts05">½×</label>
+            <input type="radio" name="ts" id="ts025" value="0.25"><label for="ts025">¼×</label>
+            <input type="radio" name="ts" id="ts01" value="0.1"><label for="ts01">⅒×</label>
+            <input type="radio" name="ts" id="ts0" value="0"><label for="ts0">Freeze</label>
+          </div>
+        </div>
+        <div class="ctl"><label for="idle">Idle chase speed <output id="idleOut"></output></label><input type="range" id="idle" min="0" max="4" step="0.1" value="1.2"></div>
+        <label class="check"><input type="checkbox" id="sound"> Tick sounds</label>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script>
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const $ = id => document.getElementById(id);
+  const mod = (a, n) => ((a % n) + n) % n;
+  const r1 = n => Math.round(n * 10) / 10;
+  function el(tag, attrs, parent) {
+    const e = document.createElementNS(NS, tag);
+    if (attrs) for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+
+  // ---- End states (clockwise from 12 o'clock) ----
+  const SEG = [
+    { name: 'Growth',   hue: 352, icon: 'sprout' },
+    { name: 'Light',    hue: 26,  icon: 'diya' },
+    { name: 'Guidance', hue: 224, icon: 'star' },
+    { name: 'Wealth',   hue: 145, icon: 'coins' },
+    { name: 'Family',   hue: 318, icon: 'people' },
+    { name: 'Gifts',    hue: 188, icon: 'gift' },
+    { name: 'Energy',   hue: 50,  icon: 'sun' },
+    { name: 'Peace',    hue: 262, icon: 'lotus' },
+  ];
+  const CYAN = '#2ee6ff', PINK = '#ff4fae', GOLD = '#c9973f';
+  const litColor = h => `hsl(${h} 90% 60%)`;
+
+  // ---- Petal geometry: left half as cubic segments in (width fraction, length fraction), mirrored ----
+  const INNER_SPEC = [[0, 0], [[-.6, 0], [-1, .14], [-1, .44]], [[-1, .72], [-.5, .84], [-.12, .93]], [[-.05, .96], [-.02, .98], [0, 1]]];
+  const OUTER_SPEC = [[0, 0], [[-.55, .02], [-1, .18], [-1, .38]], [[-1, .62], [-.35, .84], [0, 1]]];
+  function petalPath(rIn, rOut, w, spec) {
+    const h = rOut - rIn;
+    const P = ([fx, ft]) => [fx * w, -(rIn + ft * h)];
+    const pt = p => r1(p[0]) + ' ' + r1(p[1]);
+    const mir = p => [-p[0], p[1]];
+    const s = P(spec[0]);
+    const segs = spec.slice(1).map(sg => sg.map(P));
+    let d = 'M' + pt(s);
+    for (const [a, b, c] of segs) d += 'C' + pt(a) + ' ' + pt(b) + ' ' + pt(c);
+    for (let i = segs.length - 1; i >= 0; i--) {
+      const prev = i ? segs[i - 1][2] : s;
+      d += 'C' + pt(mir(segs[i][1])) + ' ' + pt(mir(segs[i][0])) + ' ' + pt(mir(prev));
+    }
+    return d + 'Z';
+  }
+
+  // ---- Line icons, drawn in a ~56-unit box ----
+  let rays = '';
+  for (let k = 0; k < 12; k++) {
+    const a = k * Math.PI / 6, ro = k % 2 ? 21 : 26;
+    rays += `M${r1(Math.sin(a) * 13)} ${r1(-Math.cos(a) * 13)}L${r1(Math.sin(a) * ro)} ${r1(-Math.cos(a) * ro)}`;
+  }
+  const coin = y => `<path d="M-18 ${y}v7c0 3 8 5.5 18 5.5s18-2.5 18-5.5v-7"/>`;
+  const ICONS = {
+    sprout: '<path d="M0 24V-4"/><path d="M0 6C-4-6-16-10-24-6C-20 4-8 8 0 6Z"/><path d="M0 0C4-12 16-16 24-12C20-2 8 2 0 0Z"/><path d="M0-4C-5-12-3-20 0-25C3-20 5-12 0-4Z"/>',
+    diya: '<path d="M-25 4H25C23 16 13 21 0 21C-13 21-23 16-25 4Z"/><path d="M-10 26H10"/><path d="M0-1C-6-7-4-15 0-24C4-15 6-7 0-1Z"/>',
+    star: '<path d="M0-27L5-5L27 0L5 5L0 27L-5 5L-27 0L-5-5Z"/><path d="M-12-12L-7-7M12-12L7-7M-12 12L-7 7M12 12L7 7"/>',
+    coins: '<ellipse cy="-14" rx="18" ry="5.5"/>' + coin(-14) + coin(-7) + coin(0),
+    people: '<circle cx="-15" cy="0" r="4.5"/><circle cx="15" cy="0" r="4.5"/><circle cx="0" cy="-3" r="5.5"/><path d="M-25 20C-25 10-5 10-5 20"/><path d="M5 20C5 10 25 10 25 20"/><path d="M-10 22C-10 8 10 8 10 22"/><path d="M0-12C-3-16-8-16-8-20C-8-24-3-24 0-20C3-24 8-24 8-20C8-16 3-16 0-12Z"/>',
+    gift: '<rect x="-18" y="-4" width="36" height="24"/><rect x="-21" y="-11" width="42" height="7"/><path d="M0-11V20"/><path d="M0-11C-4-20-16-22-14-14C-13-11-6-11 0-11Z"/><path d="M0-11C4-20 16-22 14-14C13-11 6-11 0-11Z"/>',
+    sun: `<circle r="8"/><path d="${rays}"/>`,
+    lotus: '<path d="M0 14C-8 4-8-10 0-20C8-10 8 4 0 14Z"/><path d="M-3 14C-14 10-20 0-18-12C-10-8-4 0-3 14Z"/><path d="M3 14C14 10 20 0 18-12C10-8 4 0 3 14Z"/><path d="M-6 15C-18 16-26 10-28 2C-20 2-12 6-6 15Z"/><path d="M6 15C18 16 26 10 28 2C20 2 12 6 6 15Z"/><path d="M-20 21H20"/>',
+  };
+  let flower = '';
+  for (let k = 0; k < 8; k++) {
+    flower += `<path transform="rotate(${k * 45})" d="${petalPath(14, 64, 15, INNER_SPEC)}"/>`;
+    flower += `<path transform="rotate(${k * 45 + 22.5})" d="${petalPath(14, 44, 10, OUTER_SPEC)}"/>`;
+  }
+  flower += '<circle r="14"/><circle r="5"/>';
+
+  // ---- Build SVG ----
+  const svg = $('wheel');
+  const defs = el('defs', null, svg);
+  const glowF = el('filter', { id: 'glow', x: '-60%', y: '-60%', width: '220%', height: '220%' }, defs);
+  el('feGaussianBlur', { stdDeviation: 16 }, glowF);
+  const softF = el('filter', { id: 'soft', x: '-50%', y: '-50%', width: '200%', height: '200%' }, defs);
+  el('feGaussianBlur', { stdDeviation: 2.5, result: 'b' }, softF);
+  const fm = el('feMerge', null, softF);
+  el('feMergeNode', { in: 'b' }, fm); el('feMergeNode', { in: 'SourceGraphic' }, fm);
+
+  const gOuterGlow = el('g', null, svg), gOuter = el('g', null, svg);
+  const gInnerGlow = el('g', null, svg), gInner = el('g', null, svg), gIcons = el('g', null, svg);
+
+  const outerD = petalPath(205, 495, 70, OUTER_SPEC);
+  const outerDetail = petalPath(250, 462, 48, OUTER_SPEC);
+  const outer = [];
+  for (let j = 0; j < 16; j++) {
+    const a = 11.25 + 22.5 * j;
+    const glow = el('path', { d: outerD, filter: 'url(#glow)', transform: `rotate(${a})` }, gOuterGlow);
+    const g = el('g', { transform: `rotate(${a})` }, gOuter);
+    const base = el('path', { d: outerD }, g);
+    const eyeBase = el('circle', { cy: -402, r: 19 }, g);
+    const light = el('g', null, g);
+    const overlay = el('path', { d: outerD }, light);
+    const core = el('circle', { cy: -402, r: 15 }, light);
+    el('path', { d: outerDetail, fill: 'none', stroke: GOLD, 'stroke-opacity': .55, 'stroke-width': 1.3, 'stroke-dasharray': '2 6', 'stroke-linecap': 'round' }, g);
+    el('circle', { cy: -402, r: 19, fill: 'none', stroke: GOLD, 'stroke-width': 1.6 }, g);
+    el('circle', { cy: -402, r: 5, fill: GOLD }, g);
+    el('path', { d: outerD, fill: 'none', stroke: GOLD, 'stroke-width': 2 }, g);
+    glow.style.opacity = 0; light.style.opacity = 0;
+    // breathing: golden-ratio phase offsets spread the bright petals evenly; jw/jp give each petal its own slow drift
+    outer.push({ glow, light, base, eyeBase, overlay, core, col: CYAN, I: 0,
+                 off: (j * 0.6180339887) % 1, jw: 0.05 + 0.07 * Math.random(), jp: Math.random() * 2 * Math.PI,
+                 cyc: 0, peak: 1 - 0.4 * Math.random(), breath: 0 });
+  }
+
+  const innerD = petalPath(105, 345, 108, INNER_SPEC);
+  const innerDetail = petalPath(130, 322, 88, INNER_SPEC);
+  const inner = [];
+  SEG.forEach((s, i) => {
+    const a = i * 45;
+    const grad = el('radialGradient', { id: 'ig' + i, cx: .5, cy: .55, r: .62 }, defs);
+    const stops = [0, .55, 1].map(o => el('stop', { offset: o }, grad));
+
+    const glow = el('path', { d: innerD, filter: 'url(#glow)' }, gInnerGlow);
+    const g = el('g', null, gInner);
+    el('path', { d: innerD, fill: `hsl(${s.hue} 48% 15%)` }, g);
+    const light = el('path', { d: innerD, fill: `url(#ig${i})` }, g);
+    el('path', { d: innerDetail, fill: 'none', stroke: GOLD, 'stroke-opacity': .5, 'stroke-width': 1.3, 'stroke-dasharray': '1 6', 'stroke-linecap': 'round' }, g);
+    el('path', { d: innerD, fill: 'none', stroke: GOLD, 'stroke-width': 2.4 }, g);
+    const rim = el('path', { d: innerD, fill: 'none', stroke: `hsl(${s.hue} 100% 84%)`, 'stroke-width': 3.5 }, g);
+
+    const rad = a * Math.PI / 180, ix = r1(Math.sin(rad) * 222), iy = r1(-Math.cos(rad) * 222);
+    const ig = el('g', null, gIcons);
+    const med = el('circle', { r: 48, fill: `hsl(${s.hue} 45% 9%)`, stroke: GOLD, 'stroke-width': 1.5 }, ig);
+    el('circle', { r: 57, fill: 'none', stroke: GOLD, 'stroke-width': 2.6, 'stroke-dasharray': '0 9.95', 'stroke-linecap': 'round' }, ig);
+    const dim = el('g', { fill: 'none', stroke: GOLD, 'stroke-width': 2.2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, ig);
+    dim.innerHTML = ICONS[s.icon];
+    const bright = el('g', { fill: 'none', stroke: '#fff4d6', 'stroke-width': 2.6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', filter: 'url(#soft)' }, ig);
+    bright.innerHTML = ICONS[s.icon];
+    [light, rim, glow, bright].forEach(e => e.style.opacity = 0);
+    inner.push({ a, g, glow, light, rim, ig, med, bright, ix, iy, stops, hue: s.hue, I: 0 });
+  });
+
+  // Shimmer phases: walk all 24 petals in angle order and hand out golden-ratio offsets,
+  // so neighboring lights, whichever ring they sit in, never twinkle together.
+  [...inner.map(p => ({ p, a: p.a })), ...outer.map((p, j) => ({ p, a: 11.25 + 22.5 * j }))]
+    .sort((x, y) => x.a - y.a)
+    .forEach(({ p }, k) => Object.assign(p, {
+      sOff: (k * 0.6180339887) % 1, sJw: 0.04 + 0.06 * Math.random(), sJp: Math.random() * 2 * Math.PI, sCyc: 0, sPeak: 1,
+    }));
+
+  const hub = el('g', { id: 'hub', role: 'button', tabindex: 0, 'aria-label': 'Spin the wheel' }, svg);
+  const hubGlow = el('circle', { r: 152, fill: '#d6a54e', filter: 'url(#glow)' }, hub);
+  el('circle', { r: 148, fill: '#0b0705' }, hub);
+  el('circle', { class: 'hub-ring', r: 148, fill: 'none', stroke: GOLD, 'stroke-width': 3 }, hub);
+  el('circle', { r: 133, fill: 'none', stroke: GOLD, 'stroke-width': 2.6, 'stroke-dasharray': '0 10.44', 'stroke-linecap': 'round' }, hub);
+  el('circle', { r: 120, fill: 'none', stroke: GOLD, 'stroke-opacity': .35 }, hub);
+  const fDim = el('g', { transform: 'translate(0 -14)', fill: 'none', stroke: GOLD, 'stroke-width': 2.2, 'stroke-linejoin': 'round' }, hub);
+  fDim.innerHTML = flower;
+  const fLit = el('g', { transform: 'translate(0 -14)', fill: 'none', stroke: '#fff', 'stroke-width': 2.6, 'stroke-linejoin': 'round', filter: 'url(#soft)' }, hub);
+  fLit.innerHTML = flower;
+  const hubLabel = el('text', { class: 'hub-label', y: 88, 'text-anchor': 'middle', fill: GOLD }, hub);
+  hubLabel.textContent = 'Tap to begin';
+  fLit.style.opacity = 0;
+
+  // ---- Bloom layer: a plain copy of the flower in the result's color, revealed by a growing radial mask ----
+  // It has no icons or dotted patterns on the inner petals, and the hub shows the result's icon.
+  const haloF = el('filter', { id: 'halo', x: '-50%', y: '-50%', width: '200%', height: '200%' }, defs);
+  el('feGaussianBlur', { stdDeviation: 70 }, haloF);
+  const bloomHalo = el('circle', { r: 430, filter: 'url(#halo)', 'pointer-events': 'none' });
+  svg.insertBefore(bloomHalo, gOuterGlow);
+  const maskGrad = el('radialGradient', { id: 'bmg' }, defs);
+  el('stop', { offset: 0, 'stop-color': '#fff' }, maskGrad);
+  el('stop', { offset: .8, 'stop-color': '#fff' }, maskGrad);
+  el('stop', { offset: 1, 'stop-color': '#000' }, maskGrad);
+  const mask = el('mask', { id: 'bloomMask', maskUnits: 'userSpaceOnUse', x: -560, y: -560, width: 1120, height: 1120 }, defs);
+  const maskCircle = el('circle', { r: 0, fill: 'url(#bmg)' }, mask);
+  const bloomGrad = el('radialGradient', { id: 'bloomGrad', cx: .5, cy: .55, r: .62 }, defs);
+  const bloomStops = [0, 1].map(o => el('stop', { offset: o }, bloomGrad));
+  const gBloom = el('g', { mask: 'url(#bloomMask)', 'pointer-events': 'none' }, svg);
+  const B = { outer: [], eyes: [], details: [], inner: [] };
+  for (let j = 0; j < 16; j++) {
+    const g = el('g', { transform: `rotate(${11.25 + 22.5 * j})` }, gBloom);
+    B.outer.push(el('path', { d: outerD }, g));
+    B.eyes.push(el('circle', { cy: -402, r: 19 }, g));
+    B.details.push(el('path', { d: outerDetail, fill: 'none', 'stroke-opacity': .6, 'stroke-width': 1.3, 'stroke-dasharray': '2 6', 'stroke-linecap': 'round' }, g));
+    el('circle', { cy: -402, r: 19, fill: 'none', stroke: GOLD, 'stroke-width': 1.6 }, g);
+    el('circle', { cy: -402, r: 5, fill: GOLD }, g);
+    el('path', { d: outerD, fill: 'none', stroke: GOLD, 'stroke-width': 2 }, g);
+  }
+  for (let i = 0; i < 8; i++) {
+    const g = el('g', { transform: `rotate(${i * 45})` }, gBloom);
+    el('path', { d: innerD, fill: 'url(#bloomGrad)' }, g);
+    el('path', { d: innerD, fill: 'none', stroke: GOLD, 'stroke-width': 2.4 }, g);
+    B.inner.push(g);
+  }
+  B.hub = el('circle', { r: 148 }, gBloom);
+  el('circle', { r: 148, fill: 'none', stroke: GOLD, 'stroke-width': 3 }, gBloom);
+  el('circle', { r: 133, fill: 'none', stroke: GOLD, 'stroke-width': 2.6, 'stroke-dasharray': '0 10.44', 'stroke-linecap': 'round' }, gBloom);
+  B.icon = el('g', { transform: 'translate(0 -16) scale(2.1)', fill: 'none', stroke: '#fff3d6', 'stroke-width': 1.4, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', filter: 'url(#soft)' }, gBloom);
+  B.label = el('text', { class: 'hub-label', y: 96, 'text-anchor': 'middle' }, gBloom);
+  const bloomFront = el('circle', { r: 0, fill: 'none', 'stroke-width': 28, filter: 'url(#glow)', 'pointer-events': 'none' }, svg);
+  [gBloom, bloomFront, bloomHalo].forEach(e => e.style.opacity = 0);
+
+  function setBloomColors(i) {
+    const h = SEG[i].hue;
+    B.outer.forEach(e => e.setAttribute('fill', `hsl(${h} 38% 20%)`));
+    B.eyes.forEach(e => e.setAttribute('fill', `hsl(${h} 45% 34%)`));
+    B.details.forEach(e => e.setAttribute('stroke', `hsl(${h} 55% 74%)`));
+    bloomStops[0].setAttribute('stop-color', `hsl(${h} 62% 56%)`);
+    bloomStops[1].setAttribute('stop-color', `hsl(${h} 52% 30%)`);
+    B.hub.setAttribute('fill', `hsl(${h} 45% 13%)`);
+    B.icon.innerHTML = ICONS[SEG[i].icon];
+    B.label.textContent = SEG[i].name;
+    B.label.setAttribute('fill', `hsl(${h} 80% 84%)`);
+    bloomFront.setAttribute('stroke', `hsl(${h} 85% 72%)`);
+    bloomHalo.setAttribute('fill', `hsl(${h} 75% 55%)`);
+  }
+
+  // ---- Moods: palette and timing presets ----
+  const MOODS = {
+    soft: {
+      a: { col: '#86cfc6', hue: 174, sat: 24 }, b: { col: '#eaa0bb', hue: 338, sat: 28 },
+      overlay: .5, core: '#fff6e6', coreOp: .6, outerGlow: .4, innerGlow: .5, innerLit: [70, 58, 52],
+      controls: { motion: 'breathe', fadeIn: 160, innerFade: 450, outerFade: 420, pattern: 'breathe' },
+    },
+    vegas: {
+      a: { col: CYAN, hue: 190, sat: 42 }, b: { col: PINK, hue: 328, sat: 42 },
+      overlay: .72, core: '#fff', coreOp: .9, outerGlow: .8, innerGlow: .85, innerLit: [95, 85, 80],
+      controls: { motion: 'chase', fadeIn: 0, innerFade: 160, outerFade: 80, pattern: 'burstflash' },
+    },
+  };
+  let mood = MOODS.soft;
+  function applyPalette() {
+    outer.forEach((p, j) => {
+      const c = j % 2 ? mood.b : mood.a;
+      p.col = c.col;
+      p.base.setAttribute('fill', `hsl(${c.hue} ${c.sat}% 14%)`);
+      p.eyeBase.setAttribute('fill', `hsl(${c.hue} ${c.sat + 8}% 24%)`);
+      p.overlay.setAttribute('fill', c.col); p.overlay.setAttribute('fill-opacity', mood.overlay);
+      p.core.setAttribute('fill', mood.core); p.core.setAttribute('fill-opacity', mood.coreOp);
+      p.glow.setAttribute('fill', c.col);
+    });
+    const [s0, s1, s2] = mood.innerLit;
+    inner.forEach(p => {
+      p.stops[0].setAttribute('stop-color', `hsl(${p.hue} ${s0}% 74%)`);
+      p.stops[1].setAttribute('stop-color', `hsl(${p.hue} ${s1}% 52%)`);
+      p.stops[2].setAttribute('stop-color', `hsl(${p.hue} ${s2}% 34%)`);
+      p.glow.setAttribute('fill', `hsl(${p.hue} ${s1}% 58%)`);
+    });
+  }
+
+  // ---- Controls ----
+  const P = {};
+  const target = $('target');
+  target.innerHTML = '<option value="-1">Random</option>' + SEG.map((s, i) => `<option value="${i}">${s.name}</option>`).join('');
+  function bindRange(id, fmt) {
+    const inp = $(id), out = $(id + 'Out');
+    const upd = () => { P[id] = parseFloat(inp.value); if (out) out.textContent = fmt(P[id]); };
+    inp.addEventListener('input', upd); upd();
+  }
+  function bindRadio(name, parse) {
+    const upd = () => { P[name] = parse(document.querySelector(`input[name="${name}"]:checked`).value); };
+    document.querySelectorAll(`input[name="${name}"]`).forEach(r => r.addEventListener('change', upd)); upd();
+  }
+  function bindCheck(id) { const c = $(id); const upd = () => { P[id] = c.checked; }; c.addEventListener('change', upd); upd(); }
+  function bindSelect(id, after) { const s = $(id); const upd = () => { P[id] = s.value; after && after(); }; s.addEventListener('change', upd); upd(); }
+
+  bindRange('speed', v => v + ' steps/s');
+  bindRange('cruise', v => v.toFixed(1) + ' s');
+  bindRange('slow', v => v.toFixed(1) + ' s');
+  bindRange('fadeIn', v => v + ' ms');
+  bindRange('breathPeriod', v => v.toFixed(1) + ' s');
+  bindRange('breathVar', v => Math.round(v * 100) + '%');
+  bindRange('lightUp', v => v.toFixed(2) + ' s');
+  bindRadio('motion', String);
+  const showMotion = () => { $('breatheCtl').hidden = P.motion !== 'breathe'; $('chaseCtl').hidden = P.motion !== 'chase'; };
+  document.querySelectorAll('input[name="motion"]').forEach(r => r.addEventListener('change', showMotion));
+  showMotion();
+  bindRange('innerFade', v => v + ' ms');
+  bindRange('bloomDelay', v => v.toFixed(1) + ' s');
+  bindRange('bloomSpread', v => v.toFixed(1) + ' s');
+  bindRange('spill', v => Math.round(v * 100) + '%');
+  bindRange('outerFade', v => v + ' ms');
+  bindRange('hold', v => v.toFixed(1) + ' s');
+  bindRange('idle', v => v.toFixed(1) + ' steps/s');
+  bindRadio('landing', String);
+  bindRadio('dir', Number);
+  bindRadio('heads', Number);
+  bindRadio('ts', Number);
+  bindRange('shimPeriod', v => v.toFixed(1) + ' s');
+  bindRange('shimLevel', v => Math.round(v * 100) + '%');
+  bindRange('shimVar', v => Math.round(v * 100) + '%');
+  bindRange('pulseLen', v => v.toFixed(1) + ' s');
+  bindRange('settleLen', v => v.toFixed(1) + ' s');
+  bindCheck('windup'); bindCheck('sound'); bindCheck('bloom');
+  bindSelect('pattern');
+  bindSelect('afterHold');
+  bindSelect('mood', () => {
+    mood = MOODS[P.mood];
+    applyPalette();
+    for (const [id, v] of Object.entries(mood.controls)) {
+      if (id === 'motion') {
+        const r = document.querySelector(`input[name="motion"][value="${v}"]`);
+        r.checked = true; r.dispatchEvent(new Event('change'));
+        continue;
+      }
+      const c = $(id); c.value = v;
+      c.dispatchEvent(new Event(c.tagName === 'SELECT' ? 'change' : 'input'));
+    }
+  });
+  const gcd = (a, b) => b ? gcd(b, a % b) : a;
+  bindSelect('ratio', () => {
+    const [a, b] = P.ratio.split('/').map(Number);
+    P.ratioN = a / b;
+    const sync = b / gcd(a, b);
+    $('ratioNote').textContent =
+      `Outer ticks ${r1(a / b)}× as often and turns ${+(a / b / 2).toFixed(3)}× as fast as the inner wheel. ` +
+      (sync === 1 ? 'Ticks coincide on every inner step.' : `Ticks coincide every ${sync} inner steps.`);
+  });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { $('idle').value = 0; $('idle').dispatchEvent(new Event('input')); }
+
+  // ---- Sound ----
+  let actx = null;
+  $('sound').addEventListener('change', () => {
+    if (!P.sound) return;
+    try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); actx.resume(); } catch (e) { actx = null; }
+  });
+  function beep(freq, dur, gain, delay = 0, type = 'triangle') {
+    if (!P.sound || !actx) return;
+    const t = actx.currentTime + delay;
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = type; o.frequency.value = freq;
+    g.gain.setValueAtTime(gain, t); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+    o.connect(g).connect(actx.destination); o.start(t); o.stop(t + dur + 0.02);
+  }
+
+  // ---- Motion state ----
+  // pos is a continuous count of inner steps; floor(pos) mod 8 is the lit inner petal.
+  // The outer ring reads the same pos scaled by the tick ratio, so it rides every ease the inner wheel does.
+  // modes: ambient (shimmer, before the wheel) → idle (wheel ready) → spin → tease → win
+  const S = { mode: 'ambient', phase: 'Shimmer', shimClock: 0, pos: 0.5, vel: 0, simT: 0, plan: null, winT: 0, winner: -1,
+              lastInner: 0, lastOuter: 0, sparkT: 0, history: [], bloomP: 0, bloomAlpha: 0,
+              energy: 0, breathClock: 0, floodStart: -1e9 };
+  S.lastInner = Math.floor(S.pos); S.lastOuter = Math.floor(S.pos * P.ratioN);
+  const ACCEL_T = 0.9, DECEL_POW = 3, TEASE_HOLD = 0.45, TEASE_BACK = 0.4;
+
+  function makePlan(tgt) {
+    const vmax = P.speed;
+    const tW = P.windup ? 0.45 : 0, amp = P.windup ? 0.7 : 0;
+    const v0 = P.windup ? 0 : Math.max(0, S.vel);
+    const p1 = S.pos - amp;
+    const dA = (v0 + vmax) / 2 * ACCEL_T;
+    const dD = vmax * P.slow / DECEL_POW;           // power ease-out that starts at vmax lasts exactly P.slow
+    const off = P.landing === 'tease' ? 1 : 0;
+    const minEnd = p1 + dA + vmax * P.cruise + dD;
+    const k = Math.ceil((minEnd - off - tgt - 0.5) / 8);
+    const land = 8 * k + tgt + 0.5, end = land + off;
+    const dC = end - p1 - dA - dD;                  // leftover distance stretches the cruise so the slowdown stays fixed
+    return { t0: S.simT, p0: S.pos, p1, v0, vmax, tW, amp, dA, dC, dD, tC: dC / vmax, tD: P.slow, land, end, tease: !!off, target: tgt };
+  }
+  function planAt(pl, u) {
+    if (u < pl.tW) {
+      const w = u / pl.tW;
+      return { pos: pl.p0 - pl.amp * (1 - Math.cos(Math.PI * w)) / 2, vel: -pl.amp * Math.PI / (2 * pl.tW) * Math.sin(Math.PI * w), phase: 'Wind-up' };
+    }
+    u -= pl.tW;
+    if (u < ACCEL_T) { const acc = (pl.vmax - pl.v0) / ACCEL_T; return { pos: pl.p1 + pl.v0 * u + 0.5 * acc * u * u, vel: pl.v0 + acc * u, phase: 'Spin-up' }; }
+    u -= ACCEL_T;
+    if (u < pl.tC) return { pos: pl.p1 + pl.dA + pl.vmax * u, vel: pl.vmax, phase: 'Cruise' };
+    u -= pl.tC;
+    if (u < pl.tD) { const w = u / pl.tD; return { pos: pl.p1 + pl.dA + pl.dC + pl.dD * (1 - Math.pow(1 - w, DECEL_POW)), vel: pl.vmax * Math.pow(1 - w, DECEL_POW - 1), phase: 'Slowing' }; }
+    return { pos: pl.end, vel: 0, phase: 'Landed', done: true };
+  }
+
+  // Leaving the shimmer: every light pulses once to acknowledge the tap, then eases slowly ("settle")
+  // into the wheel's first lit frame before the wheel state (or a spin) begins.
+  function enterWheel(next) {
+    if (S.mode !== 'ambient') return;
+    S.mode = 'pulse'; S.phase = 'Starting'; S.pulseT0 = S.simT; S.pulseNext = next;
+    $('spinBtn').disabled = true;
+    if (P.sound && actx) actx.resume();
+    beep(740, 0.4, 0.07, P.pulseLen / (P.ts || 1) / 2, 'sine');
+  }
+  function spin() {
+    if (S.mode === 'spin' || S.mode === 'tease' || S.mode === 'pulse' || S.mode === 'settle') return;
+    if (S.mode === 'ambient') { enterWheel('spin'); return; }
+    if (P.sound && actx) actx.resume();
+    const t = Number(P.target);
+    const tgt = t >= 0 ? t : Math.floor(Math.random() * 8);
+    if (S.mode === 'win') S.vel = 0;
+    S.plan = makePlan(tgt);
+    S.mode = 'spin';
+    S.floodStart = S.simT;
+    $('spinBtn').disabled = true;
+    hubLabel.textContent = 'Spinning';
+    hubLabel.setAttribute('fill', GOLD);
+  }
+  function enterWin() {
+    S.mode = 'win'; S.phase = 'Win'; S.winT = 0; S.vel = 0;
+    S.winner = mod(Math.floor(S.pos), 8);
+    S.bloomP = 0;
+    setBloomColors(S.winner);
+    S.history.unshift(S.winner); S.history.length = Math.min(S.history.length, 10);
+    renderHistory();
+    $('spinBtn').disabled = false;
+    hubLabel.textContent = SEG[S.winner].name;
+    hubLabel.setAttribute('fill', `hsl(${SEG[S.winner].hue} 95% 78%)`);
+    [0, 4, 7, 12].forEach((st, k) => beep(523 * Math.pow(2, st / 12), 0.5, 0.12, k * 0.09, 'sine'));
+  }
+  function toIdle() {
+    S.mode = 'idle'; S.phase = 'Ready'; S.winner = -1;
+    hubLabel.textContent = 'Tap to spin'; hubLabel.setAttribute('fill', GOLD);
+  }
+  function toAmbient() {
+    if (S.mode === 'spin' || S.mode === 'tease' || S.mode === 'pulse' || S.mode === 'settle') return;
+    S.mode = 'ambient'; S.phase = 'Shimmer'; S.winner = -1; S.vel = 0;
+    $('spinBtn').disabled = false;
+    hubLabel.textContent = 'Tap to begin'; hubLabel.setAttribute('fill', GOLD);
+  }
+  function renderHistory() {
+    $('history').innerHTML = S.history.map(i =>
+      `<span class="chip"><i style="background:${litColor(SEG[i].hue)}"></i>${SEG[i].name}</span>`).join('');
+  }
+
+  function step(dt) {
+    S.simT += dt;
+    if (S.mode === 'ambient') {
+      S.vel = 0; S.phase = 'Shimmer';
+      S.shimClock += dt / P.shimPeriod;
+    } else if (S.mode === 'pulse') {
+      S.vel = 0; S.phase = 'Starting';
+      if (S.simT - S.pulseT0 >= P.pulseLen) {
+        S.mode = 'settle'; S.settleT0 = S.simT;
+        S.fromI = inner.map(p => p.I); S.fromO = outer.map(p => p.I);
+      }
+    } else if (S.mode === 'settle') {
+      S.vel = 0; S.phase = 'Starting';
+      if (S.simT - S.settleT0 >= P.settleLen) {
+        toIdle();
+        $('spinBtn').disabled = false;
+        if (S.pulseNext === 'spin') { spin(); S.floodStart = S.simT - P.lightUp; }   // outer ring is already fully lit
+      }
+    } else if (S.mode === 'idle') {
+      S.vel = P.idle; S.pos += S.vel * dt; S.phase = 'Ready';
+    } else if (S.mode === 'spin') {
+      const r = planAt(S.plan, S.simT - S.plan.t0);
+      S.pos = r.pos; S.vel = r.vel; S.phase = r.phase;
+      if (r.done) {
+        if (S.plan.tease) { S.mode = 'tease'; S.teaseT0 = S.simT; S.phase = 'Settle'; }
+        else enterWin();
+      }
+    } else if (S.mode === 'tease') {
+      const u = S.simT - S.teaseT0;
+      if (u < TEASE_HOLD) { S.pos = S.plan.end; S.vel = 0; }
+      else {
+        const w = Math.min(1, (u - TEASE_HOLD) / TEASE_BACK);
+        const e = w < .5 ? 2 * w * w : 1 - Math.pow(-2 * w + 2, 2) / 2;
+        S.pos = S.plan.end - e; S.vel = -1 / TEASE_BACK;
+        if (w >= 1) { S.pos = S.plan.land; enterWin(); }
+      }
+    } else if (S.mode === 'win') {
+      S.winT += dt;
+      const w = S.winT;
+      S.bloomP = P.bloom ? Math.min(1, Math.max(0, (w - P.bloomDelay) / P.bloomSpread)) : 0;
+      S.phase = w < P.bloomDelay ? 'Win' : P.bloom && S.bloomP < 1 ? 'Bloom' : 'Hold';
+      if (P.afterHold !== 'stay' && w > P.bloomDelay + P.bloomSpread + P.hold) {
+        if (P.afterHold === 'shimmer') toAmbient(); else toIdle();
+      }
+    }
+    // the bloom cross-fades away when the wheel goes back to rest (slowly) or a new spin starts (quickly)
+    const resting = S.mode === 'idle' || S.mode === 'ambient';
+    if (S.mode === 'win') S.bloomAlpha = 1;
+    else if (S.bloomAlpha > 0) S.bloomAlpha = Math.max(0, S.bloomAlpha - dt / (resting ? 1.4 : 0.6));
+  }
+
+  // ---- Tick trace ----
+  const trace = [];
+  const traceCv = $('trace'), tctx = traceCv.getContext('2d');
+  const TRACE_MS = 3000;
+  function detectTicks(now) {
+    const ii = Math.floor(S.pos), oi = Math.floor(S.pos * P.ratioN);
+    if (ii !== S.lastInner) {
+      const lit = mod(ii, 8);
+      trace.push({ t: now, row: 0, color: litColor(SEG[lit].hue) });
+      beep(440 + lit * 22, 0.05, 0.09);
+      S.lastInner = ii;
+    }
+    if (oi !== S.lastOuter) {
+      if (P.motion === 'chase') {
+        const lit = mod(Math.floor(S.pos * P.ratioN * P.dir), 16);
+        trace.push({ t: now, row: 1, color: outer[lit].col });
+        beep(1760, 0.018, 0.035, 0, 'square');
+      }
+      S.lastOuter = oi;
+    }
+  }
+  function drawTrace(now) {
+    const dpr = window.devicePixelRatio || 1;
+    const W = traceCv.clientWidth, H = traceCv.clientHeight;
+    if (traceCv.width !== Math.round(W * dpr) || traceCv.height !== Math.round(H * dpr)) {
+      traceCv.width = Math.round(W * dpr); traceCv.height = Math.round(H * dpr);
+    }
+    tctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    tctx.clearRect(0, 0, W, H);
+    const rows = [H * 0.27, H * 0.73], bar = H * 0.32;
+    tctx.strokeStyle = 'rgba(214,165,78,.22)'; tctx.lineWidth = 1;
+    rows.forEach(y => { tctx.beginPath(); tctx.moveTo(0, y + .5); tctx.lineTo(W, y + .5); tctx.stroke(); });
+    for (let s = 1; s < 3; s++) {
+      const x = Math.round(W - s * 1000 / TRACE_MS * W) + .5;
+      tctx.strokeStyle = 'rgba(214,165,78,.12)'; tctx.beginPath(); tctx.moveTo(x, 0); tctx.lineTo(x, H); tctx.stroke();
+    }
+    while (trace.length && now - trace[0].t > TRACE_MS) trace.shift();
+    for (const ev of trace) {
+      const x = W - (now - ev.t) / TRACE_MS * W;
+      tctx.fillStyle = ev.color;
+      tctx.fillRect(x - 1, rows[ev.row] - bar / 2, 2, bar);
+    }
+  }
+
+  // ---- Lighting ----
+  const innerTgt = new Float32Array(8), outerTgt = new Float32Array(16);
+  function approach(cur, tgt, dt, inMs, outMs) {
+    if (tgt >= cur) return inMs <= 0 ? tgt : Math.min(tgt, cur + dt / (inMs / 1000));
+    return outMs <= 0 ? tgt : Math.max(tgt, cur - dt / (outMs / 1000));
+  }
+  const easeInOut = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+  function lightOuter(idx, I, spill) {
+    outerTgt[idx] = Math.max(outerTgt[idx], I);
+    if (spill > 0) {
+      outerTgt[mod(idx + 1, 16)] = Math.max(outerTgt[mod(idx + 1, 16)], I * spill);
+      outerTgt[mod(idx - 1, 16)] = Math.max(outerTgt[mod(idx - 1, 16)], I * spill);
+    }
+  }
+  function render(dt) {
+    innerTgt.fill(0); outerTgt.fill(0);
+    let hubI = 0.12, hubCol = '#d6a54e';
+
+    // Breathing outer ring: each petal eases in and out on its own slightly drifting phase.
+    // "energy" raises the brightness range while a spin is in progress; "flood" is the light-up on pressing Spin.
+    const calm = S.mode === 'idle' || S.mode === 'ambient' || S.mode === 'pulse' || S.mode === 'settle';
+    S.energy = approach(S.energy, calm ? 0 : 1, dt, 1000, 1800);
+    S.breathClock += dt / (P.breathPeriod * (1 - 0.25 * S.energy));
+    const lo = 0.04 + 0.41 * S.energy, hi = 0.55 + 0.45 * S.energy;
+    outer.forEach(p => {
+      const ph = S.breathClock + p.off + P.breathVar * 0.25 * Math.sin(S.simT * p.jw * 2 * Math.PI + p.jp);
+      const cyc = Math.floor(ph);
+      if (cyc !== p.cyc) { p.cyc = cyc; p.peak = 1 - P.breathVar * Math.random(); }   // new peak, chosen at the dark point
+      p.breath = lo + (hi - lo) * p.peak * (0.5 - 0.5 * Math.cos(2 * Math.PI * ph));
+    });
+    const fu = S.simT - S.floodStart;
+    const flood = fu < P.lightUp ? 1 - Math.pow(1 - fu / P.lightUp, 2)
+      : Math.min(1, Math.max(0, 1 - (fu - P.lightUp - 0.4) / 1.6));
+    if (S.mode === 'win') {
+      const pulse = 0.5 + 0.5 * Math.sin(S.winT * 2 * Math.PI * 1.1);
+      const keep = 1 - S.bloomP;                    // ring lights and the winner's pulse hand over to the bloom
+      innerTgt[S.winner] = (0.8 + 0.2 * pulse) * keep;
+      hubI = 0.35 + 0.35 * pulse; hubCol = litColor(SEG[S.winner].hue);
+      const w = S.winT;
+      let pat = P.pattern;
+      if (pat === 'burstflash') pat = w < 1.3 ? 'burst' : 'alternate';
+      // the two outer petals flanking the winner are 2W-1 and 2W
+      if (pat === 'breathe') {
+        outer.forEach((p, j) => { outerTgt[j] = p.breath * keep; });
+      } else if (pat === 'burst') {
+        const d = Math.floor(w * 14) % 9;
+        if (d < 8) { lightOuter(mod(2 * S.winner + d, 16), keep, P.spill); lightOuter(mod(2 * S.winner - 1 - d, 16), keep, P.spill); }
+      } else if (pat === 'alternate') {
+        const on = Math.floor(w * 7) % 2;
+        for (let j = 0; j < 16; j++) outerTgt[j] = (j % 2 === on ? 1 : 0.1) * keep;
+      } else if (pat === 'swell') {
+        const sw = Math.sin(w * 2 * Math.PI * 0.6);
+        for (let j = 0; j < 16; j++) outerTgt[j] = (0.45 + 0.4 * (j % 2 ? -sw : sw)) * keep;
+      } else if (pat === 'sparkle') {
+        if (S.simT - S.sparkT > 0.06 && keep > 0.5) {
+          S.sparkT = S.simT;
+          for (let n = 0; n < 3; n++) outer[Math.floor(Math.random() * 16)].I = 1;
+        }
+      }
+    } else if (S.mode === 'pulse') {
+      // one sin² bump at about half brightness; levels are applied directly (no fades) so the beat stays crisp
+      const env = Math.pow(Math.sin(Math.PI * Math.min(1, (S.simT - S.pulseT0) / P.pulseLen)), 2);
+      innerTgt.fill(0.06 + 0.47 * env); outerTgt.fill(0.06 + 0.47 * env);
+      hubI = 0.08 + 0.25 * env;
+    } else if (S.mode === 'settle') {
+      // the wheel's first frame: the current inner petal lit, the outer ring breathing (or fully lit if a spin follows)
+      innerTgt[mod(Math.floor(S.pos), 8)] = 1;
+      outer.forEach((p, j) => { outerTgt[j] = S.pulseNext === 'spin' ? 1 : p.breath; });
+    } else if (S.mode === 'ambient') {
+      // Shimmer: every petal in both rings twinkles slowly. A raised power on the cosine gives
+      // longer dark rests and shorter soft peaks, like strung lights.
+      const twinkle = p => {
+        const ph = S.shimClock + p.sOff + 0.2 * Math.sin(S.simT * p.sJw * 2 * Math.PI + p.sJp);
+        const c = Math.floor(ph);
+        if (c !== p.sCyc) { p.sCyc = c; p.sPeak = 1 - P.shimVar * Math.random(); }
+        return p.sPeak * Math.pow(0.5 - 0.5 * Math.cos(2 * Math.PI * ph), 1.8);
+      };
+      inner.forEach((p, i) => { innerTgt[i] = 0.04 + 0.7 * P.shimLevel * twinkle(p); });
+      outer.forEach((p, j) => { outerTgt[j] = 0.06 + P.shimLevel * twinkle(p); });
+      const hubTw = 0.5 - 0.5 * Math.cos(2 * Math.PI * S.shimClock * 0.5);
+      hubI = 0.06 + 0.14 * hubTw * P.shimLevel;
+    } else {
+      innerTgt[mod(Math.floor(S.pos), 8)] = 1;
+      if (P.motion === 'chase') {
+        const head = Math.floor(S.pos * P.ratioN * P.dir);
+        for (let h = 0; h < P.heads; h++) lightOuter(mod(head + h * 16 / P.heads, 16), 1, P.spill);
+      } else {
+        outer.forEach((p, j) => { outerTgt[j] = Math.max(p.breath, flood); });
+      }
+    }
+    const iFade = S.mode === 'win' ? Math.max(P.innerFade, 250) : P.innerFade;
+    const settleE = S.mode === 'settle' ? easeInOut(Math.min(1, (S.simT - S.settleT0) / P.settleLen)) : 0;
+    const level = (cur, tgt, from, inMs, outMs) =>
+      S.mode === 'pulse' ? tgt : S.mode === 'settle' ? from + (tgt - from) * settleE : approach(cur, tgt, dt, inMs, outMs);
+    inner.forEach((p, i) => {
+      p.I = level(p.I, innerTgt[i], S.fromI && S.fromI[i], P.fadeIn, iFade);
+      const I = p.I, s = 1 + (S.mode === 'pulse' || S.mode === 'ambient' ? 0 : 0.055) * I;   // shimmer and pulse are lighting only
+      const tf = `rotate(${p.a}) translate(0 -225) scale(${s.toFixed(4)}) translate(0 225)`;
+      p.g.setAttribute('transform', tf); p.glow.setAttribute('transform', tf); B.inner[i].setAttribute('transform', tf);
+      p.ig.setAttribute('transform', `translate(${p.ix} ${p.iy}) scale(${(1.12 * s).toFixed(4)})`);
+      p.light.style.opacity = I; p.rim.style.opacity = I; p.glow.style.opacity = I * mood.innerGlow; p.bright.style.opacity = I;
+      p.med.style.fillOpacity = 0.85 - 0.6 * I;
+    });
+    const oFade = S.mode === 'win' && P.pattern === 'sparkle' ? Math.max(P.outerFade, 220) : P.outerFade;
+    outer.forEach((p, j) => {
+      p.I = level(p.I, outerTgt[j], S.fromO && S.fromO[j], P.fadeIn, oFade);
+      p.light.style.opacity = p.I; p.glow.style.opacity = p.I * mood.outerGlow;
+    });
+    hubGlow.setAttribute('fill', hubCol);
+    hubGlow.style.opacity = hubI;
+    fLit.style.opacity = S.mode === 'win' ? hubI * (1 - S.bloomP) : S.mode === 'ambient' || S.mode === 'pulse' ? hubI * 1.6
+      : S.mode === 'settle' ? 0.13 * (1 - settleE) : 0;
+
+    // bloom: the mask radius grows from the hub past the outer tips; a soft colored front rides its edge
+    const pe = easeInOut(S.bloomP), R = pe * 640;
+    maskCircle.setAttribute('r', R.toFixed(1));
+    gBloom.style.opacity = S.bloomAlpha;
+    bloomFront.setAttribute('r', (R * 0.9).toFixed(1));
+    bloomFront.style.opacity = S.bloomAlpha * 0.5 * Math.sin(Math.PI * S.bloomP);
+    bloomHalo.style.opacity = S.bloomAlpha * pe * (0.2 + 0.08 * Math.sin(S.simT * 2 * Math.PI * 0.35));
+  }
+
+  // ---- HUD ----
+  const PHASE_DOT = { Shimmer: '#e8b9d0', Starting: '#ffe2a0', Ready: '#b39c7e', 'Wind-up': '#ffb35c', 'Spin-up': '#2ee6ff', Cruise: '#2ee6ff', Slowing: '#ff4fae', Settle: '#ff4fae', Landed: '#ffe2a0', Win: '#ffe2a0', Bloom: '#ffe2a0', Hold: '#ffe2a0' };
+  let hudT = 0;
+  function hud(now) {
+    if (now - hudT < 90) return;
+    hudT = now;
+    const ph = $('hPhase');
+    ph.textContent = P.ts === 0 ? S.phase + ' (frozen)' : S.phase;
+    ph.style.setProperty('--dot', PHASE_DOT[S.phase] || '#b39c7e');
+    const busy = S.mode === 'spin' || S.mode === 'tease' || S.mode === 'pulse' || S.mode === 'settle';
+    $('enterBtn').disabled = S.mode !== 'ambient';
+    $('shimmerBtn').disabled = busy || S.mode === 'ambient';
+    const v = Math.abs(S.vel);
+    $('hInner').textContent = r1(v).toFixed(1) + ' ticks/s';
+    $('hOuter').textContent = P.motion === 'chase' ? r1(v * P.ratioN).toFixed(1) + ' ticks/s'
+      : S.energy > 0.5 ? 'Breathing, bright' : 'Breathing';
+    $('hTarget').textContent = S.mode === 'spin' || S.mode === 'tease' ? SEG[S.plan.target].name
+      : S.mode === 'win' ? SEG[S.winner].name + ' ✓' : '—';
+  }
+
+  // ---- Loop ----
+  let last = performance.now();
+  function frame(now) {
+    const realDt = Math.min(0.05, (now - last) / 1000); last = now;
+    const dt = realDt * P.ts;
+    step(dt);
+    detectTicks(now);
+    render(dt);
+    drawTrace(now);
+    hud(now);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  $('spinBtn').addEventListener('click', spin);
+  const hubAction = () => S.mode === 'ambient' ? enterWheel('idle') : spin();
+  hub.addEventListener('click', hubAction);
+  hub.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); hubAction(); } });
+  $('enterBtn').addEventListener('click', () => enterWheel('idle'));
+  $('shimmerBtn').addEventListener('click', toAmbient);
+})();
+</script>

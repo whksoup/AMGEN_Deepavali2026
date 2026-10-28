@@ -1,0 +1,53 @@
+--- before/PetalPaletteLit.shader
++++ after/PetalPaletteLit.shader
+@@ -14,6 +14,7 @@
+         _EdgeColor("Edge Tint (Alpha 0 Uses Fill)", Color) = (0,0,0,0)
+         _TargetEdgeColor("Target Edge Tint", Color) = (0,0,0,0)
+         _StartupAtlas("Initial Medallion Artwork", 2D) = "black" {}
++        [Toggle] _StartupMeshUV("Initial Artwork Uses Physical Mesh UV", Float) = 0
+         _StartupRect("Initial Artwork UV Scale / Offset", Vector) = (1,1,0,0)
+         _StartupMaxMip("Initial Artwork Safe Mip", Float) = 3
+         _StartupSymbolEnabled("Initial Artwork Assigned", Float) = 0
+--- before/PetalPaletteInput.hlsl
++++ after/PetalPaletteInput.hlsl
+@@ -10,6 +10,7 @@
+ float4 _BaseMap_ST;
+ float4 _BaseMap_TexelSize;
+ half _ArtworkFitEnabled;
++half _StartupMeshUV;
+ float4 _SymbolAtlas_TexelSize;
+ float4 _StartupAtlas_TexelSize;
+ float4 _StartupRect;
+@@ -218,6 +219,10 @@
+     half artworkBlend = 1 - smoothstep(artworkFront - artworkSoftness, artworkFront + artworkSoftness, length(rootPosition));
+     half border = smoothstep(0.08h, 0.25h, regions.a);
+     float2 uvDx = ddx(artworkUV), uvDy = ddy(artworkUV);
++    // Per-leaf medallions are authored in physical UVs so their circles and
++    // inset gold contours do not inherit the old silhouette's horizontal warp.
++    float2 startupUV = lerp(artworkUV, uv, _StartupMeshUV);
++    float2 startupDx = ddx(startupUV), startupDy = ddy(startupUV);
+     ArtworkSample artwork;
+     if (artworkBlend >= 1)
+         artwork = SampleArtwork(artworkUV, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
+@@ -236,15 +241,16 @@
+     half spatialIconCoverage = 0;
+     if (initialWeight > 0)
+     {
+-        float2 atlasUV = saturate(artworkUV) * _StartupRect.xy + _StartupRect.zw;
+-        float2 dx = uvDx * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
+-        float2 dy = uvDy * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
++        float2 atlasUV = saturate(startupUV) * _StartupRect.xy + _StartupRect.zw;
++        float2 dx = startupDx * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
++        float2 dy = startupDy * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
+         float lod = min(_StartupMaxMip, 0.5 * log2(max(1, max(dot(dx,dx), dot(dy,dy)))));
+         half4 mask = SAMPLE_TEXTURE2D_LOD(_StartupAtlas, sampler_StartupAtlas, atlasUV, lod);
+         half coverage = saturate((mask.r - 0.015h) / 0.97h);
+-        // The opening glyph is centered inside the 52 mm medallion. Crop the
++        // The opening glyph is centered inside its medallion. Crop the
+         // artwork coverage inside that circle so rings, dots and borders stay dark.
+-        float2 iconOffset = (artworkUV - _PetalLightIconRegion.xy) * float2(_ArtworkFitEnabled > 0.5h ? 0.6920152 : _ArtworkUvToRoot.x, 1);
++        float iconAspect = _StartupMeshUV > 0.5h ? _ArtworkUvToRoot.x : (_ArtworkFitEnabled > 0.5h ? 0.6920152 : _ArtworkUvToRoot.x);
++        float2 iconOffset = (startupUV - _PetalLightIconRegion.xy) * float2(iconAspect, 1);
+         half iconRegion = 1 - smoothstep(_PetalLightIconRegion.z - _PetalLightIconRegion.w,
+             _PetalLightIconRegion.z + _PetalLightIconRegion.w, length(iconOffset));
+         spatialIconCoverage = coverage * iconRegion * initialWeight;

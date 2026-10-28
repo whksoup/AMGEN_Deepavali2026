@@ -1,0 +1,13 @@
+{
+  "petals": 8,
+  "petalAtlas": {
+    "width": 1024,
+    "height": 2048,
+    "format": "BC7",
+    "safeMip": 3.0
+  },
+  "centerIcons": 1,
+  "centerFormat": "BC4",
+  "validRects": true,
+  "sceneDirty": false
+}

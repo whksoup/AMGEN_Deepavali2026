@@ -1,0 +1,677 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_01 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_01 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_01 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_01 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_01 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_01 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_03 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_03 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_03 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_03 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_03 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_03 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_04 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_04 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_04 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_04 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_04 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_04 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_05 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_05 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_05 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_05 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_05 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_05 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_06 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_06 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_06 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_06 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_06 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_06 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_07 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_07 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_07 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_07 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_07 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_07 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_08 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_08 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_08 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_08 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_08 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_08 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_09 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_09 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_09 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_09 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_09 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_09 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_10 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_10 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_10 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_10 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_10 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_10 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_11 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_11 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_11 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_11 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_11 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_11 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_12 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_12 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_12 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_12 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_12 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_12 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_13 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_13 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_13 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_13 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_13 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_13 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_14 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_14 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_14 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_14 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_14 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_14 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_15 Body.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_15 Body.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_15 Fit.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_15 Fit.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_15 Light.png",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Textures/Refined Flower/OuterPetal_15 Light.png.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_01.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_01.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_04.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_04.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_06.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_06.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_08.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_08.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_10.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_10.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_12.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_12.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_14.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 1 - OuterPetal_14.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_03.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_03.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_05.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_05.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_07.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_07.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_09.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_09.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_11.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_11.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_13.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_13.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_15.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Outer Petal Palette Tone 2 - OuterPetal_15.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_01.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_01.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_04.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_04.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_06.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_06.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_08.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_08.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_10.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_10.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_12.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_12.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_14.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 1 - OuterPetal_14.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_03.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_03.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_05.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_05.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_07.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_07.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_09.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_09.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_11.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_11.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_13.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_13.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_15.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Peacock Outer Tone 2 - OuterPetal_15.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_01.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_01.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_04.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_04.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_06.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_06.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_08.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_08.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_10.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_10.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_12.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_12.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_14.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 1 - OuterPetal_14.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_03.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_03.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_05.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_05.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_07.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_07.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_09.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_09.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_11.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_11.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_13.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_13.mat.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_15.mat",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Refined Flower/Tonal Outer 2 - OuterPetal_15.mat.meta",
+      "unchanged": true
+    }
+  ]
+}

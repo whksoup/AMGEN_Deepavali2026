@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Peacock Outer Tone 1
+  m_Shader: {fileID: 4800000, guid: 1e4deb4d5be1c5145b2875aaab0ad107, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 56f14340d579db74499f5e6b7b8e0a5c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SymbolAtlas:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TertiaryMap:
+        m_Texture: {fileID: 2800000, guid: 81d2e0927fd1b574ab2782fdef6df5a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AccentPatternIntensity: 0.65
+    - _ArtworkProgress: 1
+    - _ArtworkRadius: 1.059
+    - _ArtworkSoftness: 0.04
+    - _CenterDotGlow: 0.5
+    - _CenterIconGlow: 1.3
+    - _CenterIconScale: 0.65
+    - _CenterRingGlow: 1.3
+    - _CenterRingRadius: 0.92
+    - _CenterRingWidth: 0.012
+    - _CenterSurface: 0
+    - _Cull: 0
+    - _EdgeIntensity: 5.095724
+    - _EmissionScale: 1
+    - _MainPatternIntensity: 1.25
+    - _Smoothness: 0.28
+    - _Surface: 0
+    - _SymbolEnabled: 0
+    - _SymbolMaxMip: 3
+    - _TargetAccentPatternIntensity: 0.65
+    - _TargetEdgeIntensity: 5.095724
+    - _TargetMainPatternIntensity: 1.25
+    - _TargetSymbolEnabled: 0
+    - _WaveProgress: 1
+    - _WaveRadius: 0.36
+    - _WaveSoftness: 0.025
+    m_Colors:
+    - _AccentColor: {r: 0.8631573, g: 0.35640025, b: 0.045186203, a: 1}
+    - _ArtworkUvToRoot: {r: 0.692, g: 1, b: -0.346, a: 0}
+    - _BaseColor: {r: 0.31398875, g: 0.015996292, b: 0.1274377, a: 1}
+    - _CenterRingColor: {r: 0.5, g: 0.049999982, b: 0.14999998, a: 1}
+    - _PatternColor: {r: 1, g: 0.68668544, b: 0.2422812, a: 1}
+    - _RestUvToFlowerX: {r: 0.182, g: 0, b: -0.091, a: 0}
+    - _RestUvToFlowerZ: {r: 0, g: -0.263, b: -0.082, a: 0}
+    - _SymbolRect: {r: 1, g: 1, b: 0, a: 0}
+    - _TargetAccentColor: {r: 0.8631573, g: 0.35640025, b: 0.045186203, a: 1}
+    - _TargetBaseColor: {r: 0.31398875, g: 0.015996292, b: 0.1274377, a: 1}
+    - _TargetCenterRingColor: {r: 0.5, g: 0.049999982, b: 0.14999998, a: 1}
+    - _TargetPatternColor: {r: 1, g: 0.68668544, b: 0.2422812, a: 1}
+    - _TargetSymbolRect: {r: 1, g: 1, b: 0, a: 0}
+    - _TargetTertiaryColor: {r: 0.017641952, g: 0.2050787, b: 0.6038274, a: 1}
+    - _TertiaryColor: {r: 0.017641952, g: 0.2050787, b: 0.6038274, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

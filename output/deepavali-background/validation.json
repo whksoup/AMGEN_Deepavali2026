@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "lamps": 4,
+  "layouts": [
+    {
+      "aspect": 1.77777779,
+      "valid": true,
+      "clear": true,
+      "visibleBorderPieces": 171,
+      "lamps": [
+        [
+          0.08499783,
+          0.8400018
+        ],
+        [
+          0.9150022,
+          0.8400018
+        ],
+        [
+          0.08499783,
+          0.159998268
+        ],
+        [
+          0.9150022,
+          0.159998268
+        ]
+      ]
+    },
+    {
+      "aspect": 2.28980327,
+      "valid": true,
+      "clear": true,
+      "visibleBorderPieces": 179,
+      "lamps": [
+        [
+          0.08499783,
+          0.8400018
+        ],
+        [
+          0.9150022,
+          0.8400018
+        ],
+        [
+          0.08499783,
+          0.159998268
+        ],
+        [
+          0.9150022,
+          0.159998268
+        ]
+      ]
+    }
+  ],
+  "picked": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "generatedMeshesFinite": true,
+  "backgroundColliders": 0,
+  "modelSources": [
+    "Assets/DiwaliAssets/cgtrader_optimized_Oil+Lamp.fbx",
+    "Assets/DiwaliAssets/cgtrader_optimized_Oil+Lamp.fbx",
+    "Assets/DiwaliAssets/cgtrader_optimized_Oil+Lamp.fbx",
+    "Assets/DiwaliAssets/cgtrader_optimized_Oil+Lamp.fbx"
+  ],
+  "soilAlbedo": "Assets/YughuesFreeGroundMaterials/Textures/T_YFGM_SoilGravel04_d.tga",
+  "shaderErrors": []
+}

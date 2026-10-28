@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "outerPetals": 15,
+  "states": 7,
+  "startupTone1": 8,
+  "startupTone2": 7,
+  "tertiaryFallback": "Accent when alpha is zero",
+  "batcher": true,
+  "failures": []
+}

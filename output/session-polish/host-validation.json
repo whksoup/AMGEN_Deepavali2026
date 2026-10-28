@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": {
+    "Active session owns the host timeout": true,
+    "Legacy screensaver cannot pre-empt the 30-second fade": true,
+    "Disabling session releases host ownership": true
+  }
+}

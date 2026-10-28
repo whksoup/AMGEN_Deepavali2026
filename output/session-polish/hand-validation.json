@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "Instantiation starts fully dissolved with idle ring": true,
+    "Runtime material is independent": true,
+    "Early dismissal queues once without visual jump": true,
+    "Queued dismissal starts after complete assembly": true,
+    "Completed dismissal fires both events exactly once": true,
+    "Reset cancels queued dismissal": true,
+    "Cancel clears pending assembly and dismissal": true,
+    "Re-enable replays reverse dissolve": true,
+    "Component re-enable replays appearance": true,
+    "Appearance uses unscaled time": true,
+    "Normal dismissal retains loading phase": true,
+    "Normal dismissal retains outward dissolve": true,
+    "Normal loading and despawn finish once": true,
+    "Hand shader has no compiler errors": true
+  }
+}

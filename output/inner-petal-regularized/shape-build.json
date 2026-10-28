@@ -1,0 +1,61 @@
+{
+  "inner": [
+    {
+      "name": "InnerPetal_01",
+      "width_m": 0.1573723629117012,
+      "length_m": 0.23102408647537231,
+      "base_width_m": 0.1132301464676857,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_02",
+      "width_m": 0.15009314566850662,
+      "length_m": 0.2359740436077118,
+      "base_width_m": 0.10238805413246155,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_03",
+      "width_m": 0.18246368318796158,
+      "length_m": 0.2713347375392914,
+      "base_width_m": 0.1305505484342575,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_04",
+      "width_m": 0.17659968882799149,
+      "length_m": 0.28737935423851013,
+      "base_width_m": 0.12700331211090088,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_05",
+      "width_m": 0.18187430500984192,
+      "length_m": 0.28267043828964233,
+      "base_width_m": 0.13087907433509827,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_06",
+      "width_m": 0.17354194819927216,
+      "length_m": 0.3142269253730774,
+      "base_width_m": 0.12463536858558655,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_07",
+      "width_m": 0.1749701201915741,
+      "length_m": 0.27168816328048706,
+      "base_width_m": 0.1254599243402481,
+      "vertices": 505
+    },
+    {
+      "name": "REF_TopPetal_08",
+      "width_m": 0.15183480083942413,
+      "length_m": 0.23422978818416595,
+      "base_width_m": 0.10495376586914062,
+      "vertices": 505
+    }
+  ],
+  "outer_and_center_vertices_unchanged": true
+}

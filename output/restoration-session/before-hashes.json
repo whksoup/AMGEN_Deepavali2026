@@ -1,0 +1,138 @@
+[
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\PetalPrototype\\Scripts\\PetalWheelLightSequence.cs",
+    "Hash": "0D26773503AB33351BE9625E7D12E803A2E9CB6613E960F84227B3B67F4DEE60"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\PetalPrototype\\Scripts\\PetalWheelPattern.cs",
+    "Hash": "7D1311D627B42DB95CF9E6FC6780A77C3085AE87087BD6C8A5611DFE862B8208"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts.meta",
+    "Hash": "908AEB8CD8AA1F58CCBB736E85DFC8FF29496015D7A0FDD42D9C6DA57A4F7A14"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Shaders.meta",
+    "Hash": "F1D032AEBE918BE015166A136555B698A8191B0BA4EE33738C98054FD98ACBCB"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationLampResponse.cs",
+    "Hash": "A3B17FC89205C01F0FA919F83805B618C337E89299DD0A9CB03FD4AB41099DF0"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationLampResponse.cs.meta",
+    "Hash": "36333CC0CC77E37713D3B7E305EFBC1533557017B54C7667CDEFEF76EED9D498"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationMask.cs",
+    "Hash": "D1C074287641433331D3FC21089A2C6774222A2B9BCA954F7190504C6204D1B0"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationMask.cs.meta",
+    "Hash": "8B5A91396E0CEA33F5DAC78598B49389BE3EACA6F9F131C813A22F9F46CC9D51"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationPreview.cs",
+    "Hash": "83A589525DD0E364D3581DB318E0D4DB3E698728123F1F62EE698D7C88D6259F"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationPreview.cs.meta",
+    "Hash": "689458E0B152E834C0E7E29CB385D146602AAED4F4EFFCA1EC192024C9A830C7"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationRenderPass.cs",
+    "Hash": "2B8C283CDC64E5D36D4826EB17630969D9195E9F3D6D6434037067BA8A333FFB"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\RestorationRenderPass.cs.meta",
+    "Hash": "0E01598E97B4F3D994E8CD7E42138DE93080081635693691EC20C434630D1637"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\ScreenRestorationController.cs",
+    "Hash": "37318642D33D53AD9EF1D0649AAD7A246054AD0D1610BF5C0EEB718F0EF48001"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Scripts\\ScreenRestorationController.cs.meta",
+    "Hash": "10DB9679D5F633B1B73D08215A074FD44DC4B72375D183834B5962B4DB4FD2C2"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Shaders\\ScreenRestoration.shader",
+    "Hash": "A5320EA01E51542217A7EBD812DE78544B250175FA1D70CE162C1C2BC70154F3"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\Restoration\\Shaders\\ScreenRestoration.shader.meta",
+    "Hash": "261D6157DDCD7E5DAFEF40586545DC8B0FAFA7E70669F30D040F3590148BD2F8"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\Hand Guidance Canvas.prefab",
+    "Hash": "597AF3E8F46F182CD5C37BE47B48D017815B3AB3C1532AA1BDD98D73FD804722"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\Hand Guidance Canvas.prefab.meta",
+    "Hash": "4428B6C2D16E44A399FB159F7A0CFFA3B26159F5382FBCD71A278970D93236BB"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\Hand Guidance Gold.mat",
+    "Hash": "8433B77AEC561CCC5DC9136A03A1912E643897EA645D220EE975B0FE31143CDE"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\Hand Guidance Gold.mat.meta",
+    "Hash": "E97590D919D0A05A391D3E6B995D9AC2C4B8F5271FE543ACDD159E439ED8302B"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\Hand Here.prefab",
+    "Hash": "8F4086CCF56EA1CF33EAAF4CA2A256FC34B42ED58810845548E2510F38D74D25"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\Hand Here.prefab.meta",
+    "Hash": "0737559B41030BA2AE0F0E76C1F4C2085F1CEFFDDEAF3D5227A7979E1045E558"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandGuidance.shader",
+    "Hash": "CD1D3319C8A341BF6226D1BD857B6277BC8807F11838A85A4964A2778CF09E09"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandGuidance.shader.meta",
+    "Hash": "604A34522454C6FEBC67F55C5BA47F4E42A5D50C62AEEBA9BB5DF4B73580EA32"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandGuidanceCanvas.cs",
+    "Hash": "158DDFC5D94F3BFCF72E6AB519A3D2894E8095D05C76B42A51C247938207A656"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandGuidanceCanvas.cs.meta",
+    "Hash": "197D5BC68671475B4AEA0EE4F42FE66F9FBF13A125F2CD62B1667B94E8138ABF"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandHereGraphic.cs",
+    "Hash": "B4C7BED53443582EE231BFC9D4C146E2247879E4119DCCC5E85C6911241C3E50"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandHereGraphic.cs.meta",
+    "Hash": "BA3F5E82ED2A760FF4AACA6EECD18152377C2E73B9A7970F816292C8EF44BB60"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandHereInteraction.cs",
+    "Hash": "2F0E036E491E43641CFFDEAB8F73442D1E6E5DD620CB14F850C5FB70611BF1E3"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\HandHereInteraction.cs.meta",
+    "Hash": "4775D528F02276BDB4C5CD8A4FF254A83B4B38393C42C5608370A824A2084BF3"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\README.txt",
+    "Hash": "0F57DF134CD30BD601D0DD70BC650DBEE094688596EC8999AD52AA69503CA002"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\HK_Signature\\Deepavali\\UI\\README.txt.meta",
+    "Hash": "2AD59E79C7C08D942478948D715C8E6D8FEF29F2B112BFE29BA09B58651D56C3"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\Scenes\\Deepavali_PetalWheelSequence.unity",
+    "Hash": "B2AF2F998C9CD2640AF13825F211F91A127079B6BB4F276DF095977F5140CCFF"
+  },
+  {
+    "Path": "F:\\Freelance_Work\\amgen-LEDWall\\Amgen Interactive Wall\\output\\restoration-session\\before\\Assets\\Scenes\\Deepavali_PetalWheelSequence.unity.meta",
+    "Hash": "E23607116208B9C40B8A869DBB878B3BE6F9BB0629FCCB1CF8B225005772B569"
+  }
+]

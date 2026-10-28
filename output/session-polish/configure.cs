@@ -1,0 +1,18 @@
+if(UnityEditor.EditorApplication.isPlaying)throw new System.Exception("Stop Play Mode first");
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!="Assets/Scenes/Deepavali_PetalWheelSequence.unity" || scene.isDirty)throw new System.Exception("Expected saved main scene");
+var s=UnityEngine.Object.FindFirstObjectByType<Amgen.Deepavali.DeepavaliSessionController>();
+UnityEditor.Undo.RecordObjects(new UnityEngine.Object[]{s,s.restoration,s.settingsPreset},"Polish session flow and idle controls");
+s.restoration.idleBehaviours=s.restoration.idleBehaviours.Where(b=>b!=s.sequence).ToArray();
+s.restoration.brushRadius=.32f;
+s.inactivityTimeout=30;s.inactivityFadeDuration=2;
+s.settingsPreset.CaptureFrom(s);
+UnityEditor.EditorUtility.SetDirty(s.settingsPreset);
+UnityEditor.AssetDatabase.SaveAssetIfDirty(s.settingsPreset);
+var ui=s.GetComponent<Amgen.Deepavali.DeepavaliSessionDebugUI>();
+if(ui==null)ui=UnityEditor.Undo.AddComponent<Amgen.Deepavali.DeepavaliSessionDebugUI>(s.gameObject);
+ui.session=s;ui.showControls=false;
+UnityEditor.EditorUtility.SetDirty(s);UnityEditor.EditorUtility.SetDirty(s.restoration);UnityEditor.EditorUtility.SetDirty(ui);
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);
+UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+return new{scene=scene.path,brush=s.restoration.brushRadius,timeout=s.inactivityTimeout,fade=s.inactivityFadeDuration,held=s.restoration.idleBehaviours.Length,settings=UnityEditor.AssetDatabase.GetAssetPath(s.settingsPreset)};

@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e8cd99b1c64624ebff365c0a15f811, type: 3}
+  m_Name: Glow Trial Outer Tone 1 - Eight Colors
+  m_EditorClassIdentifier: 
+  states:
+  - label: Base / Red - Tone 1
+    fill: {r: 0.38039216, g: 0.05882353, b: 0.16470589, a: 1}
+    ornament: {r: 1, g: 0.36078432, b: 0.5137255, a: 1}
+    accent: {r: 1, g: 0.15294118, b: 0.30980393, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.38039216, g: 0.05882353, b: 0.16470589, a: 1}
+    center: {r: 0.38039216, g: 0.05882353, b: 0.16470589, a: 1}
+    edgeIntensity: 13.384817
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Gold - Tone 1
+    fill: {r: 0.44313726, g: 0.20784314, b: 0.011764706, a: 1}
+    ornament: {r: 1, g: 0.827451, b: 0.29411766, a: 1}
+    accent: {r: 1, g: 0.61960787, b: 0.08627451, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.44313726, g: 0.20784314, b: 0.011764706, a: 1}
+    center: {r: 0.44313726, g: 0.20784314, b: 0.011764706, a: 1}
+    edgeIntensity: 9.689205
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Pink - Tone 1
+    fill: {r: 0.47058824, g: 0.050980393, b: 0.24313726, a: 1}
+    ornament: {r: 1, g: 0.44705883, b: 0.7882353, a: 1}
+    accent: {r: 1, g: 0.16078432, b: 0.5647059, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.47058824, g: 0.050980393, b: 0.24313726, a: 1}
+    center: {r: 0.47058824, g: 0.050980393, b: 0.24313726, a: 1}
+    edgeIntensity: 8.51876
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Purple - Tone 1
+    fill: {r: 0.18431373, g: 0.07058824, b: 0.30980393, a: 1}
+    ornament: {r: 0.73333335, g: 0.42352942, b: 1, a: 1}
+    accent: {r: 0.5372549, g: 0.2, b: 0.92941177, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.18431373, g: 0.07058824, b: 0.30980393, a: 1}
+    center: {r: 0.18431373, g: 0.07058824, b: 0.30980393, a: 1}
+    edgeIntensity: 20.463648
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Green - Tone 1
+    fill: {r: 0.043137256, g: 0.23921569, b: 0.16470589, a: 1}
+    ornament: {r: 0.6627451, g: 0.95686275, b: 0.3019608, a: 1}
+    accent: {r: 0.30980393, g: 0.8235294, b: 0.1764706, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.043137256, g: 0.23921569, b: 0.16470589, a: 1}
+    center: {r: 0.043137256, g: 0.23921569, b: 0.16470589, a: 1}
+    edgeIntensity: 34.286877
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Blue - Tone 1
+    fill: {r: 0.047058824, g: 0.1764706, b: 0.3372549, a: 1}
+    ornament: {r: 0.39607844, g: 0.7490196, b: 1, a: 1}
+    accent: {r: 0.17254902, g: 0.50980395, b: 0.9372549, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.047058824, g: 0.1764706, b: 0.3372549, a: 1}
+    center: {r: 0.047058824, g: 0.1764706, b: 0.3372549, a: 1}
+    edgeIntensity: 17.193398
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Orange - Tone 1
+    fill: {r: 0.49803922, g: 0.14509805, b: 0.03137255, a: 1}
+    ornament: {r: 1, g: 0.58431375, b: 0.21960784, a: 1}
+    accent: {r: 1, g: 0.32156864, b: 0.09411765, a: 1}
+    tertiary: {r: 0, g: 0, b: 0, a: 0}
+    useEdgeColor: 0
+    edge: {r: 0.49803922, g: 0.14509805, b: 0.03137255, a: 1}
+    center: {r: 0.49803922, g: 0.14509805, b: 0.03137255, a: 1}
+    edgeIntensity: 7.538965
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Cyan / Glow Trial Outer Tone 1
+    fill: {r: 0.0139999995, g: 0.266, b: 0.336, a: 1}
+    ornament: {r: 0.64, g: 0.96, b: 1, a: 1}
+    accent: {r: 0.14, g: 0.66, b: 0.9, a: 1}
+    tertiary: {r: 1, g: 0.75, b: 0.25, a: 1}
+    useEdgeColor: 1
+    edge: {r: 0.04, g: 0.85, b: 1, a: 1}
+    center: {r: 0.015, g: 0.2, b: 0.27, a: 1}
+    edgeIntensity: 5.2
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2
+  - label: Red / Glow Trial Outer Tone 1
+    fill: {r: 0.37800002, g: 0.012599999, b: 0.0245, a: 1}
+    ornament: {r: 1, g: 0.68, b: 0.44, a: 1}
+    accent: {r: 0.96, g: 0.15, b: 0.06, a: 1}
+    tertiary: {r: 1, g: 0.75, b: 0.25, a: 1}
+    useEdgeColor: 1
+    edge: {r: 1, g: 0.04, b: 0.06, a: 1}
+    center: {r: 0.29, g: 0.008, b: 0.02, a: 1}
+    edgeIntensity: 7
+    mainPatternIntensity: 3.2
+    accentPatternIntensity: 1.2

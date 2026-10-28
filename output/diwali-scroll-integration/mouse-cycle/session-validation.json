@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "checks": {
+    "Opening has zero coverage and four extinguished lamps": true,
+    "Opening holds motion and wheel but retains material owner": true,
+    "Opening prompt is visible above darkness": true,
+    "Review controls are absent": true,
+    "Button-free dwell drives existing loading ring": true,
+    "Dwell does not paint": true,
+    "Leaving prompt cancels partial dwell": true,
+    "Disintegration still holds painting": true,
+    "Dismissal reveals the center and enables freeform restoration": true,
+    "Center light fades in": true,
+    "First candle ignites on hover": true,
+    "Three candles do not finish": true,
+    "Out-of-viewport mouse loses presence": true,
+    "Tracking loss preserves coverage without painting": true,
+    "80 percent alone cannot finish without fourth candle": true,
+    "Both gates initiate final reveal once": true,
+    "Complete restoration enters shimmer and respawns prompt": true,
+    "Original motion states return; direct petal picking stays disabled": true,
+    "Pointer remaining at center cannot retrigger respawned prompt": true,
+    "Fresh hover consumes prompt and starts existing entry": true,
+    "Spin waits until entry reaches Ready": true,
+    "Result reveal does not start hold early": true,
+    "Hold starts only at fully visible colored result": true,
+    "Original automatic return cannot cut the hold short": true,
+    "Scroll remains fully open fifteen seconds then closes": true,
+    "Automatic end restores darkness, lamps, artwork and prompt": true,
+    "Reset with stationary center mouse remains idle": true,
+    "Dormant resets release shimmer and center lights": true,
+    "One completion, two prompt callbacks, one result per cycle": true,
+    "Four candles alone cannot finish below 80 percent": true,
+    "Two complete sessions pass": true
+  },
+  "errors": [],
+  "timeline": [
+    {
+      "time": 0.01966800000082003,
+      "phase": "AwaitingRestoration",
+      "coverage": 0.0,
+      "lamps": 0,
+      "resultCount": 0
+    },
+    {
+      "time": 1.4669509000013932,
+      "phase": "DismissingRestorationPrompt",
+      "coverage": 0.0,
+      "lamps": 0,
+      "resultCount": 0
+    },
+    {
+      "time": 2.32511820000218,
+      "phase": "Restoring",
+      "coverage": 0.01927083,
+      "lamps": 0,
+      "resultCount": 0
+    },
+    {
+      "time": 24.010253000000375,
+      "phase": "FinalReveal",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 0
+    },
+    {
+      "time": 25.822250400000485,
+      "phase": "AwaitingSpin",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 0
+    },
+    {
+      "time": 27.337589199996728,
+      "phase": "DismissingSpinPrompt",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 0
+    },
+    {
+      "time": 28.194266899998183,
+      "phase": "EnteringWheel",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 0
+    },
+    {
+      "time": 30.594666400000278,
+      "phase": "Spinning",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 0
+    },
+    {
+      "time": 36.383793699998932,
+      "phase": "RevealingResult",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 39.587156199995661,
+      "phase": "ScrollDelay",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 41.599194199996418,
+      "phase": "ScrollOpening",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 47.195305900000676,
+      "phase": "ScrollHolding",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 62.204401899994991,
+      "phase": "ScrollClosing",
+      "coverage": 0.812942147,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 65.617706500001077,
+      "phase": "AwaitingRestoration",
+      "coverage": 0.0,
+      "lamps": 0,
+      "resultCount": 1
+    },
+    {
+      "time": 67.468927699999767,
+      "phase": "DismissingRestorationPrompt",
+      "coverage": 0.0,
+      "lamps": 0,
+      "resultCount": 1
+    },
+    {
+      "time": 68.319773499999428,
+      "phase": "Restoring",
+      "coverage": 0.01927083,
+      "lamps": 0,
+      "resultCount": 1
+    },
+    {
+      "time": 87.568624899999122,
+      "phase": "FinalReveal",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 89.374607199999446,
+      "phase": "AwaitingSpin",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 90.884233899996616,
+      "phase": "DismissingSpinPrompt",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 91.7336335,
+      "phase": "EnteringWheel",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 94.127366699998674,
+      "phase": "Spinning",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 1
+    },
+    {
+      "time": 99.915309199997864,
+      "phase": "RevealingResult",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 2
+    },
+    {
+      "time": 103.1170318000004,
+      "phase": "ScrollDelay",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 2
+    },
+    {
+      "time": 105.13107080000191,
+      "phase": "ScrollOpening",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 2
+    },
+    {
+      "time": 110.73271599999862,
+      "phase": "ScrollHolding",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 2
+    },
+    {
+      "time": 125.73481919999904,
+      "phase": "ScrollClosing",
+      "coverage": 0.800002635,
+      "lamps": 4,
+      "resultCount": 2
+    },
+    {
+      "time": 129.15146039999672,
+      "phase": "AwaitingRestoration",
+      "coverage": 0.0,
+      "lamps": 0,
+      "resultCount": 2
+    }
+  ],
+  "holds": [
+    18.4224006000004,
+    18.418744399998104
+  ],
+  "resultCount": 2,
+  "restorationCount": 2,
+  "despawnCount": 4
+}

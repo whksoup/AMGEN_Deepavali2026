@@ -1,0 +1,12 @@
+if(Application.isPlaying)throw new System.Exception("Stop Play Mode before configuring the saved scene");
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!="Assets/Scenes/Deepavali_PetalWheelSequence.unity"||scene.isDirty)throw new System.Exception("Expected the clean saved wall scene");
+var s=UnityEngine.Object.FindFirstObjectByType<Amgen.Deepavali.DeepavaliSessionController>();
+var r=s.restoration;UnityEditor.Undo.RecordObject(r,"Use installed wall sensor");
+r.useMouseInput=false;
+var input=r.GetComponent<Amgen.Deepavali.DeepavaliTouchInput>();
+if(input==null)input=UnityEditor.Undo.AddComponent<Amgen.Deepavali.DeepavaliTouchInput>(r.gameObject);
+input.restoration=r;input.mousePreview=false;
+UnityEditor.EditorUtility.SetDirty(input);UnityEditor.EditorUtility.SetDirty(r);
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+return new{scene=scene.path,sensor=input.enabled,mousePreview=input.mousePreview,mouseFallback=r.useMouseInput};

@@ -1,0 +1,67 @@
+{
+  "mesh_health": {
+    "vertices": 361,
+    "triangles": 632,
+    "boundary_edges": 88,
+    "nonmanifold_interior_edges": 0,
+    "loose_vertices": 0,
+    "zero_area_faces": 0,
+    "max_influences": 2,
+    "max_weight_error": 2.9802322387695312e-08,
+    "uv_layers": [
+      "ArtworkUV",
+      "PetalCoord_Width_Length"
+    ],
+    "bones": [
+      "Petal_01_Base",
+      "Petal_01_Mid",
+      "Petal_01_Tip"
+    ]
+  },
+  "unchanged_center_and_outer_geometry": {
+    "CenterDisc_Mesh": true,
+    "OuterPetal_01_Mesh": true,
+    "OuterPetal_02_Mesh": true,
+    "OuterPetal_03_Mesh": true,
+    "OuterPetal_04_Mesh": true,
+    "OuterPetal_05_Mesh": true,
+    "OuterPetal_06_Mesh": true,
+    "OuterPetal_07_Mesh": true,
+    "OuterPetal_08_Mesh": true,
+    "OuterPetal_09_Mesh": true,
+    "OuterPetal_10_Mesh": true,
+    "OuterPetal_11_Mesh": true,
+    "OuterPetal_12_Mesh": true,
+    "OuterPetal_13_Mesh": true,
+    "OuterPetal_14_Mesh": true,
+    "OuterPetal_15_Mesh": true
+  },
+  "poses": [
+    {
+      "pose": "rest",
+      "root_drift_m": 0,
+      "outer_driver_error_radians": 0.0
+    },
+    {
+      "pose": "lift_and_curl",
+      "root_drift_m": 4.656612873077393e-10,
+      "outer_driver_error_radians": 4.339312978385301e-09
+    },
+    {
+      "pose": "downward",
+      "root_drift_m": 4.656612873077393e-10,
+      "outer_driver_error_radians": 1.2874721788680432e-08
+    },
+    {
+      "pose": "sway",
+      "root_drift_m": 0,
+      "outer_driver_error_radians": 3.6426158270264075e-10
+    },
+    {
+      "pose": "combined",
+      "root_drift_m": 4.656612873077393e-10,
+      "outer_driver_error_radians": 1.075280436912962e-08
+    }
+  ],
+  "unity_integration": "Deferred as requested; no FBX or Assets changes."
+}

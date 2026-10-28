@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "all23OpeningPalettesAndCenter": true,
+    "eightUniqueInnerMasks": true,
+    "outerPeacockArtworkPreserved": true,
+    "eightDistinctFills": true,
+    "sameGoldAllInnerPalettes": true,
+    "sameIndependentYellowEdge": true,
+    "openingCenterMandala": true,
+    "originalPhaseIconMapping": true,
+    "glowRefreshKeepsStartup": true,
+    "singlePetalOnlyConsumesItsStartup": true,
+    "singlePetalSettlesToOriginalArtwork": true,
+    "centerOnlyLeavesPetalsInitial": true,
+    "sameEnumBaseStartsRealOpeningWave": true,
+    "sameEnumBaseConsumesAll": true,
+    "all7PhasesRestoreExistingColorsAndEdgeSettings": true,
+    "outerTertiaryTakesOverForAll7Phases": true,
+    "latestRequestDoesNotRestartActiveWave": true,
+    "queueStartsFromCompletedBlue": true,
+    "latestQueuedGreenSettles": true,
+    "noStartupReplayAfterDisableEnable": true,
+    "explicitInitialResetReplaysAll": true,
+    "invalidStatesRejected": true,
+    "shaderDiagnosticsClear": true,
+    "noRuntimeErrors": true
+  },
+  "errors": []
+}

@@ -1,0 +1,60 @@
+# Blender 4.0.2 MTL File: 'Oil Lamp1.blend'
+# www.blender.org
+
+newmtl Flame
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Flame_BaseColor.png
+map_Ns C:/Flame_Roughness.png
+map_refl C:/Flame_Metallic.png
+map_Bump -bm 1.000000 C:/Flame_Normal.png
+
+newmtl Lamp
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Lamp_BaseColor.png
+map_Ns C:/Lamp_Roughness.png
+map_refl C:/Lamp_Metallic.png
+map_Bump -bm 1.000000 C:/Lamp_Normal.png
+
+newmtl Lamp_Frame
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Lamp Frame_BaseColor.png
+map_Ns C:/Lamp Frame_Frame_Roughness.png
+map_refl C:/Lamp Frame_Metallic.png
+map_Bump -bm 1.000000 C:/Lamp Frame_Frame_Normal.png
+
+newmtl Oil
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Wax
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Waxi_BaseColor.png
+map_Ns C:/Waxi_Roughness.png
+map_refl C:/Wax_Metallic.png
+map_Bump -bm 1.000000 C:/Wax_Normal.png

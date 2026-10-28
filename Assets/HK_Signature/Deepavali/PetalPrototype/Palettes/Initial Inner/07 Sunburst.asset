@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8da3c1259236f84eab03ec4b076fd0f, type: 3}
+  m_Name: 07 Sunburst
+  m_EditorClassIdentifier: 
+  colors:
+    label: Initial Sunburst
+    fill: {r: 0.5686275, g: 0.5019608, b: 0.06666667, a: 1}
+    ornament: {r: 0.972549, g: 0.8117647, b: 0.47058824, a: 1}
+    accent: {r: 0.972549, g: 0.8117647, b: 0.47058824, a: 1}
+    tertiary: {r: 0.972549, g: 0.8117647, b: 0.47058824, a: 1}
+    useEdgeColor: 1
+    edge: {r: 1, g: 0.827451, b: 0.3529412, a: 1}
+    center: {r: 0.1882353, g: 0.07450981, b: 0.24705882, a: 1}
+    edgeIntensity: 5.5
+    mainPatternIntensity: 0.65
+    accentPatternIntensity: 0.65

@@ -1,0 +1,35 @@
+{
+  "cameraUnchanged": true,
+  "cameraPosition": [
+    0.0,
+    2.16,
+    0.938
+  ],
+  "cameraEuler": [
+    69.271,
+    180.0,
+    0.0
+  ],
+  "fov": 35.0,
+  "beforeScale": [
+    1.68608963,
+    1.68608963,
+    1.68608963
+  ],
+  "afterScale": [
+    2.19191647,
+    1.68608963,
+    1.68608963
+  ],
+  "widthMultiplier": 1.30000019,
+  "beforeHeightPercent": 92.42681,
+  "afterHeightPercent": 92.42681,
+  "beforeWidthPercent": 43.0424538,
+  "afterWidthPercent": 55.9552,
+  "afterViewportBounds": [
+    0.220224,
+    0.0487962663,
+    0.779776,
+    0.973064363
+  ]
+}

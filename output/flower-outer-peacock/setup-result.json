@@ -1,0 +1,81 @@
+{
+  "prefab": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Peacock Flower.prefab",
+  "assignments": [
+    {
+      "petal": "OuterPetal_01",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_02",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_03",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_04",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_05",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_06",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_07",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_08",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_09",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_10",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_11",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_12",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_13",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    },
+    {
+      "petal": "OuterPetal_14",
+      "startup": "Peacock Startup Tone 2",
+      "regularPalette": "Glow Trial Outer Tone 2"
+    },
+    {
+      "petal": "OuterPetal_15",
+      "startup": "Peacock Startup Tone 1",
+      "regularPalette": "Glow Trial Outer Tone 1"
+    }
+  ],
+  "shaderMessages": []
+}

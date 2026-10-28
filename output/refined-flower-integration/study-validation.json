@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "growth_changes_image": true,
+    "growth_has_intermediate_stages": true,
+    "shimmer_changes_image": true,
+    "tip_control_changes_image": true,
+    "dark_gaps_change_image": true,
+    "AB_restores_original_pixels": true,
+    "other_20_materials_unchanged": true,
+    "exactly_two_enabled": true,
+    "disable_cleans_up_shader": true,
+    "shader_compiles": true,
+    "maps_linear_uncompressed": true
+  },
+  "stats": [
+    {
+      "name": "01-original",
+      "luminance": 0.062576580592161354
+    },
+    {
+      "name": "02-growth-000",
+      "luminance": 0.028681108606260945
+    },
+    {
+      "name": "03-growth-035",
+      "luminance": 0.034132572687773921
+    },
+    {
+      "name": "04-growth-065",
+      "luminance": 0.049279979556789193
+    },
+    {
+      "name": "05-growth-100",
+      "luminance": 0.061290155710726595
+    },
+    {
+      "name": "06-shimmer-later",
+      "luminance": 0.061398742225033977
+    },
+    {
+      "name": "07-no-tip",
+      "luminance": 0.059185256785910391
+    },
+    {
+      "name": "08-no-dark-gaps",
+      "luminance": 0.075492294560611364
+    },
+    {
+      "name": "09-original-restored",
+      "luminance": 0.062576580592161354
+    }
+  ],
+  "errors": []
+}

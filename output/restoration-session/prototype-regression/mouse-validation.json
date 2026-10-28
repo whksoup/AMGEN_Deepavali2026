@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "Preview controls do not paint": true,
+    "Mouse hover restores without a click": true,
+    "Leaving viewport ends presence": true,
+    "Outside mouse stops painting": true,
+    "Returning mouse paints at new position": true,
+    "Earlier hover remains restored": true,
+    "Re-entry does not connect through the scene": true
+  },
+  "errors": []
+}

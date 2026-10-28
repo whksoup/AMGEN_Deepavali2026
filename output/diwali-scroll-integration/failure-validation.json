@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "Missing clip preserves selected flower": true,
+    "Failure resets cleanly 0": true,
+    "Stall watchdog reaches bounded fallback": true,
+    "Failure resets cleanly 1": true,
+    "Valid same-color playback recovers after errors": true
+  },
+  "errors": [],
+  "expectedErrors": [
+    "DiwaliScrollOverlay: Missing clips for scroll variant 3",
+    "DiwaliScrollOverlay: Scroll playback stalled: Red"
+  ]
+}

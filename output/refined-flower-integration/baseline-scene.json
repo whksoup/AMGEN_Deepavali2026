@@ -1,0 +1,403 @@
+{
+  "playing": true,
+  "scene": "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+  "roots": [
+    {
+      "name": "Main Camera",
+      "components": [
+        "Transform",
+        "Camera",
+        "AudioListener",
+        "UniversalAdditionalCameraData"
+      ],
+      "pos": "(0.0000, 2.1600, 0.9380)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Main Light",
+      "components": [
+        "Transform",
+        "Light",
+        "UniversalAdditionalLightData"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Overhead Fill - No Shadows",
+      "components": [
+        "Transform",
+        "Light",
+        "UniversalAdditionalLightData"
+      ],
+      "pos": "(-0.2000, 0.3000, -0.1500)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Ground",
+      "components": [
+        "Transform",
+        "MeshFilter",
+        "MeshRenderer"
+      ],
+      "pos": "(0.0000, -0.0830, 0.0000)",
+      "scale": "(0.3000, 0.3000, 0.3000)",
+      "prefab": ""
+    },
+    {
+      "name": "Test Instructions",
+      "components": [
+        "RectTransform",
+        "Canvas",
+        "CanvasScaler",
+        "GraphicRaycaster",
+        "FlowerAppearancePreview"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(0.0000, 0.0000, 0.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Deepavali Peacock Flower",
+      "components": [
+        "Transform",
+        "FlowerPaletteController",
+        "PetalRingPulse"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(2.1919, 1.6861, 1.6861)",
+      "prefab": ""
+    },
+    {
+      "name": "Inner Layer Input - Click or Tap a Petal",
+      "components": [
+        "Transform",
+        "PetalLayerPointerInput"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Petal Bloom - Mobile",
+      "components": [
+        "Transform",
+        "Volume"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Palette UI Events",
+      "components": [
+        "Transform",
+        "EventSystem",
+        "InputSystemUIInputModule"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Deepavali Earthen Background",
+      "components": [
+        "Transform",
+        "DeepavaliBackground"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Petal Wheel Light Sequence",
+      "components": [
+        "Transform",
+        "FlowerLightSequence",
+        "FlowerSequencePreview",
+        "PetalWheelLightSequence",
+        "PetalWheelSequencePreview"
+      ],
+      "pos": "(0.0000, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "prefab": ""
+    },
+    {
+      "name": "Hand Guidance Canvas",
+      "components": [
+        "RectTransform",
+        "Canvas",
+        "CanvasScaler",
+        "HandGuidanceCanvas",
+        "GraphicRaycaster"
+      ],
+      "pos": "(0.0000, 2.0947, 0.9133)",
+      "scale": "(0.0000, 0.0000, 0.0000)",
+      "prefab": ""
+    }
+  ],
+  "controllers": [
+    {
+      "name": "Deepavali Peacock Flower",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"\",\"centerIconSet\":{\"fileID\":11400000,\"guid\":\"419c778c2e4c6744a8053e1a0b5e8a69\",\"type\":2},\"centerIconScale\":0.6499999761581421,\"centerRingRadius\":0.9200000166893005,\"centerRingWidth\":0.012000000104308129,\"centerRingGlow\":0.949999988079071,\"centerIconGlow\":0.44999998807907107,\"centerDotGlow\":0.30000001192092898,\"paletteSet\":{\"fileID\":11400000,\"guid\":\"ea843ed19dd3ec94ab6dc9eb96fadaa6\",\"type\":2},\"selectedState\":2,\"petalMaterial\":{\"fileID\":2100000,\"guid\":\"18b935d6599d2ff4296294142df69d47\",\"type\":2},\"petals\":[{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0}],\"centerDisc\":{\"instanceID\":0},\"petalAppearances\":[{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"dca2b4b3d4dcf9541a334bd8251f6994\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"8578b1b71f7470e4cadc3ce4842560c7\",\"type\":2},\"startupSymbol\":1,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2e0d4a3a09b40dd4fa597bdd9bd6c407\",\"type\":2},\"startupSymbol\":2,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"1e72c30744edc3a4fa5b0bac740dd7bc\",\"type\":2},\"startupSymbol\":3,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"ce9f5cbe0aea92a468bed7bc37378efb\",\"type\":2},\"startupSymbol\":4,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"85a61615c170eda4db2c69d7163775ec\",\"type\":2},\"startupSymbol\":5,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"16ec5e5eb27081e4c9fe6262c7a5ae41\",\"type\":2},\"startupSymbol\":6,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"instanceID\":0},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"ebc92e262bcd0ea43aabf783e9f006eb\",\"type\":2},\"startupSymbol\":7,\"useStartupArtwork\":true,\"materialOverride\":{\"instanceID\":0},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.09099999815225601,\"y\":0.0},\"artworkSize\":{\"x\":0.18199999630451203,\"y\":0.2630000114440918}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"174d06cc0aa0c8a43808c9aede3455b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"b01f1cdb25e28d643bce056008c0ba57\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"8f20fbdd6bffb314f92fc0387c3ddf1c\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}},{\"palette\":2,\"paletteOverride\":{\"fileID\":11400000,\"guid\":\"74a15f9ad2aaec943a7e464ced0aa6b7\",\"type\":2},\"startupPalette\":{\"fileID\":11400000,\"guid\":\"2afdd72f4eaacc247bdcef5b32089d49\",\"type\":2},\"startupSymbol\":0,\"useStartupArtwork\":false,\"materialOverride\":{\"fileID\":2100000,\"guid\":\"eae0042c44f513f4d950ee9a79d21e26\",\"type\":2},\"emissionScale\":1.0,\"symbol\":-1,\"artworkDuration\":1.2000000476837159,\"artworkSoftness\":0.03999999910593033,\"artworkMin\":{\"x\":-0.10100000351667404,\"y\":0.0},\"artworkSize\":{\"x\":0.20200000703334809,\"y\":0.34599998593330386}}],\"symbolSet\":{\"fileID\":11400000,\"guid\":\"0cb6d31eedf5a044d863617ed80ac6b3\",\"type\":2},\"transitionDuration\":1.2000000476837159,\"waveSoftness\":0.02500000037252903,\"centerArtworkMin\":{\"x\":-0.12099999934434891,\"y\":-0.12099999934434891},\"centerArtworkSize\":{\"x\":0.24199999868869782,\"y\":0.24199999868869782},\"startupSymbolSet\":{\"fileID\":11400000,\"guid\":\"adc841b34c1cece4995c0fcf179fe868\",\"type\":2},\"startupCenterPalette\":{\"fileID\":11400000,\"guid\":\"13f624b7e835b4b44b19f265040d9fa5\",\"type\":2},\"startupCenterIcon\":6}}"
+    }
+  ],
+  "renderers": [
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 01 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 02 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 03 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 04 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 05 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 06 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 07 (Runtime)"
+      ]
+    },
+    {
+      "name": "InnerPetal_01",
+      "parent": "Deepavali_SinglePetal",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Inner Petal Broad Base.asset",
+      "localPosition": "(0.0000, 0.0040, -0.0820)",
+      "rotation": "(270.0198, 0.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 08 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_01",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0208, -0.0200, -0.0978)",
+      "rotation": "(270.0000, 12.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 09 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_02",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0588, -0.0200, -0.0809)",
+      "rotation": "(270.0000, 36.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 10 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_03",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0866, -0.0200, -0.0500)",
+      "rotation": "(270.0000, 60.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 11 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_04",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0995, -0.0200, -0.0105)",
+      "rotation": "(270.0000, 84.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 12 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_05",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0951, -0.0200, 0.0309)",
+      "rotation": "(270.0000, 108.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 13 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_06",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0743, -0.0200, 0.0669)",
+      "rotation": "(270.0000, 132.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 14 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_07",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(-0.0407, -0.0200, 0.0914)",
+      "rotation": "(270.0000, 156.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 15 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_08",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0000, -0.0200, 0.1000)",
+      "rotation": "(270.0000, 180.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 16 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_09",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0407, -0.0200, 0.0914)",
+      "rotation": "(270.0000, 204.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 17 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_10",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0743, -0.0200, 0.0669)",
+      "rotation": "(270.0000, 228.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 18 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_11",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0951, -0.0200, 0.0309)",
+      "rotation": "(270.0000, 252.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 19 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_12",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0995, -0.0200, -0.0105)",
+      "rotation": "(270.0000, 276.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 20 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_13",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0866, -0.0200, -0.0500)",
+      "rotation": "(270.0198, 300.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 21 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_14",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0588, -0.0200, -0.0809)",
+      "rotation": "(270.0000, 324.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 22 (Runtime)"
+      ]
+    },
+    {
+      "name": "OuterPetal_15",
+      "parent": "Outer Petal Layer - 15",
+      "mesh": "Assets/HK_Signature/Deepavali/PetalPrototype/Models/Center Pad/Outer Petal Broad Base.asset",
+      "localPosition": "(0.0208, -0.0200, -0.0978)",
+      "rotation": "(270.0000, 348.0000, 0.0000)",
+      "scale": "(1.0000, 1.0000, 1.0000)",
+      "materials": [
+        "Flower Petal 23 (Runtime)"
+      ]
+    }
+  ]
+}

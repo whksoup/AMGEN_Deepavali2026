@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d682348c680ba34f908965fadbaca37, type: 3}
+  m_Name: Two Petal Study
+  m_EditorClassIdentifier: 
+  innerMap: {fileID: 2800000, guid: 09bf5c5b07648c44886a3096cada94ad, type: 3}
+  outerMap: {fileID: 2800000, guid: 401e8502c7198b746bcaf4cddb0290c0, type: 3}
+  inner:
+    shimmer: 0.65
+    gapCoverage: 0.48
+    gapDepth: 0.98
+    speed: 0.6
+    growth: 1
+    progress: 1
+    tipBrightness: 10
+    edgeBrightness: 7
+    washWidth: 0.25
+    washStrength: 0.22
+    color: {r: 1, g: 0.65, b: 0.22, a: 1}
+    seed: 1
+  outer:
+    shimmer: 0.65
+    gapCoverage: 0.44
+    gapDepth: 0.98
+    speed: 0.6
+    growth: 1
+    progress: 1
+    tipBrightness: 10
+    edgeBrightness: 7
+    washWidth: 0.25
+    washStrength: 0.22
+    color: {r: 1, g: 0.65, b: 0.22, a: 1}
+    seed: 17

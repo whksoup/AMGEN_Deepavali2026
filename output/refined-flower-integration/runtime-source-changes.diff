@@ -1,0 +1,189 @@
+--- before/Scripts/OuterPetalLayerMotion.cs
++++ after/Scripts/OuterPetalLayerMotion.cs
+@@ -8,9 +8,9 @@
+     {
+         [Tooltip("All eight top petals. Read after the ring's follow-through; no separate breeze clock.")]
+         [SerializeField] private PetalMotionController[] topPetals;
+-        [Tooltip("15 connected spines, flattened as Base / Mid / Tip for each petal.")]
++        [Tooltip("Connected spines in visual clockwise order, flattened as Base / Mid / Tip. Source IDs need not be contiguous.")]
+         [SerializeField] private Transform[] outerBones;
+-        [Header("Validated with the 24 mm gap and 6 degree shingled mesh")]
++        [Header("Coordinated lower-layer motion")]
+         [SerializeField, Range(0f, 0.72f)] private float liftFollow = 0.72f;
+         [SerializeField, Range(1.35f, 1.5f)] private float downwardFollow = 1.35f;
+         [SerializeField, Range(0f, 0.5f)] private float swayFollow = 0.5f;
+@@ -22,7 +22,7 @@
+ 
+         private void OnEnable()
+         {
+-            if (topPetals == null || topPetals.Length != 8 || outerBones == null || outerBones.Length != 45)
++            if (topPetals == null || topPetals.Length != 8 || outerBones == null || outerBones.Length < 3 || outerBones.Length % 3 != 0)
+             {
+                 FailSetup();
+                 return;
+@@ -36,7 +36,7 @@
+                 for (int j = 0; j < i; j++)
+                     if (outerBones[j] == outerBones[i]) { FailSetup(); return; }
+             }
+-            if (restRotations == null)
++            if (restRotations == null || restRotations.Length != outerBones.Length)
+             {
+                 restRotations = new Quaternion[outerBones.Length];
+                 for (int i = 0; i < outerBones.Length; i++) restRotations[i] = outerBones[i].localRotation;
+@@ -46,7 +46,7 @@
+ 
+         private void FailSetup()
+         {
+-            Debug.LogError("Assign all eight top motion controllers and the 15 unique three-bone outer spines.", this);
++            Debug.LogError("Assign all eight top motion controllers and unique connected three-bone outer spines.", this);
+             enabled = false;
+         }
+ 
+@@ -86,7 +86,7 @@
+         {
+             CurrentLiftDegrees = CurrentSwayDegrees = Vector3.zero;
+             if (restRotations == null) return;
+-            for (int i = 0; i < restRotations.Length; i++)
++            for (int i = 0; outerBones != null && i < Mathf.Min(restRotations.Length, outerBones.Length); i++)
+                 if (outerBones[i] != null) outerBones[i].localRotation = restRotations[i];
+         }
+     }
+--- before/Scripts/FlowerPaletteController.cs
++++ after/Scripts/FlowerPaletteController.cs
+@@ -16,6 +16,10 @@
+         public bool useStartupArtwork;
+         [Tooltip("Optional artwork material. Re-enable after changing this during Play Mode.")]
+         public Material materialOverride;
++        [Tooltip("Optional lighting coordinates fitted to this petal's silhouette.")]
++        public Texture2D spatialLightingMap;
++        [Tooltip("FBX artwork U runs opposite imported mesh X. Retained separately so existing assets keep their mapping.")]
++        public bool artworkMirroredX;
+         [Min(0f)] public float emissionScale = 1f;
+         [Tooltip("-1 keeps the original ornament. Otherwise, index in the shared symbol set.")]
+         public int symbol = -1;
+@@ -141,7 +145,7 @@
+                 var mat = new Material(MaterialFor(i)) { name = $"Flower Petal {i + 1:00} (Runtime)", hideFlags = HideFlags.DontSave };
+                 runtimePetals[i] = mat;
+                 mat.SetFloat(CenterSurface, 0f);
+-                ConfigureMapping(mat, boundPetals[i], petalAppearances[i].artworkMin, petalAppearances[i].artworkSize);
++                ConfigureMapping(mat, boundPetals[i], petalAppearances[i].artworkMin, petalAppearances[i].artworkSize, petalAppearances[i].artworkMirroredX);
+                 boundPetals[i].sharedMaterial = mat;
+             }
+             originalCenter = boundCenter.sharedMaterial;
+@@ -159,12 +163,12 @@
+         private static bool ValidAppearance(PetalAppearance p) => Finite(p.emissionScale) && p.emissionScale >= 0f &&
+             Finite(p.artworkMin.x) && Finite(p.artworkMin.y) && Finite(p.artworkSize.x) && Finite(p.artworkSize.y) && p.artworkSize.x > 0f && p.artworkSize.y > 0f;
+ 
+-        private void ConfigureMapping(Material mat, Renderer surface, Vector2 min, Vector2 size)
++        private void ConfigureMapping(Material mat, Renderer surface, Vector2 min, Vector2 size, bool mirroredX = false)
+         {
+             // Imported artwork is mesh XY. Snapshot renderer placement, never animated bones.
+             var toFlower = transform.worldToLocalMatrix * surface.transform.localToWorldMatrix;
+-            var origin = toFlower.MultiplyPoint3x4(new Vector3(min.x, min.y, 0f));
+-            var u = toFlower.MultiplyVector(new Vector3(size.x, 0f, 0f));
++            var origin = toFlower.MultiplyPoint3x4(new Vector3(mirroredX ? -min.x : min.x, min.y, 0f));
++            var u = toFlower.MultiplyVector(new Vector3(mirroredX ? -size.x : size.x, 0f, 0f));
+             var v = toFlower.MultiplyVector(new Vector3(0f, size.y, 0f));
+             mat.SetVector(RestX, new Vector4(u.x, v.x, origin.x, 0f));
+             mat.SetVector(RestZ, new Vector4(u.z, v.z, origin.z, 0f));
+--- before/Scripts/FlowerPaletteController.SpatialLighting.cs
++++ after/Scripts/FlowerPaletteController.SpatialLighting.cs
+@@ -17,6 +17,8 @@
+         public bool SetSpatialLighting(int index, PetalLightingSettings settings, Texture2D map, float clock, bool active)
+         {
+             if (!ValidPetal(index)) return false;
++            if (petalAppearances[index].spatialLightingMap != null)
++                map = petalAppearances[index].spatialLightingMap;
+             var material = runtimePetals[index];
+             material.SetFloat(SpatialEnabled, active && map != null && settings != null ? 1 : 0);
+             if (!active || map == null || settings == null) return true;
+--- before/Shaders/PetalPaletteInput.hlsl
++++ after/Shaders/PetalPaletteInput.hlsl
+@@ -9,6 +9,7 @@
+ CBUFFER_START(UnityPerMaterial)
+ float4 _BaseMap_ST;
+ float4 _BaseMap_TexelSize;
++half _ArtworkFitEnabled;
+ float4 _SymbolAtlas_TexelSize;
+ float4 _StartupAtlas_TexelSize;
+ float4 _StartupRect;
+@@ -85,6 +86,8 @@
+ 
+ TEXTURE2D(_StartupAtlas);
+ SAMPLER(sampler_StartupAtlas);
++TEXTURE2D(_ArtworkFitMap);
++SAMPLER(sampler_ArtworkFitMap);
+ 
+ TEXTURE2D(_SymbolAtlas);
+ SAMPLER(sampler_SymbolAtlas);
+@@ -195,11 +198,17 @@
+     }
+     // Linear data: R ornament coverage, G primary/secondary ornament blend,
+     // B neutral pigment detail, A edge emission. Optional minor-inlay mask is independent.
+-    half4 regions = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, uv);
++    float2 artworkUV = uv;
++    if (_ArtworkFitEnabled > 0.5h)
++    {
++        float4 fit = SAMPLE_TEXTURE2D(_ArtworkFitMap, sampler_ArtworkFitMap, uv);
++        artworkUV = float2(dot(fit.rg, float2(1, 1.0 / 255.0)), dot(fit.ba, float2(1, 1.0 / 255.0)));
++    }
++    half4 regions = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, artworkUV);
+     half3 ornament = lerp(accent, main, regions.g);
+     half detail = max(0.5h, regions.b * 1.15h);
+     half3 original = lerp(fill, ornament, regions.r) * detail;
+-    half inlay = SAMPLE_TEXTURE2D(_TertiaryMap, sampler_TertiaryMap, uv).r;
++    half inlay = SAMPLE_TEXTURE2D(_TertiaryMap, sampler_TertiaryMap, artworkUV).r;
+     original = lerp(original, tertiary * detail, inlay);
+     half3 originalCoverage = half3(regions.r * regions.g * (1 - inlay), regions.r * (1 - regions.g) * (1 - inlay), inlay);
+     // Radial distance from this petal's unanimated root, independent of the palette wave.
+@@ -208,16 +217,16 @@
+     float artworkFront = lerp(-artworkSoftness, _ArtworkRadius + artworkSoftness, saturate(_ArtworkProgress));
+     half artworkBlend = 1 - smoothstep(artworkFront - artworkSoftness, artworkFront + artworkSoftness, length(rootPosition));
+     half border = smoothstep(0.08h, 0.25h, regions.a);
+-    float2 uvDx = ddx(uv), uvDy = ddy(uv);
++    float2 uvDx = ddx(artworkUV), uvDy = ddy(artworkUV);
+     ArtworkSample artwork;
+     if (artworkBlend >= 1)
+-        artwork = SampleArtwork(uv, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
++        artwork = SampleArtwork(artworkUV, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
+     else if (artworkBlend <= 0)
+-        artwork = SampleArtwork(uv, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
++        artwork = SampleArtwork(artworkUV, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
+     else
+     {
+-        ArtworkSample from = SampleArtwork(uv, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
+-        ArtworkSample to = SampleArtwork(uv, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
++        ArtworkSample from = SampleArtwork(artworkUV, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
++        ArtworkSample to = SampleArtwork(artworkUV, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
+         artwork.albedo = lerp(from.albedo, to.albedo, artworkBlend);
+         artwork.glowCoverage = lerp(from.glowCoverage, to.glowCoverage, artworkBlend);
+     }
+@@ -227,7 +236,7 @@
+     half spatialIconCoverage = 0;
+     if (initialWeight > 0)
+     {
+-        float2 atlasUV = saturate(uv) * _StartupRect.xy + _StartupRect.zw;
++        float2 atlasUV = saturate(artworkUV) * _StartupRect.xy + _StartupRect.zw;
+         float2 dx = uvDx * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
+         float2 dy = uvDy * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
+         float lod = min(_StartupMaxMip, 0.5 * log2(max(1, max(dot(dx,dx), dot(dy,dy)))));
+@@ -235,7 +244,7 @@
+         half coverage = saturate((mask.r - 0.015h) / 0.97h);
+         // The opening glyph is centered inside the 52 mm medallion. Crop the
+         // artwork coverage inside that circle so rings, dots and borders stay dark.
+-        float2 iconOffset = (uv - _PetalLightIconRegion.xy) * float2(_ArtworkUvToRoot.x, 1);
++        float2 iconOffset = (artworkUV - _PetalLightIconRegion.xy) * float2(_ArtworkFitEnabled > 0.5h ? 0.6920152 : _ArtworkUvToRoot.x, 1);
+         half iconRegion = 1 - smoothstep(_PetalLightIconRegion.z - _PetalLightIconRegion.w,
+             _PetalLightIconRegion.z + _PetalLightIconRegion.w, length(iconOffset));
+         spatialIconCoverage = coverage * iconRegion * initialWeight;
+--- before/Shaders/PetalPaletteLit.shader
++++ after/Shaders/PetalPaletteLit.shader
+@@ -3,6 +3,8 @@
+     Properties
+     {
+         [MainTexture] _BaseMap("Region Mask (Ornament / Main / Detail / Edge)", 2D) = "white" {}
++        _ArtworkFitMap("Fitted Artwork Coordinates (16-bit U / V)", 2D) = "black" {}
++        [HideInInspector] _ArtworkFitEnabled("Use Fitted Artwork", Float) = 0
+         [MainColor] _BaseColor("Petal Fill", Color) = (0.5,0.05,0.15,1)
+         _PatternColor("Main Ornament", Color) = (1,0.7,0.3,1)
+         _AccentColor("Accent Ornament", Color) = (1,0.3,0.02,1)

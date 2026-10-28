@@ -3,6 +3,7 @@ using UnityEngine;
 namespace Amgen.Deepavali
 {
     /// <summary>Rotation-only motion for a connected, three-bone petal spine.</summary>
+    [DefaultExecutionOrder(-200)]
     [DisallowMultipleComponent]
     public sealed class PetalMotionController : MonoBehaviour
     {
@@ -33,11 +34,13 @@ namespace Amgen.Deepavali
         private float idleFade;
         private float holdRemaining;
         private float pulseWeight;
+        private float followPulseWeight;
         private float pulseVelocity;
         private Vector3 currentLiftDegrees;
         private Vector3 currentSwayDegrees;
 
         public float PulseWeight => pulseWeight;
+        public float EffectivePulseWeight => Mathf.Max(pulseWeight, followPulseWeight);
         public Vector3 CurrentLiftDegrees => currentLiftDegrees;
         public Vector3 CurrentSwayDegrees => currentSwayDegrees;
 
@@ -61,7 +64,7 @@ namespace Amgen.Deepavali
             }
 
             liftPhase = swayPhase = phaseOffset;
-            idleFade = holdRemaining = pulseWeight = pulseVelocity = 0f;
+            idleFade = holdRemaining = pulseWeight = followPulseWeight = pulseVelocity = 0f;
             RestoreRestPose();
         }
 
@@ -79,7 +82,18 @@ namespace Amgen.Deepavali
             holdRemaining = Mathf.Max(0f, holdRemaining - dt);
             pulseWeight = Mathf.SmoothDamp(pulseWeight, target, ref pulseVelocity,
                 target > pulseWeight ? pulseAttack : pulseRelease, Mathf.Infinity, dt);
+        }
 
+        private void LateUpdate()
+        {
+            // Picking in Update sees the last displayed pose. Resolve this frame's own
+            // pose here, then the ring (-100) adds follow-through before the outer layer.
+            followPulseWeight = 0f;
+            ApplyPose();
+        }
+
+        private void ApplyPose()
+        {
             ApplyBone(baseBone, baseRest, 0);
             ApplyBone(middleBone, middleRest, 1);
             ApplyBone(tipBone, tipRest, 2);
@@ -88,7 +102,7 @@ namespace Amgen.Deepavali
         private void ApplyBone(Transform bone, Quaternion rest, int index)
         {
             float lift = idleFade * (liftBias[index] + idleLift[index] * Mathf.Sin(liftPhase - index * 0.35f));
-            lift += pulseWeight * pulseLift[index];
+            lift += EffectivePulseWeight * pulseLift[index];
             float sway = idleFade * idleSway[index] * Mathf.Sin(swayPhase - index * 0.45f);
             currentLiftDegrees[index] = lift;
             currentSwayDegrees[index] = sway;
@@ -108,10 +122,18 @@ namespace Amgen.Deepavali
             holdRemaining = pulseHold;
         }
 
+        /// <summary>Follow a neighboring direct pulse without retriggering or propagating it again.</summary>
+        public void ApplyFollowPulse(float weight)
+        {
+            if (!Application.isPlaying || !isActiveAndEnabled || !hasRestPose) return;
+            followPulseWeight = Mathf.Clamp01(weight);
+            ApplyPose();
+        }
+
         private void OnDisable()
         {
             RestoreRestPose();
-            holdRemaining = pulseWeight = pulseVelocity = idleFade = 0f;
+            holdRemaining = pulseWeight = followPulseWeight = pulseVelocity = idleFade = 0f;
         }
 
         private void RestoreRestPose()

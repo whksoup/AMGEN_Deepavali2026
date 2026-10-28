@@ -33,6 +33,7 @@ namespace Amgen.Deepavali
             for (int i = 0; i < runtimePetals.Length; i++)
             {
                 var p = petalAppearances[i];
+                ConfigureStartupArtwork(i);
                 // Imported mesh root is (0,0). Map planar UV into root-relative XY,
                 // normalized by petal length, so the front is a circular arc.
                 var mapping = new Vector4(p.artworkSize.x / p.artworkSize.y, 1f,

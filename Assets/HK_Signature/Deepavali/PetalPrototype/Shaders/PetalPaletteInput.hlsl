@@ -1,12 +1,30 @@
 #ifndef DEEPAVALI_PETAL_PALETTE_INPUT
 #define DEEPAVALI_PETAL_PALETTE_INPUT
+// Match the original nonmetallic 0.04 reflectance by default, but allow the
+// dark pigment to have a softer sheen independently of the gold artwork.
+#define _SPECULAR_SETUP 1
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/SurfaceInput.hlsl"
 
 // Identical layout in every pass keeps the shader compatible with the SRP Batcher.
 CBUFFER_START(UnityPerMaterial)
 float4 _BaseMap_ST;
 float4 _BaseMap_TexelSize;
+half _ArtworkFitEnabled;
+half _StartupMeshUV;
+half _OutcomeIconEnabled;
+float4 _OutcomeIconAtlas_TexelSize;
+float4 _OutcomeIconRect;
+float4 _OutcomeIconRotation;
+float _OutcomeIconMaxMip;
 float4 _SymbolAtlas_TexelSize;
+float4 _StartupAtlas_TexelSize;
+float4 _StartupRect;
+float _StartupMaxMip;
+half _StartupSymbolEnabled;
+half _StartupAppearance;
+half _TargetStartupAppearance;
+half4 _EdgeColor;
+half4 _TargetEdgeColor;
 float4 _SymbolRect;
 float4 _TargetSymbolRect;
 float _SymbolMaxMip;
@@ -19,9 +37,11 @@ float _ArtworkSoftness;
 half4 _BaseColor;
 half4 _PatternColor;
 half4 _AccentColor;
+half4 _TertiaryColor;
 half4 _TargetBaseColor;
 half4 _TargetPatternColor;
 half4 _TargetAccentColor;
+half4 _TargetTertiaryColor;
 float4 _RestUvToFlowerX;
 float4 _RestUvToFlowerZ;
 float _WaveProgress;
@@ -46,10 +66,57 @@ half4 _CenterRingColor;
 half4 _TargetCenterRingColor;
 half _Smoothness;
 half _Surface;
+half _BodyShadeStrength;
+half _BodyOcclusionStrength;
+half _BodySpecularStrength;
+half _RimGlowScale;
+half _OrnamentGlowScale;
+half _PetalLightEnabled;
+half _PatternLightHandoff;
+half _PatternPaletteAlpha;
+half _PatternEmissionGain;
+half _PatternSurfaceGlow;
+half4 _PetalLightColor;
+float4 _PetalLightShape;
+float4 _PetalLightTravel;
+float4 _PetalLightStyle;
+half _PetalLightTipReach;
+half _PetalLightIconBrightness;
+float4 _PetalLightIconRegion;
+half4 _FlowerStageLevels;
 CBUFFER_END
+
+TEXTURE2D(_PetalLightData);
+SAMPLER(sampler_PetalLightData);
+#include "PetalSpatialLighting.hlsl"
+
+TEXTURE2D(_StartupAtlas);
+SAMPLER(sampler_StartupAtlas);
+TEXTURE2D(_OutcomeIconAtlas);
+SAMPLER(sampler_OutcomeIconAtlas);
+TEXTURE2D(_ArtworkFitMap);
+SAMPLER(sampler_ArtworkFitMap);
 
 TEXTURE2D(_SymbolAtlas);
 SAMPLER(sampler_SymbolAtlas);
+TEXTURE2D(_TertiaryMap);
+SAMPLER(sampler_TertiaryMap);
+// Linear data: R broad body shading, G recessed ambient occlusion.
+TEXTURE2D(_BodyShadingMap);
+SAMPLER(sampler_BodyShadingMap);
+TEXTURE2D(_CenterShadingMap);
+SAMPLER(sampler_CenterShadingMap);
+
+void ApplyBodyShading(float2 uv, half bodyCoverage, bool center, inout SurfaceData surface)
+{
+    half2 shading;
+    if (center) shading = SAMPLE_TEXTURE2D(_CenterShadingMap, sampler_CenterShadingMap, uv).rg;
+    else shading = SAMPLE_TEXTURE2D(_BodyShadingMap, sampler_BodyShadingMap, uv).rg;
+    // Shade the non-ornament substrate only. Emission is deliberately independent.
+    surface.albedo *= lerp(1.0h, shading.r, saturate(bodyCoverage * _BodyShadeStrength));
+    surface.occlusion = lerp(1.0h, shading.g, saturate(bodyCoverage * _BodyOcclusionStrength));
+    surface.specular *= lerp(1.0h, _BodySpecularStrength, saturate(bodyCoverage));
+}
 
 half CenterIconCoverage(float2 uv, float2 uvDx, float2 uvDy, float4 rect, half enabled)
 {
@@ -66,11 +133,11 @@ half CenterIconCoverage(float2 uv, float2 uvDx, float2 uvDy, float4 rect, half e
 struct ArtworkSample
 {
     half3 albedo;
-    half2 glowCoverage;
+    half3 glowCoverage;
 };
 
 ArtworkSample SampleArtwork(float2 uv, float2 uvDx, float2 uvDy, float4 rect, half enabled,
-    half3 original, half2 originalCoverage, half3 fill, half3 main, half3 accent, half border)
+    half3 original, half3 originalCoverage, half3 fill, half3 main, half3 accent, half border)
 {
     ArtworkSample result;
     result.albedo = original;
@@ -88,7 +155,7 @@ ArtworkSample SampleArtwork(float2 uv, float2 uvDx, float2 uvDy, float4 rect, ha
     half eraseCoverage = saturate((symbol.a - 0.01h) / 0.98h);
     half erase = eraseCoverage * (1 - border);
     result.albedo = lerp(original, replacement, erase);
-    result.glowCoverage = lerp(originalCoverage, half2(symbol.r * symbol.g, symbol.r * (1 - symbol.g)), erase);
+    result.glowCoverage = lerp(originalCoverage, half3(symbol.r * symbol.g, symbol.r * (1 - symbol.g), 0), erase);
     return result;
 }
 
@@ -99,10 +166,13 @@ void InitializeStandardLitSurfaceData(float2 uv, out SurfaceData surface)
     float softness = max(0.001, _WaveSoftness);
     float front = lerp(-softness, _WaveRadius + softness, saturate(_WaveProgress));
     half blend = 1 - smoothstep(front - softness, front + softness, length(rest));
+    blend *= _PatternPaletteAlpha;
     half3 fill = lerp(_BaseColor.rgb, _TargetBaseColor.rgb, blend);
     half3 main = lerp(_PatternColor.rgb, _TargetPatternColor.rgb, blend);
     half3 accent = lerp(_AccentColor.rgb, _TargetAccentColor.rgb, blend);
+    half3 tertiary = lerp(_TertiaryColor.rgb, _TargetTertiaryColor.rgb, blend);
     surface = (SurfaceData)0;
+    surface.specular = _CenterSurface > 0.5h ? 0.0h : 0.04h;
     surface.smoothness = _Smoothness;
     surface.normalTS = half3(0,0,1);
     surface.occlusion = 1;
@@ -127,41 +197,117 @@ void InitializeStandardLitSurfaceData(float2 uv, out SurfaceData surface)
         else icon = lerp(CenterIconCoverage(iconUV, iconDx, iconDy, _SymbolRect, _SymbolEnabled),
             CenterIconCoverage(iconUV, iconDx, iconDy, _TargetSymbolRect, _TargetSymbolEnabled), blend);
         surface.albedo = lerp(fill, main, saturate(ring + dots + icon));
+        ApplyBodyShading(uv, 1 - saturate(ring + dots + icon), true, surface);
         half3 rimHue = lerp(_CenterRingColor.rgb, _TargetCenterRingColor.rgb, blend);
-        surface.emission = ring * rimHue * lerp(_EdgeIntensity, _TargetEdgeIntensity, blend) * _CenterRingGlow
-            + main * (icon * _CenterIconGlow + dots * _CenterDotGlow);
+        surface.emission = (ring * rimHue * lerp(_EdgeIntensity, _TargetEdgeIntensity, blend) * _CenterRingGlow * _RimGlowScale * _FlowerStageLevels.w
+            + main * (icon * _CenterIconGlow + dots * _CenterDotGlow) * _FlowerStageLevels.y) * _FlowerStageLevels.x * _PatternEmissionGain;
+        surface.albedo *= _FlowerStageLevels.z;
         return;
     }
     // Linear data: R ornament coverage, G primary/secondary ornament blend,
-    // B neutral pigment detail, A edge emission. One texture sample for all states.
-    half4 regions = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, uv);
+    // B neutral pigment detail, A edge emission. Optional minor-inlay mask is independent.
+    float2 artworkUV = uv;
+    if (_ArtworkFitEnabled > 0.5h)
+    {
+        float4 fit = SAMPLE_TEXTURE2D(_ArtworkFitMap, sampler_ArtworkFitMap, uv);
+        artworkUV = float2(dot(fit.rg, float2(1, 1.0 / 255.0)), dot(fit.ba, float2(1, 1.0 / 255.0)));
+    }
+    half4 regions = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, artworkUV);
     half3 ornament = lerp(accent, main, regions.g);
     half detail = max(0.5h, regions.b * 1.15h);
     half3 original = lerp(fill, ornament, regions.r) * detail;
-    half2 originalCoverage = half2(regions.r * regions.g, regions.r * (1 - regions.g));
+    half inlay = SAMPLE_TEXTURE2D(_TertiaryMap, sampler_TertiaryMap, artworkUV).r;
+    original = lerp(original, tertiary * detail, inlay);
+    half3 originalCoverage = half3(regions.r * regions.g * (1 - inlay), regions.r * (1 - regions.g) * (1 - inlay), inlay);
     // Radial distance from this petal's unanimated root, independent of the palette wave.
     float2 rootPosition = uv * _ArtworkUvToRoot.xy + _ArtworkUvToRoot.zw;
     float artworkSoftness = max(0.001, _ArtworkSoftness);
     float artworkFront = lerp(-artworkSoftness, _ArtworkRadius + artworkSoftness, saturate(_ArtworkProgress));
     half artworkBlend = 1 - smoothstep(artworkFront - artworkSoftness, artworkFront + artworkSoftness, length(rootPosition));
     half border = smoothstep(0.08h, 0.25h, regions.a);
-    float2 uvDx = ddx(uv), uvDy = ddy(uv);
+    float2 uvDx = ddx(artworkUV), uvDy = ddy(artworkUV);
+    // Per-leaf medallions are authored in physical UVs so their circles and
+    // inset gold contours do not inherit the old silhouette's horizontal warp.
+    float2 startupUV = lerp(artworkUV, uv, _StartupMeshUV);
+    float2 startupDx = ddx(startupUV), startupDy = ddy(startupUV);
     ArtworkSample artwork;
     if (artworkBlend >= 1)
-        artwork = SampleArtwork(uv, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
+        artwork = SampleArtwork(artworkUV, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
     else if (artworkBlend <= 0)
-        artwork = SampleArtwork(uv, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
+        artwork = SampleArtwork(artworkUV, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
     else
     {
-        ArtworkSample from = SampleArtwork(uv, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
-        ArtworkSample to = SampleArtwork(uv, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
+        ArtworkSample from = SampleArtwork(artworkUV, uvDx, uvDy, _SymbolRect, _SymbolEnabled, original, originalCoverage, fill, main, accent, border);
+        ArtworkSample to = SampleArtwork(artworkUV, uvDx, uvDy, _TargetSymbolRect, _TargetSymbolEnabled, original, originalCoverage, fill, main, accent, border);
         artwork.albedo = lerp(from.albedo, to.albedo, artworkBlend);
         artwork.glowCoverage = lerp(from.glowCoverage, to.glowCoverage, artworkBlend);
     }
+    // Opening medallion, colors and edge tint share exactly the same outward wave.
+    // The normal artwork clock remains independent and is revealed beneath it.
+    half initialWeight = _StartupSymbolEnabled * lerp(_StartupAppearance, _TargetStartupAppearance, blend);
+    initialWeight = max(initialWeight, _OutcomeIconEnabled);
+    half spatialIconCoverage = 0;
+    if (initialWeight > 0)
+    {
+        float2 atlasUV = saturate(startupUV) * _StartupRect.xy + _StartupRect.zw;
+        float2 dx = startupDx * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
+        float2 dy = startupDy * _StartupRect.xy * _StartupAtlas_TexelSize.zw;
+        float lod = min(_StartupMaxMip, 0.5 * log2(max(1, max(dot(dx,dx), dot(dy,dy)))));
+        half4 mask = SAMPLE_TEXTURE2D_LOD(_StartupAtlas, sampler_StartupAtlas, atlasUV, lod);
+        half coverage = saturate((mask.r - 0.015h) / 0.97h);
+        // The opening glyph is centered inside its medallion. Crop the
+        // artwork coverage inside that circle so rings, dots and borders stay dark.
+        float iconAspect = _StartupMeshUV > 0.5h ? _ArtworkUvToRoot.x : (_ArtworkFitEnabled > 0.5h ? 0.6920152 : _ArtworkUvToRoot.x);
+        float2 iconOffset = (startupUV - _PetalLightIconRegion.xy) * float2(iconAspect, 1);
+        half iconRegion = 1 - smoothstep(_PetalLightIconRegion.z - _PetalLightIconRegion.w,
+            _PetalLightIconRegion.z + _PetalLightIconRegion.w, length(iconOffset));
+        if (_OutcomeIconEnabled > 0.5h)
+        {
+            // Keep the fitted petal frame. Only the glyph inside its medallion changes,
+            // using the same radial blend as the palette and center icon.
+            float2 p = iconOffset / max(0.001, 2 * _PetalLightIconRegion.z);
+            float c = _OutcomeIconRotation.x, s = _OutcomeIconRotation.y;
+            float2 iconUv = float2(c * p.x + s * p.y, -s * p.x + c * p.y) + 0.5;
+            float2 dx = ddx(iconUv) * _OutcomeIconRect.xy * _OutcomeIconAtlas_TexelSize.zw;
+            float2 dy = ddy(iconUv) * _OutcomeIconRect.xy * _OutcomeIconAtlas_TexelSize.zw;
+            float iconLod = min(_OutcomeIconMaxMip, 0.5 * log2(max(1, max(dot(dx, dx), dot(dy, dy)))));
+            half glyph = SAMPLE_TEXTURE2D_LOD(_OutcomeIconAtlas, sampler_OutcomeIconAtlas,
+                saturate(iconUv) * _OutcomeIconRect.xy + _OutcomeIconRect.zw, iconLod).r;
+            coverage = lerp(coverage, glyph, iconRegion * blend);
+        }
+        spatialIconCoverage = coverage * iconRegion * initialWeight;
+        half3 initialAlbedo = lerp(fill, main, coverage) * max(0.5h, mask.b * 1.15h);
+        artwork.albedo = lerp(artwork.albedo, initialAlbedo, initialWeight);
+        artwork.glowCoverage = lerp(artwork.glowCoverage, half3(coverage, 0, 0), initialWeight);
+    }
     surface.albedo = artwork.albedo;
-    half3 borderGlow = regions.a * fill * lerp(_EdgeIntensity, _TargetEdgeIntensity, blend);
+    half bodyCoverage = 1 - saturate(artwork.glowCoverage.x + artwork.glowCoverage.y + artwork.glowCoverage.z + border);
+    ApplyBodyShading(uv, bodyCoverage, false, surface);
+    half3 fromEdge = lerp(_BaseColor.rgb, _EdgeColor.rgb, saturate(_EdgeColor.a));
+    half3 toEdge = lerp(_TargetBaseColor.rgb, _TargetEdgeColor.rgb, saturate(_TargetEdgeColor.a));
+    // BC7 can introduce tiny alpha values alongside the old gold coverage. A bright
+    // yellow opening edge would illuminate those otherwise invisible codec remnants.
+    // Preserve the existing phase emission exactly once the opening wave has passed.
+    half edgeCoverage = lerp(regions.a, saturate((regions.a - 0.03h) / 0.97h), initialWeight);
+    half3 borderGlow = edgeCoverage * lerp(fromEdge, toEdge, blend) * lerp(_EdgeIntensity, _TargetEdgeIntensity, blend);
     half3 mainGlow = artwork.glowCoverage.x * main * lerp(_MainPatternIntensity, _TargetMainPatternIntensity, blend);
-    half3 accentGlow = artwork.glowCoverage.y * accent * lerp(_AccentPatternIntensity, _TargetAccentPatternIntensity, blend);
-    surface.emission = (borderGlow + mainGlow + accentGlow) * _EmissionScale;
+    // Inlays share the secondary glow control, keeping the two-region lighting workflow.
+    half3 accentGlow = (artwork.glowCoverage.y * accent + artwork.glowCoverage.z * tertiary) * lerp(_AccentPatternIntensity, _TargetAccentPatternIntensity, blend);
+    // Keep the border legible while the dense interior ornament stays quieter.
+    half ornamentScale = lerp(_OrnamentGlowScale, _RimGlowScale, border);
+    surface.emission = (borderGlow * _RimGlowScale + (mainGlow + accentGlow) * ornamentScale * _FlowerStageLevels.y) * _EmissionScale;
+    if (_PetalLightEnabled > 0.5h)
+    {
+        half3 paletteEmission = surface.emission;
+        ApplyPetalSpatialLighting(uv, edgeCoverage, borderGlow * _RimGlowScale * _EmissionScale, surface);
+        // Add before the common stage multiplier: icon and tip share exactly the
+        // same roulette crossfade, including entry, handoff and winner release.
+        surface.emission += spatialIconCoverage * _PetalLightColor.rgb * _PetalLightIconBrightness * _EmissionScale;
+        surface.emission = lerp(surface.emission, paletteEmission, _PatternLightHandoff);
+    }
+    // Opt-in whole-petal illumination follows the artwork's own colors.
+    surface.emission += artwork.albedo * _PatternSurfaceGlow * _EmissionScale;
+    surface.emission *= _FlowerStageLevels.x * _PatternEmissionGain;
+    surface.albedo *= _FlowerStageLevels.z;
 }
 #endif

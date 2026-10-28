@@ -1,0 +1,21 @@
+{
+  "beforeHeightPercent": 74.8168945,
+  "afterHeightPercent": 90.0,
+  "cameraPitchDegrees": 50.00001,
+  "tiltFromOverhead": 40,
+  "cameraPosition": [
+    1.03959408E-07,
+    1.41718245,
+    1.402771
+  ],
+  "flowerScale": 1.68608963,
+  "viewportBounds": [
+    0.234246492,
+    0.0500000119,
+    0.7657535,
+    0.95
+  ],
+  "flowerClearance": 0.876766562,
+  "lowestFlowerVertex": -0.05161982,
+  "floorHeight": -0.08
+}

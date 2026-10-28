@@ -1,0 +1,142 @@
+--- before
+
++++ after
+
+@@ -8210,5 +8210,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: fc556b276b0405441a4aedd549b84b9d, type: 2}
++      objectReference: {fileID: 2100000, guid: f6ea2b475817dfc4891136fa2172212d, type: 2}
+     - target: {fileID: 604224786001308566, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_Mesh
+@@ -8246,5 +8246,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: ee2d6165cbce0224ea8f32db1e2b8fcb, type: 2}
++      objectReference: {fileID: 2100000, guid: c14649489268e5a4388a5ce4631b74e3, type: 2}
+     - target: {fileID: 614698195536245841, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_Name
+@@ -8362,5 +8362,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: 62686030769ec634d9bf483a44a9c772, type: 2}
++      objectReference: {fileID: 2100000, guid: fd37e246eae080942a77984fbcfdd702, type: 2}
+     - target: {fileID: 845892805210199751, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_Name
+@@ -9374,5 +9374,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: 5ccb7b39f63376f48a39192de0780ee2, type: 2}
++      objectReference: {fileID: 2100000, guid: 1f33167584aba554187bc4b5ebf8e06f, type: 2}
+     - target: {fileID: 3867882239845737097, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_LocalScale.y
+@@ -10170,5 +10170,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: 795391b5c082f4a4193bfac0de9588ae, type: 2}
++      objectReference: {fileID: 2100000, guid: df5a78957d778ec4e8693097ee1177f9, type: 2}
+     - target: {fileID: 5356654545035912850, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_Name
+@@ -10402,5 +10402,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: fc8dd9fc213279c429153bb79f360087, type: 2}
++      objectReference: {fileID: 2100000, guid: ff8c36c0791b3f742a6f336a9b0caf17, type: 2}
+     - target: {fileID: 5864116329016948959, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_Mesh
+@@ -11174,5 +11174,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: c7acfface77c44a46bfe8778a8fd1a53, type: 2}
++      objectReference: {fileID: 2100000, guid: 93c49e08349757349aec778ebfff8231, type: 2}
+     - target: {fileID: 6946769967764018111, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_Name
+@@ -11526,5 +11526,5 @@
+
+       propertyPath: 'm_Materials.Array.data[0]'
+       value: 
+-      objectReference: {fileID: 2100000, guid: dfdf02ea956c69043a676ea484b88d05, type: 2}
++      objectReference: {fileID: 2100000, guid: 847586d1302cc3442a59bf3d779d43fd, type: 2}
+     - target: {fileID: 7616800273593621547, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: m_LocalScale.x
+@@ -11900,4 +11900,8 @@
+
+       objectReference: {fileID: 0}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
++      propertyPath: startupSymbolSet
++      value: 
++      objectReference: {fileID: 11400000, guid: c1552e27c0e234846a4a564d48d4575d, type: 2}
++    - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petals.Array.size
+       value: 22
+@@ -12186,5 +12190,5 @@
+
+       propertyPath: petalAppearances.Array.data[0].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: ee2d6165cbce0224ea8f32db1e2b8fcb, type: 2}
++      objectReference: {fileID: 2100000, guid: c14649489268e5a4388a5ce4631b74e3, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[10].paletteOverride
+@@ -12234,5 +12238,5 @@
+
+       propertyPath: petalAppearances.Array.data[1].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: fc8dd9fc213279c429153bb79f360087, type: 2}
++      objectReference: {fileID: 2100000, guid: ff8c36c0791b3f742a6f336a9b0caf17, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[20].paletteOverride
+@@ -12254,5 +12258,5 @@
+
+       propertyPath: petalAppearances.Array.data[2].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: dfdf02ea956c69043a676ea484b88d05, type: 2}
++      objectReference: {fileID: 2100000, guid: 847586d1302cc3442a59bf3d779d43fd, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[3].artworkMirroredX
+@@ -12262,5 +12266,5 @@
+
+       propertyPath: petalAppearances.Array.data[3].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: fc556b276b0405441a4aedd549b84b9d, type: 2}
++      objectReference: {fileID: 2100000, guid: f6ea2b475817dfc4891136fa2172212d, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[4].artworkMirroredX
+@@ -12270,5 +12274,5 @@
+
+       propertyPath: petalAppearances.Array.data[4].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: 5ccb7b39f63376f48a39192de0780ee2, type: 2}
++      objectReference: {fileID: 2100000, guid: 1f33167584aba554187bc4b5ebf8e06f, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[5].artworkMirroredX
+@@ -12278,5 +12282,5 @@
+
+       propertyPath: petalAppearances.Array.data[5].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: c7acfface77c44a46bfe8778a8fd1a53, type: 2}
++      objectReference: {fileID: 2100000, guid: 93c49e08349757349aec778ebfff8231, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[6].artworkMirroredX
+@@ -12286,5 +12290,5 @@
+
+       propertyPath: petalAppearances.Array.data[6].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: 62686030769ec634d9bf483a44a9c772, type: 2}
++      objectReference: {fileID: 2100000, guid: fd37e246eae080942a77984fbcfdd702, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[7].artworkMirroredX
+@@ -12294,5 +12298,5 @@
+
+       propertyPath: petalAppearances.Array.data[7].materialOverride
+       value: 
+-      objectReference: {fileID: 2100000, guid: 795391b5c082f4a4193bfac0de9588ae, type: 2}
++      objectReference: {fileID: 2100000, guid: df5a78957d778ec4e8693097ee1177f9, type: 2}
+     - target: {fileID: 8240058396359809100, guid: 839b083e84d2e5c428d4dcdc925c671c, type: 3}
+       propertyPath: petalAppearances.Array.data[8].artworkMirroredX

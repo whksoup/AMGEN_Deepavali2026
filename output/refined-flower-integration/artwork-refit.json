@@ -1,0 +1,178 @@
+[
+  {
+    "name": "InnerPetal_01",
+    "width": 0.1573723629117012,
+    "length": 0.23102408647537231,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 184492
+  },
+  {
+    "name": "REF_TopPetal_02",
+    "width": 0.15009314566850662,
+    "length": 0.2359740436077118,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 190759
+  },
+  {
+    "name": "REF_TopPetal_03",
+    "width": 0.18246368318796158,
+    "length": 0.2713347375392914,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 191372
+  },
+  {
+    "name": "REF_TopPetal_04",
+    "width": 0.17659968882799149,
+    "length": 0.28737935423851013,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 188632
+  },
+  {
+    "name": "REF_TopPetal_05",
+    "width": 0.18187430500984192,
+    "length": 0.28267043828964233,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 193233
+  },
+  {
+    "name": "REF_TopPetal_06",
+    "width": 0.17354194819927216,
+    "length": 0.3142269253730774,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 188927
+  },
+  {
+    "name": "REF_TopPetal_07",
+    "width": 0.1749701201915741,
+    "length": 0.27168816328048706,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 193745
+  },
+  {
+    "name": "REF_TopPetal_08",
+    "width": 0.15183480083942413,
+    "length": 0.23422978818416595,
+    "continuous_pattern": true,
+    "boundary_edges": 120,
+    "fitted_pixels": 196907
+  },
+  {
+    "name": "OuterPetal_01",
+    "width": 0.267061710357666,
+    "length": 0.2968832850456238,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_03",
+    "width": 0.17244426906108856,
+    "length": 0.3135297894477844,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_04",
+    "width": 0.2110998034477234,
+    "length": 0.340531587600708,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_05",
+    "width": 0.21311552822589874,
+    "length": 0.34367838501930237,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_06",
+    "width": 0.20440798997879028,
+    "length": 0.34669527411460876,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_07",
+    "width": 0.1813327968120575,
+    "length": 0.33866649866104126,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_08",
+    "width": 0.16949571669101715,
+    "length": 0.32841822504997253,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_09",
+    "width": 0.18376992642879486,
+    "length": 0.3291587829589844,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_10",
+    "width": 0.16997040808200836,
+    "length": 0.3183887004852295,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_11",
+    "width": 0.17851069569587708,
+    "length": 0.3366444408893585,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_12",
+    "width": 0.20678949356079102,
+    "length": 0.35253065824508667,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_13",
+    "width": 0.22251228988170624,
+    "length": 0.35569170117378235,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_14",
+    "width": 0.2173498421907425,
+    "length": 0.3461267650127411,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  },
+  {
+    "name": "OuterPetal_15",
+    "width": 0.15994735062122345,
+    "length": 0.2940366566181183,
+    "continuous_pattern": true,
+    "boundary_edges": 96,
+    "fitted_pixels": 158044
+  }
+]

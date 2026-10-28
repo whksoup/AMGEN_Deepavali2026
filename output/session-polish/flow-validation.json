@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "checks": {
+    "Saved doubled brush and default inactivity load": true,
+    "Dormant mask already contains live shimmer": true,
+    "Hand assembles with reverse dissolve": true,
+    "Hover during appearance cannot start dwell or paint": true,
+    "Dwell starts after assembly and requires no click": true,
+    "Large brush reveals beyond old radius": true,
+    "Partial restoration renders shimmer without resetting it": true,
+    "M opens hidden debug menu": true,
+    "Debug panel blocks the painting and dwell pointer": true,
+    "Open untouched debug panel does not paint or refresh inactivity": true,
+    "Settings save succeeds": true,
+    "Brush and idle are persisted to disk": true,
+    "Saved brush idle and fade round-trip": true,
+    "M closes debug menu": true,
+    "Completion keeps the same Shimmer object and clock": true,
+    "Completion requires four candles and coverage": true,
+    "Shimmer prompt begins assembly": true,
+    "Respawned prompt does not activate on a stationary pointer": true,
+    "Existing entry and randomized spin still run": true,
+    "Result reaches its matching fully visible scroll": true,
+    "Active visitor retains normal scroll close and reset": true,
+    "Stationary mouse does not refresh idle clock": true,
+    "Default inactivity waits thirty seconds": true,
+    "Timeout pauses wheel without clearing visible state": true,
+    "Inactivity return fades gradually through black before reset": true,
+    "Idle return resets all content and reassembles hand": true,
+    "Reset holds at dark base and clears pending timers": true
+  },
+  "errors": [],
+  "timeline": [
+    {
+      "time": 0.02069610000035027,
+      "phase": "AwaitingRestoration",
+      "idle": 0.6644333,
+      "coverage": 0.0,
+      "clock": 0.341666669
+    },
+    {
+      "time": 1.5063962999993237,
+      "phase": "DismissingRestorationPrompt",
+      "idle": 1.28392613,
+      "coverage": 0.0,
+      "clock": 1.50650966
+    },
+    {
+      "time": 2.3641734999982873,
+      "phase": "Restoring",
+      "idle": 2.13863182,
+      "coverage": 0.01927083,
+      "clock": 2.36121535
+    },
+    {
+      "time": 16.336630899997544,
+      "phase": "FinalReveal",
+      "idle": 0.0512865968,
+      "coverage": 0.9772825,
+      "clock": 16.3364735
+    },
+    {
+      "time": 18.146612099997583,
+      "phase": "AwaitingSpin",
+      "idle": 1.80582631,
+      "coverage": 0.9772825,
+      "clock": 18.14229
+    },
+    {
+      "time": 19.620727800000168,
+      "phase": "DismissingSpinPrompt",
+      "idle": 0.150527015,
+      "coverage": 0.9772825,
+      "clock": 19.6221256
+    },
+    {
+      "time": 20.474608199998329,
+      "phase": "EnteringWheel",
+      "idle": 1.00388384,
+      "coverage": 0.9772825,
+      "clock": 20.4754715
+    },
+    {
+      "time": 22.876485399996454,
+      "phase": "Spinning",
+      "idle": 3.406335,
+      "coverage": 0.9772825,
+      "clock": 22.87792
+    },
+    {
+      "time": 28.982143200002611,
+      "phase": "RevealingResult",
+      "idle": 0.07881781,
+      "coverage": 0.9772825,
+      "clock": 28.9820576
+    },
+    {
+      "time": 32.181120499997633,
+      "phase": "ScrollDelay",
+      "idle": 0.2689977,
+      "coverage": 0.9772825,
+      "clock": 32.1826363
+    },
+    {
+      "time": 34.192651400000614,
+      "phase": "ScrollOpening",
+      "idle": 0.265483558,
+      "coverage": 0.9772825,
+      "clock": 34.1874
+    },
+    {
+      "time": 39.78998010000214,
+      "phase": "ScrollHolding",
+      "idle": 0.84458673,
+      "coverage": 0.9772825,
+      "clock": 39.7884178
+    },
+    {
+      "time": 54.801926000000094,
+      "phase": "ScrollClosing",
+      "idle": 0.77011764,
+      "coverage": 0.9772825,
+      "clock": 54.79331
+    },
+    {
+      "time": 58.219550499998149,
+      "phase": "AwaitingRestoration",
+      "idle": 0.0,
+      "coverage": 0.0,
+      "clock": 0.008333334
+    },
+    {
+      "time": 59.87445039999875,
+      "phase": "DismissingRestorationPrompt",
+      "idle": 0.650077939,
+      "coverage": 0.0,
+      "clock": 1.66856837
+    },
+    {
+      "time": 60.731404099999054,
+      "phase": "Restoring",
+      "idle": 1.50469422,
+      "coverage": 0.01927083,
+      "clock": 2.523187
+    },
+    {
+      "time": 90.743184400002065,
+      "phase": "ReturningToBase",
+      "idle": 30.0,
+      "coverage": 0.171844363,
+      "clock": 32.5297
+    },
+    {
+      "time": 92.748582699998224,
+      "phase": "AwaitingRestoration",
+      "idle": 0.0,
+      "coverage": 0.0,
+      "clock": 1.01112831
+    }
+  ],
+  "idleWaitSeconds": 30.004801112918358
+}

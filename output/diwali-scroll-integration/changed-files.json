@@ -1,0 +1,21 @@
+{
+  "changed_from_backup": [
+    "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+    "Assets/HK_Signature/Deepavali/Restoration/Scripts/DeepavaliSessionController.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Center.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Initial.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelLightSequence.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/PetalWheelSequencePreview.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Shaders/PetalPaletteInput.hlsl",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Shaders/PetalPaletteLit.shader"
+  ],
+  "new_scripts": [
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/DeepavaliOutcomeSet.cs",
+    "Assets/HK_Signature/Deepavali/PetalPrototype/Scripts/FlowerPaletteController.Outcomes.cs",
+    "Assets/HK_Signature/Deepavali/Restoration/Scripts/DeepavaliSessionSettings.cs",
+    "Assets/HK_Signature/Deepavali/Restoration/Scripts/DeepavaliSessionController.Scroll.cs",
+    "Assets/HK_Signature/Deepavali/Restoration/Editor/DeepavaliSessionControllerEditor.cs"
+  ],
+  "imported": "Assets/DiwaliScroll"
+}

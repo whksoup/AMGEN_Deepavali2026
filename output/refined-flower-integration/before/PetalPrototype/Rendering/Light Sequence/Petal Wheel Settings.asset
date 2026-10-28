@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca8b3d373f262d4786acb38daa4b329, type: 3}
+  m_Name: Petal Wheel Settings
+  m_EditorClassIdentifier: 
+  timing:
+    shimmerPeriod: 5.5
+    shimmerLevel: 0.6
+    shimmerVariation: 0.5
+    pulseLength: 0.8
+    settleLength: 1.6
+    speed: 16
+    cruise: 1.2
+    slowdown: 3.6
+    idleSpeed: 1.2
+    windup: 0
+    overshoot: 0
+    fadeIn: 0.16
+    innerAfterglow: 0.45
+    outerAfterglow: 0.42
+    breathPeriod: 4.5
+    breathVariation: 0.4
+    lightUp: 0.5
+    outerMotion: 0
+    outerTickRatio: 2.5
+    counterClockwise: 0
+    chaseHeads: 1
+    neighborSpill: 0.35
+    winPattern: 0
+    bloom: 1
+    bloomDelay: 1.4
+    bloomSpread: 1.8
+    hold: 3.5
+    afterHold: 0
+  shimmerIntensity: 2.98845
+  outerLightIntensity: 1.9
+  outerShimmerIntensity: 0.36065352
+  outerSurfaceGlow: 3
+  shimmerPointLights: 1
+  shimmerPointIntensity: 0.12
+  shimmerPointHeight: 0.25
+  shimmerPointRange: 0.85
+  variationSeed: 137
+  previewShimmerSeconds: 6
+  previewReadySeconds: 3

@@ -1,0 +1,41 @@
+{
+  "contexts": [
+    {
+      "context": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Peacock Flower.prefab",
+      "inner": 8,
+      "outer": 14
+    },
+    {
+      "context": "Assets/HK_Signature/Deepavali/PetalPrototype/Prefabs/Deepavali Two Layer Flower.prefab",
+      "inner": 8,
+      "outer": 14
+    },
+    {
+      "context": "Assets/Scenes/Deepavali_PetalWheelSequence.unity",
+      "inner": 8,
+      "outer": 14
+    },
+    {
+      "context": "Assets/Scenes/Deepavali_LightSequence.unity",
+      "inner": 8,
+      "outer": 14
+    },
+    {
+      "context": "Assets/Scenes/Deepavali_PetalLightingPrototype.unity",
+      "inner": 8,
+      "outer": 14
+    },
+    {
+      "context": "Assets/Scenes/Deepavali_PaletteTest.unity",
+      "inner": 8,
+      "outer": 14
+    },
+    {
+      "context": "Assets/Scenes/Deepavali_RestorationTest.unity",
+      "inner": 8,
+      "outer": 14
+    }
+  ],
+  "atlas": "Assets/HK_Signature/Deepavali/PetalPrototype/Symbols/Rootward Inner/Rootward Inner Medallions.png",
+  "atlasSize": "2048x2048"
+}

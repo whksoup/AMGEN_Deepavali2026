@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "name": "InnerPetal_01",
+    "label": "Sprout",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 37360,
+    "guide_circle_clearance_mm": 10.756512247810885,
+    "outer_crown_v": 0.9375217141343668,
+    "inner_crown_v": 0.8290106805221065
+  },
+  {
+    "index": 1,
+    "name": "REF_TopPetal_02",
+    "label": "Diya",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 38293,
+    "guide_circle_clearance_mm": 3.4803724803310065,
+    "outer_crown_v": 0.9320454147891505,
+    "inner_crown_v": 0.8122406495795602
+  },
+  {
+    "index": 2,
+    "name": "REF_TopPetal_03",
+    "label": "Star",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 36479,
+    "guide_circle_clearance_mm": 14.381252246570137,
+    "outer_crown_v": 0.9341005502189506,
+    "inner_crown_v": 0.8189378830352894
+  },
+  {
+    "index": 3,
+    "name": "REF_TopPetal_04",
+    "label": "Stacked Coins",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 35656,
+    "guide_circle_clearance_mm": 10.501548035639491,
+    "outer_crown_v": 0.9286773779260132,
+    "inner_crown_v": 0.8026604573106499
+  },
+  {
+    "index": 4,
+    "name": "REF_TopPetal_05",
+    "label": "People and Heart",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 35372,
+    "guide_circle_clearance_mm": 12.653554869679631,
+    "outer_crown_v": 0.9323920095284882,
+    "inner_crown_v": 0.8137016211945549
+  },
+  {
+    "index": 5,
+    "name": "REF_TopPetal_06",
+    "label": "Gift Box",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 34510,
+    "guide_circle_clearance_mm": 10.832209882757418,
+    "outer_crown_v": 0.9222427573181113,
+    "inner_crown_v": 0.783110267954146
+  },
+  {
+    "index": 6,
+    "name": "REF_TopPetal_07",
+    "label": "Sunburst",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 36845,
+    "guide_circle_clearance_mm": 12.369825380586494,
+    "outer_crown_v": 0.9325953815750484,
+    "inner_crown_v": 0.8143260084095446
+  },
+  {
+    "index": 7,
+    "name": "REF_TopPetal_08",
+    "label": "Lotus",
+    "glyph_and_medallion_unchanged": true,
+    "changed_pixels": 38811,
+    "guide_circle_clearance_mm": 4.321797869300488,
+    "outer_crown_v": 0.9355372262630844,
+    "inner_crown_v": 0.8225832769177701
+  }
+]

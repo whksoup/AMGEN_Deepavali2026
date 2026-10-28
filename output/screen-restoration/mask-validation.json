@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Starts completely unrestored",
+      "passed": true
+    },
+    {
+      "name": "Brush restores center",
+      "passed": true
+    },
+    {
+      "name": "Wide-wall brush remains circular in pixels",
+      "passed": true
+    },
+    {
+      "name": "Distant region remains dark",
+      "passed": true
+    },
+    {
+      "name": "Invalid samples do not corrupt coverage",
+      "passed": true
+    },
+    {
+      "name": "Previously restored center remains restored",
+      "passed": true
+    },
+    {
+      "name": "Coverage is bounded and monotonic",
+      "passed": true
+    },
+    {
+      "name": "Reset removes all coverage and uploaded pixels",
+      "passed": true
+    },
+    {
+      "name": "Continuous stroke fills between input samples",
+      "passed": true
+    },
+    {
+      "name": "Dwell strength is stable across 30/120 Hz",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "after-validation.json": true,
+  "light-validation.json": true,
+  "study-validation.json": true,
+  "initial-palette-validation.json": true,
+  "artwork-validation.json": true,
+  "input-validation.json": true,
+  "framing-picking.json": true,
+  "asset-validation.json": true,
+  "clearance-validation.json": true,
+  "all_passed": true,
+  "source_sha256": "2bd61cee7fc66fc7a616fc1588b61b334df9ee95d1e685c6aeb2410154ab9949"
+}

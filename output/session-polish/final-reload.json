@@ -1,0 +1,12 @@
+{
+  "playing": true,
+  "phase": "AwaitingRestoration",
+  "brush": 0.32,
+  "idle": 30.0,
+  "fade": 2.0,
+  "minimumClamp": true,
+  "shimmer": "Shimmer",
+  "debugHidden": true,
+  "handAppearing": true,
+  "coverage": 0.0
+}

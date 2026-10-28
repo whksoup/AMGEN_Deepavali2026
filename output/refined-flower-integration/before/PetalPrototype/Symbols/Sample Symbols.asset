@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb6c13fdc9ff9144a835012e751aa5e, type: 3}
+  m_Name: Sample Symbols
+  m_EditorClassIdentifier: 
+  atlas: {fileID: 2800000, guid: 04970011c70707b43b99722b4d92ebac, type: 3}
+  maxMipLevel: 3
+  symbols:
+  - label: Blank
+    uvRect:
+      serializedVersion: 2
+      x: 0.032226562
+      y: 0.016113281
+      width: 0.43554688
+      height: 0.46777344
+  - label: Diamond
+    uvRect:
+      serializedVersion: 2
+      x: 0.53222656
+      y: 0.016113281
+      width: 0.43554688
+      height: 0.46777344
+  - label: Ring
+    uvRect:
+      serializedVersion: 2
+      x: 0.032226562
+      y: 0.5161133
+      width: 0.43554688
+      height: 0.46777344
+  - label: Rosette
+    uvRect:
+      serializedVersion: 2
+      x: 0.53222656
+      y: 0.5161133
+      width: 0.43554688
+      height: 0.46777344

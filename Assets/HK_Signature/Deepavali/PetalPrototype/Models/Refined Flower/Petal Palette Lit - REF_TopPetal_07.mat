@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Petal Palette Lit - REF_TopPetal_07
+  m_Shader: {fileID: 4800000, guid: 1e4deb4d5be1c5145b2875aaab0ad107, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _STARTUPMESHUV_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ArtworkFitMap:
+        m_Texture: {fileID: 2800000, guid: 4485d5a830154cf458eaef51029785d4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 91b8ab534490b4a4abf6c615ea8e19ad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BodyShadingMap:
+        m_Texture: {fileID: 2800000, guid: f2e80eb88cd4a1a4f84f66ad35bc83f6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CenterShadingMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PetalLightData:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StartupAtlas:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SymbolAtlas:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TertiaryMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AccentPatternIntensity: 0
+    - _ArtworkFitEnabled: 1
+    - _ArtworkProgress: 1
+    - _ArtworkRadius: 1.059
+    - _ArtworkSoftness: 0.04
+    - _BodyOcclusionStrength: 0
+    - _BodyShadeStrength: 0
+    - _BodySpecularStrength: 1
+    - _CenterDotGlow: 0.5
+    - _CenterIconGlow: 1.3
+    - _CenterIconScale: 0.65
+    - _CenterRingGlow: 1.3
+    - _CenterRingRadius: 0.92
+    - _CenterRingWidth: 0.012
+    - _CenterSurface: 0
+    - _Cull: 2
+    - _EdgeIntensity: 11.263136
+    - _EmissionScale: 1
+    - _MainPatternIntensity: 0
+    - _OrnamentGlowScale: 1
+    - _PatternEmissionGain: 1
+    - _PatternLightHandoff: 0
+    - _PatternPaletteAlpha: 1
+    - _PatternSurfaceGlow: 0
+    - _PetalLightEnabled: 0
+    - _PetalLightIconBrightness: 0
+    - _PetalLightTipReach: 0.14
+    - _RimGlowScale: 1
+    - _Smoothness: 0.22
+    - _StartupAppearance: 0
+    - _StartupMaxMip: 3
+    - _StartupMeshUV: 1
+    - _StartupSymbolEnabled: 0
+    - _Surface: 0
+    - _SymbolEnabled: 0
+    - _SymbolMaxMip: 3
+    - _TargetAccentPatternIntensity: 0
+    - _TargetEdgeIntensity: 11.263136
+    - _TargetMainPatternIntensity: 0
+    - _TargetStartupAppearance: 0
+    - _TargetSymbolEnabled: 0
+    - _WaveProgress: 1
+    - _WaveRadius: 0.36
+    - _WaveSoftness: 0.025
+    m_Colors:
+    - _AccentColor: {r: 0.9130987, g: 0.25415218, b: 0.00699541, a: 1}
+    - _ArtworkUvToRoot: {r: 0.692, g: 1, b: -0.346, a: 0}
+    - _BaseColor: {r: 0.26635566, g: 0.008568125, b: 0.051269468, a: 1}
+    - _CenterRingColor: {r: 0.5, g: 0.049999982, b: 0.14999998, a: 1}
+    - _EdgeColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 3, g: 1.4379606, b: 0.18903008, a: 3}
+    - _FlowerStageLevels: {r: 1, g: 1, b: 1, a: 1}
+    - _PatternColor: {r: 1, g: 0.65837485, b: 0.14412849, a: 1}
+    - _PetalLightColor: {r: 1, g: 0.54999995, b: 0.11999995, a: 1}
+    - _PetalLightIconRegion: {r: 0.5, g: 0.45, b: 0.17588879, a: 0.003}
+    - _PetalLightShape: {r: 0.65, g: 0.45, b: 0.97, a: 0.6}
+    - _PetalLightStyle: {r: 0.25, g: 0.25, b: 1, a: 0}
+    - _PetalLightTravel: {r: 1, g: 10, b: 7, a: 1}
+    - _RestUvToFlowerX: {r: 0.182, g: 0, b: -0.091, a: 0}
+    - _RestUvToFlowerZ: {r: 0, g: -0.263, b: -0.082, a: 0}
+    - _StartupRect: {r: 1, g: 1, b: 0, a: 0}
+    - _SymbolRect: {r: 1, g: 1, b: 0, a: 0}
+    - _TargetAccentColor: {r: 0.9130987, g: 0.25415218, b: 0.00699541, a: 1}
+    - _TargetBaseColor: {r: 0.26635566, g: 0.008568125, b: 0.051269468, a: 1}
+    - _TargetCenterRingColor: {r: 0.5, g: 0.049999982, b: 0.14999998, a: 1}
+    - _TargetEdgeColor: {r: 0, g: 0, b: 0, a: 0}
+    - _TargetPatternColor: {r: 1, g: 0.65837485, b: 0.14412849, a: 1}
+    - _TargetSymbolRect: {r: 1, g: 1, b: 0, a: 0}
+    - _TargetTertiaryColor: {r: 0.09999997, g: 0.39999998, b: 0.8, a: 1}
+    - _TertiaryColor: {r: 0.09999997, g: 0.39999998, b: 0.8, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

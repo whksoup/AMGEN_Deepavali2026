@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class LaunchSceneController : MonoBehaviour
 {
     public static LaunchSceneController Instance { get; private set; }
+    // An active experience can own its gradual inactivity return instead of the host's screensaver timeout.
+    public Behaviour InactivityOwner { get; set; }
 
     private Controls controls;
 
@@ -142,6 +144,12 @@ public class LaunchSceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (InactivityOwner != null && InactivityOwner.isActiveAndEnabled)
+        {
+            timeSinceLastInput = 0;
+            launcherCloseFired = false;
+            return;
+        }
         var activeSceneName = SceneManager.GetActiveScene().name;
 
         // Skip idle handling while we are already in a screensaver scene

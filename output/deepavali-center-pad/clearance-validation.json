@@ -1,0 +1,189 @@
+{
+  "summary": {
+    "poses": 13,
+    "top_neighbor_min_gap_mm": 0.7629025727950434,
+    "top_neighbor_crossings": 0,
+    "outer_neighbor_min_gap_mm": 3.075307989517346,
+    "outer_neighbor_crossings": 0,
+    "lower_layer_min_gap_mm": 1.6914300186608862,
+    "lower_layer_crossings": 0,
+    "maxRootDrift": 5.38558957e-08,
+    "maxBoundsOverflow": 0.0,
+    "maxSyncError": 1.80919415e-07,
+    "maxLocalPositionDrift": 0.0,
+    "maxLocalScaleDrift": 0.0,
+    "passed": true
+  },
+  "method": "Exact vertical plane separation over clipped projected triangle overlaps from Unity BakeMesh; discrete rest, idle, pulse and opposing-envelope poses.",
+  "poses": [
+    {
+      "pose": "rest",
+      "top_neighbor_min_gap_mm": 11.571768509752316,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.539148199282725,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.440432054050653,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "breeze_0",
+      "top_neighbor_min_gap_mm": 11.399885899851002,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.47450113717266,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.303948462038974,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "breeze_1",
+      "top_neighbor_min_gap_mm": 11.400562175750201,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.501696906975248,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.364781620420882,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "breeze_2",
+      "top_neighbor_min_gap_mm": 11.466882714724107,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.507146817994802,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.394143524373224,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "breeze_3",
+      "top_neighbor_min_gap_mm": 11.398734444521281,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.505330361294709,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.3474419736256555,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "single_pulse_0",
+      "top_neighbor_min_gap_mm": 1.6272186097546215,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.463515180683576,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.298389590183654,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "single_pulse_1",
+      "top_neighbor_min_gap_mm": 1.042301174885768,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.467940382223104,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.307900282858704,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "mixed_pulse_0",
+      "top_neighbor_min_gap_mm": 0.8241589247832692,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.463515180683576,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 2.60116608982866,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "mixed_pulse_1",
+      "top_neighbor_min_gap_mm": 0.7629025727950434,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.465847207945514,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 2.2706912218162443,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "all_pulse",
+      "top_neighbor_min_gap_mm": 9.569399473242505,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 3.075307989517346,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 1.6914300186608862,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "startup_pulse",
+      "top_neighbor_min_gap_mm": 9.741713467711303,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 3.4842990677663166,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 1.775760927328618,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "opposing_sway_positive",
+      "top_neighbor_min_gap_mm": 11.275214542722049,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.507068562669844,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.3988551802010827,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    },
+    {
+      "pose": "opposing_sway_negative",
+      "top_neighbor_min_gap_mm": 11.296533645037693,
+      "top_neighbor_crossings": 0,
+      "outer_neighbor_min_gap_mm": 6.507068562669844,
+      "outer_neighbor_crossings": 0,
+      "lower_layer_min_gap_mm": 3.384612075345586,
+      "lower_layer_crossings": 0,
+      "worst_top_pair": [
+        "InnerPetal_01_Deepavali_SinglePetal",
+        "InnerPetal_01_Deepavali_SinglePetal"
+      ]
+    }
+  ]
+}

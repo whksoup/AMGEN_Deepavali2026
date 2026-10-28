@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "Negative duration sanitized": true,
+    "Non-finite duration sanitized": true,
+    "Save settings succeeds": true,
+    "Both public timings persisted to disk": true,
+    "Reload restores both timings": true,
+    "Missing clip rejected": true,
+    "Unknown name never selects a different scroll": true,
+    "Duplicate outcome rejected": true,
+    "Cancel from ScrollDelay": true,
+    "All decoders stopped from ScrollDelay": true,
+    "Cancel from ScrollOpening": true,
+    "All decoders stopped from ScrollOpening": true,
+    "Cancel from ScrollHolding": true,
+    "All decoders stopped from ScrollHolding": true,
+    "Cancel from ScrollClosing": true,
+    "All decoders stopped from ScrollClosing": true,
+    "Prepare after repeated cancellation": true,
+    "Disable clears pending preparation": true,
+    "Re-enable can prepare again": true
+  },
+  "errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "source": "Petal2.svg",
+  "ground_truth": "User Image 1",
+  "length_m": 0.22,
+  "svg_width_fit": 0.88,
+  "width_m": 0.16322819317027581,
+  "root_radius_m": 0.105,
+  "tip_radius_m": 0.325,
+  "previous_length_m": 0.263,
+  "previous_tip_radius_m": 0.345,
+  "camber_m": 0.002,
+  "shingle_degrees": 6.0,
+  "vertices": 361,
+  "triangles": 632,
+  "camera": {
+    "elevation_degrees": 50,
+    "distance_m": 3.6,
+    "lens_mm": 105
+  },
+  "unity_assets_modified": false
+}

@@ -1,0 +1,266 @@
+{
+  "round": 2,
+  "phase": "judge",
+  "outer_count": 16,
+  "views": {
+    "15": {
+      "reference_file": "reference-15-027.5s.png",
+      "camera_elevation_degrees": 88.99065149714568,
+      "camera_plane_fit_rms_px": 4.3377628202000856e-10,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9737800436999272,
+          "mean_outline_error_px": 0.2687607705593109,
+          "observed_tip_distance_px": 0.17385903000831604
+        },
+        "NE": {
+          "visible_outline_iou": 0.9006024096385542,
+          "mean_outline_error_px": 1.647977590560913,
+          "observed_tip_distance_px": 0.16923893988132477
+        },
+        "E": {
+          "visible_outline_iou": 0.9585501525210838,
+          "mean_outline_error_px": 0.5960029363632202,
+          "observed_tip_distance_px": 0.1612035483121872
+        },
+        "SE": {
+          "visible_outline_iou": 0.944720118394707,
+          "mean_outline_error_px": 0.9765580892562866,
+          "observed_tip_distance_px": 0.14123831689357758
+        },
+        "S": {
+          "visible_outline_iou": 0.9645936981757878,
+          "mean_outline_error_px": 0.5277774333953857,
+          "observed_tip_distance_px": 0.13173669576644897
+        },
+        "SW": {
+          "visible_outline_iou": 0.9169248328713517,
+          "mean_outline_error_px": 1.9329049587249756,
+          "observed_tip_distance_px": 0.15750978887081146
+        },
+        "W": {
+          "visible_outline_iou": 0.9680245686929817,
+          "mean_outline_error_px": 0.42538511753082275,
+          "observed_tip_distance_px": 0.1660328507423401
+        },
+        "NW": {
+          "visible_outline_iou": 0.8559702449660126,
+          "mean_outline_error_px": 2.8088488578796387,
+          "observed_tip_distance_px": 0.1709957867860794
+        }
+      },
+      "mean_iou": 0.9353957586200508,
+      "mean_outline_error_px": 1.1480269692838192
+    },
+    "5": {
+      "reference_file": "reference-05-009.3s.png",
+      "camera_elevation_degrees": 37.124598179721055,
+      "camera_plane_fit_rms_px": 2.7334894105048257,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9491377428509059,
+          "mean_outline_error_px": 0.41368651390075684,
+          "observed_tip_distance_px": 1.0353742837905884
+        },
+        "NE": {
+          "visible_outline_iou": 0.817342725285402,
+          "mean_outline_error_px": 2.4349188804626465,
+          "observed_tip_distance_px": 1.4894148111343384
+        },
+        "E": {
+          "visible_outline_iou": 0.8963498622589532,
+          "mean_outline_error_px": 1.3689829111099243,
+          "observed_tip_distance_px": 1.6347509622573853
+        },
+        "SE": {
+          "visible_outline_iou": 0.9130434782608695,
+          "mean_outline_error_px": 1.1012182235717773,
+          "observed_tip_distance_px": 0.6042128801345825
+        },
+        "S": {
+          "visible_outline_iou": 0.9500566251415629,
+          "mean_outline_error_px": 0.6890413165092468,
+          "observed_tip_distance_px": 1.6876740455627441
+        },
+        "SW": {
+          "visible_outline_iou": 0.9143730886850153,
+          "mean_outline_error_px": 1.5308854579925537,
+          "observed_tip_distance_px": 2.0490036010742188
+        },
+        "W": {
+          "visible_outline_iou": 0.892747352840715,
+          "mean_outline_error_px": 1.7313432693481445,
+          "observed_tip_distance_px": 5.709203243255615
+        },
+        "NW": {
+          "visible_outline_iou": 0.7889379681198386,
+          "mean_outline_error_px": 3.2947440147399902,
+          "observed_tip_distance_px": 3.300455331802368
+        }
+      },
+      "mean_iou": 0.8902486054304077,
+      "mean_outline_error_px": 1.57060257345438
+    },
+    "9": {
+      "reference_file": "reference-09-016.6s.png",
+      "camera_elevation_degrees": 20.399866752814702,
+      "camera_plane_fit_rms_px": 0.40256986637653935,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.8915915915915916,
+          "mean_outline_error_px": 0.7565280795097351,
+          "observed_tip_distance_px": 1.5577276945114136
+        },
+        "NE": {
+          "visible_outline_iou": 0.8738586405140345,
+          "mean_outline_error_px": 0.9971262216567993,
+          "observed_tip_distance_px": 1.1827033758163452
+        },
+        "E": {
+          "visible_outline_iou": 0.8985922214268671,
+          "mean_outline_error_px": 0.8658033609390259,
+          "observed_tip_distance_px": 1.0716603994369507
+        },
+        "SE": {
+          "visible_outline_iou": 0.8967075532601678,
+          "mean_outline_error_px": 0.7886767387390137,
+          "observed_tip_distance_px": 2.1463019847869873
+        },
+        "S": {
+          "visible_outline_iou": 0.8875829383886256,
+          "mean_outline_error_px": 1.1245802640914917,
+          "observed_tip_distance_px": 1.7550350427627563
+        },
+        "SW": {
+          "visible_outline_iou": 0.8663330950679057,
+          "mean_outline_error_px": 1.6217446327209473,
+          "observed_tip_distance_px": 1.8342534303665161
+        },
+        "W": {
+          "visible_outline_iou": 0.8962507439000198,
+          "mean_outline_error_px": 1.0386836528778076,
+          "observed_tip_distance_px": 2.1763627529144287
+        },
+        "NW": {
+          "visible_outline_iou": 0.7652609849601887,
+          "mean_outline_error_px": 2.6662487983703613,
+          "observed_tip_distance_px": 1.9404094219207764
+        }
+      },
+      "mean_iou": 0.8720222211386751,
+      "mean_outline_error_px": 1.2324239686131477
+    },
+    "2": {
+      "reference_file": "reference-02-003.9s.png",
+      "camera_elevation_degrees": 81.04394330953484,
+      "camera_plane_fit_rms_px": 1.626453432647377,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9596430474160895,
+          "mean_outline_error_px": 0.3988376557826996,
+          "observed_tip_distance_px": 2.4588844776153564
+        },
+        "NE": {
+          "visible_outline_iou": 0.9244831950499226,
+          "mean_outline_error_px": 1.0604305267333984,
+          "observed_tip_distance_px": 2.265275478363037
+        },
+        "E": {
+          "visible_outline_iou": 0.9600898234153312,
+          "mean_outline_error_px": 0.4989016056060791,
+          "observed_tip_distance_px": 0.9348011016845703
+        },
+        "SE": {
+          "visible_outline_iou": 0.9387986011108825,
+          "mean_outline_error_px": 0.9536499977111816,
+          "observed_tip_distance_px": 2.7701504230499268
+        },
+        "S": {
+          "visible_outline_iou": 0.945975416336241,
+          "mean_outline_error_px": 0.8523753881454468,
+          "observed_tip_distance_px": 0.6924117803573608
+        },
+        "SW": {
+          "visible_outline_iou": 0.9060650169820476,
+          "mean_outline_error_px": 1.96028470993042,
+          "observed_tip_distance_px": 2.7315609455108643
+        },
+        "W": {
+          "visible_outline_iou": 0.9643818595982605,
+          "mean_outline_error_px": 0.42909228801727295,
+          "observed_tip_distance_px": 1.3327562808990479
+        },
+        "NW": {
+          "visible_outline_iou": 0.8820379215515993,
+          "mean_outline_error_px": 2.129610538482666,
+          "observed_tip_distance_px": 2.104142665863037
+        }
+      },
+      "mean_iou": 0.9351843601825467,
+      "mean_outline_error_px": 1.0353978388011456
+    },
+    "0": {
+      "reference_file": "reference-00-000.3s.png",
+      "camera_elevation_degrees": 83.25447851969264,
+      "camera_plane_fit_rms_px": 0.03599787094734456,
+      "petals": {
+        "N": {
+          "visible_outline_iou": 0.9720994053971642,
+          "mean_outline_error_px": 0.24461351335048676,
+          "observed_tip_distance_px": 0.2830396890640259
+        },
+        "NE": {
+          "visible_outline_iou": 0.9010745891276865,
+          "mean_outline_error_px": 1.394610047340393,
+          "observed_tip_distance_px": 0.29538270831108093
+        },
+        "E": {
+          "visible_outline_iou": 0.9563514269725797,
+          "mean_outline_error_px": 0.5477856993675232,
+          "observed_tip_distance_px": 0.2603582739830017
+        },
+        "SE": {
+          "visible_outline_iou": 0.9496124031007752,
+          "mean_outline_error_px": 0.7497735023498535,
+          "observed_tip_distance_px": 0.14856137335300446
+        },
+        "S": {
+          "visible_outline_iou": 0.9634828603397416,
+          "mean_outline_error_px": 0.47860485315322876,
+          "observed_tip_distance_px": 0.07645856589078903
+        },
+        "SW": {
+          "visible_outline_iou": 0.9150896165014519,
+          "mean_outline_error_px": 1.753006935119629,
+          "observed_tip_distance_px": 0.17095492780208588
+        },
+        "W": {
+          "visible_outline_iou": 0.9688476998660116,
+          "mean_outline_error_px": 0.3444920778274536,
+          "observed_tip_distance_px": 0.2248918116092682
+        },
+        "NW": {
+          "visible_outline_iou": 0.8562941554271034,
+          "mean_outline_error_px": 2.4732248783111572,
+          "observed_tip_distance_px": 0.24848832190036774
+        }
+      },
+      "mean_iou": 0.9353565195915642,
+      "mean_outline_error_px": 0.9982639383524656
+    }
+  },
+  "measurement_note": "Hand-marked borders, approximate planar registration; silhouette fit is not proof of exact 3D geometry.",
+  "mean_iou_three_angles": 0.8992221950630445,
+  "mean_outline_error_three_angles_px": 1.3170178371171157,
+  "visual_judgment": [
+    "Upper diagonal bodies now closely follow the rounded reference rather than a straight SVG taper.",
+    "Overhead silhouette overlap is 93.5%; three main angles average 89.9%.",
+    "Remaining errors concentrate at upper-diagonal necks, lower-left shoulders and low-angle height offsets.",
+    "Uniform 22.5 degree outer spacing does not align all readable perimeter tips; the recording and confirmed count require unequal spacing and size."
+  ],
+  "next_build": [
+    "Use the complete measured contour fit for all 8 inner positions.",
+    "Fit outer directions to readable perimeter tips; retain 16 petals and infer two partly occluded far-side tips.",
+    "Scale outer widths by their local angular space; lower the shallow shingle to 0.45 degrees."
+  ]
+}
