@@ -31,7 +31,12 @@ sysinfo.txt
 
 # Local automation state and credentials
 /.codex/
-/.agents/
+/.agents/*
+!/.agents/skills/
+/.agents/skills/*
+!/.agents/skills/deepavali-documentation/
+/.agents/skills/deepavali-documentation/*
+!/.agents/skills/deepavali-documentation/SKILL.md
 .env
 .env.*
 !.env.example

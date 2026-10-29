@@ -91,7 +91,7 @@ namespace Amgen.Deepavali
             float timeout = DeepavaliSessionSettings.Safe(inactivityTimeout, 30, .1f);
             InactivityElapsed = Mathf.Min(InactivityElapsed + Time.unscaledDeltaTime, timeout);
             // Already at base: leave the invitation visible instead of fading it every timeout interval.
-            if (Phase == DeepavaliSessionPhase.AwaitingRestoration || InactivityElapsed < timeout) return false;
+            if (Phase == DeepavaliSessionPhase.AwaitingRestoration || IsResultPresentation || InactivityElapsed < timeout) return false;
             EnsureInactivityFade();
             returningToBase = true;
             resetAtBlack = false;

@@ -6,7 +6,8 @@ namespace Amgen.Deepavali
     {
         AwaitingRestoration, DismissingRestorationPrompt, Restoring, FinalReveal,
         AwaitingSpin, DismissingSpinPrompt, EnteringWheel, Spinning, RevealingResult, HoldingResult,
-        ScrollDelay, ScrollOpening, ScrollHolding, ScrollClosing, ReturningToBase
+        ScrollDelay, ScrollOpening, ScrollHolding, ScrollClosing, ReturningToBase,
+        GreetingOpening, GreetingHolding, GreetingClosing
     }
 
     /// <summary>Owns the main wall's repeatable session. All input comes through restoration's XY/presence route.</summary>
@@ -101,6 +102,7 @@ namespace Amgen.Deepavali
         private void LateUpdate()
         {
             if (!initialized) return;
+            ApplyPresentationSettings();
             BindHostInactivity();
             if (TickInactivity()) return;
             // Observe the lamps after their LateUpdate and the result after the wheel has applied its material state.
@@ -142,7 +144,7 @@ namespace Amgen.Deepavali
                     break;
                 case DeepavaliSessionPhase.HoldingResult:
                     ColoredHoldElapsed += Time.unscaledDeltaTime;
-                    if (ColoredHoldElapsed >= DeepavaliSessionSettings.Safe(coloredHoldDuration, 10)) endSequence();
+                    if (ColoredHoldElapsed >= DeepavaliSessionSettings.Safe(coloredHoldDuration, 10)) BeginGreeting();
                     break;
                 case DeepavaliSessionPhase.ScrollDelay:
                 case DeepavaliSessionPhase.ScrollOpening:
@@ -150,11 +152,17 @@ namespace Amgen.Deepavali
                 case DeepavaliSessionPhase.ScrollClosing:
                     TickScroll();
                     break;
+                case DeepavaliSessionPhase.GreetingOpening:
+                case DeepavaliSessionPhase.GreetingHolding:
+                case DeepavaliSessionPhase.GreetingClosing:
+                    TickGreeting();
+                    break;
             }
             bool illuminateCenter = Phase == DeepavaliSessionPhase.Restoring || Phase == DeepavaliSessionPhase.FinalReveal;
             centerLightLevel = Mathf.MoveTowards(centerLightLevel, illuminateCenter ? 1 : 0,
                 Time.unscaledDeltaTime / Mathf.Max(.01f, centerLightFadeDuration));
             ApplyCenterLight();
+            TickResultLogo();
         }
 
         private void PromptDismissed()
@@ -185,6 +193,7 @@ namespace Amgen.Deepavali
         {
             ResetInactivity();
             CancelScroll();
+            CancelGreeting();
             handPrompt.CancelAndHide();
             handPrompt.externallyDriven = true;
             sequence.autoPreview = false;
@@ -230,8 +239,10 @@ namespace Amgen.Deepavali
 
         private void OnDisable()
         {
+            RestoreCameraPitch();
             ReleaseInactivity();
             CancelScroll();
+            CancelGreeting();
             if (handPrompt != null) handPrompt.Despawned -= PromptDismissed;
             if (!initialized) return;
             // Scene teardown can destroy references in any order. Do not respawn UI or reset destroyed owners.

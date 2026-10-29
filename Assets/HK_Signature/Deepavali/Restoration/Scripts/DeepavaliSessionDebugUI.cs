@@ -141,9 +141,30 @@ namespace Amgen.Deepavali
 #endif
                 scroll = GUILayout.BeginScrollView(scroll);
                 GUILayout.Space(8);
+                GUILayout.Label("Camera perspective", heading);
+                Slider("Pitch offset (degrees)", ref session.cameraPitchOffset, -45, 20);
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("Pitch down -2", button))
+                { session.cameraPitchOffset = Mathf.Clamp(session.cameraPitchOffset - 2, -45, 20); session.RegisterActivity(); }
+                if (GUILayout.Button("Pitch up +2", button))
+                { session.cameraPitchOffset = Mathf.Clamp(session.cameraPitchOffset + 2, -45, 20); session.RegisterActivity(); }
+                if (GUILayout.Button("Authored view", button))
+                { session.cameraPitchOffset = 0; session.RegisterActivity(); }
+                GUILayout.EndHorizontal();
+                GUILayout.Label("Spin animation", heading);
+                Slider("Speed (petal slots / second)", ref session.spinSpeed, 1, 32);
+                Slider("Cruise duration (seconds)", ref session.spinCruiseSeconds, 0, 30);
+                Slider("Slowdown duration (seconds)", ref session.spinSlowdownSeconds, .1f, 20);
+                GUILayout.Label("Applies to the next spin. Total includes 0.9s acceleration and landing alignment. " +
+                    "Long spins may need a longer idle timeout below.", label);
+                if (session.sequence != null && session.sequence.Pattern != null &&
+                    session.sequence.Pattern.Mode == PetalWheelMode.Spin)
+                    GUILayout.Label("Current planned spin: " + session.sequence.Pattern.PlannedDuration.ToString("0.0") + "s", label);
+                GUILayout.Label("Session", heading);
                 if (session.restoration != null)
                     Slider("Restoration brush radius (viewport height)", ref session.restoration.brushRadius, .02f, .4f);
                 Slider("Idle time before return (seconds)", ref session.inactivityTimeout, 1, 180);
+                GUILayout.Label("Scroll and Happy Deepavali finish before returning to restoration.", label);
                 Slider("Return fade duration (seconds)", ref session.inactivityFadeDuration, .1f, 8);
                 Slider("Opening dwell (seconds)", ref session.openingDwellDuration, .1f, 4);
                 Slider("Spin dwell (seconds)", ref session.spinDwellDuration, .05f, 3);
@@ -154,6 +175,8 @@ namespace Amgen.Deepavali
                 Slider("Center light fade (seconds)", ref session.centerLightFadeDuration, .05f, 4);
                 Slider("Scroll delay after result (seconds)", ref session.scrollDelayAfterResultSeconds, 0, 15);
                 Slider("Fully open scroll hold (seconds)", ref session.scrollHoldSeconds, 0, 60);
+                Slider("Logo fade after scroll opens (seconds)", ref session.logoFadeSeconds, .1f, 5);
+                Slider("Happy Deepavali hold (seconds)", ref session.greetingHoldSeconds, 0, 30);
                 GUILayout.EndScrollView();
                 GUILayout.EndArea();
             }

@@ -1,0 +1,8 @@
+{
+  "Clean integrated scene": true,
+  "Default pitch and spin restored after scene reload": true,
+  "Logo binding and hidden opening survive reload": true,
+  "Native touch and menu closed": true,
+  "Base prompt and original timing defaults": true,
+  "No synthetic validation devices": true
+}

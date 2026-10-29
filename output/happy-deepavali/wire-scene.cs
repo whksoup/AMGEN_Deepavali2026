@@ -1,0 +1,17 @@
+if (UnityEditor.EditorApplication.isPlaying) throw new System.Exception("Exit Play Mode first");
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!="Assets/Scenes/Deepavali_PetalWheelSequence.unity"||scene.isDirty) throw new System.Exception("Expected clean integrated scene");
+var s=UnityEngine.Object.FindFirstObjectByType<Amgen.Deepavali.DeepavaliSessionController>();
+if(s.greetingOverlay!=null) throw new System.Exception("Already wired");
+UnityEditor.EditorApplication.ExecuteMenuItem("Tools/Happy Deepavali/Add Title To Scene");
+var g=UnityEngine.Object.FindFirstObjectByType<HappyDeepavaliOverlay>();
+if(g==null||g.spawnClip==null||g.idleClip==null||g.hideClip==null) throw new System.Exception("Missing greeting clips");
+g.showOnStart=g.toggleOnMouseClick=false;
+g.GetComponent<UnityEngine.UI.RawImage>().enabled=false;
+g.logo.enabled=false;
+var c=g.logo.color;c.a=0;g.logo.color=c;
+s.greetingOverlay=g;s.greetingHoldSeconds=4;
+UnityEditor.EditorUtility.SetDirty(s);UnityEditor.EditorUtility.SetDirty(g);
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);
+UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+return new {scene=scene.path, clips=new[]{g.spawnClip.name,g.idleClip.name,g.hideClip.name}, sorting=g.GetComponentInParent<Canvas>().sortingOrder};

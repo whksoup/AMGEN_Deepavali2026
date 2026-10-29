@@ -1,5 +1,7 @@
 # AMGEN Deepavali module scope and integration
 
+> Historical scope note. Status pointer added 29 October 2026: the integrated session, restoration, wheel, scroll and touch adapter now exist. Read [current architecture](architecture.md), [scene operation](scenes.md) and [validation limits](validation.md) for delivered behavior. Implementation-status statements below describe the earlier investigation, not the current checkout; original requirements and open product questions are retained.
+
 Updated 27 October 2026. Planning note; no gameplay or host configuration changes have been made.
 
 ## Assignment and scope boundary

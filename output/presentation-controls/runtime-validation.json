@@ -1,0 +1,261 @@
+{
+  "passed": true,
+  "checks": {
+    "Saved defaults retained": true,
+    "Logo is a noninteractive screen-space image": true,
+    "Spin accepts slot 0": true,
+    "Extended duration bound 0": true,
+    "Active spin duration is snapshotted 0": true,
+    "Exact winner after changed live settings 0": true,
+    "Spin accepts slot 1": true,
+    "Extended duration bound 1": true,
+    "Active spin duration is snapshotted 1": true,
+    "Exact winner after changed live settings 1": true,
+    "Spin accepts slot 2": true,
+    "Extended duration bound 2": true,
+    "Active spin duration is snapshotted 2": true,
+    "Exact winner after changed live settings 2": true,
+    "Spin accepts slot 3": true,
+    "Extended duration bound 3": true,
+    "Active spin duration is snapshotted 3": true,
+    "Exact winner after changed live settings 3": true,
+    "Spin accepts slot 4": true,
+    "Extended duration bound 4": true,
+    "Active spin duration is snapshotted 4": true,
+    "Exact winner after changed live settings 4": true,
+    "Spin accepts slot 5": true,
+    "Extended duration bound 5": true,
+    "Active spin duration is snapshotted 5": true,
+    "Exact winner after changed live settings 5": true,
+    "Spin accepts slot 6": true,
+    "Extended duration bound 6": true,
+    "Active spin duration is snapshotted 6": true,
+    "Exact winner after changed live settings 6": true,
+    "Spin accepts slot 7": true,
+    "Extended duration bound 7": true,
+    "Active spin duration is snapshotted 7": true,
+    "Exact winner after changed live settings 7": true,
+    "Center dwell still starts restoration at changed pitch": true,
+    "Coverage and all four lamps complete at changed pitch": true,
+    "Integrated next spin uses extended settings": true,
+    "Logo remains hidden during opening 0": true,
+    "Exact outcome scroll and completed reveal 0": true,
+    "Logo starts transparent after opening 0": true,
+    "Logo fades progressively to opaque 0": true,
+    "Logo hidden throughout closing": true,
+    "Normal round resets logo and content": true,
+    "Logo remains hidden during opening 1": true,
+    "Exact outcome scroll and completed reveal 1": true,
+    "Logo starts transparent after opening 1": true,
+    "Logo fades progressively to opaque 1": true,
+    "Reset during hold hides logo": true,
+    "Logo remains hidden during opening 2": true,
+    "Reset during opening hides logo": true,
+    "Logo remains hidden during opening 3": true,
+    "Exact outcome scroll and completed reveal 3": true,
+    "Logo starts transparent after opening 3": true,
+    "Logo fades progressively to opaque 3": true,
+    "Disable immediately hides logo": true,
+    "Reenable keeps logo hidden": true,
+    "Logo remains hidden during opening 4": true,
+    "Exact outcome scroll and completed reveal 4": true,
+    "Logo starts transparent after opening 4": true,
+    "Logo fades progressively to opaque 4": true,
+    "Playback cancellation fallback hides logo": true,
+    "Logo remains hidden during opening 5": true,
+    "Exact outcome scroll and completed reveal 5": true,
+    "Logo starts transparent after opening 5": true,
+    "Logo fades progressively to opaque 5": true,
+    "Inactivity reset clears logo and scroll": true,
+    "Shared wheel preset unchanged": true,
+    "Saved session asset unchanged by live tuning": true
+  },
+  "errors": [],
+  "timeline": [
+    {
+      "seconds": 0.46175229999994372,
+      "state": "0/AwaitingRestoration/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 2.1593554999999469,
+      "state": "0/DismissingRestorationPrompt/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 3.0104621000000407,
+      "state": "0/Restoring/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 11.326800399999911,
+      "state": "0/FinalReveal/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 13.129291399999829,
+      "state": "0/AwaitingSpin/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 14.485550200000034,
+      "state": "0/DismissingSpinPrompt/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 15.340433099999927,
+      "state": "0/EnteringWheel/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 17.738318499999878,
+      "state": "0/Spinning/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 33.565317399999913,
+      "state": "0/RevealingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 36.764964100000043,
+      "state": "0/ScrollDelay/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 38.767899100000022,
+      "state": "0/ScrollOpening/Spawning",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 44.366641099999924,
+      "state": "0/ScrollHolding/Shown",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 47.368511299999909,
+      "state": "0/ScrollClosing/Hiding",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 50.789248799999996,
+      "state": "0/AwaitingRestoration/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 50.815250699999979,
+      "state": "1/RevealingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 53.98652879999986,
+      "state": "1/ScrollDelay/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 55.989193799999839,
+      "state": "1/ScrollOpening/Spawning",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 61.591181000000006,
+      "state": "1/ScrollHolding/Shown",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 62.799453999999969,
+      "state": "2/RevealingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 65.9935312,
+      "state": "2/ScrollDelay/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 67.994740500000034,
+      "state": "2/ScrollOpening/Spawning",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 68.004305799999884,
+      "state": "3/RevealingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 71.195729399999891,
+      "state": "3/ScrollDelay/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 73.197432100000015,
+      "state": "3/ScrollOpening/Spawning",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 78.798619199999848,
+      "state": "3/ScrollHolding/Shown",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 80.007205699999986,
+      "state": "4/RevealingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 83.203304399999979,
+      "state": "4/ScrollDelay/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 85.2056364,
+      "state": "4/ScrollOpening/Spawning",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 90.807415600000013,
+      "state": "4/ScrollHolding/Shown",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 92.013162799999918,
+      "state": "4/HoldingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 92.020721999999978,
+      "state": "5/RevealingResult/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 95.212717799999837,
+      "state": "5/ScrollDelay/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 97.214781599999924,
+      "state": "5/ScrollOpening/Spawning",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 102.8146428,
+      "state": "5/ScrollHolding/Shown",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 104.02210839999998,
+      "state": "5/ReturningToBase/Shown",
+      "alpha": 1.0
+    },
+    {
+      "seconds": 104.12262039999996,
+      "state": "5/ReturningToBase/Hidden",
+      "alpha": 0.0
+    },
+    {
+      "seconds": 104.2230798999999,
+      "state": "5/AwaitingRestoration/Hidden",
+      "alpha": 0.0
+    }
+  ]
+}

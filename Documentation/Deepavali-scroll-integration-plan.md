@@ -1,5 +1,7 @@
 # Deepavali scroll and eight-state synchronization plan
 
+> Current-status pointer added 29 October 2026: [architecture](architecture.md) describes the implemented session and subsequent inactivity/input changes. The session now owns host inactivity and its own 30-second inactivity return can interrupt result/scroll phases. The plan and original implementation evidence below remain historical records.
+
 Prepared and implemented 29 October 2026 after the wheel integration. **The scroll and shared eight-outcome mapping are now wired into `Assets/Scenes/Deepavali_PetalWheelSequence.unity`.** The sections below retain the original audit and design rationale; see the implementation record at the end for the delivered files and validation.
 
 ## Agreed behavior

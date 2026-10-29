@@ -68,12 +68,13 @@ namespace Amgen.Deepavali
                     { SetScrollPhase(DeepavaliSessionPhase.ScrollClosing); scrollOverlay.Hide(); }
                     break;
                 case DeepavaliSessionPhase.ScrollClosing:
-                    if (scrollOverlay.CurrentState == DiwaliScrollOverlay.State.Hidden) endSequence();
+                    if (scrollOverlay.CurrentState == DiwaliScrollOverlay.State.Hidden) BeginGreeting();
                     break;
             }
         }
         private void CancelScroll()
         {
+            HideResultLogo();
             if (scrollOverlay != null) scrollOverlay.CancelImmediate();
             SelectedScrollVariant = null; ScrollPhaseElapsed = 0; scrollFailed = false;
         }

@@ -1,0 +1,10 @@
+{
+  "pitch changes rotation without changing orbit radius": true,
+  "pitch is absolute with no accumulated drift": true,
+  "save succeeds": true,
+  "session settings round trip": true,
+  "wheel shared preset unchanged": true,
+  "saved on disk": true,
+  "disable restores authored camera": true,
+  "zero restores exact authored view": true
+}

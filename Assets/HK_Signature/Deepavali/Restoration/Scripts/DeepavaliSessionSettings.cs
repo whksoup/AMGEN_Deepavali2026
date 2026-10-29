@@ -21,6 +21,13 @@ namespace Amgen.Deepavali
         [Min(0)] public float scrollDelayAfterResultSeconds = 2;
         [Tooltip("Time fully open, excluding the opening and closing clips.")]
         [Min(0)] public float scrollHoldSeconds = 15;
+        [Min(0)] public float greetingHoldSeconds = 4;
+        [Header("Session presentation (does not edit the shared wheel preset)")]
+        [Range(-45, 20)] public float cameraPitchOffset;
+        [Min(.1f)] public float spinSpeed = 16;
+        [Min(0)] public float spinCruiseSeconds = 1.2f;
+        [Min(.1f)] public float spinSlowdownSeconds = 3.6f;
+        [Min(.01f)] public float logoFadeSeconds = 1;
 
         public void CaptureFrom(DeepavaliSessionController s)
         {
@@ -31,6 +38,10 @@ namespace Amgen.Deepavali
             if (s.restoration != null) restorationBrushRadius = s.restoration.brushRadius;
             inactivityTimeout = s.inactivityTimeout; inactivityFadeDuration = s.inactivityFadeDuration;
             scrollDelayAfterResultSeconds = s.scrollDelayAfterResultSeconds; scrollHoldSeconds = s.scrollHoldSeconds;
+            greetingHoldSeconds = s.greetingHoldSeconds;
+            cameraPitchOffset = s.cameraPitchOffset;
+            spinSpeed = s.spinSpeed; spinCruiseSeconds = s.spinCruiseSeconds; spinSlowdownSeconds = s.spinSlowdownSeconds;
+            logoFadeSeconds = s.logoFadeSeconds;
             Sanitize();
         }
         public void ApplyTo(DeepavaliSessionController s)
@@ -48,6 +59,13 @@ namespace Amgen.Deepavali
             s.inactivityFadeDuration = Safe(inactivityFadeDuration, 2, .1f);
             s.scrollDelayAfterResultSeconds = Safe(scrollDelayAfterResultSeconds, 2);
             s.scrollHoldSeconds = Safe(scrollHoldSeconds, 15);
+            s.greetingHoldSeconds = Safe(greetingHoldSeconds, 4);
+            s.cameraPitchOffset = float.IsFinite(cameraPitchOffset) ? Mathf.Clamp(cameraPitchOffset, -45, 20) : 0;
+            s.spinSpeed = Safe(spinSpeed, 16, .1f);
+            s.spinCruiseSeconds = Safe(spinCruiseSeconds, 1.2f);
+            s.spinSlowdownSeconds = Safe(spinSlowdownSeconds, 3.6f, .1f);
+            s.logoFadeSeconds = Safe(logoFadeSeconds, 1, .01f);
+            s.ApplyPresentationSettings();
         }
         public static float Safe(float value, float fallback, float min = 0) => float.IsFinite(value) ? Mathf.Max(min, value) : fallback;
         private void Sanitize()
@@ -57,6 +75,12 @@ namespace Amgen.Deepavali
             inactivityFadeDuration = Safe(inactivityFadeDuration, 2, .1f);
             scrollDelayAfterResultSeconds = Safe(scrollDelayAfterResultSeconds, 2);
             scrollHoldSeconds = Safe(scrollHoldSeconds, 15);
+            greetingHoldSeconds = Safe(greetingHoldSeconds, 4);
+            cameraPitchOffset = float.IsFinite(cameraPitchOffset) ? Mathf.Clamp(cameraPitchOffset, -45, 20) : 0;
+            spinSpeed = Safe(spinSpeed, 16, .1f);
+            spinCruiseSeconds = Safe(spinCruiseSeconds, 1.2f);
+            spinSlowdownSeconds = Safe(spinSlowdownSeconds, 3.6f, .1f);
+            logoFadeSeconds = Safe(logoFadeSeconds, 1, .01f);
         }
         private void OnValidate() => Sanitize();
     }

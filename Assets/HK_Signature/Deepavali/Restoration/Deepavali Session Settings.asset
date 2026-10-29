@@ -24,3 +24,9 @@ MonoBehaviour:
   inactivityFadeDuration: 2
   scrollDelayAfterResultSeconds: 2
   scrollHoldSeconds: 15
+  greetingHoldSeconds: 4
+  cameraPitchOffset: 0
+  spinSpeed: 16
+  spinCruiseSeconds: 1.2
+  spinSlowdownSeconds: 3.6
+  logoFadeSeconds: 1

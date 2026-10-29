@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "checks": {
+    "Saved greeting default": true,
+    "Externally owned noninteractive overlay": true,
+    "Layer above scroll below fade": true,
+    "Initially hidden": true,
+    "Greeting hidden through scroll closing 0": true,
+    "Greeting starts after scroll hidden 0": true,
+    "Rangoli remains selected 0": true,
+    "Idle reached and alpha image visible 0": true,
+    "Full idle hold elapsed": true,
+    "Final reset clears all greeting players 0": true,
+    "Reset restores dark opening 0": true,
+    "Expired inactivity did not interrupt finale": true,
+    "Greeting hidden through scroll closing 1": true,
+    "Greeting starts after scroll hidden 1": true,
+    "Rangoli remains selected 1": true,
+    "Reset during writing": true,
+    "Greeting hidden through scroll closing 2": true,
+    "Greeting starts after scroll hidden 2": true,
+    "Rangoli remains selected 2": true,
+    "Idle reached and alpha image visible 2": true,
+    "Disable during greeting": true,
+    "Greeting hidden through scroll closing 3": true,
+    "Greeting starts after scroll hidden 3": true,
+    "Rangoli remains selected 3": true,
+    "Idle reached and alpha image visible 3": true,
+    "Injected error clears overlay": true,
+    "Final reset clears all greeting players 3": true,
+    "Reset restores dark opening 3": true,
+    "Saved preset unchanged": true
+  },
+  "errors": [],
+  "timeline": [
+    {
+      "seconds": 0.51600440000038361,
+      "state": "0/RevealingResult/Hidden",
+      "inactive": 3.02984571
+    },
+    {
+      "seconds": 3.6509513000000879,
+      "state": "0/ScrollDelay/Hidden",
+      "inactive": 6.211654
+    },
+    {
+      "seconds": 3.7556100000001607,
+      "state": "0/ScrollOpening/Hidden",
+      "inactive": 6.31370926
+    },
+    {
+      "seconds": 9.3571679000006043,
+      "state": "0/ScrollHolding/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 24.360978400000022,
+      "state": "0/ScrollClosing/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 27.780389700000342,
+      "state": "0/GreetingOpening/Spawning",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 33.565952800000559,
+      "state": "0/GreetingHolding/Shown",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 37.56558750000022,
+      "state": "0/GreetingClosing/Hiding",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 39.114883799999916,
+      "state": "0/AwaitingRestoration/Hidden",
+      "inactive": 0.0
+    },
+    {
+      "seconds": 39.139062000000195,
+      "state": "1/RevealingResult/Hidden",
+      "inactive": 0.009107696
+    },
+    {
+      "seconds": 42.311480500000471,
+      "state": "1/ScrollDelay/Hidden",
+      "inactive": 3.20154285
+    },
+    {
+      "seconds": 42.412931100000606,
+      "state": "1/ScrollOpening/Hidden",
+      "inactive": 3.30309319
+    },
+    {
+      "seconds": 48.014545200000612,
+      "state": "1/ScrollHolding/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 48.217032600000493,
+      "state": "1/ScrollClosing/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 51.635040799999842,
+      "state": "1/GreetingOpening/Spawning",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 51.66016159999981,
+      "state": "2/RevealingResult/Hidden",
+      "inactive": 0.006784999
+    },
+    {
+      "seconds": 54.835577900000317,
+      "state": "2/ScrollDelay/Hidden",
+      "inactive": 3.20119882
+    },
+    {
+      "seconds": 54.938182599999891,
+      "state": "2/ScrollOpening/Hidden",
+      "inactive": 3.30205321
+    },
+    {
+      "seconds": 60.537799300000188,
+      "state": "2/ScrollHolding/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 60.740144299999884,
+      "state": "2/ScrollClosing/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 64.157847100000254,
+      "state": "2/GreetingOpening/Spawning",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 69.939271600000211,
+      "state": "2/GreetingHolding/Shown",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 69.9503792000005,
+      "state": "3/RevealingResult/Hidden",
+      "inactive": 0.009359297
+    },
+    {
+      "seconds": 73.139554800000042,
+      "state": "3/ScrollDelay/Hidden",
+      "inactive": 3.20192051
+    },
+    {
+      "seconds": 73.243147000000135,
+      "state": "3/ScrollOpening/Hidden",
+      "inactive": 3.30549526
+    },
+    {
+      "seconds": 78.844662100000278,
+      "state": "3/ScrollHolding/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 79.047453799999857,
+      "state": "3/ScrollClosing/Hidden",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 82.464335000000574,
+      "state": "3/GreetingOpening/Spawning",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 88.2774102000003,
+      "state": "3/GreetingHolding/Shown",
+      "inactive": 0.1
+    },
+    {
+      "seconds": 88.290666500000043,
+      "state": "3/AwaitingRestoration/Hidden",
+      "inactive": 0.0
+    }
+  ]
+}

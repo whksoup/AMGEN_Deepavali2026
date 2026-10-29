@@ -1,44 +1,33 @@
 # AMGEN Deepavali 2026
 
-Unity project for the AMGEN interactive LED wall's Deepavali flower experience.
+Unity project for the AMGEN interactive LED wall, including the Deepavali restoration, flower wheel and blessing-scroll experience.
 
-## Open the project
+## Open and preview
 
-1. Clone this repository. Source artwork and media are included directly; Git LFS is not required.
-2. Open the repository folder in Unity Hub with **Unity 6000.0.55f1**.
-3. Allow Unity to import assets and resolve packages (URP 17.0.4 and Input System 1.14.1).
-4. Open `Assets/Scenes/Deepavali_PetalWheelSequence.unity` and press Play for the latest wheel/shimmer experience. `Deepavali_PaletteTest.unity` retains the direct per-petal appearance controls.
+1. Open this repository folder in Unity Hub using **Unity 6000.0.55f1**. The project uses **URP 17.0.4** and **Input System 1.14.1**. Allow assets, packages and videos to import; source media is included directly without requiring Git LFS.
+2. Open [Deepavali_PetalWheelSequence.unity](Assets/Scenes/Deepavali_PetalWheelSequence.unity) and press Play.
+3. Native touch/sensor input is the saved default. For desktop testing, focus the Game view, press **M** and enable **Mouse preview (temporary)**.
+4. Dwell over the center prompt, restore the image and all four lamps, then leave/re-enter the second prompt to spin. The selected flower color/icon and matching scroll share one of eight outcomes. The session resets after the scroll or on inactivity.
 
-The repository root is the Unity project root. Unity caches and local editor settings are regenerated locally.
+See [scene controls and settings](Documentation/scenes.md) for the full flow and the roles of all nine Deepavali scenes. `Deepavali_PaletteTest.unity` remains the direct appearance review scene; `Deepavali.unity` is an older placeholder.
 
-## Current progress
+**Deployment status:** Deepavali is not currently in the build scene list. Previous Editor/simulated-touch evidence does not establish physical sensor, target-wall performance or launcher/deployment readiness.
 
-- Refined two-layer flower with 22 petals: 8 individual inner silhouettes and 14 outer leaves, including one merged north leaf. Inner roots are broad and planar, following Image 1 and Petal2.svg.
-- Petal motion and mouse/touch selection.
-- Independent per-petal palettes, artwork, and emission controls.
-- Outward palette waves and independent root-to-tip artwork reveals, finishing the active transition before using the latest queued choice.
-- Glowing center rim and six palette-associated icons: lotus, sunburst, star, sprout, diya, and people with a heart.
-- Saturated, matte center fills that match their palette colors.
-- Initial inner-petal state with eight individual symbols and fills, gold medallion patterns, yellow edge lighting, and a center mandala.
-- Wheel, shimmer, lighting sequences and spatial-lighting study scenes use the refined meshes and per-leaf fitted artwork/light maps.
-- Dark Yughues soil background, four corner oil lamps with flickering flames, and scattered marigold/burgundy petals. Corner placement adapts to the wall's aspect ratio.
+## Documentation
 
-In the review scene, select **All petals** and choose a palette to update the flower and center together. Select an individual petal to adjust it independently. **Initial state** restores the opening appearance; the next palette choice transitions its symbols, patterns, colors, and edge lighting into the selected phase.
+- [Documentation index](Documentation/README.md)
+- [Architecture and session flow](Documentation/architecture.md)
+- [Validation evidence and remaining checks](Documentation/validation.md)
+- [Agent instructions](AGENTS.md) and [documentation workflow](Documentation/agent-workflow.md)
+- [Session summaries](Documentation/sessions/README.md) and [in-session scratchpads](Documentation/scratchpads/README.md)
+- [Project documentation skill](.agents/skills/deepavali-documentation/SKILL.md)
 
-![Center palette states](output/flower-center-fill/six-center-colors.png)
+## Sources and implementation records
 
-## Source and progress records
+- [Deepavali assets and runtime code](Assets/HK_Signature/Deepavali): petal appearance/motion, restoration/session, background and hand guidance.
+- [Scroll overlay and media](Assets/DiwaliScroll): eight video variants and playback component.
+- [Refined flower integration](output/refined-flower-integration/README.txt): 8 inner petals and 14 outer leaves, fitted artwork/light maps, source and review evidence. Editable Blender source: `output/flower-petal-prototype/Deepavali_InnerPetal_VideoFit.blend`.
+- [Restoration/session integration](output/restoration-session/README.txt), [scroll integration](output/diwali-scroll-integration/README.txt), [session polish](output/session-polish/README.txt), [sensor input](output/sensor-input/README.txt).
+- [Original scope](Documentation/Deepavali-module-scope.md) and [scroll plan](Documentation/Deepavali-scroll-integration-plan.md): historical requirements and decisions, with links to current behavior.
 
-- Runtime scripts, shaders, models, materials, and prefabs: `Assets/HK_Signature/Deepavali/PetalPrototype/`
-- Current Blender source: `output/flower-petal-prototype/Deepavali_InnerPetal_VideoFit.blend`; production export: `Models/Refined Flower/Deepavali_RefinedFlower.fbx` under the runtime folder.
-- Integration, root-shape correction, recoverable backups, before/after images and Play Mode evidence: `output/refined-flower-integration/README.txt`.
-- Scope: `Documentation/Deepavali-module-scope.md`
-- Appearance implementation: `output/flower-appearance/README.txt`
-- Artwork transitions: `output/artwork-transition/README.txt`
-- Center implementation and icon provenance: `output/flower-center/README.txt`
-- Initial inner appearance and verification: `output/flower-initial-state/README.txt`
-- Background assets: `Assets/HK_Signature/Deepavali/Background/`; preview and verification: `output/deepavali-background/`
-- Unity validation results: `output/flower-center/validation.json` and `output/artwork-transition/validation.json`
-- Lighting notes: `reports/` and `research_notes/`
-
-The current save includes the existing wall scenes and media as well as the Deepavali work. Wheel/roulette behavior is validated in the Unity Editor; final Android/device performance validation remains outstanding.
+The repository also contains the existing wall scenes and media. Unity caches and local Editor settings are regenerated locally.
